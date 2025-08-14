@@ -1,0 +1,338 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Агентство недвижимости</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}" />
+</head>
+<body>
+
+  <!-- Рекламная топ-полоска -->
+  <div id="top-bar" class="top-bar">
+    <span>Лучшие предложения по недвижимости! Звоните прямо сейчас!</span>
+    <button class="close-button" aria-label="Закрыть">&times;</button>
+  </div>
+
+  <!-- Хедер -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="{% static 'webapp/images/logo.svg' %}" alt="Логотип агентства" />
+      </div>
+
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="#about"><i class="fa-solid fa-info-circle"></i> О нас</a></li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fa-solid fa-house"></i> Продажа <i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#sale-house">Дом</a></li>
+              <li><a href="#sale-apartment">Квартира</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#rent-house">Дом</a></li>
+              <li><a href="#rent-apartment">Квартира</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#contacts"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
+
+          <li class="contacts-menu">
+            <a href="tel:+71234567890"><i class="fa-solid fa-phone"></i> +7 (123) 456-78-90</a>
+            <a href="mailto:info@realestate.ru"><i class="fa-solid fa-envelope"></i> info@realestate.ru</a>
+          </li>
+
+          <li class="social-menu">
+            <a href="https://telegram.org" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://kufar.by" aria-label="Kufar"><i class="fa-solid fa-building"></i></a>
+            <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+
+          <li>
+            <button class="btn-consultation">Получить консультацию</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Слайдер - главные предложения -->
+  <section class="slider-main">
+    <div class="slider-wrapper">
+      <div class="slides">
+
+        <div class="slide">
+          <img src="{% static 'webapp/images/slide1.jpg' %}" alt="Слайд 1" />
+          <div class="slide-content">
+            <h2>Найдите дом своей мечты с нами</h2>
+            <button class="btn-consultation">Получить консультацию</button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="{% static 'webapp/images/slide2.jpg' %}" alt="Слайд 2" />
+          <div class="slide-content">
+            <h2>Лучшие квартиры в вашем городе</h2>
+            <button class="btn-consultation">Получить консультацию</button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="{% static 'webapp/images/slide3.jpg' %}" alt="Слайд 3" />
+          <div class="slide-content">
+            <h2>Аренда на выгодных условиях</h2>
+            <button class="btn-consultation">Получить консультацию</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Слайдер новые объекты -->
+  <section class="slider-new-objects">
+    <h2>Новые объекты</h2>
+    <div class="slider-container">
+      <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
+      <div class="new-objects-wrapper">
+        <div class="new-objects">
+          <!-- 10 объектов пример -->
+          <div class="new-object">
+            <img src="{% static 'webapp/images/object1.jpg' %}" alt="Объект 1" />
+            <p>Дом в центре</p>
+          </div>
+          <div class="new-object">
+            <img src="{% static 'webapp/images/object2.jpg' %}" alt="Объект 2" />
+            <p>Квартира с видом на парк</p>
+          </div>
+          <div class="new-object">
+            <img src="{% static 'webapp/images/object3.jpg' %}" alt="Объект 3" />
+            <p>Современный дом</p>
+          </div>
+          <div class="new-object">
+            <img src="{% static 'webapp/images/object4.jpg' %}" alt="Объект 4" />
+            <p>Уютная квартира</p>
+          </div>
+          <div class="new-object">
+            <img src="{% static 'webapp/images/object5.jpg' %}" alt="Объект 5" />
+            <p>Семейный дом</p>
+          </div>
+          <div class="new-object">
+            <img src="{% static 'webapp/images/object6.jpg' %}" alt="Объект 6" />
+            <p>Стильная квартира</p>
+          </div>
+          <div class="new-object">
+            <img src="{% static 'webapp/images/object7.jpg' %}" alt="Объект 7" />
+            <p>Сельский дом</p>
+          </div>
+          <div class="new-object">
+            <img src="{% static 'webapp/images/object8.jpg' %}" alt="Объект 8" />
+            <p>Квартира в новостройке</p>
+          </div>
+          <div class="new-object">
+            <img src="{% static 'webapp/images/object9.jpg' %}" alt="Объект 9" />
+            <p>Дом на озере</p>
+          </div>
+          <div class="new-object">
+            <img src="{% static 'webapp/images/object10.jpg' %}" alt="Объект 10" />
+            <p>Пентхаус</p>
+          </div>
+        </div>
+      </div>
+      <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- Форма консультации -->
+  <section class="consultation-form-section" id="consultation-form">
+    <h2>Получить консультацию</h2>
+    <form class="consultation-form" action="#" method="post">
+      {% csrf_token %}
+      <label for="name">Имя</label>
+      <input type="text" id="name" name="name" required placeholder="Ваше имя" />
+
+      <label for="phone">Телефон</label>
+      <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__" />
+
+      <div class="checkbox-wrapper">
+        <input type="radio" id="agree" name="agree" required />
+        <label for="agree">Я согласен с обработкой информации</label>
+      </div>
+
+      <button type="submit" class="btn-submit">Отправить заявку</button>
+    </form>
+  </section>
+
+  <!-- Почему нам доверяют -->
+  <section class="trust-section">
+    <h2>Почему нам можно доверять</h2>
+    <div class="trust-items">
+      <div class="trust-item">
+        <i class="fa-solid fa-shield-virus"></i>
+        <p>Надежность</p>
+      </div>
+      <div class="trust-item">
+        <i class="fa-solid fa-user-check"></i>
+        <p>Профессионализм</p>
+      </div>
+      <div class="trust-item">
+        <i class="fa-solid fa-handshake"></i>
+        <p>Честность</p>
+      </div>
+      <div class="trust-item">
+        <i class="fa-solid fa-clock"></i>
+        <p>Быстрый отклик</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Видео блок -->
+  <section class="video-section">
+    <h2>Наши видео</h2>
+    <div class="video-grid">
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Видео 1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Видео 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Видео 3" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Видео 4" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Второй слайдер объектов (наоборот) -->
+  <section class="slider-objects-reverse">
+    <h2>Все объекты</h2>
+    <div class="slider-container reverse-direction">
+      <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
+      <div class="objects-wrapper">
+        <div class="objects">
+          <!-- 10 объектов, как пример -->
+          <div class="object-item">
+            <img src="{% static 'webapp/images/object11.jpg' %}" alt="Объект 11" />
+            <p>Дом с садом</p>
+          </div>
+          <div class="object-item">
+            <img src="{% static 'webapp/images/object12.jpg' %}" alt="Объект 12" />
+            <p>Модерн квартира</p>
+          </div>
+          <div class="object-item">
+            <img src="{% static 'webapp/images/object13.jpg' %}" alt="Объект 13" />
+            <p>Загородный дом</p>
+          </div>
+          <div class="object-item">
+            <img src="{% static 'webapp/images/object14.jpg' %}" alt="Объект 14" />
+            <p>Студия в центре</p>
+          </div>
+          <div class="object-item">
+            <img src="{% static 'webapp/images/object15.jpg' %}" alt="Объект 15" />
+            <p>Лофт</p>
+          </div>
+          <div class="object-item">
+            <img src="{% static 'webapp/images/object16.jpg' %}" alt="Объект 16" />
+            <p>Апартаменты у моря</p>
+          </div>
+          <div class="object-item">
+            <img src="{% static 'webapp/images/object17.jpg' %}" alt="Объект 17" />
+            <p>Дом с бассейном</p>
+          </div>
+          <div class="object-item">
+            <img src="{% static 'webapp/images/object18.jpg' %}" alt="Объект 18" />
+            <p>Квартира-студия</p>
+          </div>
+          <div class="object-item">
+            <img src="{% static 'webapp/images/object19.jpg' %}" alt="Объект 19" />
+            <p>Таунхаус</p>
+          </div>
+          <div class="object-item">
+            <img src="{% static 'webapp/images/object20.jpg' %}" alt="Объект 20" />
+            <p>Пентхаус с террасой</p>
+          </div>
+        </div>
+      </div>
+      <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- Информация о нас -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <div class="about-photo">
+        <img src="{% static 'webapp/images/about-photo.jpg' %}" alt="Фото компании" />
+      </div>
+      <div class="about-text">
+        <h2>О нашем агентстве недвижимости</h2>
+        <p>
+          Мы профессионалы своего дела, предоставляющие полный спектр услуг по продаже и аренде недвижимости. Наш коллектив — команда опытных специалистов, которые помогут вам найти идеальное жилье.
+        </p>
+        <div class="contacts-about">
+          <p><i class="fa-solid fa-phone"></i> +7 (123) 456-78-90</p>
+          <p><i class="fa-solid fa-envelope"></i> info@realestate.ru</p>
+          <div class="social-about">
+            <a href="https://telegram.org" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://kufar.by" aria-label="Kufar"><i class="fa-solid fa-building"></i></a>
+            <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <img src="{% static 'webapp/images/logo.svg' %}" alt="Логотип агентства" />
+      </div>
+
+      <nav class="footer-menu">
+        <a href="#about">О нас</a>
+        <a href="#sale-house">Продажа</a>
+        <a href="#rent-house">Аренда</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="footer-contacts">
+        <p><i class="fa-solid fa-phone"></i> +7 (123) 456-78-90</p>
+        <p><i class="fa-solid fa-envelope"></i> info@realestate.ru</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://telegram.org" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://kufar.by" aria-label="Kufar"><i class="fa-solid fa-building"></i></a>
+        <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 Агентство недвижимости. Все права защищены.
+    </div>
+  </footer>
+
+  <script src="{% static 'webapp/js/slider.js' %}"></script>
+  <script>
+    // Топ бар закрытие
+    document.querySelector('.close-button').addEventListener('click', () => {
+      document.getElementById('top-bar').style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
