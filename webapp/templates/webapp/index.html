@@ -9,6 +9,8 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}" />
+    <link rel="icon" href="{% static 'webapp/images/favicon.svg' %}" type="image/svg+xml" />
+
 </head>
 <body>
 
@@ -32,16 +34,16 @@
           <li class="dropdown">
             <a href="#"><i class="fa-solid fa-house"></i> Продажа <i class="fa fa-caret-down"></i></a>
             <ul class="dropdown-menu">
-              <li><a href="#sale-house">Дом</a></li>
-              <li><a href="#sale-apartment">Квартира</a></li>
+              <li><a href="#sale-house"><i class="fa-solid fa-house-user"></i> Дом</a></li>
+              <li><a href="#sale-apartment"><i class="fa-solid fa-building"></i> Квартира</a></li>
             </ul>
           </li>
 
           <li class="dropdown">
             <a href="#"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>
             <ul class="dropdown-menu">
-              <li><a href="#rent-house">Дом</a></li>
-              <li><a href="#rent-apartment">Квартира</a></li>
+              <li><a href="#rent-house"><i class="fa-solid fa-house-user"></i> Дом</a></li>
+              <li><a href="#rent-apartment"><i class="fa-solid fa-building"></i> Квартира</a></li>
             </ul>
           </li>
 
@@ -73,7 +75,7 @@
       <div class="slides">
 
         <div class="slide">
-          <img src="{% static 'webapp/images/slide1.jpg' %}" alt="Слайд 1" />
+          <img src="{% static 'webapp/images/house_slide.png' %}" alt="Слайд 1" />
           <div class="slide-content">
             <h2>Найдите дом своей мечты с нами</h2>
             <button class="btn-consultation">Получить консультацию</button>
@@ -81,15 +83,15 @@
         </div>
 
         <div class="slide">
-          <img src="{% static 'webapp/images/slide2.jpg' %}" alt="Слайд 2" />
+          <img src="{% static 'webapp/images/slide_badroom.png' %}" alt="Слайд 2" />
           <div class="slide-content">
-            <h2>Лучшие квартиры в вашем городе</h2>
+            <h2>Лучшие квартиры в нашем городе</h2>
             <button class="btn-consultation">Получить консультацию</button>
           </div>
         </div>
 
         <div class="slide">
-          <img src="{% static 'webapp/images/slide3.jpg' %}" alt="Слайд 3" />
+          <img src="{% static 'webapp/images/rent_slide.jpg' %}" alt="Слайд 3" />
           <div class="slide-content">
             <h2>Аренда на выгодных условиях</h2>
             <button class="btn-consultation">Получить консультацию</button>
@@ -152,26 +154,6 @@
       </div>
       <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
     </div>
-  </section>
-
-  <!-- Форма консультации -->
-  <section class="consultation-form-section" id="consultation-form">
-    <h2>Получить консультацию</h2>
-    <form class="consultation-form" action="#" method="post">
-      {% csrf_token %}
-      <label for="name">Имя</label>
-      <input type="text" id="name" name="name" required placeholder="Ваше имя" />
-
-      <label for="phone">Телефон</label>
-      <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__" />
-
-      <div class="checkbox-wrapper">
-        <input type="radio" id="agree" name="agree" required />
-        <label for="agree">Я согласен с обработкой информации</label>
-      </div>
-
-      <button type="submit" class="btn-submit">Отправить заявку</button>
-    </form>
   </section>
 
   <!-- Почему нам доверяют -->
@@ -293,6 +275,26 @@
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Форма консультации -->
+  <section class="consultation-form-section" id="consultation-form">
+      <h2>🗣 Получить консультацию</h2>
+      <form class="consultation-form" action="#" method="post">
+          {% csrf_token %}
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" required placeholder="Ваше имя"/>
+
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__"/>
+
+          <div class="checkbox-wrapper">
+              <input type="radio" id="agree" name="agree" required/>
+              <label for="agree">Я согласен с обработкой информации</label>
+          </div>
+
+          <button type="submit" class="btn-submit">Отправить заявку</button>
+      </form>
   </section>
 
   <!-- Футер -->
