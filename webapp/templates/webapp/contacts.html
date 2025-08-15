@@ -4,6 +4,17 @@
 
 
 {% block content %}
+
+    <nav class="breadcrumb-container" aria-label="breadcrumb">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="{% url 'index' %}" class="nav-link">Главная</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+        </ol>
+    </nav>
+
+
   <!-- Информация о нас -->
   <section class="about-section" id="about">
       <div class="container about-container">

@@ -23,9 +23,11 @@
   <!-- Хедер -->
   <header class="header">
     <div class="container header-container">
-      <div class="logo">
-        <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства" />
-      </div>
+        <div class="logo">
+            <a href="{% url 'index' %}">
+                <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства"/>
+            </a>
+        </div>
 
       <nav class="nav">
         <ul class="menu">
