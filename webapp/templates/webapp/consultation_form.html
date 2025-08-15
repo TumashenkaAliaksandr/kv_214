@@ -1,0 +1,60 @@
+{% load static %}
+
+{% block content %}
+
+  <!-- Форма консультации -->
+  <section class="consultation-form-section" id="consultation-form">
+      <h2>🗣 Получить консультацию</h2>
+      <form id="consultationForm" class="consultation-form" method="post">
+          {% csrf_token %}
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" required placeholder="Ваше имя"/>
+
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__"/>
+
+          <div class="checkbox-wrapper">
+              <input type="radio" id="agree" name="agree" required/>
+              <label for="agree">Я согласен с обработкой информации</label>
+          </div>
+
+          <button type="submit" class="btn-submit">Отправить заявку</button>
+      </form>
+      <div id="formMessage" style="margin-top: 15px;"></div>
+  </section>
+
+  <script>
+  document.getElementById('consultationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    fetch("{% url 'consultation_form' %}", {
+      method: 'POST',
+      headers: {
+        'X-CSRFToken': formData.get('csrfmiddlewaretoken'),
+      },
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      const messageDiv = document.getElementById('formMessage');
+      if (data.success) {
+        messageDiv.style.color = 'green';
+        messageDiv.textContent = data.message || 'Спасибо! Ваш запрос отправлен.';
+        form.reset();
+      } else {
+        messageDiv.style.color = 'red';
+        messageDiv.textContent = data.message || 'Ошибка при отправке формы.';
+      }
+    })
+    .catch(() => {
+      const messageDiv = document.getElementById('formMessage');
+      messageDiv.style.color = 'red';
+      messageDiv.textContent = 'Ошибка сети. Попробуйте позже.';
+    });
+  });
+  </script>
+
+{% endblock %}

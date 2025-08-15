@@ -131,3 +131,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+TELEGRAM_BOT_TOKEN = config('TELEGRAM_BOT_TOKEN')
+TELEGRAM_CHAT_ID = config('TELEGRAM_CHAT_ID')

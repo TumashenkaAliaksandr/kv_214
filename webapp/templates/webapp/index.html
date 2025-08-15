@@ -263,26 +263,7 @@
 
 
 
-  <!-- Форма консультации -->
-  <section class="consultation-form-section" id="consultation-form">
-      <h2>🗣 Получить консультацию</h2>
-      <form class="consultation-form" action="#" method="post">
-          {% csrf_token %}
-          <label for="name">Имя</label>
-          <input type="text" id="name" name="name" required placeholder="Ваше имя"/>
-
-          <label for="phone">Телефон</label>
-          <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__"/>
-
-          <div class="checkbox-wrapper">
-              <input type="radio" id="agree" name="agree" required/>
-              <label for="agree">Я согласен с обработкой информации</label>
-          </div>
-
-          <button type="submit" class="btn-submit">Отправить заявку</button>
-      </form>
-  </section>
-
+{% include 'webapp/consultation_form.html' %}
 
   <!-- Футер -->
   <footer class="footer">
@@ -327,6 +308,7 @@
   </footer>
 
   <script src="{% static 'webapp/js/slider.js' %}"></script>
+{#  <script src="{% static 'webapp/js/form.js' %}"></script>#}
   <script>
     // Топ бар закрытие
     document.querySelector('.close-button').addEventListener('click', () => {
