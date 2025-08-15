@@ -1,320 +1,194 @@
+{% extends 'main/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Агентство недвижимости</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}" />
-    <link rel="icon" href="{% static 'webapp/images/favicon.svg' %}" type="image/svg+xml" />
+{% block content %}
+    <!-- Слайдер - главные предложения -->
+    <section class="slider-main">
+        <div class="slider-wrapper">
+            <div class="slides">
 
-</head>
-<body>
+                <div class="slide">
+                    <img src="{% static 'webapp/images/house_slide.png' %}" alt="Слайд 1"/>
+                    <div class="slide-content">
+                        <h2>Найдите дом своей мечты с нами</h2>
+                        <button class="btn-consultation">Получить консультацию</button>
+                    </div>
+                </div>
 
-  <!-- Рекламная топ-полоска -->
-  <div id="top-bar" class="top-bar">
-    <span>Лучшие предложения по недвижимости! Звоните прямо сейчас!</span>
-    <button class="close-button" aria-label="Закрыть">&times;</button>
-  </div>
+                <div class="slide">
+                    <img src="{% static 'webapp/images/slide_badroom.png' %}" alt="Слайд 2"/>
+                    <div class="slide-content">
+                        <h2>Лучшие квартиры в нашем городе</h2>
+                        <button class="btn-consultation">Получить консультацию</button>
+                    </div>
+                </div>
 
-  <!-- Хедер -->
-  <header class="header">
-    <div class="container header-container">
-      <div class="logo">
-        <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства" />
-      </div>
+                <div class="slide">
+                    <img src="{% static 'webapp/images/rent_slide.jpg' %}" alt="Слайд 3"/>
+                    <div class="slide-content">
+                        <h2>Аренда на выгодных условиях</h2>
+                        <button class="btn-consultation">Получить консультацию</button>
+                    </div>
+                </div>
 
-      <nav class="nav">
-        <ul class="menu">
-          <li><a href="#about"><i class="fa-solid fa-info-circle"></i> О нас</a></li>
+            </div>
+        </div>
+    </section>
 
-          <li class="dropdown">
-            <a href="#"><i class="fa-solid fa-house"></i> Продажа <i class="fa fa-caret-down"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#sale-house"><i class="fa-solid fa-house-user"></i> Дом</a></li>
-              <li><a href="#sale-apartment"><i class="fa-solid fa-building"></i> Квартира</a></li>
-            </ul>
-          </li>
+    <!-- Слайдер новые объекты -->
+    <section class="slider-new-objects">
+        <h2>Новые объекты</h2>
+        <div class="slider-container">
+            <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
+            <div class="new-objects-wrapper">
+                <div class="new-objects">
+                    {% for property in properties_new %}
+                        <div class="new-object">
+                            {% if property.photos.all %}
+                                <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
+                            {% else %}
+                                <img src="{% static 'webapp/images/house_slide.png' %}" alt="{{ property.name }}"/>
+                            {% endif %}
+                            <p>{{ property.name }}</p>
+                        </div>
+                    {% empty %}
+                        <p>Новых объектов нет</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
+        </div>
+    </section>
 
-          <li class="dropdown">
-            <a href="#"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#rent-house"><i class="fa-solid fa-house-user"></i> Дом</a></li>
-              <li><a href="#rent-apartment"><i class="fa-solid fa-building"></i> Квартира</a></li>
-            </ul>
-          </li>
+    <!-- Почему нам доверяют -->
+    <section class="trust-section">
+        <h2>Почему нам можно доверять</h2>
+        <div class="trust-items">
+            <div class="trust-item">
+                <i class="fa-solid fa-shield-virus"></i>
+                <p>Надежность</p>
+            </div>
+            <div class="trust-item">
+                <i class="fa-solid fa-user-check"></i>
+                <p>Профессионализм</p>
+            </div>
+            <div class="trust-item">
+                <i class="fa-solid fa-handshake"></i>
+                <p>Честность</p>
+            </div>
+            <div class="trust-item">
+                <i class="fa-solid fa-clock"></i>
+                <p>Быстрый отклик</p>
+            </div>
+        </div>
+    </section>
 
-          <li><a href="#contacts"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
+    <!-- Видео блок -->
+    <section class="video-section">
+        <h2>Наши видео</h2>
+        <div class="video-grid">
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/GXrxmrgG0mo" title="Видео 1" frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/CQF3IEwUWLI" title="Видео 2" frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/AaHqGM5TMmI" title="Видео 3" frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/CQF3IEwUWLI" title="Видео 4" frameborder="0"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
 
-            <li class="contacts-menu">
-                <a href="tel:{{ contact.phone|urlencode }}">
-                    <i class="fa-solid fa-phone"></i> {{ contact.phone }}
-                </a>
-                <a href="mailto:{{ contact.email|urlencode }}">
-                    <i class="fa-solid fa-envelope"></i> {{ contact.email }}
-                </a>
-            </li>
 
-            <li class="social-menu">
-                {% for social in contact.social_networks.all %}
-                    <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank" rel="noopener noreferrer">
-                        <i class="{{ social.icon }}"></i>
-                    </a>
-                {% empty %}
-                    <span>Соцсетей нет</span>
-                {% endfor %}
-            </li>
+    <!-- Второй слайдер объектов (наоборот) -->
+    <section class="slider-objects-reverse">
+        <h2>Все объекты</h2>
+        <div class="slider-container reverse-direction">
+            <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
+            <div class="objects-wrapper">
+                <div class="objects">
+                    {% for property in properties_all %}
+                        <div class="object-item">
+                            {% if property.photos.all %}
+                                <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
+                            {% else %}
+                                <img src="{% static 'webapp/images/default-object.jpg' %}" alt="{{ property.name }}"/>
+                            {% endif %}
+                            <p>{{ property.name }}</p>
+                        </div>
+                    {% empty %}
+                        <p>Объектов нет</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
+        </div>
+    </section>
 
-
-          <li>
-            <button class="btn-consultation">Получить консультацию</button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Слайдер - главные предложения -->
-  <section class="slider-main">
-    <div class="slider-wrapper">
-      <div class="slides">
-
-        <div class="slide">
-          <img src="{% static 'webapp/images/house_slide.png' %}" alt="Слайд 1" />
-          <div class="slide-content">
-            <h2>Найдите дом своей мечты с нами</h2>
-            <button class="btn-consultation">Получить консультацию</button>
-          </div>
+    <!-- Информация о нас -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+            <div class="about-photo">
+                <img src="{% static 'webapp/images/kvatera_about.jpg' %}" alt="Фото компании"/>
+            </div>
+            <div class="about-text">
+                <h2>✔ О нашем агентстве недвижимости</h2>
+                <p>
+                    ⭐⭐⭐⭐⭐<br>
+                    Мы профессионалы своего дела, предоставляющие полный спектр услуг по продаже и аренде недвижимости.
+                    Наш коллектив — команда опытных специалистов, которые помогут вам найти идеальное жилье.
+                </p>
+                <div class="contacts-about">
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
+                    </p>
+                    <div class="social-about">
+                        {% for social in contact.social_networks.all %}
+                            <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank"
+                               rel="noopener noreferrer">
+                                <i class="{{ social.icon }}"></i>
+                            </a>
+                        {% empty %}
+                            <p>Соцсетей нет</p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="slide">
-          <img src="{% static 'webapp/images/slide_badroom.png' %}" alt="Слайд 2" />
-          <div class="slide-content">
-            <h2>Лучшие квартиры в нашем городе</h2>
-            <button class="btn-consultation">Получить консультацию</button>
-          </div>
+        <!-- Карта под фото и информацией -->
+        <div class="container">
+            <h3>Мы на карте</h3>
+            <div class="map-container">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.7787718957343!2d28.6432172!3d55.536222599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c485209fe11a4b%3A0x906ceb1e54e03589!2z0KbQtdC90YLRgCDRgNC40Y3Qu9GC0LXRgNGB0LrQuNGFINGD0YHQu9GD0LMg0JrQstCw0KLRjdGA0LAgMjE0!5e0!3m2!1sru!2sby!4v1755249880238!5m2!1sru!2sby"
+                        width="1200"
+                        height="350"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="map-iframe"
+                ></iframe>
+            </div>
         </div>
-
-        <div class="slide">
-          <img src="{% static 'webapp/images/rent_slide.jpg' %}" alt="Слайд 3" />
-          <div class="slide-content">
-            <h2>Аренда на выгодных условиях</h2>
-            <button class="btn-consultation">Получить консультацию</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Слайдер новые объекты -->
-  <section class="slider-new-objects">
-      <h2>Новые объекты</h2>
-      <div class="slider-container">
-          <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
-          <div class="new-objects-wrapper">
-              <div class="new-objects">
-                  {% for property in properties_new %}
-                      <div class="new-object">
-                          {% if property.photos.all %}
-                              <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
-                          {% else %}
-                              <img src="{% static 'webapp/images/house_slide.png' %}" alt="{{ property.name }}"/>
-                          {% endif %}
-                          <p>{{ property.name }}</p>
-                      </div>
-                  {% empty %}
-                      <p>Новых объектов нет</p>
-                  {% endfor %}
-              </div>
-          </div>
-          <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
-      </div>
-  </section>
-
-  <!-- Почему нам доверяют -->
-  <section class="trust-section">
-    <h2>Почему нам можно доверять</h2>
-    <div class="trust-items">
-      <div class="trust-item">
-        <i class="fa-solid fa-shield-virus"></i>
-        <p>Надежность</p>
-      </div>
-      <div class="trust-item">
-        <i class="fa-solid fa-user-check"></i>
-        <p>Профессионализм</p>
-      </div>
-      <div class="trust-item">
-        <i class="fa-solid fa-handshake"></i>
-        <p>Честность</p>
-      </div>
-      <div class="trust-item">
-        <i class="fa-solid fa-clock"></i>
-        <p>Быстрый отклик</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Видео блок -->
-  <section class="video-section">
-      <h2>Наши видео</h2>
-      <div class="video-grid">
-          <div class="video-item">
-              <iframe src="https://www.youtube.com/embed/GXrxmrgG0mo" title="Видео 1" frameborder="0"
-                      allowfullscreen></iframe>
-          </div>
-          <div class="video-item">
-              <iframe src="https://www.youtube.com/embed/CQF3IEwUWLI" title="Видео 2" frameborder="0"
-                      allowfullscreen></iframe>
-          </div>
-          <div class="video-item">
-              <iframe src="https://www.youtube.com/embed/AaHqGM5TMmI" title="Видео 3" frameborder="0"
-                      allowfullscreen></iframe>
-          </div>
-          <div class="video-item">
-              <iframe src="https://www.youtube.com/embed/CQF3IEwUWLI" title="Видео 4" frameborder="0"
-                      allowfullscreen></iframe>
-          </div>
-      </div>
-  </section>
+    </section>
 
 
-  <!-- Второй слайдер объектов (наоборот) -->
-  <section class="slider-objects-reverse">
-      <h2>Все объекты</h2>
-      <div class="slider-container reverse-direction">
-          <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
-          <div class="objects-wrapper">
-              <div class="objects">
-                  {% for property in properties_all %}
-                      <div class="object-item">
-                          {% if property.photos.all %}
-                              <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
-                          {% else %}
-                              <img src="{% static 'webapp/images/default-object.jpg' %}" alt="{{ property.name }}"/>
-                          {% endif %}
-                          <p>{{ property.name }}</p>
-                      </div>
-                  {% empty %}
-                      <p>Объектов нет</p>
-                  {% endfor %}
-              </div>
-          </div>
-          <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
-      </div>
-  </section>
-
-  <!-- Информация о нас -->
-  <section class="about-section" id="about">
-      <div class="container about-container">
-          <div class="about-photo">
-              <img src="{% static 'webapp/images/kvatera_about.jpg' %}" alt="Фото компании"/>
-          </div>
-          <div class="about-text">
-              <h2>✔ О нашем агентстве недвижимости</h2>
-              <p>
-                  ⭐⭐⭐⭐⭐<br>
-                  Мы профессионалы своего дела, предоставляющие полный спектр услуг по продаже и аренде недвижимости.
-                  Наш коллектив — команда опытных специалистов, которые помогут вам найти идеальное жилье.
-              </p>
-              <div class="contacts-about">
-                  <p>
-                      <i class="fa-solid fa-phone"></i>
-                      <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
-                  </p>
-                  <p>
-                      <i class="fa-solid fa-envelope"></i>
-                      <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
-                  </p>
-                  <div class="social-about">
-                      {% for social in contact.social_networks.all %}
-                          <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank"
-                             rel="noopener noreferrer">
-                              <i class="{{ social.icon }}"></i>
-                          </a>
-                      {% empty %}
-                          <p>Соцсетей нет</p>
-                      {% endfor %}
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Карта под фото и информацией -->
-      <div class="container">
-          <h3>Мы на карте</h3>
-          <div class="map-container">
-              <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.7787718957343!2d28.6432172!3d55.536222599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c485209fe11a4b%3A0x906ceb1e54e03589!2z0KbQtdC90YLRgCDRgNC40Y3Qu9GC0LXRgNGB0LrQuNGFINGD0YHQu9GD0LMg0JrQstCw0KLRjdGA0LAgMjE0!5e0!3m2!1sru!2sby!4v1755249880238!5m2!1sru!2sby"
-                      width="1200"
-                      height="350"
-                      style="border:0;"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                      class="map-iframe"
-              ></iframe>
-          </div>
-      </div>
-  </section>
+    {% include 'webapp/consultation_form.html' %}
 
 
-
-{% include 'webapp/consultation_form.html' %}
-
-  <!-- Футер -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-logo">
-        <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства" />
-      </div>
-
-      <nav class="footer-menu">
-        <a href="#about">О нас</a>
-        <a href="#sale-house">Продажа</a>
-        <a href="#rent-house">Аренда</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-
-        <div class="footer-contacts">
-            <p>
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
-            </p>
-            <p>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
-            </p>
-        </div>
-
-        <div class="footer-social">
-            {% for social in contact.social_networks.all %}
-                <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank" rel="noopener noreferrer">
-                    <i class="{{ social.icon }}"></i>
-                </a>
-            {% empty %}
-                <p>Соцсетей нет</p>
-            {% endfor %}
-        </div>
-
-
-    </div>
-    <div class="copyright">
-      &copy; 2025 Агентство недвижимости. Все права защищены.
-    </div>
-  </footer>
-
-  <script src="{% static 'webapp/js/slider.js' %}"></script>
-{#  <script src="{% static 'webapp/js/form.js' %}"></script>#}
-  <script>
-    // Топ бар закрытие
-    document.querySelector('.close-button').addEventListener('click', () => {
-      document.getElementById('top-bar').style.display = 'none';
-    });
-  </script>
-
-</body>
-</html>
+{% endblock %}

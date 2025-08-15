@@ -1,0 +1,135 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Агентство недвижимости</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}" />
+    <link rel="icon" href="{% static 'webapp/images/favicon.svg' %}" type="image/svg+xml" />
+
+</head>
+<body>
+
+  <!-- Рекламная топ-полоска -->
+  <div id="top-bar" class="top-bar">
+    <span>Лучшие предложения по недвижимости! Звоните прямо сейчас!</span>
+    <button class="close-button" aria-label="Закрыть">&times;</button>
+  </div>
+
+  <!-- Хедер -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства" />
+      </div>
+
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="#about"><i class="fa-solid fa-info-circle"></i> О нас</a></li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fa-solid fa-house"></i> Продажа <i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#sale-house"><i class="fa-solid fa-house-user"></i> Дом</a></li>
+              <li><a href="#sale-apartment"><i class="fa-solid fa-building"></i> Квартира</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#rent-house"><i class="fa-solid fa-house-user"></i> Дом</a></li>
+              <li><a href="#rent-apartment"><i class="fa-solid fa-building"></i> Квартира</a></li>
+            </ul>
+          </li>
+
+          <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
+
+            <li class="contacts-menu">
+                <a href="tel:{{ contact.phone|urlencode }}">
+                    <i class="fa-solid fa-phone"></i> {{ contact.phone }}
+                </a>
+                <a href="mailto:{{ contact.email|urlencode }}">
+                    <i class="fa-solid fa-envelope"></i> {{ contact.email }}
+                </a>
+            </li>
+
+            <li class="social-menu">
+                {% for social in contact.social_networks.all %}
+                    <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank" rel="noopener noreferrer">
+                        <i class="{{ social.icon }}"></i>
+                    </a>
+                {% empty %}
+                    <span>Соцсетей нет</span>
+                {% endfor %}
+            </li>
+
+
+          <li>
+            <button class="btn-consultation">Получить консультацию</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+{% block content %}{% endblock %}
+
+
+   <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства"/>
+            </div>
+
+            <nav class="footer-menu">
+                <a href="#about">О нас</a>
+                <a href="#sale-house">Продажа</a>
+                <a href="#rent-house">Аренда</a>
+                <a href="{% url 'contacts' %}">Контакты</a>
+            </nav>
+
+            <div class="footer-contacts">
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
+                </p>
+            </div>
+
+            <div class="footer-social">
+                {% for social in contact.social_networks.all %}
+                    <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank" rel="noopener noreferrer">
+                        <i class="{{ social.icon }}"></i>
+                    </a>
+                {% empty %}
+                    <p>Соцсетей нет</p>
+                {% endfor %}
+            </div>
+
+
+        </div>
+        <div class="copyright">
+            &copy; 2025 Агентство недвижимости. Все права защищены.
+        </div>
+    </footer>
+
+  <script src="{% static 'webapp/js/slider.js' %}"></script>
+{#  <script src="{% static 'webapp/js/form.js' %}"></script>#}
+  <script>
+    // Топ бар закрытие
+    document.querySelector('.close-button').addEventListener('click', () => {
+      document.getElementById('top-bar').style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>

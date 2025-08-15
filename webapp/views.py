@@ -12,7 +12,10 @@ def index(request):
     properties_all = Property.objects.prefetch_related('photos').all()
     return render(request, 'webapp/index.html', {'properties_new': properties_new, 'properties_all': properties_all})
 
+def contacts(request):
+    """contacts page"""
 
+    return render(request, 'webapp/contacts.html')
 
 def consultation_view(request):
     if request.method == 'POST':
