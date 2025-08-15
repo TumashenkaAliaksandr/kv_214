@@ -112,56 +112,27 @@
 
   <!-- Слайдер новые объекты -->
   <section class="slider-new-objects">
-    <h2>Новые объекты</h2>
-    <div class="slider-container">
-      <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
-      <div class="new-objects-wrapper">
-        <div class="new-objects">
-          <!-- 10 объектов пример -->
-          <div class="new-object">
-            <img src="{% static 'webapp/images/object1.jpg' %}" alt="Объект 1" />
-            <p>Дом в центре</p>
+      <h2>Новые объекты</h2>
+      <div class="slider-container">
+          <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
+          <div class="new-objects-wrapper">
+              <div class="new-objects">
+                  {% for property in properties_new %}
+                      <div class="new-object">
+                          {% if property.photos.all %}
+                              <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
+                          {% else %}
+                              <img src="{% static 'webapp/images/house_slide.png' %}" alt="{{ property.name }}"/>
+                          {% endif %}
+                          <p>{{ property.name }}</p>
+                      </div>
+                  {% empty %}
+                      <p>Новых объектов нет</p>
+                  {% endfor %}
+              </div>
           </div>
-          <div class="new-object">
-            <img src="{% static 'webapp/images/object2.jpg' %}" alt="Объект 2" />
-            <p>Квартира с видом на парк</p>
-          </div>
-          <div class="new-object">
-            <img src="{% static 'webapp/images/object3.jpg' %}" alt="Объект 3" />
-            <p>Современный дом</p>
-          </div>
-          <div class="new-object">
-            <img src="{% static 'webapp/images/object4.jpg' %}" alt="Объект 4" />
-            <p>Уютная квартира</p>
-          </div>
-          <div class="new-object">
-            <img src="{% static 'webapp/images/object5.jpg' %}" alt="Объект 5" />
-            <p>Семейный дом</p>
-          </div>
-          <div class="new-object">
-            <img src="{% static 'webapp/images/object6.jpg' %}" alt="Объект 6" />
-            <p>Стильная квартира</p>
-          </div>
-          <div class="new-object">
-            <img src="{% static 'webapp/images/object7.jpg' %}" alt="Объект 7" />
-            <p>Сельский дом</p>
-          </div>
-          <div class="new-object">
-            <img src="{% static 'webapp/images/object8.jpg' %}" alt="Объект 8" />
-            <p>Квартира в новостройке</p>
-          </div>
-          <div class="new-object">
-            <img src="{% static 'webapp/images/object9.jpg' %}" alt="Объект 9" />
-            <p>Дом на озере</p>
-          </div>
-          <div class="new-object">
-            <img src="{% static 'webapp/images/object10.jpg' %}" alt="Объект 10" />
-            <p>Пентхаус</p>
-          </div>
-        </div>
+          <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
       </div>
-      <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
-    </div>
   </section>
 
   <!-- Почему нам доверяют -->
@@ -189,112 +160,108 @@
 
   <!-- Видео блок -->
   <section class="video-section">
-    <h2>Наши видео</h2>
-    <div class="video-grid">
-      <div class="video-item">
-        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Видео 1" frameborder="0" allowfullscreen></iframe>
+      <h2>Наши видео</h2>
+      <div class="video-grid">
+          <div class="video-item">
+              <iframe src="https://www.youtube.com/embed/GXrxmrgG0mo" title="Видео 1" frameborder="0"
+                      allowfullscreen></iframe>
+          </div>
+          <div class="video-item">
+              <iframe src="https://www.youtube.com/embed/CQF3IEwUWLI" title="Видео 2" frameborder="0"
+                      allowfullscreen></iframe>
+          </div>
+          <div class="video-item">
+              <iframe src="https://www.youtube.com/embed/AaHqGM5TMmI" title="Видео 3" frameborder="0"
+                      allowfullscreen></iframe>
+          </div>
+          <div class="video-item">
+              <iframe src="https://www.youtube.com/embed/CQF3IEwUWLI" title="Видео 4" frameborder="0"
+                      allowfullscreen></iframe>
+          </div>
       </div>
-      <div class="video-item">
-        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Видео 2" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="video-item">
-        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Видео 3" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="video-item">
-        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Видео 4" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
   </section>
+
 
   <!-- Второй слайдер объектов (наоборот) -->
   <section class="slider-objects-reverse">
-    <h2>Все объекты</h2>
-    <div class="slider-container reverse-direction">
-      <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
-      <div class="objects-wrapper">
-        <div class="objects">
-          <!-- 10 объектов, как пример -->
-          <div class="object-item">
-            <img src="{% static 'webapp/images/object11.jpg' %}" alt="Объект 11" />
-            <p>Дом с садом</p>
+      <h2>Все объекты</h2>
+      <div class="slider-container reverse-direction">
+          <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
+          <div class="objects-wrapper">
+              <div class="objects">
+                  {% for property in properties_all %}
+                      <div class="object-item">
+                          {% if property.photos.all %}
+                              <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
+                          {% else %}
+                              <img src="{% static 'webapp/images/default-object.jpg' %}" alt="{{ property.name }}"/>
+                          {% endif %}
+                          <p>{{ property.name }}</p>
+                      </div>
+                  {% empty %}
+                      <p>Объектов нет</p>
+                  {% endfor %}
+              </div>
           </div>
-          <div class="object-item">
-            <img src="{% static 'webapp/images/object12.jpg' %}" alt="Объект 12" />
-            <p>Модерн квартира</p>
-          </div>
-          <div class="object-item">
-            <img src="{% static 'webapp/images/object13.jpg' %}" alt="Объект 13" />
-            <p>Загородный дом</p>
-          </div>
-          <div class="object-item">
-            <img src="{% static 'webapp/images/object14.jpg' %}" alt="Объект 14" />
-            <p>Студия в центре</p>
-          </div>
-          <div class="object-item">
-            <img src="{% static 'webapp/images/object15.jpg' %}" alt="Объект 15" />
-            <p>Лофт</p>
-          </div>
-          <div class="object-item">
-            <img src="{% static 'webapp/images/object16.jpg' %}" alt="Объект 16" />
-            <p>Апартаменты у моря</p>
-          </div>
-          <div class="object-item">
-            <img src="{% static 'webapp/images/object17.jpg' %}" alt="Объект 17" />
-            <p>Дом с бассейном</p>
-          </div>
-          <div class="object-item">
-            <img src="{% static 'webapp/images/object18.jpg' %}" alt="Объект 18" />
-            <p>Квартира-студия</p>
-          </div>
-          <div class="object-item">
-            <img src="{% static 'webapp/images/object19.jpg' %}" alt="Объект 19" />
-            <p>Таунхаус</p>
-          </div>
-          <div class="object-item">
-            <img src="{% static 'webapp/images/object20.jpg' %}" alt="Объект 20" />
-            <p>Пентхаус с террасой</p>
-          </div>
-        </div>
+          <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
       </div>
-      <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
-    </div>
   </section>
 
   <!-- Информация о нас -->
   <section class="about-section" id="about">
-    <div class="container about-container">
-      <div class="about-photo">
-        <img src="{% static 'webapp/images/kvatera_about.jpg' %}" alt="Фото компании" />
-      </div>
-      <div class="about-text">
-        <h2>✔ О нашем агентстве недвижимости</h2>
-        <p>
-          ⭐⭐⭐⭐⭐<br>
-            Мы профессионалы своего дела, предоставляющие полный спектр услуг по продаже и аренде недвижимости. Наш коллектив — команда опытных специалистов, которые помогут вам найти идеальное жилье.
-        </p>
-          <div class="contacts-about">
+      <div class="container about-container">
+          <div class="about-photo">
+              <img src="{% static 'webapp/images/kvatera_about.jpg' %}" alt="Фото компании"/>
+          </div>
+          <div class="about-text">
+              <h2>✔ О нашем агентстве недвижимости</h2>
               <p>
-                  <i class="fa-solid fa-phone"></i>
-                  <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
+                  ⭐⭐⭐⭐⭐<br>
+                  Мы профессионалы своего дела, предоставляющие полный спектр услуг по продаже и аренде недвижимости.
+                  Наш коллектив — команда опытных специалистов, которые помогут вам найти идеальное жилье.
               </p>
-              <p>
-                  <i class="fa-solid fa-envelope"></i>
-                  <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
-              </p>
-              <div class="social-about">
-                  {% for social in contact.social_networks.all %}
-                      <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank"
-                         rel="noopener noreferrer">
-                          <i class="{{ social.icon }}"></i>
-                      </a>
-                  {% empty %}
-                      <p>Соцсетей нет</p>
-                  {% endfor %}
+              <div class="contacts-about">
+                  <p>
+                      <i class="fa-solid fa-phone"></i>
+                      <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
+                  </p>
+                  <p>
+                      <i class="fa-solid fa-envelope"></i>
+                      <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
+                  </p>
+                  <div class="social-about">
+                      {% for social in contact.social_networks.all %}
+                          <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank"
+                             rel="noopener noreferrer">
+                              <i class="{{ social.icon }}"></i>
+                          </a>
+                      {% empty %}
+                          <p>Соцсетей нет</p>
+                      {% endfor %}
+                  </div>
               </div>
           </div>
       </div>
-    </div>
+
+      <!-- Карта под фото и информацией -->
+      <div class="container">
+          <h3>Мы на карте</h3>
+          <div class="map-container">
+              <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.7787718957343!2d28.6432172!3d55.536222599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c485209fe11a4b%3A0x906ceb1e54e03589!2z0KbQtdC90YLRgCDRgNC40Y3Qu9GC0LXRgNGB0LrQuNGFINGD0YHQu9GD0LMg0JrQstCw0KLRjdGA0LAgMjE0!5e0!3m2!1sru!2sby!4v1755249880238!5m2!1sru!2sby"
+                      width="1200"
+                      height="350"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      class="map-iframe"
+              ></iframe>
+          </div>
+      </div>
   </section>
+
+
 
   <!-- Форма консультации -->
   <section class="consultation-form-section" id="consultation-form">
@@ -315,6 +282,7 @@
           <button type="submit" class="btn-submit">Отправить заявку</button>
       </form>
   </section>
+
 
   <!-- Футер -->
   <footer class="footer">
