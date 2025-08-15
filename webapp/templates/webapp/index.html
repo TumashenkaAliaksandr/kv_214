@@ -49,17 +49,25 @@
 
           <li><a href="#contacts"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
 
-          <li class="contacts-menu">
-            <a href="tel:+71234567890"><i class="fa-solid fa-phone"></i> +7 (123) 456-78-90</a>
-            <a href="mailto:info@realestate.ru"><i class="fa-solid fa-envelope"></i> info@realestate.ru</a>
-          </li>
+            <li class="contacts-menu">
+                <a href="tel:{{ contact.phone|urlencode }}">
+                    <i class="fa-solid fa-phone"></i> {{ contact.phone }}
+                </a>
+                <a href="mailto:{{ contact.email|urlencode }}">
+                    <i class="fa-solid fa-envelope"></i> {{ contact.email }}
+                </a>
+            </li>
 
-          <li class="social-menu">
-            <a href="https://www.tiktok.com" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-            <a href="https://youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://kufar.by" aria-label="Kufar"><i class="fa-solid fa-building"></i></a>
-            <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          </li>
+            <li class="social-menu">
+                {% for social in contact.social_networks.all %}
+                    <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank" rel="noopener noreferrer">
+                        <i class="{{ social.icon }}"></i>
+                    </a>
+                {% empty %}
+                    <span>Соцсетей нет</span>
+                {% endfor %}
+            </li>
+
 
           <li>
             <button class="btn-consultation">Получить консультацию</button>
@@ -256,23 +264,34 @@
   <section class="about-section" id="about">
     <div class="container about-container">
       <div class="about-photo">
-        <img src="{% static 'webapp/images/about-photo.jpg' %}" alt="Фото компании" />
+        <img src="{% static 'webapp/images/kvatera_about.jpg' %}" alt="Фото компании" />
       </div>
       <div class="about-text">
-        <h2>О нашем агентстве недвижимости</h2>
+        <h2>✔ О нашем агентстве недвижимости</h2>
         <p>
-          Мы профессионалы своего дела, предоставляющие полный спектр услуг по продаже и аренде недвижимости. Наш коллектив — команда опытных специалистов, которые помогут вам найти идеальное жилье.
+          ⭐⭐⭐⭐⭐<br>
+            Мы профессионалы своего дела, предоставляющие полный спектр услуг по продаже и аренде недвижимости. Наш коллектив — команда опытных специалистов, которые помогут вам найти идеальное жилье.
         </p>
-        <div class="contacts-about">
-          <p><i class="fa-solid fa-phone"></i> +7 (123) 456-78-90</p>
-          <p><i class="fa-solid fa-envelope"></i> info@realestate.ru</p>
-          <div class="social-about">
-            <a href="https://telegram.org" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-            <a href="https://youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://kufar.by" aria-label="Kufar"><i class="fa-solid fa-building"></i></a>
-            <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <div class="contacts-about">
+              <p>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
+              </p>
+              <p>
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
+              </p>
+              <div class="social-about">
+                  {% for social in contact.social_networks.all %}
+                      <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank"
+                         rel="noopener noreferrer">
+                          <i class="{{ social.icon }}"></i>
+                      </a>
+                  {% empty %}
+                      <p>Соцсетей нет</p>
+                  {% endfor %}
+              </div>
           </div>
-        </div>
       </div>
     </div>
   </section>
@@ -311,17 +330,28 @@
         <a href="#contacts">Контакты</a>
       </nav>
 
-      <div class="footer-contacts">
-        <p><i class="fa-solid fa-phone"></i> +7 (123) 456-78-90</p>
-        <p><i class="fa-solid fa-envelope"></i> info@realestate.ru</p>
-      </div>
+        <div class="footer-contacts">
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
+            </p>
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
+            </p>
+        </div>
 
-      <div class="footer-social">
-        <a href="https://telegram.org" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-        <a href="https://youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://kufar.by" aria-label="Kufar"><i class="fa-solid fa-building"></i></a>
-        <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      </div>
+        <div class="footer-social">
+            {% for social in contact.social_networks.all %}
+                <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank" rel="noopener noreferrer">
+                    <i class="{{ social.icon }}"></i>
+                </a>
+            {% empty %}
+                <p>Соцсетей нет</p>
+            {% endfor %}
+        </div>
+
+
     </div>
     <div class="copyright">
       &copy; 2025 Агентство недвижимости. Все права защищены.
