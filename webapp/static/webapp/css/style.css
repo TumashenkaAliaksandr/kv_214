@@ -84,7 +84,7 @@ body {
 /* Хедер и меню */
 
 .header {
-  background: #f8ffff;
+  background: #f1f1f1;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -93,7 +93,7 @@ body {
 }
 
 .header-container {
-  max-width: 1350px;
+  max-width: 1430px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -102,10 +102,14 @@ body {
 }
 
 .logo img {
-  height: 50px;
-  filter: drop-shadow(0 0 2px var(--accent-color-dark));
-  cursor: pointer;
+    height: 80px;
+    filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+    cursor: pointer;
+    margin-top: 5px;
+    /*box-shadow: 0 4px 6px rgba(134, 160, 52, 0.4), 0 2px 4px rgba(134, 160, 52, 0.2);*/
+    border-radius: var(--border-radius);
 }
+
 
 /* Меню */
 
@@ -136,6 +140,7 @@ body {
   user-select: none;
   border: none;
   background: transparent;
+  filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
 }
 
 /* Вдавливание эффекта текста и кнопок */
@@ -478,7 +483,7 @@ body {
 
 .consultation-form-section {
   max-width: 1200px;
-  background: #f1f1f1;
+  background: #eef3f1;
   margin: 2rem auto;
   padding: 2rem;
   border-radius: 25px;
@@ -760,14 +765,14 @@ body {
   flex: 2 1 500px;
   user-select: text;
   color: var(--text-color);
-  filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+  filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.4));
 }
 
 .about-text h2 {
   margin-bottom: 1rem;
   font-weight: 700;
   color: var(--accent-color-dark);
-  filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+  filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.4));
 }
 
 .about-text p {
@@ -791,7 +796,7 @@ body {
 .social-about {
   display: flex;
   gap: 1rem;
-  filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+  filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.1));
 }
 
 .social-about a {
@@ -826,8 +831,8 @@ body {
 }
 
 .footer-logo img {
-  height: 50px;
-  filter: drop-shadow(0 0 3px var(--accent-color-dark));
+  height: 60px;
+  filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
   cursor: pointer;
 }
 
