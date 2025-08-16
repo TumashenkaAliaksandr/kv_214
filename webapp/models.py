@@ -22,6 +22,10 @@ class SocialNetwork(models.Model):
 
 
 class Property(models.Model):
+    CURRENCY_CHOICES = [
+        ('USD', 'USD'),
+        ('BYN', 'BYN'),
+    ]
     name = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
     description = models.TextField()
@@ -40,6 +44,7 @@ class Property(models.Model):
     is_active_apartment = models.BooleanField(default=True)
     is_active_sold = models.BooleanField(default=False)
     contacts = models.ManyToManyField(Contact, related_name='properties')
+    currency = models.CharField(max_length=3, choices=CURRENCY_CHOICES, default='USD')
 
     def __str__(self):
         return self.name

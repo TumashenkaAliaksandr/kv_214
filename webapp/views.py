@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 from webapp.models import Property
 import requests
@@ -24,11 +24,61 @@ def rent(request):
 
     return render(request, 'webapp/rent_page.html')
 
+
 def sale(request):
-    """sale page"""
+    properties = Property.objects.all()
 
-    return render(request, 'webapp/sale_page.html')
+    # Фильтрация по типу недвижимости
+    property_types = request.GET.getlist('property_type')
+    if property_types:
+        filter_args = {ptype: True for ptype in property_types if hasattr(Property, ptype)}
+        if filter_args:
+            properties = properties.filter(**filter_args)
 
+    # Фильтрация по городу (по любому совпадению в адресе)
+    direction = request.GET.get('direction', '').strip()
+    if direction:
+        properties = properties.filter(address__icontains=direction)
+
+    # Фильтрация по цене
+    price_min = request.GET.get('price_min')
+    if price_min:
+        try:
+            price_min = float(price_min)
+            properties = properties.filter(price__gte=price_min)
+        except ValueError:
+            pass
+
+    price_max = request.GET.get('price_max')
+    if price_max:
+        try:
+            price_max = float(price_max)
+            properties = properties.filter(price__lte=price_max)
+        except ValueError:
+            pass
+
+    context = {
+        'properties': properties,
+    }
+    return render(request, 'webapp/sale_page.html', context)
+
+def property_detail(request, slug):
+    property = get_object_or_404(Property, slug=slug)
+    return render(request, 'webapp/sale_page.html', {'property': property})
+
+def autocomplete(request):
+    query = request.GET.get('q', '').strip()
+    results = []
+
+    if query:
+        qs = Property.objects.filter(address__icontains=query).values_list('address', flat=True).distinct()
+        cities = set()
+        for addr in qs:
+            city = addr.split(',')[0].strip()
+            if city.lower().startswith(query.lower()):
+                cities.add(city)
+        results = list(cities)[:10]
+    return JsonResponse(results, safe=False)
 
 def contacts(request):
     """contacts page"""

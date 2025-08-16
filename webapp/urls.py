@@ -8,7 +8,10 @@ from .views import consultation_view
 urlpatterns = [
     path('', views.index, name='index'),
     path('about', views.about, name='about'),
+
+    path('autocomplete/', views.autocomplete, name='autocomplete'),
     path('sale', views.sale, name='sale'),
+    path('property/<slug:slug>/', views.property_detail, name='property_detail'),
     path('rent', views.rent, name='rent'),
     path('about', views.about, name='about'),
     path('contacts', views.contacts, name='contacts'),
