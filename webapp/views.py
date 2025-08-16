@@ -12,6 +12,24 @@ def index(request):
     properties_all = Property.objects.prefetch_related('photos').all()
     return render(request, 'webapp/index.html', {'properties_new': properties_new, 'properties_all': properties_all})
 
+
+def about(request):
+    """about page"""
+
+    return render(request, 'webapp/about.html')
+
+
+def rent(request):
+    """rent page"""
+
+    return render(request, 'webapp/rent_page.html')
+
+def sale(request):
+    """sale page"""
+
+    return render(request, 'webapp/sale_page.html')
+
+
 def contacts(request):
     """contacts page"""
 
