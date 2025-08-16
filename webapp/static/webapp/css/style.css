@@ -758,6 +758,18 @@ body {
   margin-bottom: 60px;
 }
 
+.rent-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1350px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
 .about-photo {
   flex: 1 1 350px;
   min-width: 280px;
@@ -1236,7 +1248,7 @@ body.light-theme .breadcrumb-item.active {
 /* Фиксированная ширина для цены и валюты */
 .filter-row input[type="number"] {
   flex-grow: 1;
-  min-width: 100px;
+  width: 112px;
 }
 
 .filter-row select {

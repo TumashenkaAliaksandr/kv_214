@@ -41,6 +41,7 @@ class Property(models.Model):
     is_rent = models.BooleanField(default=True)
     is_active_new = models.BooleanField(default=True)
     is_active_house = models.BooleanField(default=True)
+    is_active_country_house = models.BooleanField(default=True)
     is_active_apartment = models.BooleanField(default=True)
     is_active_sold = models.BooleanField(default=False)
     contacts = models.ManyToManyField(Contact, related_name='properties')
@@ -69,3 +70,19 @@ class PropertyPhoto(models.Model):
 
     def __str__(self):
         return f"Фото объекта {self.property.name}"
+
+
+class PropertyVideo(models.Model):
+    title = models.CharField("Название", max_length=200)
+    description = models.TextField("Описание", blank=True)
+    date = models.DateField("Дата", auto_now_add=True)
+    property_address = models.CharField("Адрес объекта", max_length=255)
+    video_url = models.URLField("Ссылка на видео", max_length=500)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = "Видео объекта"
+        verbose_name_plural = "Видео объектов"
+        ordering = ['-date']

@@ -20,10 +20,41 @@ def about(request):
 
 
 def rent(request):
-    """rent page"""
+    properties = Property.objects.all()
 
-    return render(request, 'webapp/rent_page.html')
+    # Фильтрация по типу недвижимости
+    property_types = request.GET.getlist('property_type')
+    if property_types:
+        filter_args = {ptype: True for ptype in property_types if hasattr(Property, ptype)}
+        if filter_args:
+            properties = properties.filter(**filter_args)
 
+    # Фильтрация по городу (по вхождению в адрес)
+    direction = request.GET.get('direction', '').strip()
+    if direction:
+        properties = properties.filter(address__icontains=direction)
+
+    # Фильтрация по цене
+    price_min = request.GET.get('price_min')
+    if price_min:
+        try:
+            price_min = float(price_min)
+            properties = properties.filter(price__gte=price_min)
+        except ValueError:
+            pass
+
+    price_max = request.GET.get('price_max')
+    if price_max:
+        try:
+            price_max = float(price_max)
+            properties = properties.filter(price__lte=price_max)
+        except ValueError:
+            pass
+
+    context = {
+        'properties': properties,
+    }
+    return render(request, 'webapp/rent_page.html', context)
 
 def sale(request):
     properties = Property.objects.all()

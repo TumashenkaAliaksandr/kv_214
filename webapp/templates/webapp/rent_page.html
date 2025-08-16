@@ -1,8 +1,6 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
-
-
 {% block content %}
     <nav class="breadcrumb-container" aria-label="breadcrumb">
         <ol class="breadcrumb-list">
@@ -12,4 +10,33 @@
             <li class="breadcrumb-item active" aria-current="page">Аренда</li>
         </ol>
     </nav>
+    <section>
+        <div class="rent-container">
+            <h1 class="page-title">Объекты недвижимости для аренды</h1>
+
+            {% if properties %}
+                <div class="properties-list">
+                    {% for property in properties %}
+                        <div class="property-card">
+                            <h2 class="property-name">
+                                <a href="{% url 'property_detail' property.slug %}">{{ property.name }}</a>
+                            </h2>
+                            <p class="property-address">{{ property.address }}</p>
+                            <p class="property-price">Цена аренды: {{ property.price }} USD</p>
+                            <p class="property-description">{{ property.description|truncatewords:30 }}</p>
+                            {% if property.photos.all %}
+                                <div class="property-photos">
+                                    <img src="{{ property.photos.all.0.photo.url }}"
+                                         alt="{{ property.photos.all.0.alt_text }}"
+                                         class="property-main-photo"/>
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p class="no-properties-message">К сожалению, объекты по вашему запросу не найдены.</p>
+            {% endif %}
+        </div>
+    </section>
 {% endblock %}
