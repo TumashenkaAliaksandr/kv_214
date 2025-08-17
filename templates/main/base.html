@@ -33,23 +33,29 @@
         <ul class="menu">
           <li><a href="{% url 'about' %}"><i class="fa-solid fa-info-circle"></i> О нас</a></li>
 
-          <li class="dropdown">
-            <a href="{% url 'sale' %}"><i class="fa-solid fa-house"></i> Продажа <i class="fa fa-caret-down"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#sale-house"><i class="fa-solid fa-house-user"></i> Дом</a></li>
-              <li><a href="#sale-apartment"><i class="fa-solid fa-building"></i> Квартира</a></li>
-            </ul>
-          </li>
+            <li class="dropdown">
+                <a href="{% url 'sale' %}"><i class="fa-solid fa-house"></i> Продажа <i
+                        class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'sale' %}?property_type=is_active_house"><i class="fa-solid fa-house-user"></i>
+                        Дом</a></li>
+                    <li><a href="{% url 'sale' %}?property_type=is_active_apartment"><i
+                            class="fa-solid fa-building"></i> Квартира</a></li>
+                </ul>
+            </li>
 
-          <li class="dropdown">
-            <a href="{% url 'rent' %}"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="#rent-house"><i class="fa-solid fa-house-user"></i> Дом</a></li>
-              <li><a href="#rent-apartment"><i class="fa-solid fa-building"></i> Квартира</a></li>
-            </ul>
-          </li>
+            <li class="dropdown">
+                <a href="{% url 'rent' %}"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="{% url 'rent' %}?property_type=is_active_house"><i class="fa-solid fa-house-user"></i>
+                        Дом</a></li>
+                    <li><a href="{% url 'rent' %}?property_type=is_active_apartment"><i
+                            class="fa-solid fa-building"></i> Квартира</a></li>
+                </ul>
+            </li>
 
-          <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
+
+            <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
 
             <li class="contacts-menu">
                 <a href="tel:{{ contact.phone|urlencode }}">
