@@ -47,12 +47,16 @@
                 <div class="new-objects">
                     {% for property in properties_new %}
                         <div class="new-object">
-                            {% if property.photos.all %}
-                                <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
-                            {% else %}
-                                <img src="{% static 'webapp/images/house_slide.png' %}" alt="{{ property.name }}"/>
-                            {% endif %}
-                            <p>{{ property.name }}</p>
+                            <a href="{% if property.is_rent %}{% url 'rent_single' property.slug %}
+                                 {% elif property.is_sale %}{% url 'sale_single' property.slug %}
+                                 {% else %}#{% endif %}">
+                                {% if property.photos.all %}
+                                    <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
+                                {% else %}
+                                    <img src="{% static 'webapp/images/house_slide.png' %}" alt="{{ property.name }}"/>
+                                {% endif %}
+                                <p>{{ property.name }}</p>
+                            </a>
                         </div>
                     {% empty %}
                         <p>Новых объектов нет</p>
@@ -62,6 +66,7 @@
             <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
         </div>
     </section>
+
 
     <!-- Почему нам доверяют -->
     <section class="trust-section">
@@ -119,16 +124,22 @@
                 <div class="objects">
                     {% for property in properties_all %}
                         <div class="object-item">
-                            {% if property.photos.all %}
-                                <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
-                            {% else %}
-                                <img src="{% static 'webapp/images/default-object.jpg' %}" alt="{{ property.name }}"/>
-                            {% endif %}
-                            <p>{{ property.name }}</p>
+                            <a href="{% if property.is_rent %}{% url 'rent_single' property.slug %}
+                 {% elif property.is_sale %}{% url 'sale_single' property.slug %}
+                 {% else %}#{% endif %}">
+                                {% if property.photos.all %}
+                                    <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
+                                {% else %}
+                                    <img src="{% static 'webapp/images/default-object.jpg' %}"
+                                         alt="{{ property.name }}"/>
+                                {% endif %}
+                                <p>{{ property.name }}</p>
+                            </a>
                         </div>
                     {% empty %}
                         <p>Объектов нет</p>
                     {% endfor %}
+
                 </div>
             </div>
             <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>

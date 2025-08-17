@@ -7,8 +7,109 @@
             <li class="breadcrumb-item">
                 <a href="{% url 'index' %}" class="nav-link">Главная</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Продажа сингл</li>
+            <li class="breadcrumb-item active" aria-current="page">{{ property.name }}</li>
         </ol>
     </nav>
 
+
+    <section class="objects-section">
+        <div class="single-property-container">
+            <div class="single-property-gallery">
+                <!-- Главное фото -->
+                {% if photos %}
+                    <div class="gallery-main-photo" id="main-photo-block">
+                        <img id="mainPhoto" src="{{ photos.0.photo.url }}" alt="{{ photos.0.alt_text }}"
+                             onclick="openGalleryPopup(0)">
+                    </div>
+                    <div class="gallery-thumbnails" id="gallery-thumbnails">
+                        {% for photo in photos %}
+                            <img src="{{ photo.photo.url }}" alt="{{ photo.alt_text }}" class="thumbnail"
+                                 onclick="selectThumbnail({{ forloop.counter0 }})">
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="single-property-info">
+                <h1 class="single-page-title">{{ property.name }}</h1>
+                <p><b>Адрес:</b> {{ property.address }}</p>
+                <p><b>Тип:</b>
+                    {% if property.is_active_apartment %} Квартира
+                    {% elif property.is_active_house %} Дом
+                    {% elif property.is_active_country_house %} Дача
+                    {% elif property.is_active_new %} Новостройка
+                    {% else %} Другое
+                    {% endif %}
+                </p>
+                <p><b>Этаж:</b> {{ property.floor }}</p>
+                <p><b>Комнат:</b> {{ property.many_rooms }}</p>
+                <p><b>Площадь:</b> {{ property.area }} м²
+                    {% if property.area_ga %} ({{ property.area_ga }} сот./га) {% endif %}
+                </p>
+                <p><b>Цена аренды:</b> <span
+                        class="property-price">{{ property.price }} {{ property.currency }}</span>
+                </p>
+                <button class="callback-btn" onclick="showCallbackModal()">🔔 Заказать звонок</button>
+            </div>
+        </div>
+        <div class="single-property-desc">
+            <h2>Описание</h2>
+            <p>{{ property.description }}</p>
+        </div>
+    </section>
+
+    <!-- Popup for photo gallery -->
+    <div class="photo-popup" id="photoPopup" style="display:none;">
+        <span class="popup-close" onclick="closeGalleryPopup()">&times;</span>
+        <img class="popup-img" id="popupImg" src="" alt="">
+        <div class="popup-arrows">
+            <span class="popup-arrow left" onclick="prevPhoto()">&lt;</span>
+            <span class="popup-arrow right" onclick="nextPhoto()">&gt;</span>
+        </div>
+    </div>
+
+    <script>
+        // Массив фото
+        const photos = [
+            {% for photo in photos %}
+                "{{ photo.photo.url }}"{% if not forloop.last %},{% endif %}
+            {% endfor %}
+        ];
+        let currentPhotoIdx = 0;
+
+        // Показ миниатюры
+        function selectThumbnail(idx) {
+            document.getElementById('mainPhoto').src = photos[idx];
+            currentPhotoIdx = idx;
+        }
+
+        // Галерея popup
+        function openGalleryPopup(idx) {
+            document.getElementById('photoPopup').style.display = 'flex';
+            document.getElementById('popupImg').src = photos[idx];
+            currentPhotoIdx = idx;
+        }
+
+        function closeGalleryPopup() {
+            document.getElementById('photoPopup').style.display = 'none';
+        }
+
+        function prevPhoto() {
+            currentPhotoIdx = (currentPhotoIdx - 1 + photos.length) % photos.length;
+            document.getElementById('popupImg').src = photos[currentPhotoIdx];
+        }
+
+        function nextPhoto() {
+            currentPhotoIdx = (currentPhotoIdx + 1) % photos.length;
+            document.getElementById('popupImg').src = photos[currentPhotoIdx];
+        }
+
+        // Клик по миниатюре внутри popup
+        document.getElementById('popupImg')?.addEventListener('click', nextPhoto);
+
+        // Колбек модалка (просто для наглядности)
+        function showCallbackModal() {
+            alert("Форма обратной связи появится здесь");
+        }
+    </script>
 {% endblock %}

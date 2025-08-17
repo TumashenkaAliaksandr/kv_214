@@ -116,6 +116,22 @@ def rent(request):
     }
     return render(request, 'webapp/rent_page.html', context)
 
+def sale_single(request, slug):
+    property = get_object_or_404(Property, slug=slug, is_sale=True)
+    photos = property.photos.all()
+    return render(request, 'webapp/sale_single.html', {
+        'property': property,
+        'photos': photos,
+    })
+
+def rent_single(request, slug):
+    property = get_object_or_404(Property, slug=slug, is_rent=True)
+    photos = property.photos.all()
+    return render(request, 'webapp/rent_single.html', {
+        'property': property,
+        'photos': photos,
+    })
+
 
 def sale(request):
     properties = Property.objects.filter(is_sale=True)  # добавляем фильтр по продаже
