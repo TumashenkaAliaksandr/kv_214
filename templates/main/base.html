@@ -22,70 +22,77 @@
 
   <!-- Хедер -->
   <header class="header">
-    <div class="container header-container">
-        <div class="logo">
-            <a href="{% url 'index' %}">
-                <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства"/>
-            </a>
-        </div>
+      <div class="container header-container">
+          <div class="logo">
+              <a href="{% url 'index' %}">
+                  <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства"/>
+              </a>
+          </div>
 
-      <nav class="nav">
-        <ul class="menu">
-          <li><a href="{% url 'about' %}"><i class="fa-solid fa-info-circle"></i> О нас</a></li>
+          <!-- Кнопка "бургер" -->
+          <button class="burger" aria-label="Меню" aria-expanded="false" aria-controls="navMenu">
+              <span class="burger-bar"></span>
+              <span class="burger-bar"></span>
+              <span class="burger-bar"></span>
+          </button>
 
-            <li class="dropdown">
-                <a href="{% url 'sale' %}"><i class="fa-solid fa-house"></i> Продажа <i
-                        class="fa fa-caret-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="{% url 'sale' %}?property_type=is_active_house"><i class="fa-solid fa-house-user"></i>
-                        Дом</a></li>
-                    <li><a href="{% url 'sale' %}?property_type=is_active_apartment"><i
-                            class="fa-solid fa-building"></i> Квартира</a></li>
-                </ul>
-            </li>
+          <nav id="navMenu" class="nav">
+              <ul class="menu">
+                  <li><a href="{% url 'about' %}"><i class="fa-solid fa-info-circle"></i> О нас</a></li>
 
-            <li class="dropdown">
-                <a href="{% url 'rent' %}"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="{% url 'rent' %}?property_type=is_active_house"><i class="fa-solid fa-house-user"></i>
-                        Дом</a></li>
-                    <li><a href="{% url 'rent' %}?property_type=is_active_apartment"><i
-                            class="fa-solid fa-building"></i> Квартира</a></li>
-                </ul>
-            </li>
+                  <li class="dropdown">
+                      <a href="{% url 'sale' %}"><i class="fa-solid fa-house"></i> Продажа <i
+                              class="fa fa-caret-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="{% url 'sale' %}?property_type=is_active_house"><i
+                                  class="fa-solid fa-house-user"></i> Дом</a></li>
+                          <li><a href="{% url 'sale' %}?property_type=is_active_apartment"><i
+                                  class="fa-solid fa-building"></i> Квартира</a></li>
+                      </ul>
+                  </li>
 
+                  <li class="dropdown">
+                      <a href="{% url 'rent' %}"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="{% url 'rent' %}?property_type=is_active_house"><i
+                                  class="fa-solid fa-house-user"></i> Дом</a></li>
+                          <li><a href="{% url 'rent' %}?property_type=is_active_apartment"><i
+                                  class="fa-solid fa-building"></i> Квартира</a></li>
+                      </ul>
+                  </li>
 
-            <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
+                  <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
 
-            <li class="contacts-menu">
-                <a href="tel:{{ contact.phone|urlencode }}">
-                    <i class="fa-solid fa-phone"></i> {{ contact.phone }}
-                </a>
-                <a href="mailto:{{ contact.email|urlencode }}">
-                    <i class="fa-solid fa-envelope"></i> {{ contact.email }}
-                </a>
-            </li>
+                  <li class="contacts-menu">
+                      <a href="tel:{{ contact.phone|urlencode }}">
+                          <i class="fa-solid fa-phone"></i> {{ contact.phone }}
+                      </a>
+                      <a href="mailto:{{ contact.email|urlencode }}">
+                          <i class="fa-solid fa-envelope"></i> {{ contact.email }}
+                      </a>
+                  </li>
 
-            <li class="social-menu">
-                {% for social in contact.social_networks.all %}
-                    <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank" rel="noopener noreferrer">
-                        <i class="{{ social.icon }}"></i>
-                    </a>
-                {% empty %}
-                    <span>Соцсетей нет</span>
-                {% endfor %}
-            </li>
+                  <li class="social-menu">
+                      {% for social in contact.social_networks.all %}
+                          <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank"
+                             rel="noopener noreferrer">
+                              <i class="{{ social.icon }}"></i>
+                          </a>
+                      {% empty %}
+                          <span>Соцсетей нет</span>
+                      {% endfor %}
+                  </li>
 
-
-          <li>
-            <button class="btn-consultation">Получить консультацию</button>
-          </li>
-        </ul>
-      </nav>
-    </div>
+                  <li>
+                      <button class="btn-consultation">Получить консультацию</button>
+                  </li>
+              </ul>
+          </nav>
+      </div>
   </header>
 
-{% block content %}{% endblock %}
+
+  {% block content %}{% endblock %}
 
 
    <!-- Футер -->
@@ -132,6 +139,7 @@
 
   <script src="{% static 'webapp/js/slider.js' %}"></script>
   <script src="{% static 'webapp/js/filter_rent.js' %}"></script>
+  <script src="{% static 'webapp/js/burger_mobile.js' %}"></script>
 {#  <script src="{% static 'webapp/js/form.js' %}"></script>#}
   <script>
     // Топ бар закрытие
