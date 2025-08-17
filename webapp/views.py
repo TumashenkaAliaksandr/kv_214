@@ -6,11 +6,68 @@ from django.conf import settings
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
+
 def index(request):
-    """this main page"""
-    properties_new = Property.objects.filter(is_active_new=True).prefetch_related('photos')
-    properties_all = Property.objects.prefetch_related('photos').all()
-    return render(request, 'webapp/index.html', {'properties_new': properties_new, 'properties_all': properties_all})
+    # Начинаем с всех объектов
+    properties = Property.objects.all()
+
+    # Фильтрация по типам (булевым полям)
+    property_types = request.GET.getlist('property_type')
+    if property_types:
+        filter_args = {}
+        for ptype in property_types:
+            model_fields = [f.name for f in Property._meta.get_fields()]
+            if ptype in model_fields:
+                filter_args[ptype] = True
+        if filter_args:
+            properties = properties.filter(**filter_args)
+
+    # Фильтрация по городу/направлению (вхождение в поле address)
+    direction = request.GET.get('direction', '').strip()
+    if direction:
+        properties = properties.filter(address__icontains=direction)
+
+    # Фильтрация по цене
+    price_min = request.GET.get('price_min')
+    if price_min:
+        try:
+            price_min = float(price_min)
+            properties = properties.filter(price__gte=price_min)
+        except (ValueError, TypeError):
+            pass
+
+    price_max = request.GET.get('price_max')
+    if price_max:
+        try:
+            price_max = float(price_max)
+            properties = properties.filter(price__lte=price_max)
+        except (ValueError, TypeError):
+            pass
+
+    # Фильтрация по валюте (учитывая большие буквы как в модели)
+    currency = request.GET.get('currency')
+    if currency:
+        valid_currencies = dict(Property.CURRENCY_CHOICES).keys()
+        if currency.upper() in valid_currencies:
+            properties = properties.filter(currency=currency.upper())
+
+    # Для автодополнения городов, сформируем список уникальных городов из адресов
+    addresses = Property.objects.values_list('address', flat=True).distinct()
+    cities_set = set()
+    for addr in addresses:
+        if addr and "," in addr:
+            city = addr.split(",")[0].strip()
+        else:
+            city = addr
+        cities_set.add(city)
+    cities = sorted(cities_set)
+
+    context = {
+        'properties_new': Property.objects.filter(is_active_new=True).prefetch_related('photos'),
+        'properties_all': properties.prefetch_related('photos'),
+        'cities': cities,
+    }
+    return render(request, 'webapp/index.html', context)
 
 
 def about(request):
@@ -18,29 +75,28 @@ def about(request):
 
     return render(request, 'webapp/about.html')
 
-
 def rent(request):
-    properties = Property.objects.all()
+    properties = Property.objects.filter(is_rent=True)  # добавляем фильтр по аренде
 
-    # Фильтрация по типу недвижимости
     property_types = request.GET.getlist('property_type')
     if property_types:
-        filter_args = {ptype: True for ptype in property_types if hasattr(Property, ptype)}
+        filter_args = {}
+        for ptype in property_types:
+            if ptype in [f.name for f in Property._meta.get_fields()]:
+                filter_args[ptype] = True
         if filter_args:
             properties = properties.filter(**filter_args)
 
-    # Фильтрация по городу (по вхождению в адрес)
     direction = request.GET.get('direction', '').strip()
     if direction:
         properties = properties.filter(address__icontains=direction)
 
-    # Фильтрация по цене
     price_min = request.GET.get('price_min')
     if price_min:
         try:
             price_min = float(price_min)
             properties = properties.filter(price__gte=price_min)
-        except ValueError:
+        except (ValueError, TypeError):
             pass
 
     price_max = request.GET.get('price_max')
@@ -48,36 +104,41 @@ def rent(request):
         try:
             price_max = float(price_max)
             properties = properties.filter(price__lte=price_max)
-        except ValueError:
+        except (ValueError, TypeError):
             pass
+
+    currency = request.GET.get('currency')
+    if currency in dict(Property.CURRENCY_CHOICES).keys():
+        properties = properties.filter(currency=currency.upper())
 
     context = {
         'properties': properties,
     }
     return render(request, 'webapp/rent_page.html', context)
 
-def sale(request):
-    properties = Property.objects.all()
 
-    # Фильтрация по типу недвижимости
+def sale(request):
+    properties = Property.objects.filter(is_sale=True)  # добавляем фильтр по продаже
+
     property_types = request.GET.getlist('property_type')
     if property_types:
-        filter_args = {ptype: True for ptype in property_types if hasattr(Property, ptype)}
+        filter_args = {}
+        for ptype in property_types:
+            if ptype in [f.name for f in Property._meta.get_fields()]:
+                filter_args[ptype] = True
         if filter_args:
             properties = properties.filter(**filter_args)
 
-    # Фильтрация по городу (по любому совпадению в адресе)
     direction = request.GET.get('direction', '').strip()
     if direction:
         properties = properties.filter(address__icontains=direction)
 
-    # Фильтрация по цене
     price_min = request.GET.get('price_min')
     if price_min:
         try:
             price_min = float(price_min)
             properties = properties.filter(price__gte=price_min)
-        except ValueError:
+        except (ValueError, TypeError):
             pass
 
     price_max = request.GET.get('price_max')
@@ -85,13 +146,19 @@ def sale(request):
         try:
             price_max = float(price_max)
             properties = properties.filter(price__lte=price_max)
-        except ValueError:
+        except (ValueError, TypeError):
             pass
+
+    currency = request.GET.get('currency')
+    if currency in dict(Property.CURRENCY_CHOICES).keys():
+        properties = properties.filter(currency=currency.upper())
 
     context = {
         'properties': properties,
     }
     return render(request, 'webapp/sale_page.html', context)
+
+
 
 def property_detail(request, slug):
     property = get_object_or_404(Property, slug=slug)

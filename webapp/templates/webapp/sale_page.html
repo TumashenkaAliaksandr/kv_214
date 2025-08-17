@@ -23,7 +23,26 @@
                             </h2>
                             <p class="property-address">{{ property.address }}</p>
                             <p class="property-price">Цена: {{ property.price }} USD</p>
+
+                            <p class="property-type">
+                                Тип недвижимости:
+                                {% if property.is_active_apartment %}
+                                    Квартира
+                                {% elif property.is_active_house %}
+                                    Дом
+                                {% elif property.is_active_country_house %}
+                                    Дача
+                                {% elif property.is_active_new %}
+                                    Новостройка
+                                {% elif property.is_active_sold %}
+                                    Продано
+                                {% else %}
+                                    Другой тип
+                                {% endif %}
+                            </p>
+
                             <p class="property-description">{{ property.description|truncatewords:30 }}</p>
+
                             {% if property.photos.all %}
                                 <div class="property-photos">
                                     <img src="{{ property.photos.all.0.photo.url }}"
@@ -39,6 +58,4 @@
             {% endif %}
         </div>
     </section>
-
-
 {% endblock %}
