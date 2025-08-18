@@ -112,6 +112,9 @@
                         allowfullscreen></iframe>
             </div>
         </div>
+        <a href="https://www.youtube.com/channel/UChR3iu9DprNs3y-5lhLBGKg">
+            <button class="btn btn-see_all" type="button">Посмотреть на YouTube</button>
+        </a>
     </section>
 
 
@@ -130,7 +133,7 @@
                                 {% if property.photos.all %}
                                     <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
                                 {% else %}
-                                    <img src="{% static 'webapp/images/default-object.jpg' %}"
+                                    <img src="{% static 'webapp/images/kvatera_default.jpg' %}"
                                          alt="{{ property.name }}"/>
                                 {% endif %}
                                 <p>{{ property.name }}</p>

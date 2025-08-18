@@ -1,95 +1,135 @@
-/*
-  Простейший автослайдер для главного слайдера
-  и слайдеров новых объектов и обратный слайдер объектов
-  c автолуппом и автоплеем.
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Главный слайдер
-  let slideIndex = 0;
-  const slides = document.querySelectorAll(".slider-main .slide");
-  const totalSlides = slides.length;
+    // Главный слайдер
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".slider-main .slide");
+    const totalSlides = slides.length;
 
-  function showSlide(index) {
-    const slidesContainer = document.querySelector(".slider-main .slides");
-    slidesContainer.style.transform = `translateX(${-index * 100}%)`;
-  }
+    function showSlide(index) {
+        const slidesContainer = document.querySelector(".slider-main .slides");
+        slidesContainer.style.transform = `translateX(${-index * 100}%)`;
+    }
 
-  function nextSlide() {
-    slideIndex = (slideIndex + 1) % totalSlides;
+    function nextSlide() {
+        slideIndex = (slideIndex + 1) % totalSlides;
+        showSlide(slideIndex);
+    }
+
+    setInterval(nextSlide, 4000);
     showSlide(slideIndex);
-  }
 
-  setInterval(nextSlide, 4000);
-  showSlide(slideIndex);
+    // Слайдер Новые объекты
+    const newObjectsWrapper = document.querySelector(".slider-new-objects .new-objects-wrapper");
+    const newObjects = document.querySelector(".slider-new-objects .new-objects");
+    const newObjectsLeftBtn = document.querySelector(".slider-new-objects .left-arrow");
+    const newObjectsRightBtn = document.querySelector(".slider-new-objects .right-arrow");
 
-  // Слайдер Новые объекты
-  const newObjectsWrapper = document.querySelector(".slider-new-objects .new-objects-wrapper");
-  const newObjects = document.querySelector(".slider-new-objects .new-objects");
-  const newObjectsLeftBtn = document.querySelector(".slider-new-objects .left-arrow");
-  const newObjectsRightBtn = document.querySelector(".slider-new-objects .right-arrow");
+    let posNewObjects = 0;
+    const newObjectElement = newObjects.querySelector(".new-object");
+    // учитываем отступ между элементами (gap = 16px в примере)
+    const gapNew = 16;
+    let itemWidthNew = newObjectElement.offsetWidth + gapNew;
 
-  let posNewObjects = 0;
-  const itemWidthNew = newObjects.querySelector(".new-object").offsetWidth + 16; // gap
-
-  newObjectsLeftBtn.addEventListener("click", () => {
-    if (posNewObjects < 0) {
-      posNewObjects += itemWidthNew;
-      newObjects.style.transform = `translateX(${posNewObjects}px)`;
-    } else {
-      // зациклить в конец
-      posNewObjects = -(itemWidthNew * (newObjects.children.length - 5));
-      newObjects.style.transform = `translateX(${posNewObjects}px)`;
+    function updateVisibleCountNew() {
+        itemWidthNew = newObjectElement.offsetWidth + gapNew;
+        const containerWidthNew = newObjectsWrapper.offsetWidth;
+        return Math.floor(containerWidthNew / itemWidthNew);
     }
-  });
 
-  newObjectsRightBtn.addEventListener("click", () => {
-    if (posNewObjects > -(itemWidthNew * (newObjects.children.length - 5))) {
-      posNewObjects -= itemWidthNew;
-      newObjects.style.transform = `translateX(${posNewObjects}px)`;
-    } else {
-      posNewObjects = 0;
-      newObjects.style.transform = `translateX(0px)`;
+    let visibleCountNew = updateVisibleCountNew();
+    let maxShiftNew = itemWidthNew * (newObjects.children.length - visibleCountNew);
+    if (maxShiftNew < 0) maxShiftNew = 0; // если элементов меньше, чем видимых
+
+    newObjectsLeftBtn.addEventListener("click", () => {
+        if (posNewObjects < 0) {
+            posNewObjects += itemWidthNew;
+            if (posNewObjects > 0) posNewObjects = 0;
+            newObjects.style.transform = `translateX(${posNewObjects}px)`;
+        } else {
+            posNewObjects = -maxShiftNew;
+            newObjects.style.transform = `translateX(${posNewObjects}px)`;
+        }
+    });
+
+    newObjectsRightBtn.addEventListener("click", () => {
+        if (posNewObjects > -maxShiftNew) {
+            posNewObjects -= itemWidthNew;
+            if (posNewObjects < -maxShiftNew) posNewObjects = -maxShiftNew;
+            newObjects.style.transform = `translateX(${posNewObjects}px)`;
+        } else {
+            posNewObjects = 0;
+            newObjects.style.transform = `translateX(0px)`;
+        }
+    });
+
+    // Автоплей для новых объектов
+    setInterval(() => {
+        newObjectsRightBtn.click();
+    }, 5000);
+
+    // Второй слайдер (обратный)
+    const objectsWrapper = document.querySelector(".slider-objects-reverse .objects-wrapper");
+    const objects = document.querySelector(".slider-objects-reverse .objects");
+    const objectsLeftBtn = document.querySelector(".slider-objects-reverse .left-arrow");
+    const objectsRightBtn = document.querySelector(".slider-objects-reverse .right-arrow");
+
+    let posObjects = 0;
+    const objectElement = objects.querySelector(".object-item");
+    const gapObjects = 16;
+    let itemWidthObjects = objectElement.offsetWidth + gapObjects;
+
+    function updateVisibleCountObjects() {
+        itemWidthObjects = objectElement.offsetWidth + gapObjects;
+        const containerWidthObjects = objectsWrapper.offsetWidth;
+        return Math.floor(containerWidthObjects / itemWidthObjects);
     }
-  });
 
-  // Автоплей для новых объектов
-  setInterval(() => {
-    newObjectsRightBtn.click();
-  }, 5000);
+    let visibleCountObjects = updateVisibleCountObjects();
+    let maxShiftObjects = itemWidthObjects * (objects.children.length - visibleCountObjects);
+    if (maxShiftObjects < 0) maxShiftObjects = 0;
 
-  // Второй слайдер (обратный)
-  const objectsWrapper = document.querySelector(".slider-objects-reverse .objects-wrapper");
-  const objects = document.querySelector(".slider-objects-reverse .objects");
-  const objectsLeftBtn = document.querySelector(".slider-objects-reverse .left-arrow");
-  const objectsRightBtn = document.querySelector(".slider-objects-reverse .right-arrow");
+    objectsLeftBtn.addEventListener("click", () => {
+        if (posObjects > -maxShiftObjects) {
+            posObjects -= itemWidthObjects;
+            if (posObjects < -maxShiftObjects) posObjects = -maxShiftObjects;
+            objects.style.transform = `translateX(${posObjects}px)`;
+        } else {
+            posObjects = 0;
+            objects.style.transform = `translateX(0px)`;
+        }
+    });
 
-  let posObjects = 0;
-  const itemWidthObjects = objects.querySelector(".object-item").offsetWidth + 16; // gap
+    objectsRightBtn.addEventListener("click", () => {
+        if (posObjects < 0) {
+            posObjects += itemWidthObjects;
+            if (posObjects > 0) posObjects = 0;
+            objects.style.transform = `translateX(${posObjects}px)`;
+        } else {
+            posObjects = -maxShiftObjects;
+            objects.style.transform = `translateX(${posObjects}px)`;
+        }
+    });
 
-  objectsLeftBtn.addEventListener("click", () => {
-    if (posObjects > -(itemWidthObjects * (objects.children.length - 5))) {
-      posObjects -= itemWidthObjects;
-      objects.style.transform = `translateX(${posObjects}px)`;
-    } else {
-      posObjects = 0;
-      objects.style.transform = `translateX(0px)`;
-    }
-  });
+    // Автоплей в другую сторону
+    setInterval(() => {
+        objectsLeftBtn.click();
+    }, 5000);
 
-  objectsRightBtn.addEventListener("click", () => {
-    if (posObjects < 0) {
-      posObjects += itemWidthObjects;
-      objects.style.transform = `translateX(${posObjects}px)`;
-    } else {
-      posObjects = -(itemWidthObjects * (objects.children.length - 5));
-      objects.style.transform = `translateX(${posObjects}px)`;
-    }
-  });
+    // Обновление размеров на ресайз
+    window.addEventListener("resize", () => {
+        visibleCountNew = updateVisibleCountNew();
+        maxShiftNew = itemWidthNew * (newObjects.children.length - visibleCountNew);
+        if (maxShiftNew < 0) maxShiftNew = 0;
+        if (posNewObjects < -maxShiftNew) {
+            posNewObjects = -maxShiftNew;
+            newObjects.style.transform = `translateX(${posNewObjects}px)`;
+        }
 
-  // Автоплей в другую сторону
-  setInterval(() => {
-    objectsLeftBtn.click();
-  }, 5000);
-
+        visibleCountObjects = updateVisibleCountObjects();
+        maxShiftObjects = itemWidthObjects * (objects.children.length - visibleCountObjects);
+        if (maxShiftObjects < 0) maxShiftObjects = 0;
+        if (posObjects < -maxShiftObjects) {
+            posObjects = -maxShiftObjects;
+            objects.style.transform = `translateX(${posObjects}px)`;
+        }
+    });
 });
