@@ -2544,3 +2544,25 @@ body.light-theme .breadcrumb-item.active {
   }
 }
 
+.btn-sale {
+    /* background: var(--accent-color); */
+    border: none;
+    border-radius: 13px;
+    padding: 0.4rem 2rem;
+    color: #3a6500;
+    font-weight: 700;
+    font-size: 0.9rem;
+    height: 44px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(134, 160, 52, 0.4), 0 2px 4px rgba(134, 160, 52, 0.2);
+    cursor: pointer;
+    transition: box-shadow 0.3s, background 0.3s, transform 0.1s;
+    user-select: none;
+}
+
+.menu > li > a:hover, .menu > li > button:hover, .btn-sale:hover, .btn-sale:focus, .btn-submit:hover, .btn-submit:focus {
+    background: var(--accent-color-light);
+    box-shadow: inset 0 3px 5px var(--accent-color-dark);
+    outline: none;
+}
+
