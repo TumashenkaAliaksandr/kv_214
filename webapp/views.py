@@ -1,10 +1,14 @@
+import json
+
 from django.shortcuts import render, redirect, get_object_or_404
 
+from kv_214.settings import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 from webapp.models import Property
 import requests
 from django.conf import settings
 from django.http import JsonResponse
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt, csrf_protect
+import logging
 
 
 def index(request):
@@ -206,9 +210,9 @@ def consultation_view(request):
         agree = request.POST.get('agree')
 
         if not (name and phone and agree):
-            return JsonResponse({'success': False, 'message': 'Пожалуйста, заполните все поля и согласитесь с обработкой данных.'})
+            return JsonResponse({'success': False, 'message': '⚠️ Пожалуйста, заполните все поля и согласитесь с обработкой данных.'})
 
-        message = f"<b>Новая заявка на консультацию</b>\nИмя: {name}\nТелефон: {phone}"
+        message = f"<b>💬 Новая заявка на консультацию</b>\n\n🧑🏻 Имя: {name}\n📞 Телефон: {phone}"
 
         bot_token = settings.TELEGRAM_BOT_TOKEN
         chat_id = settings.TELEGRAM_CHAT_ID
@@ -222,11 +226,55 @@ def consultation_view(request):
         try:
             response = requests.post(telegram_api_url, data=data)
             if response.status_code == 200:
-                return JsonResponse({'success': True, 'message': 'Спасибо! Ваш запрос отправлен.'})
+                return JsonResponse({'success': True, 'message': '🤝 Спасибо! Ваш запрос отправлен.'})
             else:
-                error_msg = response.json().get('description', 'Ошибка при отправке в Telegram.')
+                error_msg = response.json().get('description', '⚠️ Ошибка при отправке в Telegram.')
                 return JsonResponse({'success': False, 'message': error_msg})
         except Exception as e:
-            return JsonResponse({'success': False, 'message': f'Ошибка сервера: {str(e)}'})
+            return JsonResponse({'success': False, 'message': f'⚠️ Ошибка сервера: {str(e)}'})
 
-    return JsonResponse({'success': False, 'message': 'Некорректный запрос.'})
+    return JsonResponse({'success': False, 'message': '⚠️ Некорректный запрос.'})
+
+
+logger = logging.getLogger(__name__)
+
+@csrf_protect
+def send_consultation_message(request):
+    if request.method != 'POST':
+        return JsonResponse({'success': False, 'message': '⛔ Метод не разрешён'}, status=405)
+
+    name = request.POST.get('name')
+    phone = request.POST.get('phone')
+    description = request.POST.get('description', '⚠️ Нет описания')
+
+    if not name or not phone:
+        return JsonResponse({'success': False, 'message': '⚠️ Пожалуйста, заполните обязательные поля: имя и телефон.'}, status=400)
+
+    message = (
+        f"<b>✔️ Новая заявка на консультацию</b>\n\n"
+        f"<b>🧑🏻 Имя:</b> {name}\n"
+        f"<b>📞 Телефон:</b> {phone}\n"
+        f"<b>📝 Описание:</b> {description}"
+    )
+
+    bot_token = settings.TELEGRAM_BOT_TOKEN
+    chat_id = settings.TELEGRAM_CHAT_ID
+    telegram_api_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+
+    payload = {
+        'chat_id': chat_id,
+        'text': message,
+        'parse_mode': 'HTML',
+    }
+
+    try:
+        response = requests.post(telegram_api_url, data=payload, timeout=10)
+        if response.status_code == 200:
+            return JsonResponse({'success': True, 'message': '🤝 Спасибо! Ваш запрос отправлен.'}, json_dumps_params={'ensure_ascii': False})
+        else:
+            error_desc = response.json().get('description', '⚠️ Ошибка при отправке в Telegram.')
+            logger.error(f'Telegram API error: {error_desc}')
+            return JsonResponse({'success': False, 'message': error_desc}, status=500)
+    except Exception as e:
+        logger.exception('⚠️ Ошибка при отправке сообщения в Telegram')
+        return JsonResponse({'success': False, 'message': f'⚠️ Ошибка сервера: {str(e)}'}, status=500)

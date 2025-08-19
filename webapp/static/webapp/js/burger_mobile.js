@@ -2,15 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav');
 
-  // Получаем реальные URL из скрытых ссылок в HTML, чтобы избежать проблем с шаблонами Django в JS
   const saleUrlElem = document.getElementById('url-sale');
   const rentUrlElem = document.getElementById('url-rent');
   const saleUrl = saleUrlElem ? saleUrlElem.href : '#';
   const rentUrl = rentUrlElem ? rentUrlElem.href : '#';
 
-  // Добавляем доп. ссылку «Все объекты» если нужно
   function addAllObjectsMenu() {
-    // Продажа
+    if (window.innerWidth > 767) {
+      const allPropsItems = document.querySelectorAll('.all-properties');
+      allPropsItems.forEach(item => item.remove());
+      return;
+    }
+
     const saleDropdownMenu = document.querySelector('.sale-dropdown > .dropdown-menu');
     if (saleDropdownMenu && !saleDropdownMenu.querySelector('.all-properties')) {
       const li = document.createElement('li');
@@ -18,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       li.innerHTML = `<a href="${saleUrl}"><i class="fa-solid fa-house"></i> Все объекты</a>`;
       saleDropdownMenu.appendChild(li);
     }
-    // Аренда
+
     const rentDropdownMenu = document.querySelector('.rent-dropdown > .dropdown-menu');
     if (rentDropdownMenu && !rentDropdownMenu.querySelector('.all-properties')) {
       const li = document.createElement('li');
@@ -29,15 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function disableMainLinkOnMobile() {
-    // Ссылки "Продажа" и "Аренда"
     const saleLink = document.querySelector('.sale-dropdown > a');
     const rentLink = document.querySelector('.rent-dropdown > a');
 
     function clickHandler(e) {
       if (window.innerWidth <= 767) {
-        // Отменяем переход по ссылке на мобильных
         e.preventDefault();
-        // Здесь можно дополнительно показать/спрятать подменю, если нужно
       }
     }
 
@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Переключение меню по клику на бургер
   burger.addEventListener('click', (e) => {
     e.stopPropagation();
     const expanded = burger.getAttribute('aria-expanded') === 'true';
@@ -61,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.setAttribute('aria-hidden', expanded);
   });
 
-  // Инициализация при загрузке и при изменении размера экрана
   function init() {
     addAllObjectsMenu();
     disableMainLinkOnMobile();

@@ -1225,7 +1225,7 @@ a[href^="tel"], a[href^="mailto"] {
 }
 
 .breadcrumb-item.active {
-  color: #97e404;
+  color: #81c303;
   font-weight: 600;
   filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
 }
@@ -1706,9 +1706,19 @@ body.light-theme .breadcrumb-item.active {
 }
 
 .single-property-gallery {
-    min-width: 490px;
+    min-width: 550px;
     max-width: 350px;
 }
+
+.centered-title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Отступ между иконкой и текстом */
+  font-size: 24px; /* Можно настроить размер шрифта */
+}
+
 
 .gallery-main-photo img {
     width: 100%;
@@ -1743,7 +1753,7 @@ body.light-theme .breadcrumb-item.active {
 
 .single-property-info {
     flex: 1 1 400px;
-    background: #e7efe2;
+    background: #e1f1d7;
     border-radius: 15px;
     padding: 40px 34px;
     min-width: 340px;
@@ -1777,7 +1787,7 @@ body.light-theme .breadcrumb-item.active {
 
 .single-property-desc {
     margin-top: 20px;
-    background: #e7efe2;
+    background: #e1f1d7;
     border-radius: 15px;
     padding: 24px 36px;
     box-shadow: 0 1px 8px rgba(70, 154, 7, 0.10);
@@ -2447,3 +2457,90 @@ body.light-theme .breadcrumb-item.active {
     max-width: 400px;
   }
 }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px 30px;
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.modal-content .btn-submit {
+  background-color: #00ff59;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.modal-content .btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* Адаптивные стили */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 20px;
+    max-width: 90vw;
+  }
+}
+

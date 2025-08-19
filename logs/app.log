@@ -1,0 +1,230 @@
+[INFO] 2025-08-19 07:53:04,368 autoreload 16556 12512 Watching for file changes with StatReloader
+[INFO] 2025-08-19 07:53:11,947 basehttp 16556 8420 "POST / HTTP/1.1" 200 29589
+[INFO] 2025-08-19 07:53:12,246 basehttp 16556 8420 "GET /static/webapp/css/style.css HTTP/1.1" 200 53285
+[INFO] 2025-08-19 07:53:12,251 basehttp 16556 8420 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-19 07:53:12,256 basehttp 16556 8420 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-19 07:53:12,262 basehttp 16556 15624 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-19 07:53:12,278 basehttp 16556 3680 "GET /static/webapp/images/rent_slide.jpg HTTP/1.1" 200 116441
+[INFO] 2025-08-19 07:53:12,281 basehttp 16556 17928 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-08-19 07:53:12,292 basehttp 16556 8420 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3081
+[INFO] 2025-08-19 07:53:12,303 basehttp 16556 3680 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 1946
+[INFO] 2025-08-19 07:53:12,325 basehttp 16556 8420 "GET /static/webapp/js/send_mail_base_btn.js HTTP/1.1" 200 3104
+[INFO] 2025-08-19 07:53:12,332 basehttp 16556 17928 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-08-19 07:53:12,340 basehttp 16556 3680 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-08-19 07:53:12,344 basehttp 16556 15624 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-08-19 07:53:12,362 basehttp 16556 8420 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-08-19 07:53:12,363 basehttp 16556 12264 "GET /static/webapp/images/slide_badroom.png HTTP/1.1" 200 2378515
+[INFO] 2025-08-19 07:53:12,375 basehttp 16556 17928 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-08-19 07:53:12,376 basehttp 16556 14056 "GET /static/webapp/images/house_slide.png HTTP/1.1" 200 2736227
+[INFO] 2025-08-19 07:53:12,386 basehttp 16556 3680 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-08-19 07:53:17,451 basehttp 16556 14056 "GET /static/webapp/images/favicon.svg HTTP/1.1" 200 447
+[INFO] 2025-08-19 07:53:27,489 basehttp 16556 14056 "POST / HTTP/1.1" 200 29589
+[INFO] 2025-08-19 07:55:42,442 basehttp 16556 14056 "POST / HTTP/1.1" 200 29626
+[INFO] 2025-08-19 07:55:42,493 basehttp 16556 12264 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-19 07:55:42,495 basehttp 16556 14056 "GET /static/webapp/css/style.css HTTP/1.1" 200 53285
+[INFO] 2025-08-19 07:55:42,499 basehttp 16556 8420 "GET /static/webapp/images/rent_slide.jpg HTTP/1.1" 200 116441
+[INFO] 2025-08-19 07:55:42,501 basehttp 16556 15624 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-08-19 07:55:42,510 basehttp 16556 14056 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-19 07:55:42,512 basehttp 16556 8420 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-19 07:55:42,521 basehttp 16556 15624 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3081
+[INFO] 2025-08-19 07:55:42,533 basehttp 16556 8420 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 1946
+[INFO] 2025-08-19 07:55:42,535 basehttp 16556 17928 "GET /static/webapp/images/slide_badroom.png HTTP/1.1" 200 2378515
+[INFO] 2025-08-19 07:55:42,543 basehttp 16556 15624 "GET /static/webapp/js/send_mail_base_btn.js HTTP/1.1" 200 3104
+[INFO] 2025-08-19 07:55:42,549 basehttp 16556 3680 "GET /static/webapp/images/house_slide.png HTTP/1.1" 200 2736227
+[INFO] 2025-08-19 07:55:42,551 basehttp 16556 14056 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-08-19 07:55:42,553 basehttp 16556 8420 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-08-19 07:55:42,560 basehttp 16556 12264 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-08-19 07:55:42,567 basehttp 16556 15624 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-08-19 07:55:42,582 basehttp 16556 8420 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-08-19 07:55:42,585 basehttp 16556 12264 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-08-19 07:55:46,623 basehttp 16556 3680 "GET /static/webapp/images/favicon.svg HTTP/1.1" 200 447
+[INFO] 2025-08-19 07:55:56,377 basehttp 16556 3680 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[WARNING] 2025-08-19 07:55:56,475 log 16556 3680 Not Found: /favicon.ico
+[WARNING] 2025-08-19 07:55:56,476 basehttp 16556 3680 "GET /favicon.ico HTTP/1.1" 404 5644
+[INFO] 2025-08-19 07:59:07,117 basehttp 16556 3680 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 07:59:18,849 basehttp 16556 3680 "POST / HTTP/1.1" 200 29626
+[INFO] 2025-08-19 07:59:18,881 basehttp 16556 3680 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-08-19 07:59:18,889 basehttp 16556 17928 "GET /static/webapp/js/send_mail_base_btn.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 07:59:18,890 basehttp 16556 3680 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2037
+[INFO] 2025-08-19 08:06:32,135 basehttp 16556 14736 "GET / HTTP/1.1" 200 29629
+[INFO] 2025-08-19 08:06:32,162 basehttp 16556 14736 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:06:32,174 basehttp 16556 11676 "GET /static/webapp/js/send_mail_base_btn.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:06:32,175 basehttp 16556 14736 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2072
+[INFO] 2025-08-19 08:06:36,900 basehttp 16556 14736 "GET /about HTTP/1.1" 200 14260
+[INFO] 2025-08-19 08:06:36,948 basehttp 16556 14736 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:06:39,674 basehttp 16556 14736 "GET / HTTP/1.1" 200 29629
+[INFO] 2025-08-19 08:06:39,736 basehttp 16556 14736 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:06:50,437 basehttp 16556 14736 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:07:28,152 basehttp 16556 14736 "GET / HTTP/1.1" 200 29629
+[INFO] 2025-08-19 08:07:28,222 basehttp 16556 14736 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:08:34,416 basehttp 16556 14736 "GET / HTTP/1.1" 200 29563
+[INFO] 2025-08-19 08:08:34,470 basehttp 16556 11676 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-19 08:08:34,477 basehttp 16556 14736 "GET /static/webapp/css/style.css HTTP/1.1" 200 53285
+[INFO] 2025-08-19 08:08:34,480 basehttp 16556 11676 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-19 08:08:34,484 basehttp 16556 14736 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-19 08:08:34,488 basehttp 16556 11676 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3081
+[INFO] 2025-08-19 08:08:34,494 basehttp 16556 13696 "GET /static/webapp/images/rent_slide.jpg HTTP/1.1" 200 116441
+[INFO] 2025-08-19 08:08:34,494 basehttp 16556 14736 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2072
+[INFO] 2025-08-19 08:08:34,503 basehttp 16556 15252 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-08-19 08:08:34,512 basehttp 16556 11676 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-08-19 08:08:34,514 basehttp 16556 15252 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-08-19 08:08:34,516 basehttp 16556 14736 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-08-19 08:08:34,522 basehttp 16556 13696 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-08-19 08:08:34,529 basehttp 16556 14736 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-08-19 08:08:34,532 basehttp 16556 15252 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-08-19 08:08:34,558 basehttp 16556 6716 "GET /static/webapp/images/house_slide.png HTTP/1.1" 200 2736227
+[INFO] 2025-08-19 08:08:34,570 basehttp 16556 15588 "GET /static/webapp/images/slide_badroom.png HTTP/1.1" 200 2378515
+[INFO] 2025-08-19 08:08:39,324 basehttp 16556 15588 "GET /static/webapp/images/favicon.svg HTTP/1.1" 200 447
+[INFO] 2025-08-19 08:08:47,823 basehttp 16556 15588 "POST /consultation/ HTTP/1.1" 200 187
+[INFO] 2025-08-19 08:09:02,077 basehttp 16556 15588 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:09:37,220 basehttp 16556 15588 "GET / HTTP/1.1" 200 29562
+[INFO] 2025-08-19 08:09:37,272 basehttp 16556 6716 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-19 08:09:37,274 basehttp 16556 15588 "GET /static/webapp/css/style.css HTTP/1.1" 200 53285
+[INFO] 2025-08-19 08:09:37,276 basehttp 16556 13696 "GET /static/webapp/images/rent_slide.jpg HTTP/1.1" 200 116441
+[INFO] 2025-08-19 08:09:37,280 basehttp 16556 11676 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-08-19 08:09:37,282 basehttp 16556 15588 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-19 08:09:37,284 basehttp 16556 13696 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-19 08:09:37,290 basehttp 16556 11676 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3081
+[INFO] 2025-08-19 08:09:37,290 basehttp 16556 6716 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2072
+[INFO] 2025-08-19 08:09:37,307 basehttp 16556 11676 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-08-19 08:09:37,312 basehttp 16556 13696 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-08-19 08:09:37,314 basehttp 16556 6716 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-08-19 08:09:37,316 basehttp 16556 15588 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-08-19 08:09:37,325 basehttp 16556 11676 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-08-19 08:09:37,327 basehttp 16556 15588 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-08-19 08:09:37,338 basehttp 16556 14736 "GET /static/webapp/images/slide_badroom.png HTTP/1.1" 200 2378515
+[INFO] 2025-08-19 08:09:37,343 basehttp 16556 15252 "GET /static/webapp/images/house_slide.png HTTP/1.1" 200 2736227
+[INFO] 2025-08-19 08:09:42,776 basehttp 16556 15252 "GET /static/webapp/images/favicon.svg HTTP/1.1" 200 447
+[INFO] 2025-08-19 08:09:47,490 basehttp 16556 15252 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:10:15,427 basehttp 16556 15252 "GET /sale/novopolock_drujby3/ HTTP/1.1" 200 15085
+[INFO] 2025-08-19 08:10:15,477 basehttp 16556 15252 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:13:48,275 basehttp 16556 15252 "GET /sale/novopolock_drujby3/ HTTP/1.1" 200 16511
+[INFO] 2025-08-19 08:13:48,321 basehttp 16556 11676 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-19 08:13:48,321 basehttp 16556 13696 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3081
+[INFO] 2025-08-19 08:13:48,322 basehttp 16556 6716 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-19 08:13:48,322 basehttp 16556 14736 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-19 08:13:48,324 basehttp 16556 15252 "GET /static/webapp/css/style.css HTTP/1.1" 200 53285
+[INFO] 2025-08-19 08:13:48,326 basehttp 16556 15588 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-08-19 08:13:48,328 basehttp 16556 13696 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2072
+[INFO] 2025-08-19 08:13:48,711 basehttp 16556 13696 "GET /static/webapp/images/favicon.svg HTTP/1.1" 200 447
+[INFO] 2025-08-19 08:16:14,682 basehttp 16556 13696 "GET /sale/novopolock_drujby3/ HTTP/1.1" 200 18958
+[INFO] 2025-08-19 08:16:14,732 basehttp 16556 15252 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-19 08:16:14,733 basehttp 16556 6716 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-19 08:16:14,734 basehttp 16556 11676 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3081
+[INFO] 2025-08-19 08:16:14,735 basehttp 16556 15588 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-19 08:16:14,736 basehttp 16556 13696 "GET /static/webapp/css/style.css HTTP/1.1" 200 53285
+[INFO] 2025-08-19 08:16:14,740 basehttp 16556 14736 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-08-19 08:16:14,742 basehttp 16556 6716 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2072
+[INFO] 2025-08-19 08:16:14,991 basehttp 16556 6716 "GET /static/webapp/images/favicon.svg HTTP/1.1" 200 447
+[INFO] 2025-08-19 08:16:27,780 basehttp 16556 14736 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:16:27,796 basehttp 16556 6716 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:16:45,966 basehttp 16556 6716 "GET / HTTP/1.1" 200 29562
+[INFO] 2025-08-19 08:16:48,938 basehttp 16556 6716 "GET /rent HTTP/1.1" 200 13330
+[INFO] 2025-08-19 08:16:52,290 basehttp 16556 6716 "GET /rent/polock-mira6b/ HTTP/1.1" 200 17151
+[INFO] 2025-08-19 08:16:59,488 basehttp 16556 6716 "GET /sale HTTP/1.1" 200 16757
+[INFO] 2025-08-19 08:17:01,002 basehttp 16556 6716 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 18449
+[INFO] 2025-08-19 08:17:51,280 basehttp 16556 6716 "GET / HTTP/1.1" 200 29562
+[INFO] 2025-08-19 08:17:51,359 basehttp 16556 6716 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:18:42,645 basehttp 16556 6716 "GET / HTTP/1.1" 200 29562
+[INFO] 2025-08-19 08:18:47,445 basehttp 16556 6716 "GET /rent HTTP/1.1" 200 13330
+[INFO] 2025-08-19 08:18:49,617 basehttp 16556 6716 "GET /rent/polock-mira6b/ HTTP/1.1" 200 20310
+[INFO] 2025-08-19 08:18:59,843 basehttp 16556 6716 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:18:59,855 basehttp 16556 14736 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:19:27,590 basehttp 16556 6716 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:19:27,624 basehttp 16556 14736 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:19:36,316 basehttp 16556 14736 "GET /sale HTTP/1.1" 200 16757
+[INFO] 2025-08-19 08:19:36,359 basehttp 16556 14736 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:19:36,366 basehttp 16556 14736 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:19:38,120 basehttp 16556 14736 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 18449
+[INFO] 2025-08-19 08:19:50,626 basehttp 16556 14736 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:19:50,650 basehttp 16556 6716 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:21:20,825 basehttp 16556 6716 "GET /rent HTTP/1.1" 200 13330
+[INFO] 2025-08-19 08:21:20,875 basehttp 16556 6716 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:21:22,876 basehttp 16556 6716 "GET /rent/kalinina5/ HTTP/1.1" 200 19174
+[INFO] 2025-08-19 08:34:33,434 basehttp 16556 17644 "GET /sale HTTP/1.1" 200 16757
+[INFO] 2025-08-19 08:34:33,464 basehttp 16556 17644 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:34:33,478 basehttp 16556 17644 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:34:35,580 basehttp 16556 17644 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 15706
+[INFO] 2025-08-19 08:34:56,193 basehttp 16556 17644 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 18449
+[INFO] 2025-08-19 08:34:56,233 basehttp 16556 14020 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-19 08:34:56,233 basehttp 16556 17644 "GET /static/webapp/css/style.css HTTP/1.1" 200 53285
+[INFO] 2025-08-19 08:34:56,234 basehttp 16556 17072 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-19 08:34:56,235 basehttp 16556 7684 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-19 08:34:56,236 basehttp 16556 16328 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3081
+[INFO] 2025-08-19 08:34:56,240 basehttp 16556 14020 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2072
+[INFO] 2025-08-19 08:34:56,241 basehttp 16556 16624 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-08-19 08:34:56,578 basehttp 16556 16624 "GET /static/webapp/images/favicon.svg HTTP/1.1" 200 447
+[INFO] 2025-08-19 08:35:09,219 basehttp 16556 16624 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 15985
+[INFO] 2025-08-19 08:35:09,265 basehttp 16556 17072 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-19 08:35:09,265 basehttp 16556 17644 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3081
+[INFO] 2025-08-19 08:35:09,266 basehttp 16556 7684 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-19 08:35:09,266 basehttp 16556 14020 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-19 08:35:09,268 basehttp 16556 16624 "GET /static/webapp/css/style.css HTTP/1.1" 200 53285
+[INFO] 2025-08-19 08:35:09,271 basehttp 16556 17644 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2072
+[INFO] 2025-08-19 08:35:09,273 basehttp 16556 16328 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-08-19 08:35:09,470 basehttp 16556 16328 "GET /static/webapp/images/favicon.svg HTTP/1.1" 200 447
+[INFO] 2025-08-19 08:35:21,244 basehttp 16556 16328 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:36:38,779 basehttp 16556 16328 "GET /rent HTTP/1.1" 200 13330
+[INFO] 2025-08-19 08:36:40,464 basehttp 16556 16328 "GET /rent/kalinina5/ HTTP/1.1" 200 17055
+[INFO] 2025-08-19 08:36:52,768 basehttp 16556 16328 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:40:17,571 autoreload 16556 12512 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-19 08:40:18,422 autoreload 13088 17664 Watching for file changes with StatReloader
+[INFO] 2025-08-19 08:41:16,871 autoreload 13088 17664 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-19 08:41:18,031 autoreload 18084 11988 Watching for file changes with StatReloader
+[INFO] 2025-08-19 08:41:29,521 autoreload 18084 11988 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-19 08:41:30,471 autoreload 9500 15780 Watching for file changes with StatReloader
+[INFO] 2025-08-19 08:41:43,354 autoreload 9500 15780 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-19 08:41:44,654 autoreload 7108 8360 Watching for file changes with StatReloader
+[INFO] 2025-08-19 08:42:30,967 autoreload 7108 8360 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-19 08:42:32,050 autoreload 428 13976 Watching for file changes with StatReloader
+[INFO] 2025-08-19 08:42:44,090 basehttp 428 624 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:43:33,871 autoreload 428 13976 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-19 08:43:34,737 autoreload 572 14252 Watching for file changes with StatReloader
+[INFO] 2025-08-19 08:43:35,681 basehttp 572 9616 "GET /rent/kalinina5/ HTTP/1.1" 200 17537
+[INFO] 2025-08-19 08:43:35,931 basehttp 572 2204 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-19 08:43:35,935 basehttp 572 2204 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2105
+[INFO] 2025-08-19 08:43:35,938 basehttp 572 12260 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3081
+[INFO] 2025-08-19 08:43:35,940 basehttp 572 15968 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-19 08:43:35,942 basehttp 572 15804 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-19 08:43:35,942 basehttp 572 9616 "GET /static/webapp/css/style.css HTTP/1.1" 200 53285
+[INFO] 2025-08-19 08:43:35,943 basehttp 572 15220 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-08-19 08:43:36,223 basehttp 572 15220 "GET /static/webapp/images/favicon.svg HTTP/1.1" 200 447
+[ERROR] 2025-08-19 08:43:45,476 log 572 15220 Internal Server Error: /send-consultation-message/
+[ERROR] 2025-08-19 08:43:45,477 basehttp 572 15220 "POST /send-consultation-message/ HTTP/1.1" 500 104
+[ERROR] 2025-08-19 08:43:50,777 log 572 15220 Internal Server Error: /send-consultation-message/
+[ERROR] 2025-08-19 08:43:50,778 basehttp 572 15220 "POST /send-consultation-message/ HTTP/1.1" 500 104
+[ERROR] 2025-08-19 08:43:58,897 log 572 15220 Internal Server Error: /send-consultation-message/
+[ERROR] 2025-08-19 08:43:58,899 basehttp 572 15220 "POST /send-consultation-message/ HTTP/1.1" 500 104
+[INFO] 2025-08-19 08:44:02,172 basehttp 572 15220 "GET /rent/kalinina5/ HTTP/1.1" 200 17537
+[INFO] 2025-08-19 08:44:02,200 basehttp 572 15220 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[ERROR] 2025-08-19 08:44:11,308 log 572 15220 Internal Server Error: /send-consultation-message/
+[ERROR] 2025-08-19 08:44:11,310 basehttp 572 15220 "POST /send-consultation-message/ HTTP/1.1" 500 104
+[INFO] 2025-08-19 08:44:18,946 basehttp 572 15220 "GET /rent HTTP/1.1" 200 13330
+[INFO] 2025-08-19 08:44:21,956 basehttp 572 15220 "GET /rent HTTP/1.1" 200 13330
+[INFO] 2025-08-19 08:44:21,998 basehttp 572 2204 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-19 08:44:21,998 basehttp 572 15968 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-19 08:44:21,998 basehttp 572 12260 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-19 08:44:21,999 basehttp 572 15220 "GET /static/webapp/css/style.css HTTP/1.1" 200 53285
+[INFO] 2025-08-19 08:44:22,004 basehttp 572 15804 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-08-19 08:44:22,005 basehttp 572 9616 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-08-19 08:44:22,010 basehttp 572 2204 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2105
+[INFO] 2025-08-19 08:44:22,011 basehttp 572 15968 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3081
+[INFO] 2025-08-19 08:44:22,205 basehttp 572 15968 "GET /static/webapp/images/favicon.svg HTTP/1.1" 200 447
+[INFO] 2025-08-19 08:44:25,307 basehttp 572 15968 "GET /rent/polock-mira6b/ HTTP/1.1" 200 18591
+[ERROR] 2025-08-19 08:44:36,666 log 572 15968 Internal Server Error: /send-consultation-message/
+[ERROR] 2025-08-19 08:44:36,667 basehttp 572 15968 "POST /send-consultation-message/ HTTP/1.1" 500 104
+[INFO] 2025-08-19 08:45:31,309 autoreload 572 14252 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-19 08:45:32,177 autoreload 18428 18220 Watching for file changes with StatReloader
+[INFO] 2025-08-19 08:45:35,024 basehttp 18428 16188 "POST /send-consultation-message/ HTTP/1.1" 200 87
+[INFO] 2025-08-19 08:46:20,006 autoreload 18428 18220 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-19 08:46:21,000 autoreload 4396 6164 Watching for file changes with StatReloader
+[INFO] 2025-08-19 08:47:05,750 autoreload 4396 6164 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-19 08:47:06,623 autoreload 14308 12432 Watching for file changes with StatReloader
+[INFO] 2025-08-19 08:48:17,543 autoreload 14308 12432 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-19 08:48:18,474 autoreload 13352 228 Watching for file changes with StatReloader
+[INFO] 2025-08-19 08:48:26,965 basehttp 13352 16808 "GET / HTTP/1.1" 200 29562
+[INFO] 2025-08-19 08:48:27,026 basehttp 13352 16808 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-08-19 08:48:30,001 basehttp 13352 16808 "GET /sale HTTP/1.1" 200 16757
+[INFO] 2025-08-19 08:48:32,159 basehttp 13352 16808 "GET /sale/novopolock_drujby3/ HTTP/1.1" 200 16490
+[WARNING] 2025-08-19 08:48:36,073 log 13352 16808 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-08-19 08:48:36,074 basehttp 13352 16808 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5755
