@@ -1,0 +1,89 @@
+{% load static %}
+
+
+{% block content %}
+
+    <!-- Слайдер - главные предложения -->
+    <section class="slider-main">
+        <div class="slider-wrapper">
+            <div class="slides">
+                {% if sliders %}
+                    {% for slider in sliders %}
+                        {% if slider.photos.exists %}
+                            {% for photo in slider.photos.all %}
+                                <div class="slide">
+                                    <img src="{{ photo.photo.url }}" alt="{% if photo.desc_text %}{{ photo.desc_text }}{% else %}Слайд {{ forloop.counter }}{% endif %}" />
+                                    <div class="slide-content">
+                                        <h2>{{ slider.name|default:"Название отсутствует" }}</h2>
+                                        <button class="btn-consultation" onclick="showCallbackModal()">Получить
+                                            консультацию
+                                        </button>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <!-- Если у слайдера нет фото -->
+                            <div class="slide">
+                                <img src="{% static 'webapp/images/kvatera_default.jpg' %}"
+                                     alt="Изображение отсутствует"/>
+                                <div class="slide-content">
+                                    <h2>{{ slider.name|default:"Название отсутствует" }}</h2>
+                                    <button class="btn-consultation" onclick="showCallbackModal()">Получить
+                                        консультацию
+                                    </button>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <!-- Если нет слайдеров вообще -->
+                    <div class="slide">
+                        <img src="{% static 'webapp/images/house_slide.png' %}" alt="Слайд 1"/>
+                        <div class="slide-content">
+                            <h2>Найдите дом своей мечты с нами</h2>
+                            <button class="btn-consultation" onclick="showCallbackModal()">Получить консультацию
+                            </button>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
+
+
+   <!-- Слайдер - главные предложения -->
+{#    <section class="slider-main">#}
+{#        <div class="slider-wrapper">#}
+{#            <div class="slides">#}
+{##}
+{#                <div class="slide">#}
+{#                    <img src="{% static 'webapp/images/house_slide.png' %}" alt="Слайд 1"/>#}
+{#                    <div class="slide-content">#}
+{#                        <h2>Найдите дом своей мечты с нами</h2>#}
+{#                        <button class="btn-consultation" onclick="showCallbackModal()">Получить консультацию</button>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#                <div class="slide">#}
+{#                    <img src="{% static 'webapp/images/slide_badroom.png' %}" alt="Слайд 2"/>#}
+{#                    <div class="slide-content">#}
+{#                        <h2>Лучшие квартиры в нашем городе</h2>#}
+{#                        <button class="btn-consultation" onclick="showCallbackModal()">Получить консультацию</button>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#                <div class="slide">#}
+{#                    <img src="{% static 'webapp/images/rent_slide.jpg' %}" alt="Слайд 3"/>#}
+{#                    <div class="slide-content">#}
+{#                        <h2>Аренда на выгодных условиях</h2>#}
+{#                        <button class="btn-consultation" onclick="showCallbackModal()">Получить консультацию</button>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </section>#}
+

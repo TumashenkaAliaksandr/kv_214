@@ -86,3 +86,19 @@ class PropertyVideo(models.Model):
         verbose_name = "Видео объекта"
         verbose_name_plural = "Видео объектов"
         ordering = ['-date']
+
+
+class MainSlider(models.Model):
+    name = models.CharField("Название", max_length=255)
+
+
+    def __str__(self):
+        return self.name
+
+class MainSliderPhoto(models.Model):
+    name_photo = models.ForeignKey(MainSlider, related_name='photos', on_delete=models.CASCADE)
+    photo = models.ImageField(upload_to='main_slider_photos/')
+    desc_text = models.CharField(max_length=255, blank=True)
+
+    def __str__(self):
+        return f"Фото Слайдера {self.name_photo.name}"

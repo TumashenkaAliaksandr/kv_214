@@ -3,69 +3,15 @@
 
 
 {% block content %}
-    <!-- Слайдер - главные предложения -->
-    <section class="slider-main">
-        <div class="slider-wrapper">
-            <div class="slides">
 
-                <div class="slide">
-                    <img src="{% static 'webapp/images/house_slide.png' %}" alt="Слайд 1"/>
-                    <div class="slide-content">
-                        <h2>Найдите дом своей мечты с нами</h2>
-                        <button class="btn-consultation" onclick="showCallbackModal()">Получить консультацию</button>
-                    </div>
-                </div>
+    <!-- Главный Слайдер -->
+    {% include 'main/main_slider.html' %}
 
-                <div class="slide">
-                    <img src="{% static 'webapp/images/slide_badroom.png' %}" alt="Слайд 2"/>
-                    <div class="slide-content">
-                        <h2>Лучшие квартиры в нашем городе</h2>
-                        <button class="btn-consultation" onclick="showCallbackModal()">Получить консультацию</button>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <img src="{% static 'webapp/images/rent_slide.jpg' %}" alt="Слайд 3"/>
-                    <div class="slide-content">
-                        <h2>Аренда на выгодных условиях</h2>
-                        <button class="btn-consultation" onclick="showCallbackModal()">Получить консультацию</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
+    <!-- Фильтер под гл слайдером -->
     {% include 'webapp/filter.html' %}
 
     <!-- Слайдер новые объекты -->
-    <section class="slider-new-objects">
-        <h2><i class="fa-solid fa-home"></i> Новые объекты</h2>
-        <div class="slider-container">
-            <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
-            <div class="new-objects-wrapper">
-                <div class="new-objects">
-                    {% for property in properties_new %}
-                        <div class="new-object">
-                            <a href="{% if property.is_rent %}{% url 'rent_single' property.slug %}
-                                 {% elif property.is_sale %}{% url 'sale_single' property.slug %}
-                                 {% else %}#{% endif %}">
-                                {% if property.photos.all %}
-                                    <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
-                                {% else %}
-                                    <img src="{% static 'webapp/images/house_slide.png' %}" alt="{{ property.name }}"/>
-                                {% endif %}
-                                <p>{{ property.name }}</p>
-                            </a>
-                        </div>
-                    {% empty %}
-                        <p>Новых объектов нет</p>
-                    {% endfor %}
-                </div>
-            </div>
-            <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
-        </div>
-    </section>
+    {% include 'main/new_objects_slider.html' %}
 
 
     <!-- Почему нам доверяют -->
@@ -223,7 +169,7 @@
     <div class="modal-overlay" id="consultationModal" style="display:none;">
         <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
             <button class="modal-close" id="closeConsultationBtn" aria-label="Закрыть окно">&times;</button>
-            <h2 id="modalTitle">💡 Заказать звонок</h2>
+            <h2 id="modalTitle">🕭 Заказать звонок</h2>
             <form id="consultationFormtwo" method="post" action="/send-consultation-message/">
                 {% csrf_token %}
                 <label for="inputName">Имя</label>
@@ -241,4 +187,5 @@
             </form>
         </div>
     </div>
+
 {% endblock %}

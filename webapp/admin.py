@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contact, SocialNetwork, PropertyPhoto, Property, PropertyVideo
+from .models import Contact, SocialNetwork, PropertyPhoto, Property, PropertyVideo, MainSliderPhoto, MainSlider
 
 
 class PropertyPhotoInline(admin.TabularInline):
@@ -49,3 +49,16 @@ class PropertyVideoAdmin(admin.ModelAdmin):
             'classes': ('collapse',),  # скрываем блок
         }),
     )
+
+class MainSliderPhotoInline(admin.TabularInline):
+    model = MainSliderPhoto
+    extra = 1
+
+@admin.register(MainSlider)
+class MainSliderAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    inlines = [MainSliderPhotoInline]
+
+@admin.register(MainSliderPhoto)
+class MainSliderPhotoAdmin(admin.ModelAdmin):
+    list_display = ('name_photo', 'desc_text')
