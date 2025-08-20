@@ -1488,3 +1488,87 @@ tz
 [INFO] 2025-08-20 16:21:36,166 basehttp 4140 6648 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
 [WARNING] 2025-08-20 16:21:36,254 log 4140 6648 Not Found: /.well-known/appspecific/com.chrome.devtools.json
 [WARNING] 2025-08-20 16:21:36,254 basehttp 4140 6648 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5755
+[INFO] 2025-08-20 16:24:20,764 basehttp 4140 6648 "GET / HTTP/1.1" 200 35521
+[INFO] 2025-08-20 16:24:20,840 basehttp 4140 1724 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-20 16:24:20,841 basehttp 4140 6648 "GET /static/webapp/css/style.css HTTP/1.1" 200 54304
+[WARNING] 2025-08-20 16:24:20,864 log 4140 6648 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-08-20 16:24:20,866 basehttp 4140 6648 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5755
+[INFO] 2025-08-20 16:24:20,868 basehttp 4140 1724 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-20 16:24:20,869 basehttp 4140 8960 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-08-20 16:24:20,871 basehttp 4140 16812 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-08-20 16:24:20,887 basehttp 4140 6648 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-20 16:24:20,909 basehttp 4140 15988 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-08-20 16:24:20,913 basehttp 4140 10368 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-08-20 16:24:20,916 basehttp 4140 1724 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 2510
+[INFO] 2025-08-20 16:24:20,920 basehttp 4140 16812 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2105
+[INFO] 2025-08-20 16:24:20,927 basehttp 4140 6648 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-08-20 16:24:20,937 basehttp 4140 8960 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-08-20 16:24:20,943 basehttp 4140 1724 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-08-20 16:24:20,944 basehttp 4140 16812 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-08-20 16:24:20,964 basehttp 4140 1724 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-08-20 16:24:20,966 basehttp 4140 16812 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-08-20 16:24:26,574 basehttp 4140 10368 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 1442097
+[INFO] 2025-08-20 16:26:55,296 basehttp 4140 10368 "GET / HTTP/1.1" 200 35521
+[INFO] 2025-08-20 16:26:55,359 basehttp 4140 10368 "GET /static/webapp/css/style.css HTTP/1.1" 200 54306
+[INFO] 2025-08-20 16:26:55,362 basehttp 4140 15988 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[WARNING] 2025-08-20 16:26:55,379 log 4140 8960 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-08-20 16:26:55,382 basehttp 4140 8960 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5755
+[INFO] 2025-08-20 16:26:55,385 basehttp 4140 15988 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-20 16:26:55,390 basehttp 4140 8960 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-20 16:26:55,393 basehttp 4140 6648 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-08-20 16:26:55,395 basehttp 4140 10368 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-08-20 16:26:55,416 basehttp 4140 16812 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-08-20 16:26:55,421 basehttp 4140 1724 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-08-20 16:26:55,431 basehttp 4140 10368 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 2510
+[INFO] 2025-08-20 16:26:55,431 basehttp 4140 8960 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2105
+[INFO] 2025-08-20 16:26:55,439 basehttp 4140 6648 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-08-20 16:26:55,446 basehttp 4140 15988 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-08-20 16:26:55,458 basehttp 4140 10368 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-08-20 16:26:55,464 basehttp 4140 8960 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-08-20 16:26:55,473 basehttp 4140 6648 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-08-20 16:26:55,491 basehttp 4140 8960 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-08-20 16:27:00,524 basehttp 4140 1724 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 1442097
+[INFO] 2025-08-20 16:27:46,076 basehttp 4140 1724 "GET / HTTP/1.1" 200 35521
+[INFO] 2025-08-20 16:27:46,145 basehttp 4140 16812 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-20 16:27:46,147 basehttp 4140 1724 "GET /static/webapp/css/style.css HTTP/1.1" 200 54306
+[INFO] 2025-08-20 16:27:46,152 basehttp 4140 1724 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-20 16:27:46,155 basehttp 4140 10368 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-08-20 16:27:46,155 basehttp 4140 16812 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-20 16:27:46,157 basehttp 4140 15988 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[WARNING] 2025-08-20 16:27:46,187 log 4140 15988 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-08-20 16:27:46,189 basehttp 4140 15988 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5755
+[INFO] 2025-08-20 16:27:46,191 basehttp 4140 16812 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 2510
+[INFO] 2025-08-20 16:27:46,192 basehttp 4140 1724 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2105
+[INFO] 2025-08-20 16:27:46,200 basehttp 4140 10368 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-08-20 16:27:46,207 basehttp 4140 6648 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-08-20 16:27:46,211 basehttp 4140 15988 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-08-20 16:27:46,219 basehttp 4140 8960 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-08-20 16:27:46,230 basehttp 4140 16812 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-08-20 16:27:46,231 basehttp 4140 10368 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-08-20 16:27:46,233 basehttp 4140 1724 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-08-20 16:27:46,249 basehttp 4140 15988 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-08-20 16:27:51,981 basehttp 4140 15988 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 1442097
+[INFO] 2025-08-20 16:30:00,096 basehttp 4140 15988 "GET / HTTP/1.1" 200 35521
+[INFO] 2025-08-20 16:30:00,159 basehttp 4140 15988 "GET /static/webapp/css/style.css HTTP/1.1" 200 54306
+[INFO] 2025-08-20 16:30:00,160 basehttp 4140 1724 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-08-20 16:30:00,167 basehttp 4140 15988 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-08-20 16:30:00,168 basehttp 4140 1724 "GET /static/webapp/js/slider.js HTTP/1.1" 200 5707
+[INFO] 2025-08-20 16:30:00,171 basehttp 4140 8960 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-08-20 16:30:00,172 basehttp 4140 6648 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-08-20 16:30:00,188 basehttp 4140 6648 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 2510
+[INFO] 2025-08-20 16:30:00,189 basehttp 4140 8960 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2105
+[INFO] 2025-08-20 16:30:00,207 basehttp 4140 15988 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-08-20 16:30:00,209 basehttp 4140 6648 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-08-20 16:30:00,211 basehttp 4140 1724 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-08-20 16:30:00,214 basehttp 4140 8960 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-08-20 16:30:00,218 basehttp 4140 16812 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-08-20 16:30:00,222 basehttp 4140 10368 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-08-20 16:30:00,228 basehttp 4140 1724 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-08-20 16:30:00,229 basehttp 4140 6648 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-08-20 16:30:05,211 basehttp 4140 10368 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 1442097
+[INFO] 2025-08-20 17:54:43,687 autoreload 4140 7360 C:\Users\Admin\PycharmProjects\kv_214\kv_214\settings.py changed, reloading.
+[INFO] 2025-08-20 17:54:44,965 autoreload 16260 18388 Watching for file changes with StatReloader
+[INFO] 2025-08-20 17:55:53,977 autoreload 16260 18388 C:\Users\Admin\PycharmProjects\kv_214\kv_214\settings.py changed, reloading.
+[INFO] 2025-08-20 17:55:54,844 autoreload 7504 15748 Watching for file changes with StatReloader
+[INFO] 2025-08-20 17:56:23,828 autoreload 7504 15748 C:\Users\Admin\PycharmProjects\kv_214\kv_214\settings.py changed, reloading.
+[INFO] 2025-08-20 17:56:24,759 autoreload 14224 8332 Watching for file changes with StatReloader
