@@ -3,7 +3,7 @@ import json
 from django.shortcuts import render, redirect, get_object_or_404
 
 from kv_214.settings import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
-from webapp.models import Property, MainSlider
+from webapp.models import Property, MainSlider, PropertyVideo
 import requests
 from django.conf import settings
 from django.http import JsonResponse
@@ -15,6 +15,7 @@ def index(request):
     # Начинаем с всех объектов
     properties = Property.objects.all()
     sliders = MainSlider.objects.prefetch_related('photos').all()
+    videos = PropertyVideo.objects.all()
 
     # Фильтрация по типам (булевым полям)
     property_types = request.GET.getlist('property_type')
@@ -72,6 +73,7 @@ def index(request):
         'properties_all': properties.prefetch_related('photos'),
         'cities': cities,
         'sliders': sliders,
+        'videos': videos,
     }
     return render(request, 'webapp/index.html', context)
 

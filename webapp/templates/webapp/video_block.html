@@ -1,0 +1,65 @@
+{% load static %}
+{% load custom_filters %}
+
+
+{% block content %}
+
+    <section class="video-section">
+        <h2><i class="fa-solid fa-film"></i> Наши видео</h2>
+        <div class="video-grid">
+            {% for video in videos %}
+                <div class="video-item">
+
+                    <iframe
+                            src="{{ video.video_url|youtube_embed }}"
+                            title="{{ video.title }}"
+                            frameborder="0"
+                            allowfullscreen>
+                    </iframe>
+
+                    <div class="video-info">
+                        <h3>{{ video.title }}</h3>
+                        {% if video.description %}
+                            <p>{{ video.description }}</p>
+                        {% endif %}
+                        <p><strong>Адрес объекта:</strong> {{ video.property_address }}</p>
+                        <p><small>Добавлено: {{ video.date|date:"d.m.Y" }}</small></p>
+                    </div>
+                </div>
+            {% empty %}
+                <p>Видео пока нет.</p>
+            {% endfor %}
+        </div>
+        <a href="https://www.youtube.com/channel/UChR3iu9DprNs3y-5lhLBGKg" target="_blank" rel="noopener">
+            <button class="btn btn-see_all" type="button">Посмотреть на YouTube</button>
+        </a>
+    </section>
+
+
+{% endblock %}
+
+
+{#<section class="video-section">#}
+{#    <h2><i class="fa-solid fa-film"></i> Наши видео</h2>#}
+{#    <div class="video-grid">#}
+{#        <div class="video-item">#}
+{#            <iframe src="https://www.youtube.com/embed/GXrxmrgG0mo" title="Видео 1" frameborder="0"#}
+{#                    allowfullscreen></iframe>#}
+{#        </div>#}
+{#        <div class="video-item">#}
+{#            <iframe src="https://www.youtube.com/embed/CQF3IEwUWLI" title="Видео 2" frameborder="0"#}
+{#                    allowfullscreen></iframe>#}
+{#        </div>#}
+{#        <div class="video-item">#}
+{#            <iframe src="https://www.youtube.com/embed/AaHqGM5TMmI" title="Видео 3" frameborder="0"#}
+{#                    allowfullscreen></iframe>#}
+{#        </div>#}
+{#        <div class="video-item">#}
+{#            <iframe src="https://www.youtube.com/embed/CQF3IEwUWLI" title="Видео 4" frameborder="0"#}
+{#                    allowfullscreen></iframe>#}
+{#        </div>#}
+{#    </div>#}
+{#    <a href="https://www.youtube.com/channel/UChR3iu9DprNs3y-5lhLBGKg">#}
+{#        <button class="btn btn-see_all" type="button">Посмотреть на YouTube</button>#}
+{#    </a>#}
+{#</section>#}
