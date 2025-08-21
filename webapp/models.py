@@ -102,3 +102,31 @@ class MainSliderPhoto(models.Model):
 
     def __str__(self):
         return f"Фото Слайдера {self.name_photo.name}"
+
+
+class TrustReason(models.Model):
+    icon_class = models.CharField(max_length=100, verbose_name="Класс иконки FontAwesome")
+    text = models.CharField(max_length=100, verbose_name="Текст причины")
+    order = models.PositiveIntegerField(default=0, verbose_name="Порядок вывода")
+
+    class Meta:
+        ordering = ['order']
+        verbose_name = "Причина доверия"
+        verbose_name_plural = "Причины доверия"
+
+    def __str__(self):
+        return self.text
+
+
+class TrustStats(models.Model):
+    sold_objects = models.PositiveIntegerField(default=1000, verbose_name="Объектов продано")
+    avg_sale_days = models.PositiveIntegerField(default=21, verbose_name="Средний срок продажи (дней)")
+    support_247 = models.CharField(max_length=10, default="24", verbose_name="На связи (часов в сутки)")
+
+    def __str__(self):
+        return "Статистика доверия"
+
+    class Meta:
+        verbose_name = "Статистика доверия"
+        verbose_name_plural = "Статистика доверия"
+

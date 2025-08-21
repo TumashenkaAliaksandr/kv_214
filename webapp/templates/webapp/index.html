@@ -13,29 +13,52 @@
     <!-- Слайдер новые объекты -->
     {% include 'main/new_objects_slider.html' %}
 
-
     <!-- Почему нам доверяют -->
     <section class="trust-section">
-        <h2><i class="fa-solid fa-circle-question"></i> Почему нам можно доверять</h2>
+        <h2><i class="fa-solid fa-circle-question"></i> Почему нам доверяют</h2>
         <div class="trust-items">
-            <div class="trust-item">
-                <i class="fa-solid fa-shield-virus"></i>
-                <p>Надежность</p>
+            {% for reason in trust_reasons %}
+                <div class="trust-item">
+                    <i class="{{ reason.icon_class }}"></i>
+                    <p>{{ reason.text }}</p>
+                </div>
+            {% empty %}
+                <div class="trust-item">
+                    <i class="fa-solid fa-shield-virus"></i>
+                    <p>Надежность</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-user-check"></i>
+                    <p>Профессионализм</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-handshake"></i>
+                    <p>Честность</p>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Быстрый отклик</p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Новая строка с анимированными счетчиками -->
+        <div class="trust-stats">
+            <div class="stat-item">
+                <h3><span class="counter" data-target="{{ sold_objects }}">0</span>+</h3>
+                <p>Объектов продано</p>
             </div>
-            <div class="trust-item">
-                <i class="fa-solid fa-user-check"></i>
-                <p>Профессионализм</p>
+            <div class="stat-item">
+                <h3><span class="counter" data-target="{{ avg_sale_days }}">0</span> дней</h3>
+                <p>Средний срок продажи</p>
             </div>
-            <div class="trust-item">
-                <i class="fa-solid fa-handshake"></i>
-                <p>Честность</p>
-            </div>
-            <div class="trust-item">
-                <i class="fa-solid fa-clock"></i>
-                <p>Быстрый отклик</p>
+            <div class="stat-item">
+                <h3><span class="counter" data-target="{{ support_247 }}">0</span>/7</h3>
+                <p>На связи</p>
             </div>
         </div>
     </section>
+
 
     <!-- Видео блок -->
     {% include 'webapp/video_block.html' %}

@@ -3,7 +3,7 @@ import json
 from django.shortcuts import render, redirect, get_object_or_404
 
 from kv_214.settings import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
-from webapp.models import Property, MainSlider, PropertyVideo
+from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason
 import requests
 from django.conf import settings
 from django.http import JsonResponse
@@ -16,6 +16,8 @@ def index(request):
     properties = Property.objects.all()
     sliders = MainSlider.objects.prefetch_related('photos').all()
     videos = PropertyVideo.objects.all()
+    trust_stats = TrustStats.objects.first()
+    trust_reasons = TrustReason.objects.all()
 
     # Фильтрация по типам (булевым полям)
     property_types = request.GET.getlist('property_type')
@@ -69,11 +71,15 @@ def index(request):
     cities = sorted(cities_set)
 
     context = {
+        'trust_reasons': trust_reasons,
         'properties_new': Property.objects.filter(is_active_new=True).prefetch_related('photos'),
         'properties_all': properties.prefetch_related('photos'),
         'cities': cities,
         'sliders': sliders,
         'videos': videos,
+        'sold_objects': trust_stats.sold_objects if trust_stats else 1000,
+        'avg_sale_days': trust_stats.avg_sale_days if trust_stats else 21,
+        'support_247': trust_stats.support_247 if trust_stats else "24",
     }
     return render(request, 'webapp/index.html', context)
 

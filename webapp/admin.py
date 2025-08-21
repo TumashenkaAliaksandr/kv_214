@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Contact, SocialNetwork, PropertyPhoto, Property, PropertyVideo, MainSliderPhoto, MainSlider
+from .models import Contact, SocialNetwork, PropertyPhoto, Property, PropertyVideo, MainSliderPhoto, MainSlider, \
+    TrustStats, TrustReason
 
 
 class PropertyPhotoInline(admin.TabularInline):
@@ -59,6 +60,24 @@ class MainSliderAdmin(admin.ModelAdmin):
     list_display = ('name',)
     inlines = [MainSliderPhotoInline]
 
+
 @admin.register(MainSliderPhoto)
 class MainSliderPhotoAdmin(admin.ModelAdmin):
     list_display = ('name_photo', 'desc_text')
+
+
+@admin.register(TrustReason)
+class TrustReasonAdmin(admin.ModelAdmin):
+    list_display = ('text', 'icon_class', 'order')
+    list_editable = ('order',)
+    ordering = ('order',)
+
+
+@admin.register(TrustStats)
+class TrustStatsAdmin(admin.ModelAdmin):
+    list_display = ('sold_objects', 'avg_sale_days', 'support_247')
+
+    # Можно запретить создание множественных объектов, если нужна всего одна запись
+    def has_add_permission(self, request):
+        # Если записей больше 0, создание запрещено
+        return not TrustStats.objects.exists()

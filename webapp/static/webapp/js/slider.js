@@ -6,8 +6,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function showSlide(index) {
         const slidesContainer = document.querySelector(".slider-main .slides");
-        slidesContainer.style.transform = `translateX(${-index * 100}%)`;
+        const sliderWrapper = document.querySelector(".slider-main .slider-wrapper");
+        const slide = slides[0];
+
+        const windowWidth = window.innerWidth;
+
+        if (windowWidth <= 768) {
+            // Мобильные - считаем сдвиг в пикселях по ширине слайда и центруем
+            const slideWidth = slide.offsetWidth;
+            const wrapperWidth = sliderWrapper.offsetWidth;
+            // Центрируем слайд по середине wrapper, сдвигая slides влево
+            // Формула: смещение = slideWidth * index - (wrapperWidth - slideWidth)/2
+            const offset = slideWidth * index - (wrapperWidth - slideWidth) / 2;
+
+            slidesContainer.style.transform = `translateX(${-offset}px)`;
+        } else {
+            // Десктоп - двигаемся на 100% слайда ширины (как было)
+            slidesContainer.style.transform = `translateX(${-index * 100}%)`;
+        }
     }
+
 
     function nextSlide() {
         slideIndex = (slideIndex + 1) % totalSlides;
