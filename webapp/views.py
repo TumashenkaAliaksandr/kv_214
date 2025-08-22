@@ -3,7 +3,7 @@ import json
 from django.shortcuts import render, redirect, get_object_or_404
 
 from kv_214.settings import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
-from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason
+from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason, About
 import requests
 from django.conf import settings
 from django.http import JsonResponse
@@ -86,8 +86,23 @@ def index(request):
 
 def about(request):
     """about page"""
+    about = About.objects.first()
+    properties = Property.objects.all()
+    trust_stats = TrustStats.objects.first()
+    trust_reasons = TrustReason.objects.all()
 
-    return render(request, 'webapp/about.html')
+
+    context = {
+        'about': about,
+        'sold_objects': trust_stats.sold_objects if trust_stats else 1000,
+        'avg_sale_days': trust_stats.avg_sale_days if trust_stats else 21,
+        'support_247': trust_stats.support_247 if trust_stats else "24",
+        'properties_new': Property.objects.filter(is_active_new=True).prefetch_related('photos'),
+        'properties_all': properties.prefetch_related('photos'),
+        'trust_reasons': trust_reasons,
+    }
+
+    return render(request, 'webapp/about.html', context)
 
 def rent(request):
     properties = Property.objects.filter(is_rent=True)  # добавляем фильтр по аренде

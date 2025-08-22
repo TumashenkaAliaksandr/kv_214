@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Contact, SocialNetwork, PropertyPhoto, Property, PropertyVideo, MainSliderPhoto, MainSlider, \
-    TrustStats, TrustReason
+    TrustStats, TrustReason, About
 
 
 class PropertyPhotoInline(admin.TabularInline):
@@ -30,8 +30,12 @@ class SocialNetworkAdmin(admin.ModelAdmin):
     list_display = ('name', 'url', 'contact')
     search_fields = ('name', 'contact__name')
 
-from django.contrib import admin
-from .models import PropertyVideo
+
+@admin.register(About)
+class AboutAdmin(admin.ModelAdmin):
+    list_display = ('name', 'phone', 'unp', 'license')
+    search_fields = ('name',)
+
 
 @admin.register(PropertyVideo)
 class PropertyVideoAdmin(admin.ModelAdmin):

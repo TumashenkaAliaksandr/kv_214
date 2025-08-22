@@ -21,6 +21,19 @@ class SocialNetwork(models.Model):
         return f"{self.name} - {self.contact.name}"
 
 
+class About(models.Model):
+    name = models.CharField("Имя компании", max_length=255)
+    photo = models.ImageField("Фото компании", upload_to='about_photos/')
+    description = models.TextField("Описание")
+    unp = models.CharField("УНП", max_length=100, blank=True, null=True)
+    license = models.CharField("Лицензия", max_length=100, blank=True, null=True)
+    phone = models.CharField("Телефон", max_length=20)
+
+    def __str__(self):
+        return self.name
+
+
+
 class Property(models.Model):
     CURRENCY_CHOICES = [
         ('USD', 'USD'),
