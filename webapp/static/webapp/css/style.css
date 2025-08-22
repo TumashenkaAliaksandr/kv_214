@@ -1790,7 +1790,7 @@ body.light-theme .breadcrumb-item.active {
     height: 70px;
     object-fit: cover;
     border-radius: 6px;
-    border: 2px solid #c3fa67;
+    /*border: 2px solid #c3fa67;*/
     cursor: pointer;
     transition: border 0.17s, box-shadow 0.17s;
 }
@@ -1992,17 +1992,31 @@ body.light-theme .breadcrumb-item.active {
 }
 
   .filter-submit button {
-    color: var(--text-color);
-    border: none;
-    padding: 12px 45px;
+    /*color: var(--text-color);*/
+    /*border: none;*/
+    /*padding: 12px 45px;*/
+    /*font-weight: 600;*/
+    /*font-size: 0.9rem;*/
+    /*border-radius: 12px;*/
+    /*box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3), -4px -4px 6px rgba(255, 255, 255, 0.13);*/
+    /*cursor: pointer;*/
+    /*transition: background 0.3s ease, box-shadow 0.2s ease, transform 0.1s ease;*/
+    /*user-select: none;*/
+    /*filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));*/
+    display: block;
+    margin: 20px auto;
+    padding: 13px 25px;
+    font-size: 16px;
     font-weight: 600;
-    font-size: 0.9rem;
-    border-radius: 12px;
+    color: var(--text-color);
+    background: transparent;
+    filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+    border: none;
+    border-radius: 13px;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3), -4px -4px 6px rgba(255, 255, 255, 0.13);
     cursor: pointer;
-    transition: background 0.3s ease, box-shadow 0.2s ease, transform 0.1s ease;
+    transition: background 0.3s, box-shadow 0.2s, transform 0.1s;
     user-select: none;
-    filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
   }
 
   .filter-submit button:hover,
@@ -2074,8 +2088,19 @@ body.light-theme .breadcrumb-item.active {
   }
 
   .copyright {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 10px;
+  }
+
+  .footer-menu a {
+    color: var(--accent-color-dark);
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 0.7rem;
+    user-select: none;
+    transition: color 0.3s;
+    filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+    font-size: 15px;
   }
 
   .about-text h2 {
@@ -2710,18 +2735,18 @@ body.light-theme .breadcrumb-item.active {
     margin: 0;
     font-weight: 700;
     letter-spacing: 1.2px;
-    color: var(--accent-color-dark);
+    color: #a1d082;
     /* Вместо белой подсветки - зеленое свечение */
     filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
 }
 
 .stat-item p {
     margin: 8px 0 0;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--text-color);
+    letter-spacing: 1.1px;
+    color: #5a942d;
     filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
 }
 

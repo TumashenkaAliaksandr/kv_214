@@ -2774,3 +2774,4 @@ tz
 [INFO] 2025-08-21 10:57:29,842 basehttp 20032 21016 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
 [INFO] 2025-08-21 10:57:29,854 basehttp 20032 18920 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
 [INFO] 2025-08-21 10:57:35,516 basehttp 20032 18920 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-08-22 09:02:26,311 autoreload 18536 12348 Watching for file changes with StatReloader

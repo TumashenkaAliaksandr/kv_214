@@ -28,6 +28,7 @@ class Property(models.Model):
     ]
     name = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
+    city_name = models.CharField(max_length=255, default='город')
     description = models.TextField()
     notes = models.TextField(default='Примечание')
     address = models.CharField(max_length=500)
