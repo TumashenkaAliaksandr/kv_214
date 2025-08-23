@@ -16,7 +16,7 @@
     <!-- Информация о нас -->
     <section class="about-section" id="about">
         <div class="container about-container">
-            <div class="about-photo">
+            <div class="about-photo-page">
                 <img src="{{ about.photo.url }}" alt="Фото компании"/>
             </div>
             <div class="about-text">
@@ -32,8 +32,12 @@
                         <a href="tel:{{ about.phone|urlencode }}">Гор.: {{ about.phone }}</a>
                     </p>
                     <p>
-                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-mobile-alt"></i>
                         <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
+                    </p>
+                     <p>
+                        <i class="fa-solid fa-mobile-alt"></i>
+                        <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone_two }}</a>
                     </p>
                     <p>
                         <i class="fa-solid fa-envelope"></i>

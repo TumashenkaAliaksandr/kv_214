@@ -30,8 +30,16 @@
               </p>
               <div class="contacts-about">
                   <p>
-                      <i class="fa-solid fa-phone"></i>
+                      <i class="fa-solid fa-mobile-alt"></i>
                       <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
+                  </p>
+                  <p>
+                      <i class="fa-solid fa-mobile-alt"></i>
+                      <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone_two }}</a>
+                  </p>
+                  <p>
+                      <i class="fa-solid fa-phone"></i>
+                      <a href="tel:{{ about.phone|urlencode }}"> {{ about.phone }}</a>
                   </p>
                   <p>
                       <i class="fa-solid fa-envelope"></i>

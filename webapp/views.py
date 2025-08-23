@@ -14,6 +14,7 @@ import logging
 def index(request):
     # Начинаем с всех объектов
     properties = Property.objects.all()
+    about = About.objects.first()
     sliders = MainSlider.objects.prefetch_related('photos').all()
     videos = PropertyVideo.objects.all()
     trust_stats = TrustStats.objects.first()
@@ -77,6 +78,7 @@ def index(request):
         'cities': cities,
         'sliders': sliders,
         'videos': videos,
+        'about': about,
         'sold_objects': trust_stats.sold_objects if trust_stats else 1000,
         'avg_sale_days': trust_stats.avg_sale_days if trust_stats else 21,
         'support_247': trust_stats.support_247 if trust_stats else "24",
@@ -153,6 +155,7 @@ def sale_single(request, slug):
         'photos': photos,
     })
 
+
 def rent_single(request, slug):
     property = get_object_or_404(Property, slug=slug, is_rent=True)
     photos = property.photos.all()
@@ -209,6 +212,7 @@ def property_detail(request, slug):
     property = get_object_or_404(Property, slug=slug)
     return render(request, 'webapp/sale_page.html', {'property': property})
 
+
 def autocomplete(request):
     query = request.GET.get('q', '').strip()
     results = []
@@ -223,10 +227,17 @@ def autocomplete(request):
         results = list(cities)[:10]
     return JsonResponse(results, safe=False)
 
+
 def contacts(request):
     """contacts page"""
 
-    return render(request, 'webapp/contacts.html')
+    about = About.objects.first()
+
+    context = {
+        'about': about,
+    }
+
+    return render(request, 'webapp/contacts.html', context=context)
 
 def consultation_view(request):
     if request.method == 'POST':
