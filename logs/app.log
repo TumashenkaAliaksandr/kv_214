@@ -3312,3 +3312,13 @@ tz
 [INFO] 2025-08-23 17:39:40,578 basehttp 12348 15112 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
 [INFO] 2025-08-23 17:39:40,592 basehttp 12348 10644 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
 [INFO] 2025-08-23 17:39:44,693 basehttp 12348 10644 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-08-23 17:49:42,004 autoreload 12348 16512 C:\Users\Admin\PycharmProjects\kv_214\kv_214\settings.py changed, reloading.
+[INFO] 2025-08-23 17:49:42,935 autoreload 9840 5356 Watching for file changes with StatReloader
+[INFO] 2025-08-23 17:51:31,233 autoreload 9840 5356 C:\Users\Admin\PycharmProjects\kv_214\kv_214\urls.py changed, reloading.
+[INFO] 2025-08-23 17:51:32,121 autoreload 12248 13064 Watching for file changes with StatReloader
+[INFO] 2025-08-23 17:52:11,933 autoreload 12248 13064 C:\Users\Admin\PycharmProjects\kv_214\kv_214\urls.py changed, reloading.
+[INFO] 2025-08-23 17:52:13,693 autoreload 15364 21956 Watching for file changes with StatReloader
+[INFO] 2025-08-23 17:54:36,691 autoreload 15364 21956 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-08-23 17:54:45,222 autoreload 18804 1244 Watching for file changes with StatReloader
+[INFO] 2025-08-23 17:55:19,495 autoreload 18804 1244 C:\Users\Admin\PycharmProjects\kv_214\webapp\urls.py changed, reloading.
+[INFO] 2025-08-23 17:55:21,275 autoreload 4332 17720 Watching for file changes with StatReloader

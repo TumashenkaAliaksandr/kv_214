@@ -1,6 +1,7 @@
 import json
 
 from django.shortcuts import render, redirect, get_object_or_404
+from django.views.generic import TemplateView
 
 from kv_214.settings import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason, About
@@ -314,3 +315,13 @@ def send_consultation_message(request):
     except Exception as e:
         logger.exception('⚠️ Ошибка при отправке сообщения в Telegram')
         return JsonResponse({'success': False, 'message': f'⚠️ Ошибка сервера: {str(e)}'}, status=500)
+
+
+class RobotsTxtView(TemplateView):
+    template_name = "robots.txt"
+    content_type = "text/plain"
+
+    def get_context_data(self, **kwargs):
+        domain = self.request.scheme + "://" + self.request.get_host()
+        sitemap_url = domain + "/sitemap.xml"
+        return {'sitemap_url': sitemap_url}

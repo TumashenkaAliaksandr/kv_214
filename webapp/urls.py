@@ -3,7 +3,7 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 
-from .views import consultation_view, send_consultation_message
+from .views import consultation_view, send_consultation_message, RobotsTxtView
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -19,6 +19,7 @@ urlpatterns = [
     path('contacts', views.contacts, name='contacts'),
     path('consultation/', consultation_view, name='consultation_form'),
     path('send-consultation-message/', send_consultation_message, name='send_consultation_message'),
+    path("robots.txt", RobotsTxtView.as_view(), name="robots_txt"),
 
     ]
 

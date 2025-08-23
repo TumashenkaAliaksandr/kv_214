@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /some-private-page/
+
+Sitemap: {{ sitemap_url }}
