@@ -44,18 +44,21 @@
                     {% endif %}
                 </p>
                 <p><b>Этаж:</b> {{ property.floor }}</p>
-                <p><b>Комнат:</b> {{ property.many_rooms }}</p>
+                <p><b>Комнат:</b> {{ property.many_rooms|safe }}</p>
                 <p><b>Площадь:</b> {{ property.area }} м²
                     {% if property.area_ga %} ({{ property.area_ga }} сот./га) {% endif %}
                 </p>
                 <p><b>Цена аренды:</b> <span class="property-price">{{ property.price }} {{ property.currency }}</span>
+                </p>
+                <br>
+                <p><b>Примечание:</b><br> <span>{{ property.notes|safe }}</span>
                 </p>
                 <button class="btn-sale" onclick="showCallbackModal()">🕭 &nbsp;&nbsp;Заказать звонок</button>
             </div>
         </div>
         <div class="single-property-desc">
             <h2>Описание</h2>
-            <p>{{ property.description }}</p>
+            <p>{{ property.description|safe }}</p>
         </div>
     </section>
 

@@ -11,6 +11,11 @@ class Contact(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = "Контакт"
+        verbose_name_plural = "Контакты"
+
+
 class SocialNetwork(models.Model):
     contact = models.ForeignKey(Contact, related_name='social_networks', on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
@@ -19,6 +24,10 @@ class SocialNetwork(models.Model):
 
     def __str__(self):
         return f"{self.name} - {self.contact.name}"
+
+    class Meta:
+        verbose_name = "Соц сети"
+        verbose_name_plural = "Соц сети"
 
 
 class About(models.Model):
@@ -32,6 +41,10 @@ class About(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = "О нас"
+        verbose_name_plural = "О нас"
+
 
 
 class Property(models.Model):
@@ -39,27 +52,27 @@ class Property(models.Model):
         ('USD', 'USD'),
         ('BYN', 'BYN'),
     ]
-    name = models.CharField(max_length=255)
-    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True)
-    city_name = models.CharField(max_length=255, default='город')
-    description = models.TextField()
-    notes = models.TextField(default='Примечание')
-    address = models.CharField(max_length=500)
-    price = models.DecimalField(max_digits=12, decimal_places=2)
-    floor = models.TextField(help_text='Этаж', default=0)
-    many_rooms = models.TextField(help_text='Сколько комнат', default=0)
-    area = models.FloatField(help_text='Площадь в квадратных метрах')
-    area_ga = models.FloatField(help_text='Площадь в гектарах/сотках', null=True, blank=True)
-    date_posted = models.DateField(auto_now_add=True)
-    is_sale = models.BooleanField(default=True)
-    is_rent = models.BooleanField(default=True)
-    is_active_new = models.BooleanField(default=True)
-    is_active_house = models.BooleanField(default=True)
-    is_active_country_house = models.BooleanField(default=True)
-    is_active_apartment = models.BooleanField(default=True)
-    is_active_sold = models.BooleanField(default=False)
-    contacts = models.ManyToManyField(Contact, related_name='properties')
-    currency = models.CharField(max_length=3, choices=CURRENCY_CHOICES, default='USD')
+    name = models.CharField(max_length=255, verbose_name="Имя/Адрес")
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True, verbose_name="Для адресной строки ЮРЛ")
+    city_name = models.CharField(max_length=255, default='город', verbose_name="Город")
+    description = models.TextField(verbose_name="Описание")
+    notes = models.TextField(default='Примечание', verbose_name="Примечание")
+    address = models.CharField(max_length=500, verbose_name="Адрес")
+    price = models.DecimalField(max_digits=12, decimal_places=2, verbose_name="Цена")
+    floor = models.TextField(help_text='Этаж', verbose_name="Этаж", default=0)
+    many_rooms = models.TextField(help_text='Сколько комнат', verbose_name="Сколько комнат", default=0)
+    area = models.FloatField(help_text='Площадь в квадратных метрах', verbose_name="Полщадь м/кв")
+    area_ga = models.FloatField(help_text='Площадь в гектарах/сотках', verbose_name="Площадь в гектарах/сотках", null=True, blank=True)
+    date_posted = models.DateField(auto_now_add=True, verbose_name="Дата добавления")
+    is_sale = models.BooleanField(default=True, verbose_name="Продается")
+    is_rent = models.BooleanField(default=True, verbose_name="Сдается в аренду")
+    is_active_new = models.BooleanField(default=True, verbose_name="Новое объявление")
+    is_active_house = models.BooleanField(default=True, verbose_name="Доступен дом")
+    is_active_country_house = models.BooleanField(default=True, verbose_name="Доступен загородный дом")
+    is_active_apartment = models.BooleanField(default=True, verbose_name="Доступна квартира")
+    is_active_sold = models.BooleanField(default=False, verbose_name="Продан")
+    contacts = models.ManyToManyField('Contact', related_name='properties', verbose_name="Контакты")
+    currency = models.CharField(max_length=3, choices=[('USD', 'USD'), ('BYN', 'BYN')], default='USD', verbose_name="Валюта")
 
     def __str__(self):
         return self.name
@@ -76,6 +89,11 @@ class Property(models.Model):
                 counter += 1
             self.slug = slug
         super().save(*args, **kwargs)
+
+    class Meta:
+        verbose_name = "Объекты"
+        verbose_name_plural = "Объекты"
+
 
 class PropertyPhoto(models.Model):
     property = models.ForeignKey(Property, related_name='photos', on_delete=models.CASCADE)
@@ -103,19 +121,28 @@ class PropertyVideo(models.Model):
 
 
 class MainSlider(models.Model):
-    name = models.CharField("Название", max_length=255)
-
+    name = models.CharField("Название слайдера", max_length=255)
 
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = "Главный слайдер"
+        verbose_name_plural = "Главные слайдеры"
+
+
 class MainSliderPhoto(models.Model):
-    name_photo = models.ForeignKey(MainSlider, related_name='photos', on_delete=models.CASCADE)
-    photo = models.ImageField(upload_to='main_slider_photos/')
-    desc_text = models.CharField(max_length=255, blank=True)
+    name_photo = models.ForeignKey(MainSlider, related_name='photos', on_delete=models.CASCADE, verbose_name="Слайдер")
+    photo = models.ImageField("Фото слайда", upload_to='main_slider_photos/')
+    desc_text = models.CharField("Описание", max_length=255, blank=True)
 
     def __str__(self):
-        return f"Фото Слайдера {self.name_photo.name}"
+        return f"Фото слайдера {self.name_photo.name}"
+
+    class Meta:
+        verbose_name = "Фото слайдера"
+        verbose_name_plural = "Фото слайдера"
+
 
 
 class TrustReason(models.Model):

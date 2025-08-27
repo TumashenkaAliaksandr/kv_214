@@ -1,4 +1,6 @@
 from django.contrib import admin
+
+from .forms import ObjectForm
 from .models import Contact, SocialNetwork, PropertyPhoto, Property, PropertyVideo, MainSliderPhoto, MainSlider, \
     TrustStats, TrustReason, About
 
@@ -9,6 +11,7 @@ class PropertyPhotoInline(admin.TabularInline):
 
 @admin.register(Property)
 class PropertyAdmin(admin.ModelAdmin):
+    form = ObjectForm
     list_display = ['name', 'address', 'city_name', 'price', 'area', 'area_ga', 'date_posted', 'is_active_new', 'is_active_sold']
     list_filter = ['is_active_new', 'is_active_sold', 'date_posted']
     search_fields = ['name', 'address', 'description']
