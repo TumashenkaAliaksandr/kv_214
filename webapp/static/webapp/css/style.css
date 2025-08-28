@@ -931,7 +931,7 @@ body {
 }
 
 .footer-menu a {
-  color: var(--accent-color-dark);
+  color: #416e1e;
   font-weight: 600;
   text-decoration: none;
   margin: 0 0.7rem;
@@ -1000,7 +1000,7 @@ a {
 a[href^="tel"], a[href^="mailto"] {
     text-decoration: none;
     user-select: text;
-    color: #63a431;
+    color: #416e1e;
 }
 
 /* Адаптивность и мобильная версия */
