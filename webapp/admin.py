@@ -30,7 +30,7 @@ class ContactAdmin(admin.ModelAdmin):
 
 @admin.register(SocialNetwork)
 class SocialNetworkAdmin(admin.ModelAdmin):
-    list_display = ('name', 'url', 'contact')
+    list_display = ('name', 'url', 'contact', 'is_had')
     search_fields = ('name', 'contact__name')
 
 

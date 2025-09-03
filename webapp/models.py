@@ -21,6 +21,7 @@ class SocialNetwork(models.Model):
     name = models.CharField(max_length=100)
     url = models.URLField()
     icon = models.CharField(max_length=100, help_text='Название иконки (например, fa-facebook) или путь')
+    is_had = models.BooleanField(default=True, verbose_name="В верхнее меню")
 
     def __str__(self):
         return f"{self.name} - {self.contact.name}"

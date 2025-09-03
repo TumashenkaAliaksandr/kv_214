@@ -1,9 +1,12 @@
 from .models import Contact
 
 def contact_data(request):
-    # Получаем первый объект Contact, либо None если нет
     contact = Contact.objects.prefetch_related('social_networks').first()
+    if contact:
+        social_networks = contact.social_networks.filter(is_had=True)
+    else:
+        social_networks = []
     return {
         'contact': contact,
-        # Соцсети можно получить через contact.social_networks.all() в шаблоне
+        'social_networks': social_networks,
     }

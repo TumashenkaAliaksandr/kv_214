@@ -57,16 +57,18 @@
                       </ul>
                   </li>
 
-                  <li class="dropdown rent-dropdown">
-                      <a href="{% url 'rent' %}"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>
-                      <ul class="dropdown-menu">
-                          <li><a href="{% url 'rent' %}?property_type=is_active_house"><i
-                                  class="fa-solid fa-house-user"></i> Дом</a></li>
-                          <li><a href="{% url 'rent' %}?property_type=is_active_apartment"><i
-                                  class="fa-solid fa-building"></i> Квартира</a></li>
-                          <!-- Пункт "Все объекты" добавляется JS на мобиле -->
-                      </ul>
-                  </li>
+                  <li><a href="{% url 'contacts' %}"><i class="fas fa-pencil-alt"></i> Оставить отзыв</a></li>
+
+{#                  <li class="dropdown rent-dropdown">#}
+{#                      <a href="{% url 'rent' %}"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>#}
+{#                      <ul class="dropdown-menu">#}
+{#                          <li><a href="{% url 'rent' %}?property_type=is_active_house"><i#}
+{#                                  class="fa-solid fa-house-user"></i> Дом</a></li>#}
+{#                          <li><a href="{% url 'rent' %}?property_type=is_active_apartment"><i#}
+{#                                  class="fa-solid fa-building"></i> Квартира</a></li>#}
+{#                          <!-- Пункт "Все объекты" добавляется JS на мобиле -->#}
+{#                      </ul>#}
+{#                  </li>#}
 
                   <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
 
@@ -78,7 +80,7 @@
                   </li>
 
                   <li class="social-menu">
-                      {% for social in contact.social_networks.all %}
+                      {% for social in social_networks %}
                           <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank"
                              rel="noopener noreferrer">
                               <i class="{{ social.icon }}"></i>
@@ -88,8 +90,9 @@
                       {% endfor %}
                   </li>
 
+
                   <li>
-                      <button class="btn-consultation" id="openConsultationBtn">Получить консультацию</button>
+                      <button class="btn-consultation" id="openConsultationBtn">✓ Получить консультацию</button>
                   </li>
               </ul>
           </nav>
