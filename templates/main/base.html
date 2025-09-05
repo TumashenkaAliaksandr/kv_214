@@ -78,17 +78,22 @@
                       <a href="tel:{{ contact.phone|urlencode }}"><i class="fa-solid fa-phone"></i> {{ contact.phone }}
                       </a>
                   </li>
-
-                  <li class="social-menu">
-                      {% for social in social_networks %}
-                          <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank"
+                  <li class="messenger-menu">
+                      {% for messenger in messengers %}
+                          <a href="{{ messenger.url }}" aria-label="{{ messenger.name }}" target="_blank"
                              rel="noopener noreferrer">
-                              <i class="{{ social.icon }}"></i>
+                              {% if messenger.icon_svg %}
+                                  <img src="{{ messenger.icon_svg.url }}" alt="{{ messenger.name }}"
+                                       class="messengers"/>
+                              {% else %}
+                                  {{ messenger.name }}
+                              {% endif %}
                           </a>
                       {% empty %}
-                          <span>Соцсетей нет</span>
+                          <span>Мессенджеров нет</span>
                       {% endfor %}
                   </li>
+
 
 
                   <li>

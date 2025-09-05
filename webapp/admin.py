@@ -1,8 +1,9 @@
 from django.contrib import admin
+from django.utils.html import format_html
 
 from .forms import ObjectForm
 from .models import Contact, SocialNetwork, PropertyPhoto, Property, PropertyVideo, MainSliderPhoto, MainSlider, \
-    TrustStats, TrustReason, About
+    TrustStats, TrustReason, About, Messengers
 
 
 class PropertyPhotoInline(admin.TabularInline):
@@ -32,6 +33,18 @@ class ContactAdmin(admin.ModelAdmin):
 class SocialNetworkAdmin(admin.ModelAdmin):
     list_display = ('name', 'url', 'contact', 'is_had')
     search_fields = ('name', 'contact__name')
+
+@admin.register(Messengers)
+class MessengersAdmin(admin.ModelAdmin):
+    list_display = ('name', 'contact', 'is_had', 'preview_icon')
+    list_filter = ('is_had', )
+    search_fields = ('name',)
+
+    def preview_icon(self, obj):
+        if obj.icon_svg:
+            return format_html('<img src="{}" style="height:24px; width:auto;" />', obj.icon_svg.url)
+        return "-"
+    preview_icon.short_description = 'Иконка'
 
 
 @admin.register(About)

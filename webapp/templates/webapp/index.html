@@ -139,6 +139,22 @@
                             <p>Соцсетей нет</p>
                         {% endfor %}
                     </div>
+                    <div class="messenger-menu">
+                        <p class="messengers-contacts">Наши Мессенджеры:</p>
+                        {% for messenger in messengers %}
+                            <a href="{{ messenger.url }}" aria-label="{{ messenger.name }}" target="_blank"
+                               rel="noopener noreferrer">
+                                {% if messenger.icon_svg %}
+                                    <img src="{{ messenger.icon_svg.url }}" alt="{{ messenger.name }}"
+                                         class="messengers-contacts"/>
+                                {% else %}
+                                    {{ messenger.name }}
+                                {% endif %}
+                            </a>
+                        {% empty %}
+                            <span>Мессенджеров нет</span>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

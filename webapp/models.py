@@ -31,6 +31,22 @@ class SocialNetwork(models.Model):
         verbose_name_plural = "Соц сети"
 
 
+class Messengers(models.Model):
+    contact = models.ForeignKey(Contact, related_name='messengers', on_delete=models.CASCADE)
+    name = models.CharField(max_length=100)
+    url = models.URLField()
+    icon_svg = models.FileField(upload_to='messenger_svgs/', blank=True, null=True, help_text='SVG файл иконки')
+    is_had = models.BooleanField(default=True, verbose_name="В верхнее меню")
+
+    def __str__(self):
+        return f"{self.name} - {self.contact.name}"
+
+    class Meta:
+        verbose_name = "Мессенджеры"
+        verbose_name_plural = "Мессенджеры"
+
+
+
 class About(models.Model):
     name = models.CharField("Имя компании", max_length=255)
     photo = models.ImageField("Фото компании", upload_to='about_photos/')
