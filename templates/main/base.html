@@ -73,10 +73,10 @@
                   <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
 
                   <li class="contacts-menu">
-                      <a href="tel:{{ contact.phone|urlencode }}"><i class="fa-solid fa-phone"></i> {{ contact.phone }}
-                      </a>
                       <a href="mailto:{{ contact.email|urlencode }}"><i
                               class="fa-solid fa-envelope"></i> {{ contact.email }}</a>
+                      <a href="tel:{{ contact.phone|urlencode }}"><i class="fa-solid fa-phone"></i> {{ contact.phone }}
+                      </a>
                   </li>
 
                   <li class="social-menu">
