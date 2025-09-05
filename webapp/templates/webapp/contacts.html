@@ -46,6 +46,7 @@
                       <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
                   </p>
                   <div class="social-about">
+                  <p>Соцсети:</p>
                       {% for social in contact.social_networks.all %}
                           <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank"
                              rel="noopener noreferrer">
