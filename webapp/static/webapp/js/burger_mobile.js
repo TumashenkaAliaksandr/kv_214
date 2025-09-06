@@ -52,8 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+   // Открытие/закрытие меню по клику на бургер
   burger.addEventListener('click', (e) => {
-    e.stopPropagation();
+    e.stopPropagation(); // предотвращаем всплытие, чтобы клик не закрыл меню мгновенно
+    burger.classList.toggle('active'); // переключаем крестик
     const expanded = burger.getAttribute('aria-expanded') === 'true';
     burger.setAttribute('aria-expanded', !expanded);
     nav.classList.toggle('active');

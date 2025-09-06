@@ -92,9 +92,9 @@
             </div>
             <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
         </div>
-    <a href="{% url 'sale' %}">
-  <button class="btn btn-see_all" type="button">Посмотреть все</button>
-</a>
+        <a href="{% url 'sale' %}">
+            <button class="btn btn-see_all" type="button">Посмотреть все</button>
+        </a>
 
     </section>
 
@@ -130,7 +130,7 @@
                         <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
                     </p>
                     <div class="social-about">
-                    <p>Соцсети:</p>
+                        <p>Соцсети:</p>
                         {% for social in contact.social_networks.all %}
                             <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank"
                                rel="noopener noreferrer">
@@ -182,35 +182,12 @@
 
     {% include 'webapp/consultation_form.html' %}
     <script>
-            // Модалка для заказа звонка
+        // Модалка для заказа звонка
         function showCallbackModal() {
             const modal = document.getElementById('consultationModal');
             modal.style.display = 'flex';
             document.getElementById('inputName').focus();
         }
     </script>
-
-    <!-- Модальное окно для формы заказа звонка -->
-    <div class="modal-overlay" id="consultationModal" style="display:none;">
-        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-            <button class="modal-close" id="closeConsultationBtn" aria-label="Закрыть окно">&times;</button>
-            <h2 id="modalTitle">🕭 Заказать звонок</h2>
-            <form id="consultationFormtwo" method="post" action="/send-consultation-message/">
-                {% csrf_token %}
-                <label for="inputName">Имя</label>
-                <input type="text" id="inputName" name="name" required>
-
-                <label for="inputPhone">Телефон</label>
-                <input type="tel" id="inputPhone" name="phone" required pattern="^\+?[0-9\s\-]{7,15}$"
-                       placeholder="+7 999 999-99-99">
-
-                <label for="inputDescription">Описание</label>
-                <textarea id="inputDescription" name="description" rows="4"
-                          placeholder="Опишите ваш вопрос или пожелания"></textarea>
-
-                <button type="submit" class="btn-submit">Отправить</button>
-            </form>
-        </div>
-    </div>
 
 {% endblock %}

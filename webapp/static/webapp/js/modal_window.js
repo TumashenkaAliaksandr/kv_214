@@ -30,9 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const name = form.name.value.trim();
     const phone = form.phone.value.trim();
+    const agree = form.agree.checked; // Проверка радио кнопки
 
     if (!name || !phone) {
       alert('✍️ Пожалуйста, заполните обязательные поля: имя и телефон.');
+      return;
+    }
+
+    if (!agree) {
+      alert('⚠️ Пожалуйста, подтвердите согласие с обработкой информации.');
       return;
     }
 

@@ -16,7 +16,7 @@
 
   <!-- Рекламная топ-полоска -->
   <div id="top-bar" class="top-bar">
-    <span>Лучшие предложения по недвижимости! Звоните прямо сейчас!</span>
+    <span class="marquee-text">Лучшие предложения по недвижимости! Звоните прямо сейчас!</span>
     <button class="close-button" aria-label="Закрыть">&times;</button>
   </div>
 
@@ -30,11 +30,12 @@
           </div>
 
           <!-- Кнопка "бургер" -->
-          <button class="burger" aria-label="Меню" aria-expanded="false" aria-controls="navMenu" type="button">
-              <span class="burger-bar"></span>
-              <span class="burger-bar"></span>
-              <span class="burger-bar"></span>
+          <button class="burger" aria-expanded="false" aria-label="Toggle menu">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
           </button>
+
           <div id="mobile-urls" style="display:none;">
               <a id="url-sale" href="{% url 'sale' %}"></a>
               <a id="url-rent" href="{% url 'rent' %}"></a>
@@ -167,6 +168,11 @@
               <textarea id="inputDescription" name="description" rows="4"
                         placeholder="Опишите ваш вопрос или пожелания"></textarea>
 
+              <div class="radio-label-container">
+                  <input type="radio" id="agree" name="agree" required/>
+                  <label for="agree">Я согласен с обработкой информации</label>
+              </div>
+
               <button type="submit" class="btn-submit">Отправить</button>
           </form>
 
@@ -186,5 +192,6 @@
       document.getElementById('top-bar').style.display = 'none';
     });
   </script>
+
 </body>
 </html>
