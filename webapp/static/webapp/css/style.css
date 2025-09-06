@@ -1904,7 +1904,7 @@ body.light-theme .breadcrumb-item.active {
     .slide {
         min-width: 100%;
         position: relative;
-        border-radius: 13px;
+        border-radius: 0;
         overflow: hidden;
         user-select: none;
         height: auto;
@@ -1914,7 +1914,7 @@ body.light-theme .breadcrumb-item.active {
         width: 100%;
         height: 400px;
         object-fit: cover;
-        border-radius: 13px;
+        border-radius: 0;
         filter: brightness(0.85);
     }
 
@@ -3063,10 +3063,12 @@ body.light-theme .breadcrumb-item.active {
 
     /* Согреваем бургер-кнопку в верхнем углу */
     .burger {
-        position: fixed;
-        top: 79px;
-        left: 40%;
+        position: relative;
+        bottom: 0px;
+        left: 0%;
         z-index: 2000;
+        top: 34%;
+
     }
 
     /* Дропдаун меню растягиваем по ширине */
@@ -3094,6 +3096,7 @@ body.light-theme .breadcrumb-item.active {
     /* Контейнеры с отступами */
     .header-container {
         padding: 1rem 1.5rem;
+        height: 100px;
     }
 
     /* Уменьшаем размер текста в хедере для компактности */
