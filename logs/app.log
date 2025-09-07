@@ -6730,3 +6730,81 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'django_summernote-upload_att
 [INFO] 2025-09-06 22:31:56,468 basehttp 21344 17180 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 304 0
 [INFO] 2025-09-06 22:31:56,500 basehttp 21344 17180 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
 [INFO] 2025-09-06 22:31:56,500 basehttp 21344 16600 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-09-06 22:33:19,052 basehttp 21344 16600 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-06 22:33:19,117 log 21344 16600 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:33:19,118 basehttp 21344 16600 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:33:19,119 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 200 72100
+[INFO] 2025-09-06 22:34:56,682 basehttp 21344 17180 "GET / HTTP/1.1" 200 36678
+[INFO] 2025-09-06 22:34:56,764 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-06 22:34:56,853 log 21344 17180 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:34:56,857 basehttp 21344 17180 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:38:31,957 basehttp 21344 17180 "GET / HTTP/1.1" 200 36678
+[INFO] 2025-09-06 22:38:32,028 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 200 72125
+[WARNING] 2025-09-06 22:38:32,087 log 21344 17180 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:38:32,088 basehttp 21344 17180 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:39:00,508 basehttp 21344 17180 "GET / HTTP/1.1" 200 36678
+[INFO] 2025-09-06 22:39:00,581 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-06 22:39:00,596 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:39:00,598 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:39:51,831 basehttp 21344 17812 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-06 22:39:51,917 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-06 22:39:51,918 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-06 22:39:51,919 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:40:40,639 basehttp 21344 17812 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-06 22:40:40,733 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-06 22:40:40,733 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-06 22:40:40,738 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:40:59,814 basehttp 21344 17812 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-06 22:40:59,920 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-06 22:40:59,921 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-06 22:40:59,937 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:41:17,379 basehttp 21344 17812 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-06 22:41:17,486 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:41:17,487 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:43:11,201 basehttp 21344 17812 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-06 22:43:11,294 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-06 22:43:11,296 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 200 72149
+[WARNING] 2025-09-06 22:43:11,299 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:43:40,240 basehttp 21344 17812 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-06 22:43:40,317 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:43:40,319 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:43:40,319 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-06 22:43:58,460 basehttp 21344 17812 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-06 22:43:58,528 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:43:58,529 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:43:58,530 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-06 22:44:19,115 basehttp 21344 17180 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-06 22:44:19,177 log 21344 17180 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:44:19,179 basehttp 21344 17180 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:44:19,182 basehttp 21344 17812 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-06 22:46:08,120 basehttp 21344 17812 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-06 22:46:08,191 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:46:08,193 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:46:35,045 basehttp 21344 17812 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-06 22:46:35,108 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-06 22:46:35,109 basehttp 21344 17180 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-06 22:46:35,110 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:47:12,365 basehttp 21344 17812 "GET / HTTP/1.1" 200 36678
+[INFO] 2025-09-06 22:47:12,414 basehttp 21344 17812 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-06 22:47:12,445 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:47:12,446 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-06 22:48:00,942 basehttp 21344 17812 "GET / HTTP/1.1" 200 36678
+[INFO] 2025-09-06 22:48:00,994 basehttp 21344 17812 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-06 22:48:01,020 log 21344 17812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-06 22:48:01,021 basehttp 21344 17812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-07 09:30:59,899 basehttp 21344 17692 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-07 09:30:59,970 log 21344 17692 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-07 09:30:59,971 basehttp 21344 17692 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-07 09:31:04,565 basehttp 21344 17692 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-07 09:31:04,650 log 21344 17692 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-07 09:31:04,651 basehttp 21344 16360 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 304 0
+[WARNING] 2025-09-07 09:31:04,653 basehttp 21344 17692 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-07 09:31:04,657 basehttp 21344 11780 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 304 0
+[INFO] 2025-09-07 09:31:04,765 basehttp 21344 11780 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 304 0
+[INFO] 2025-09-07 09:31:04,765 basehttp 21344 17692 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-07 09:31:04,777 basehttp 21344 17692 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[WARNING] 2025-09-07 09:32:23,003 log 21344 17692 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-07 09:32:23,004 basehttp 21344 17692 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371
+[INFO] 2025-09-07 09:33:18,119 basehttp 21344 17692 "GET / HTTP/1.1" 200 36678
+[WARNING] 2025-09-07 09:33:18,206 log 21344 17692 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-07 09:33:18,208 basehttp 21344 17692 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6371

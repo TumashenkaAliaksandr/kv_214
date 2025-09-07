@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const saleUrl = saleUrlElem ? saleUrlElem.href : '#';
   const rentUrl = rentUrlElem ? rentUrlElem.href : '#';
 
+  // Добавить пункт "Все объекты" в дропдауны на мобильных
   function addAllObjectsMenu() {
     if (window.innerWidth > 767) {
       const allPropsItems = document.querySelectorAll('.all-properties');
@@ -31,13 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Для мобильных запретить переход по основным ссылкам и переключать дропдауны
   function disableMainLinkOnMobile() {
     const saleLink = document.querySelector('.sale-dropdown > a');
     const rentLink = document.querySelector('.rent-dropdown > a');
 
     function clickHandler(e) {
       if (window.innerWidth <= 767) {
-        e.preventDefault();
+        e.preventDefault(); // Отменяем переход
+
+        // Переключаем активность родительского li (для открытия/закрытия дропдауна)
+        const parentLi = e.currentTarget.parentElement;
+        parentLi.classList.toggle('active');
       }
     }
 
@@ -52,16 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-   // Открытие/закрытие меню по клику на бургер
+  // Обработчик клика на бургер меню — добавляет крестик, открывает меню
   burger.addEventListener('click', (e) => {
-    e.stopPropagation(); // предотвращаем всплытие, чтобы клик не закрыл меню мгновенно
-    burger.classList.toggle('active'); // переключаем крестик
+    e.stopPropagation(); // Предотвращаем всплытие события
+    burger.classList.toggle('active'); // Переключаем крестик
     const expanded = burger.getAttribute('aria-expanded') === 'true';
     burger.setAttribute('aria-expanded', !expanded);
     nav.classList.toggle('active');
     nav.setAttribute('aria-hidden', expanded);
   });
 
+  // Инициализация функций
   function init() {
     addAllObjectsMenu();
     disableMainLinkOnMobile();
@@ -69,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   init();
 
+  // Обновление при изменении размера окна
   window.addEventListener('resize', () => {
     init();
   });

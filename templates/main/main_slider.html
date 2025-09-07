@@ -15,7 +15,7 @@
                                     <img src="{{ photo.photo.url }}" alt="{% if photo.desc_text %}{{ photo.desc_text }}{% else %}Слайд {{ forloop.counter }}{% endif %}" />
                                     <div class="slide-content">
                                         <h2>{{ slider.name|default:"Название отсутствует" }}</h2>
-                                        <button class="btn-consultation" onclick="showCallbackModal()">Получить
+                                        <button class="btn-consultation" onclick="showCallbackModal()">✓ Получить
                                             консультацию
                                         </button>
                                     </div>
@@ -28,7 +28,7 @@
                                      alt="Изображение отсутствует"/>
                                 <div class="slide-content">
                                     <h2>{{ slider.name|default:"Название отсутствует" }}</h2>
-                                    <button class="btn-consultation" onclick="showCallbackModal()">Получить
+                                    <button class="btn-consultation" onclick="showCallbackModal()">✓ Получить
                                         консультацию
                                     </button>
                                 </div>
@@ -41,7 +41,7 @@
                         <img src="{% static 'webapp/images/house_slide.png' %}" alt="Слайд 1"/>
                         <div class="slide-content">
                             <h2>Найдите дом своей мечты с нами</h2>
-                            <button class="btn-consultation" onclick="showCallbackModal()">Получить консультацию
+                            <button class="btn-consultation" onclick="showCallbackModal()">✓ Получить консультацию
                             </button>
                         </div>
                     </div>
