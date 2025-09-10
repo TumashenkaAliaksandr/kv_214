@@ -22,8 +22,8 @@
                         {% if video.description %}
                             <p>{{ video.description }}</p>
                         {% endif %}
-                        <p><strong>Адрес объекта:</strong> {{ video.property_address }}</p>
-                        <p><small>Добавлено: {{ video.date|date:"d.m.Y" }}</small></p>
+                        <p class="margin-v-adr-set"><strong>🌐 Адрес:</strong> {{ video.property_address }}</p>
+                        <p class="margin-video-set"><small>✓ Добавлено: {{ video.date|date:"d.m.Y" }}</small></p>
                     </div>
                 </div>
             {% empty %}
