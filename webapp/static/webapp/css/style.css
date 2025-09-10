@@ -67,26 +67,11 @@ body {
     display: inline-block;
 }
 
-.marquee-container {
-    overflow: hidden; /* прячет "выходящие" части текста */
-    width: 100%;
-    position: relative;
-}
-
 .marquee-text {
     white-space: nowrap;
     display: inline-block;
-    padding-left: 100%; /* стартовое смещение */
-    animation: marquee 15s linear infinite;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+    padding-left: 0;
+    animation: none;
 }
 
 /* Для управления взаимодействием */
@@ -1259,6 +1244,29 @@ a[href^="tel"], a[href^="mailto"] {
         padding: 0.6rem 1.2rem;
         border-radius: 14px;
     }
+
+    .marquee-container {
+        overflow: hidden; /* прячет "выходящие" части текста */
+        width: 100%;
+        position: relative;
+    }
+
+    .marquee-text {
+        white-space: nowrap;
+        display: inline-block;
+        padding-left: 100%; /* стартовое смещение */
+        animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
 
     .about-container {
         flex-direction: column;
