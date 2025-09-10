@@ -15,7 +15,7 @@
 <body>
 
   <!-- Рекламная топ-полоска -->
-  <div id="top-bar" class="top-bar">
+  <div id="top-bar" class="top-bar marquee-container">
     <span class="marquee-text">Лучшие предложения по недвижимости! Звоните прямо сейчас!</span>
     <button class="close-button" aria-label="Закрыть">&times;</button>
   </div>
@@ -54,7 +54,9 @@
                           <li><a href="{% url 'sale' %}?property_type=is_active_house"><i
                                   class="fa-solid fa-house-user"></i> Дом</a></li>
                           <li><a href="{% url 'sale' %}?property_type=is_active_apartment"><i
-                                  class="fa-solid fa-building"></i> Квартира</a></li>
+                                  class="fa-solid fa-building-user"></i> Квартира</a></li>
+                          <li><a href="{% url 'sale' %}?property_type=is_commercial"><i
+                                  class="fa-solid fa-building"></i> Коммерческая</a></li>
                           <!-- Пункт "Все объекты" добавляется JS на мобиле -->
                       </ul>
                   </li>

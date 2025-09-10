@@ -7,9 +7,29 @@
             <li class="breadcrumb-item">
                 <a href="{% url 'index' %}" class="nav-link">Главная</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Продажа</li>
+            <li class="breadcrumb-item active" aria-current="page">
+                <a href="{% url 'sale' %}">
+                    {% if has_filters %}
+                        Продажа
+                    {% else %}
+                        Продажа все объекты
+                    {% endif %}
+                </a>
+            </li>
+            {% if has_filters and first_property %}
+                {% if first_property.is_active_apartment %}
+                    <li class="breadcrumb-item">Квартира</li>
+                {% endif %}
+                {% if first_property.is_active_house %}
+                    <li class="breadcrumb-item">Дом</li>
+                {% endif %}
+                {% if first_property.is_commercial %}
+                    <li class="breadcrumb-item">Коммерческое</li>
+                {% endif %}
+            {% endif %}
         </ol>
     </nav>
+
     <section>
         <div class="sale-container">
             <h1 class="page-title">Объекты для покупки</h1>

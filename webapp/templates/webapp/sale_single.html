@@ -8,9 +8,18 @@
                 <a href="{% url 'index' %}" class="nav-link">Главная</a>
             </li>
             <li class="breadcrumb-item">
-                <a href="{% url 'sale' %}" class="nav-link">Продажа</a>
+                <a href="{% url 'sale' %}" class="nav-link">продажа</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">{{ property.city_name }}</li>
+            <li class="breadcrumb-item active" aria-current="page">
+                {% if property.is_active_apartment %}
+                    Квартира
+                {% elif property.is_active_house %}
+                    Дом
+                {% elif property.is_commercial %}
+                    Коммерческое
+                {% endif %}
+            </li>
         </ol>
     </nav>
 

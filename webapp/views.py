@@ -167,46 +167,65 @@ def rent_single(request, slug):
 
 
 def sale(request):
-    properties = Property.objects.filter(is_sale=True)  # добавляем фильтр по продаже
+    # Начинаем с фильтра по продаже
+    properties = Property.objects.filter(is_sale=True)
 
+    has_filters = False  # флаг наличия фильтров
+
+    # Фильтрация по булевым типам из GET параметров
     property_types = request.GET.getlist('property_type')
     if property_types:
+        has_filters = True
         filter_args = {}
+        valid_fields = [f.name for f in Property._meta.get_fields() if f.get_internal_type() == 'BooleanField']
         for ptype in property_types:
-            if ptype in [f.name for f in Property._meta.get_fields()]:
+            if ptype in valid_fields:
                 filter_args[ptype] = True
         if filter_args:
             properties = properties.filter(**filter_args)
 
+    # Фильтр по адресу
     direction = request.GET.get('direction', '').strip()
     if direction:
+        has_filters = True
         properties = properties.filter(address__icontains=direction)
 
+    # Фильтрация по минимальной цене
     price_min = request.GET.get('price_min')
     if price_min:
+        has_filters = True
         try:
-            price_min = float(price_min)
-            properties = properties.filter(price__gte=price_min)
+            price_min_val = float(price_min)
+            properties = properties.filter(price__gte=price_min_val)
         except (ValueError, TypeError):
             pass
 
+    # Фильтрация по максимальной цене
     price_max = request.GET.get('price_max')
     if price_max:
+        has_filters = True
         try:
-            price_max = float(price_max)
-            properties = properties.filter(price__lte=price_max)
+            price_max_val = float(price_max)
+            properties = properties.filter(price__lte=price_max_val)
         except (ValueError, TypeError):
             pass
 
+    # Фильтрация по валюте
     currency = request.GET.get('currency')
-    if currency in dict(Property.CURRENCY_CHOICES).keys():
+    if currency and currency.upper() in dict(Property.CURRENCY_CHOICES).keys():
+        has_filters = True
         properties = properties.filter(currency=currency.upper())
+
+    # Первый объект для булевых признаков
+    first_property = properties.first()
 
     context = {
         'properties': properties,
+        'first_property': first_property,
+        'has_filters': has_filters,
     }
-    return render(request, 'webapp/sale_page.html', context)
 
+    return render(request, 'webapp/sale_page.html', context)
 
 
 def property_detail(request, slug):

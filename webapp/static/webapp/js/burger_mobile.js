@@ -1,83 +1,110 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const MOBILE_BREAKPOINT = 767;
   const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav');
+  const nav = document.querySelector('#navMenu') || document.querySelector('.nav');
+  const saleUrl = document.getElementById('url-sale')?.getAttribute('href') || '#';
+  const rentUrl = document.getElementById('url-rent')?.getAttribute('href') || '#';
 
-  const saleUrlElem = document.getElementById('url-sale');
-  const rentUrlElem = document.getElementById('url-rent');
-  const saleUrl = saleUrlElem ? saleUrlElem.href : '#';
-  const rentUrl = rentUrlElem ? rentUrlElem.href : '#';
+  function removeAllObjectsItems() {
+    document.querySelectorAll('.all-properties').forEach(el => el.remove());
+  }
 
-  // Добавить пункт "Все объекты" в дропдауны на мобильных
   function addAllObjectsMenu() {
-    if (window.innerWidth > 767) {
-      const allPropsItems = document.querySelectorAll('.all-properties');
-      allPropsItems.forEach(item => item.remove());
-      return;
-    }
-
-    const saleDropdownMenu = document.querySelector('.sale-dropdown > .dropdown-menu');
-    if (saleDropdownMenu && !saleDropdownMenu.querySelector('.all-properties')) {
-      const li = document.createElement('li');
-      li.classList.add('all-properties');
-      li.innerHTML = `<a href="${saleUrl}"><i class="fa-solid fa-house"></i> Все объекты</a>`;
-      saleDropdownMenu.appendChild(li);
-    }
-
-    const rentDropdownMenu = document.querySelector('.rent-dropdown > .dropdown-menu');
-    if (rentDropdownMenu && !rentDropdownMenu.querySelector('.all-properties')) {
-      const li = document.createElement('li');
-      li.classList.add('all-properties');
-      li.innerHTML = `<a href="${rentUrl}"><i class="fa-solid fa-key"></i> Все объекты</a>`;
-      rentDropdownMenu.appendChild(li);
-    }
-  }
-
-  // Для мобильных запретить переход по основным ссылкам и переключать дропдауны
-  function disableMainLinkOnMobile() {
-    const saleLink = document.querySelector('.sale-dropdown > a');
-    const rentLink = document.querySelector('.rent-dropdown > a');
-
-    function clickHandler(e) {
-      if (window.innerWidth <= 767) {
-        e.preventDefault(); // Отменяем переход
-
-        // Переключаем активность родительского li (для открытия/закрытия дропдауна)
-        const parentLi = e.currentTarget.parentElement;
-        parentLi.classList.toggle('active');
+    removeAllObjectsItems();
+    if (window.innerWidth > MOBILE_BREAKPOINT) return;
+    const maps = [
+      { parentSelector: '.sale-dropdown', menuSelector: '.sale-dropdown .dropdown-menu', url: saleUrl, icon: 'fa-house' },
+      { parentSelector: '.rent-dropdown', menuSelector: '.rent-dropdown .dropdown-menu', url: rentUrl, icon: 'fa-key' }
+    ];
+    maps.forEach(({ parentSelector, menuSelector, url, icon }) => {
+      const parent = document.querySelector(parentSelector);
+      const menu = document.querySelector(menuSelector);
+      if (!menu || !url || !parent) return;
+      if (!menu.querySelector('.all-properties')) {
+        const li = document.createElement('li');
+        li.className = 'all-properties';
+        li.innerHTML = `<a href="${url}"><i class="fa-solid ${icon}"></i> Все объекты</a>`;
+        const firstItem = menu.querySelector('li');
+        if (firstItem) menu.insertBefore(li, firstItem);
+        else menu.appendChild(li);
       }
-    }
-
-    if (saleLink) {
-      saleLink.removeEventListener('click', clickHandler);
-      saleLink.addEventListener('click', clickHandler);
-    }
-
-    if (rentLink) {
-      rentLink.removeEventListener('click', clickHandler);
-      rentLink.addEventListener('click', clickHandler);
-    }
+    });
   }
 
-  // Обработчик клика на бургер меню — добавляет крестик, открывает меню
-  burger.addEventListener('click', (e) => {
-    e.stopPropagation(); // Предотвращаем всплытие события
-    burger.classList.toggle('active'); // Переключаем крестик
-    const expanded = burger.getAttribute('aria-expanded') === 'true';
-    burger.setAttribute('aria-expanded', !expanded);
-    nav.classList.toggle('active');
-    nav.setAttribute('aria-hidden', expanded);
+  function closeAllDropdowns() {
+    document.querySelectorAll('.dropdown.active').forEach(drop => {
+      drop.classList.remove('active');
+      const a = drop.querySelector('> a');
+      if (a) a.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  function disableMainLinkOnMobile() {
+  const dropdownLinks = document.querySelectorAll('.dropdown > a[href]');
+
+  dropdownLinks.forEach(link => {
+    if (link._menuHandlerAdded) return;
+    if (!link.hasAttribute('aria-expanded')) link.setAttribute('aria-expanded', 'false');
+
+    link.addEventListener('click', (e) => {
+      if (window.innerWidth > MOBILE_BREAKPOINT) return;
+      e.preventDefault();
+      e.stopPropagation();
+
+      const parentLi = link.parentElement;
+      const wasActive = parentLi.classList.contains('active');
+
+      document.querySelectorAll('.dropdown.active').forEach(drop => {
+        if (drop !== parentLi) {
+          drop.classList.remove('active');
+          const otherA = drop.querySelector('> a');
+          if (otherA) otherA.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      if (!wasActive) {
+        parentLi.classList.add('active');
+        link.setAttribute('aria-expanded', 'true');
+      } else {
+        parentLi.classList.remove('active');
+        link.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    link._menuHandlerAdded = true;
+  });
+}
+
+
+  if (burger) {
+    burger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const expanded = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', String(!expanded));
+      burger.classList.toggle('active');
+      if (nav) {
+        nav.classList.toggle('active');
+        nav.setAttribute('aria-hidden', String(expanded));
+      }
+    });
+  }
+
+  document.addEventListener('click', (e) => {
+    const insideNav = e.target.closest && e.target.closest('#navMenu, .nav, .burger');
+    if (!insideNav) {
+      closeAllDropdowns();
+      // НЕ закрываем бургер меню при кликах вне
+    }
   });
 
-  // Инициализация функций
   function init() {
     addAllObjectsMenu();
     disableMainLinkOnMobile();
+    if (window.innerWidth > MOBILE_BREAKPOINT) {
+      closeAllDropdowns();
+    }
   }
 
   init();
-
-  // Обновление при изменении размера окна
-  window.addEventListener('resize', () => {
-    init();
-  });
+  window.addEventListener('resize', init);
 });
