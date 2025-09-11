@@ -3559,3 +3559,129 @@ body.light-theme .breadcrumb-item.active {
     border-radius: 0.5rem;
 }
 
+.employee-profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.employee-photo {
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.employee-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.employee-info {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.employee-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+.employee-position {
+    font-size: 1.25rem;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+.employee-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fbbf24; /* amber-400 for stars */
+}
+
+.rating-stars {
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+.rating-count {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.employee-agency .agency-link {
+    font-weight: 600;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.employee-agency .agency-link:hover {
+    text-decoration: underline;
+}
+
+.employee-regions, .employee-specialties {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.4;
+}
+
+.employee-contacts {
+    margin-top: 16px;
+}
+
+.show-phone-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.show-phone-btn:hover {
+    background-color: #2563eb;
+}
+
+.employee-phone {
+    display: none;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.employee-phone.show {
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .employee-profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .employee-photo {
+        width: 140px;
+        height: 140px;
+    }
+    .employee-info {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}

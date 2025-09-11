@@ -4,7 +4,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic import TemplateView
 
 from kv_214.settings import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
-from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason, About
+from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason, About, Employee
 import requests
 from django.conf import settings
 from django.http import JsonResponse
@@ -108,17 +108,18 @@ def about(request):
     return render(request, 'webapp/about.html', context)
 
 
+
 def employees(request):
-    """employees page"""
+    """Страница со списком сотрудников"""
+    all_employees = Employee.objects.all()
+    context = {'employees': all_employees}
+    return render(request, 'webapp/employees.html', context)
 
-    return render(request, 'webapp/employees.html')
-
-
-
-def employees_single(request):
-    """employees_single page"""
-
-    return render(request, 'webapp/single_employees.html')
+def employees_single(request, slug):
+    """Детальная страница сотрудника"""
+    employee = get_object_or_404(Employee, slug=slug)
+    context = {'employee': employee}
+    return render(request, 'webapp/single_employees.html', context)
 
 
 def rent(request):

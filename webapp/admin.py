@@ -3,7 +3,7 @@ from django.utils.html import format_html
 
 from .forms import ObjectForm
 from .models import Contact, SocialNetwork, PropertyPhoto, Property, PropertyVideo, MainSliderPhoto, MainSlider, \
-    TrustStats, TrustReason, About, Messengers
+    TrustStats, TrustReason, About, Messengers, Employee
 
 
 class PropertyPhotoInline(admin.TabularInline):
@@ -101,3 +101,13 @@ class TrustStatsAdmin(admin.ModelAdmin):
     def has_add_permission(self, request):
         # Если записей больше 0, создание запрещено
         return not TrustStats.objects.exists()
+
+
+@admin.register(Employee)
+class EmployeeAdmin(admin.ModelAdmin):
+    list_display = ('full_name', 'position', 'agency_name', 'phone', 'rating', 'reviews_count')
+    list_filter = ('position', 'agency_name')
+    search_fields = ('full_name', 'position', 'agency_name', 'regions', 'specialties')
+    prepopulated_fields = {'slug': ('full_name',)}
+    readonly_fields = ('created_at', 'updated_at')
+    ordering = ('full_name',)

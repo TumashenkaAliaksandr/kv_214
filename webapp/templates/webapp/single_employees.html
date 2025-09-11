@@ -1,17 +1,53 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
-
-
 {% block content %}
 
-    <nav class="breadcrumb-container" aria-label="breadcrumb">
-        <ol class="breadcrumb-list">
-            <li class="breadcrumb-item">
-                <a href="{% url 'index' %}" class="nav-link">Главная</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">Сотрудник</li>
-        </ol>
-    </nav>
+<nav class="breadcrumb-container" aria-label="breadcrumb">
+    <ol class="breadcrumb-list">
+        <li class="breadcrumb-item">
+            <a href="{% url 'index' %}" class="nav-link">Главная</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Сотрудник</li>
+    </ol>
+</nav>
+
+<div class="employee-profile-container">
+    <div class="employee-photo">
+        <img src="{% static 'webapp/svg/default_person.svg' %}" alt="Фото сотрудника" class="rounded-full">
+    </div>
+    <div class="employee-info">
+        <h1 class="employee-name">{{ employee.full_name }}</h1>
+        <div class="employee-position">{{ employee.position }}</div>
+
+        <div class="employee-rating">
+            <span class="rating-stars" aria-label="Рейтинг {{ employee.rating }}">{{ employee.rating_stars|safe }}</span>
+            <span class="rating-count">({{ employee.reviews_count }} отзывов)</span>
+        </div>
+
+        <div class="employee-agency">
+            <a href="{{ employee.agency_url }}" target="_blank" rel="noopener" class="agency-link">
+                {{ employee.agency_name }}
+            </a>
+        </div>
+
+        <div class="employee-regions">
+            <strong>Регионы работы:</strong> {{ employee.regions }}
+        </div>
+
+        <div class="employee-specialties">
+            <strong>Специализация:</strong> {{ employee.specialties }}
+        </div>
+
+        <div class="employee-contacts">
+            <button class="show-phone-btn" type="button" aria-expanded="false" aria-controls="phone-number">
+                Показать телефон
+            </button>
+            <a href="tel:{{ employee.phone }}" class="employee-phone" id="phone-number" style="display:none;">
+                {{ employee.phone }}
+            </a>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

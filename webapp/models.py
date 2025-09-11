@@ -190,3 +190,31 @@ class TrustStats(models.Model):
         verbose_name = "Статистика доверия"
         verbose_name_plural = "Статистика доверия"
 
+
+class Employee(models.Model):
+    full_name = models.CharField(max_length=150, verbose_name="ФИО сотрудника")
+    position = models.CharField(max_length=100, verbose_name="Должность")
+    rating = models.DecimalField(max_digits=2, decimal_places=1, default=0, verbose_name="Рейтинг")  # например 4.5
+    reviews_count = models.PositiveIntegerField(default=0, verbose_name="Количество отзывов")
+    agency_name = models.CharField(max_length=255, verbose_name="Название агентства")
+    agency_url = models.URLField(max_length=500, blank=True, null=True, verbose_name="URL агентства")
+    regions = models.TextField(blank=True, verbose_name="Регионы работы")
+    specialties = models.TextField(blank=True, verbose_name="Специализация")
+    phone = models.CharField(max_length=20, blank=True, verbose_name="Телефон")
+    photo = models.ImageField(upload_to='employees/photos/', blank=True, null=True, verbose_name="Фото сотрудника")
+
+    slug = models.SlugField(unique=True, max_length=200, verbose_name="URL-слаг")  # для URL
+
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Дата обновления")
+
+    class Meta:
+        verbose_name = "Сотрудник"
+        verbose_name_plural = "Сотрудники"
+        ordering = ['full_name']
+
+    def __str__(self):
+        return self.full_name
+
+    def get_absolute_url(self):
+        return reverse('employee_detail', kwargs={'slug': self.slug})
