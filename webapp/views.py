@@ -107,6 +107,20 @@ def about(request):
 
     return render(request, 'webapp/about.html', context)
 
+
+def employees(request):
+    """employees page"""
+
+    return render(request, 'webapp/employees.html')
+
+
+
+def employees_single(request):
+    """employees_single page"""
+
+    return render(request, 'webapp/single_employees.html')
+
+
 def rent(request):
     properties = Property.objects.filter(is_rent=True)  # добавляем фильтр по аренде
 

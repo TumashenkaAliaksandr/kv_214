@@ -174,20 +174,94 @@ body {
     }
 }
 
-/* Средние экраны (от 1200px до 1399px) */
-@media (max-width: 1399px) and (min-width: 1200px) {
+@media (max-width: 1350px) and (min-width: 1399px) {
     .nav .menu {
-        gap: 0.4rem;
+        gap: 0.5rem;
+    }
+}
+
+/* Средние экраны (от 1200px до 1399px) */
+@media (max-width: 1349px) and (min-width: 1200px) {
+    .nav .menu {
+        gap: 0.3rem;
         font-size: 15px;
+        flex-wrap: wrap;
+    }
+    .logo img {
+        height: 65px;
+        filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+        cursor: pointer;
+        margin-top: 5px;
+        /* box-shadow: 0 4px 6px rgba(134, 160, 52, 0.4), 0 2px 4px rgba(134, 160, 52, 0.2); */
+        border-radius: var(--border-radius);
+    }
+
+    .menu > li > a,
+    .menu > li > button {
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.4rem 0.4rem!important;
+        border-radius: var(--border-radius);
+        display: flex;
+        align-items: center;
+        gap: 0.3rem!important;
+        cursor: pointer;
+        transition: background 0.25s, box-shadow 0.25s;
+        user-select: none;
+        border: none;
+        background: transparent;
+        filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+    }
+}
+
+/* Верхний небольшой десктоп: 1100px - 1199px */
+@media (min-width: 1100px) and (max-width: 1199px) {
+    .nav .menu {
+        gap: 0.35rem;
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        height: 65px;
+        filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+        cursor: pointer;
+        margin-top: 5px;
+        /* box-shadow: 0 4px 6px rgba(134, 160, 52, 0.4), 0 2px 4px rgba(134, 160, 52, 0.2); */
+        border-radius: var(--border-radius);
+    }
+
+    .menu > li > a,
+    .menu > li > button {
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.4rem 0.4rem!important;
+        border-radius: var(--border-radius);
+        display: flex;
+        align-items: center;
+        gap: 0.3rem!important;
+        cursor: pointer;
+        transition: background 0.25s, box-shadow 0.25s;
+        user-select: none;
+        border: none;
+        background: transparent;
+        filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
     }
 }
 
 /* Небольшие десктопы (от 992px до 1199px) */
-@media (max-width: 1199px) and (min-width: 992px) {
+@media (max-width: 1099px) and (min-width: 992px) {
     .nav .menu {
         gap: 0.4rem;
-        font-size: 16px;
+        font-size: 15px;
         flex-wrap: wrap;
+    }
+
+    .menu > li {
+        position: relative;
+        display: contents;
     }
 }
 
@@ -456,12 +530,11 @@ body {
     user-select: none;
     box-shadow: 0 10px 20px var(--shadow-color);
     height: 350px;
-    max-width: 1444px;
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .slider-wrapper {
@@ -726,6 +799,83 @@ body {
     transform: translateY(1px);
 }
 
+.messenger-menu-always {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.messenger-toggle {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 56px;
+  border-radius: 50%;
+}
+
+#messenger-options {
+  margin-top: 12px;
+    background: #eef3f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 12px 16px;
+    min-width: 200px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-right: 140px;
+    margin-bottom: 70px;
+}
+
+#messenger-options[aria-hidden="false"] {
+  display: flex;
+}
+
+
+.messengers-icons-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
+}
+
+.messenger-link {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+.messenger-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.about_employees h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--accent-color-dark);
+    filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+}
+
 /* Блок доверия */
 
 .trust-section {
@@ -899,7 +1049,7 @@ body {
     background: #eef3f1;
     border-radius: 25px;
     margin: 3rem auto 3rem auto;
-    max-width: 1300px;
+    max-width: 1400px;
     padding: 2rem;
     user-select: none;
     box-shadow: 0 13px 15px -8px rgba(193, 215, 213, 0.5) !important;
@@ -1791,6 +1941,7 @@ body.light-theme .breadcrumb-item.active {
     width: 100%; /* для корректного позиционирования */
     background: transparent; /* можно убрать фон если не нужен */
     z-index: 20;
+    font-size: 24px;
 }
 
 
@@ -3230,3 +3381,181 @@ body.light-theme .breadcrumb-item.active {
         filter: brightness(0.85);
     }
 }
+
+/* Базовые стили распределения */
+.main-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 44px;
+}
+
+/* Карточка сотрудника */
+.employees-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* или center/space-around для центра */
+}
+
+.employee-card {
+    background-color: #e9f2ff;
+    border: 2px solid #cff2bf;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex: 1 1 60%;
+    min-height: 300px;
+    box-shadow: 0 4px 8px rgba(59,130,246,0.15);
+    margin-left: 10px;
+    max-width: 1200px;
+    margin-right: auto;
+}
+
+.photo-container {
+    flex-shrink: 0;
+    width: 128px;
+    height: 128px;
+    position: relative;
+}
+
+.photo-container img.rounded-full {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.content {
+    flex-grow: 1;
+}
+
+
+.text-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #3a6500;
+    margin: 0;
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stars {
+    color: #f59e0b;
+    font-size: 1.25rem;
+    user-select: none;
+    margin-left: 4px;
+}
+
+.review-count {
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.position {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 1rem;
+}
+
+.agency-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.agency-link:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+.regions, .specialties {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.contacts {
+    margin-top: auto;
+}
+
+.phone-number {
+    color: #3b82f6;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.phone-number:hover {
+    text-decoration: underline;
+}
+
+/* Сайдбар */
+.sidebar {
+    flex: 1 1 34%;
+    max-width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 10px;
+}
+
+.banner {
+    background-color: #f3f4f6;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.banner-link {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banner-link-1 {
+    background-image: url('//realt.by/fileadmin/images/326248.png');
+    color: #2a3f76;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.banner-link-1:hover {
+    background-color: rgba(42, 63, 118, 0.1);
+}
+
+.banner-link-2 {
+    background-image: url('//realt.by/fileadmin/images/3cd3d9.jpg');
+    color: #000;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.banner-link-2:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.iframe-banner iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 0.5rem;
+}
+

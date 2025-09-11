@@ -61,7 +61,7 @@
                                 {% endif %}
                             </p>
 
-                            <p class="property-description">{{ property.description|truncatewords:30 }}</p>
+                            <p class="property-description">{{ property.description|safe|truncatewords:30 }}</p>
 
                             <a href="{% url 'sale_single' property.slug %}">
                                 {% if property.photos.all %}

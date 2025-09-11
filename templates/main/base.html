@@ -3,198 +3,228 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Агентство недвижимости</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Агентство недвижимости</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 
-  <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}" />
-    <link rel="icon" href="{% static 'webapp/images/favicon_kvatera.png' %}" type="image/svg+xml" />
+    <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}"/>
+    <link rel="icon" href="{% static 'webapp/images/favicon_kvatera.png' %}" type="image/svg+xml"/>
 
 </head>
 <body>
 
-  <!-- Рекламная топ-полоска -->
-  <div id="top-bar" class="top-bar marquee-container">
+<!-- Рекламная топ-полоска -->
+<div id="top-bar" class="top-bar marquee-container">
     <span class="marquee-text">Лучшие предложения по недвижимости! Звоните прямо сейчас!</span>
     <button class="close-button" aria-label="Закрыть">&times;</button>
-  </div>
+</div>
 
-  <!-- Хедер -->
-  <header class="header">
-      <div class="container header-container">
-          <div class="logo">
-              <a href="{% url 'index' %}">
-                  <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства"/>
-              </a>
-          </div>
-
-          <!-- Кнопка "бургер" -->
-          <button class="burger" aria-expanded="false" aria-label="Toggle menu">
-              <span class="burger-line"></span>
-              <span class="burger-line"></span>
-              <span class="burger-line"></span>
-          </button>
-
-          <div id="mobile-urls" style="display:none;">
-              <a id="url-sale" href="{% url 'sale' %}"></a>
-              <a id="url-rent" href="{% url 'rent' %}"></a>
-          </div>
-
-
-          <nav id="navMenu" class="nav" aria-hidden="true">
-          <img class="logo-mob" src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства"/>
-              <ul class="menu">
-                  <li><a href="{% url 'about' %}"><i class="fa-solid fa-info-circle"></i> О нас</a></li>
-
-                  <li class="dropdown sale-dropdown">
-                      <a href="{% url 'sale' %}"><i class="fa-solid fa-coins"></i> Продажа <i
-                              class="fa fa-caret-down"></i></a>
-                      <ul class="dropdown-menu">
-                          <li><a href="{% url 'sale' %}?property_type=is_active_house"><i
-                                  class="fa-solid fa-house-user"></i> Дом</a></li>
-                          <li><a href="{% url 'sale' %}?property_type=is_active_apartment"><i
-                                  class="fa-solid fa-building-user"></i> Квартира</a></li>
-                          <li><a href="{% url 'sale' %}?property_type=is_commercial"><i
-                                  class="fa-solid fa-building"></i> Коммерческая</a></li>
-                          <!-- Пункт "Все объекты" добавляется JS на мобиле -->
-                      </ul>
-                  </li>
-
-                  <li><a href="{% url 'contacts' %}"><i class="fas fa-pencil-alt"></i> Оставить отзыв</a></li>
-
-{#                  <li class="dropdown rent-dropdown">#}
-{#                      <a href="{% url 'rent' %}"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>#}
-{#                      <ul class="dropdown-menu">#}
-{#                          <li><a href="{% url 'rent' %}?property_type=is_active_house"><i#}
-{#                                  class="fa-solid fa-house-user"></i> Дом</a></li>#}
-{#                          <li><a href="{% url 'rent' %}?property_type=is_active_apartment"><i#}
-{#                                  class="fa-solid fa-building"></i> Квартира</a></li>#}
-{#                          <!-- Пункт "Все объекты" добавляется JS на мобиле -->#}
-{#                      </ul>#}
-{#                  </li>#}
-
-                  <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
-
-                  <li class="contacts-menu">
-                      <a href="mailto:{{ contact.email|urlencode }}"><i
-                              class="fa-solid fa-envelope"></i> {{ contact.email }}</a>
-                      <a href="tel:{{ contact.phone|urlencode }}"><i class="fa-solid fa-phone"></i> {{ contact.phone }}
-                      </a>
-                  </li>
-                  <li class="messenger-menu">
-                      {% for messenger in messengers %}
-                          <a href="{{ messenger.url }}" aria-label="{{ messenger.name }}" target="_blank"
-                             rel="noopener noreferrer">
-                              {% if messenger.icon_svg %}
-                                  <img src="{{ messenger.icon_svg.url }}" alt="{{ messenger.name }}"
-                                       class="messengers"/>
-                              {% else %}
-                                  {{ messenger.name }}
-                              {% endif %}
-                          </a>
-                      {% empty %}
-                          <span>Мессенджеров нет</span>
-                      {% endfor %}
-                  </li>
-
-
-
-                  <li>
-                      <button class="btn-consultation" id="openConsultationBtn">✓ Получить консультацию</button>
-                  </li>
-              </ul>
-          </nav>
-      </div>
-  </header>
-
-
-  {% block content %}{% endblock %}
-
-
-   <!-- Футер -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-logo">
+<!-- Хедер -->
+<header class="header">
+    <div class="container header-container">
+        <div class="logo">
+            <a href="{% url 'index' %}">
                 <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства"/>
-            </div>
+            </a>
+        </div>
 
-            <nav class="footer-menu">
-                <a href="{% url 'about' %}">О нас</a>
-                <a href="{% url 'sale' %}">Продажа</a>
-                <a href="{% url 'rent' %}">Аренда</a>
-                <a href="{% url 'contacts' %}">Контакты</a>
-            </nav>
+        <!-- Кнопка "бургер" -->
+        <button class="burger" aria-expanded="false" aria-label="Toggle menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
 
-            <div class="footer-contacts">
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
-                </p>
-                <p>
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
-                </p>
-            </div>
+        <div id="mobile-urls" style="display:none;">
+            <a id="url-sale" href="{% url 'sale' %}"></a>
+            <a id="url-rent" href="{% url 'rent' %}"></a>
+        </div>
 
-            <div class="footer-social">
-                {% for social in contact.social_networks.all %}
-                    <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank" rel="noopener noreferrer">
-                        <i class="{{ social.icon }}"></i>
+
+        <nav id="navMenu" class="nav" aria-hidden="true">
+            <img class="logo-mob" src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства"/>
+            <ul class="menu">
+                <li class="dropdown sale-dropdown"><a href="{% url 'about' %}"><i class="fa-solid fa-info-circle"></i>
+                    О нас<i
+                            class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'employees' %}"><i
+                                class="fa-solid fa-users"></i> Сотрудники</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown sale-dropdown">
+                    <a href="{% url 'sale' %}"><i class="fa-solid fa-coins"></i> Продажа <i
+                            class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'sale' %}?property_type=is_active_house"><i
+                                class="fa-solid fa-house-user"></i> Дом</a></li>
+                        <li><a href="{% url 'sale' %}?property_type=is_active_apartment"><i
+                                class="fa-solid fa-building-user"></i> Квартира</a></li>
+                        <li><a href="{% url 'sale' %}?property_type=is_commercial"><i
+                                class="fa-solid fa-building"></i> Коммерческая</a></li>
+                        <!-- Пункт "Все объекты" добавляется JS на мобиле -->
+                    </ul>
+                </li>
+
+                <li><a href="{% url 'contacts' %}"><i class="fas fa-pencil-alt"></i> Оставить отзыв</a></li>
+
+                {#                  <li class="dropdown rent-dropdown">#}
+                {#                      <a href="{% url 'rent' %}"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>#}
+                {#                      <ul class="dropdown-menu">#}
+                {#                          <li><a href="{% url 'rent' %}?property_type=is_active_house"><i#}
+                {#                                  class="fa-solid fa-house-user"></i> Дом</a></li>#}
+                {#                          <li><a href="{% url 'rent' %}?property_type=is_active_apartment"><i#}
+                {#                                  class="fa-solid fa-building"></i> Квартира</a></li>#}
+                {#                          <!-- Пункт "Все объекты" добавляется JS на мобиле -->#}
+                {#                      </ul>#}
+                {#                  </li>#}
+
+                <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-globe"></i> Новости</a></li>
+                <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-envelope"></i> Контакты</a></li>
+
+                <li class="contacts-menu">
+                    <a href="mailto:{{ contact.email|urlencode }}"><i
+                            class="fa-solid fa-envelope"></i> {{ contact.email }}</a>
+                    <a href="tel:{{ contact.phone|urlencode }}"><i class="fa-solid fa-phone"></i> {{ contact.phone }}
+                    </a>
+                </li>
+                <li class="messenger-menu">
+                    {% for messenger in messengers %}
+                        <a href="{{ messenger.url }}" aria-label="{{ messenger.name }}" target="_blank"
+                           rel="noopener noreferrer">
+                            {% if messenger.icon_svg %}
+                                <img src="{{ messenger.icon_svg.url }}" alt="{{ messenger.name }}"
+                                     class="messengers"/>
+                            {% else %}
+                                {{ messenger.name }}
+                            {% endif %}
+                        </a>
+                    {% empty %}
+                        <span>Мессенджеров нет</span>
+                    {% endfor %}
+                </li>
+
+
+                <li>
+                    <button class="btn-consultation" id="openConsultationBtn">✓ Получить консультацию</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="messenger-menu-always" aria-label="Мессенджер меню" role="navigation" class="messenger-menu-always">
+        <button class="messenger-toggle" aria-expanded="false" aria-controls="messenger-options">
+            💬
+        </button>
+        <div id="messenger-options" class="hidden" role="menu" aria-hidden="true">
+            <p class="messengers-contacts">Напишите нам:</p>
+            <div class="messengers-icons-row">
+                {% for messenger in messengers %}
+                    <a href="{{ messenger.url }}" aria-label="{{ messenger.name }}" target="_blank"
+                       rel="noopener noreferrer" role="menuitem" class="messenger-link">
+                        {% if messenger.icon_svg %}
+                            <img src="{{ messenger.icon_svg.url }}" alt="{{ messenger.name }}"
+                                 class="messenger-icon"/>
+                        {% else %}
+                            {{ messenger.name }}
+                        {% endif %}
                     </a>
                 {% empty %}
-                    <p>Соцсетей нет</p>
+                    <span>Мессенджеров нет</span>
                 {% endfor %}
             </div>
-
-
         </div>
-        <div class="copyright">
-            &copy; 2025 Агентство недвижимости. Все права защищены.
+    </div>
+</header>
+
+
+{% block content %}{% endblock %}
+
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-logo">
+            <img src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства"/>
         </div>
-    </footer>
 
-  <div class="modal-overlay" id="consultationModal" style="display:none;">
-      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-          <button class="modal-close" id="closeConsultationBtn" aria-label="Закрыть окно">&times;</button>
-          <h2 id="modalTitle">💡 Получить консультацию</h2>
-          <form id="consultationFormtwo" method="post" action="/send-consultation-message/">
-              {% csrf_token %}
-              <label for="inputName">Имя</label>
-              <input type="text" id="inputName" name="name" required>
+        <nav class="footer-menu">
+            <a href="{% url 'about' %}">О нас</a>
+            <a href="{% url 'sale' %}">Продажа</a>
+            <a href="{% url 'rent' %}">Аренда</a>
+            <a href="{% url 'contacts' %}">Контакты</a>
+        </nav>
 
-              <label for="inputPhone">Телефон</label>
-              <input type="tel" id="inputPhone" name="phone" required pattern="^\+?[0-9\s\-]{7,15}$"
-                     placeholder="+7 999 999-99-99">
+        <div class="footer-contacts">
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:{{ contact.phone|urlencode }}">{{ contact.phone }}</a>
+            </p>
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:{{ contact.email|urlencode }}">{{ contact.email }}</a>
+            </p>
+        </div>
 
-              <label for="inputDescription">Описание</label>
-              <textarea id="inputDescription" name="description" rows="4"
-                        placeholder="Опишите ваш вопрос или пожелания"></textarea>
-
-              <div class="radio-label-container">
-                  <input type="radio" id="agree" name="agree" required/>
-                  <label for="agree">Я согласен с обработкой информации</label>
-              </div>
-
-              <button type="submit" class="btn-submit">Отправить</button>
-          </form>
-
-      </div>
-  </div>
-
+        <div class="footer-social">
+            {% for social in contact.social_networks.all %}
+                <a href="{{ social.url }}" aria-label="{{ social.name }}" target="_blank" rel="noopener noreferrer">
+                    <i class="{{ social.icon }}"></i>
+                </a>
+            {% empty %}
+                <p>Соцсетей нет</p>
+            {% endfor %}
+        </div>
 
 
-  <script src="{% static 'webapp/js/slider.js' %}"></script>
-  <script src="{% static 'webapp/js/filter_rent.js' %}"></script>
-  <script src="{% static 'webapp/js/burger_mobile.js' %}"></script>
-  <script src="{% static 'webapp/js/modal_window.js' %}"></script>
-  <script src="{% static 'webapp/js/trust_animations.js' %}"></script>
-  <script>
+    </div>
+    <div class="copyright">
+        &copy; 2025 Агентство недвижимости. Все права защищены.
+    </div>
+</footer>
+
+<div class="modal-overlay" id="consultationModal" style="display:none;">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" id="closeConsultationBtn" aria-label="Закрыть окно">&times;</button>
+        <h2 id="modalTitle">💡 Получить консультацию</h2>
+        <form id="consultationFormtwo" method="post" action="/send-consultation-message/">
+            {% csrf_token %}
+            <label for="inputName">Имя</label>
+            <input type="text" id="inputName" name="name" required>
+
+            <label for="inputPhone">Телефон</label>
+            <input type="tel" id="inputPhone" name="phone" required pattern="^\+?[0-9\s\-]{7,15}$"
+                   placeholder="+7 999 999-99-99">
+
+            <label for="inputDescription">Описание</label>
+            <textarea id="inputDescription" name="description" rows="4"
+                      placeholder="Опишите ваш вопрос или пожелания"></textarea>
+
+            <div class="radio-label-container">
+                <input type="radio" id="agree" name="agree" required/>
+                <label for="agree">Я согласен с обработкой информации</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Отправить</button>
+        </form>
+
+    </div>
+</div>
+
+
+<script src="{% static 'webapp/js/slider.js' %}"></script>
+<script src="{% static 'webapp/js/filter_rent.js' %}"></script>
+<script src="{% static 'webapp/js/burger_mobile.js' %}"></script>
+<script src="{% static 'webapp/js/modal_window.js' %}"></script>
+<script src="{% static 'webapp/js/trust_animations.js' %}"></script>
+<script src="{% static 'webapp/js/messengers.js' %}"></script>
+<script>
     // Топ бар закрытие
     document.querySelector('.close-button').addEventListener('click', () => {
-      document.getElementById('top-bar').style.display = 'none';
+        document.getElementById('top-bar').style.display = 'none';
     });
-  </script>
+</script>
 
 </body>
 </html>

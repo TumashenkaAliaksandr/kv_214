@@ -16,7 +16,7 @@
     <!-- Информация о нас -->
     <section class="about-section" id="about">
         <div class="container about-container">
-            <div class="about-photo-page">
+            <div class="about-photo">
                 <img src="{{ about.photo.url }}" alt="Фото компании"/>
             </div>
             <div class="about-text">
@@ -55,7 +55,7 @@
                         {% endfor %}
                     </div>
                     <div class="messenger-menu">
-                        <p class="messengers-contacts">Наши Мессенджеры:</p>
+                        <p class="messengers-contacts">Мессенджеры:</p>
                         {% for messenger in messengers %}
                             <a href="{{ messenger.url }}" aria-label="{{ messenger.name }}" target="_blank"
                                rel="noopener noreferrer">
@@ -139,6 +139,95 @@
         </div>
     </section>
 
+    <!-- Наши Сотрудники -->
+    <section class="about_employees">
+    <h2><i class="fa-solid fa-users"></i> Риэлтеры и агенты по недвижимости Новоплоцк/Полоцк</h2>
+    </section>
+    <div class="main-container">
+        <div class="employees-container">
+            <div class="employee-card">
+                <div class="photo-container">
+                    <img alt="Фото специалиста" src="{% static 'webapp/svg/default_person.svg' %}"
+                         class="rounded-full"/>
+                </div>
+
+                <div class="content">
+                    <div class="header">
+                        <p class="text-title">Иван Иванов</p>
+                        <div class="rating">
+                            <span class="stars" aria-label="Рейтинг 5 из 5">★★★★★</span>
+                            <span class="review-count">339 отзывов</span>
+                        </div>
+                    </div>
+                    <div class="position">Риэлтер, Учредитель</div>
+                    <a href="{% url 'about' %}" target="_blank" class="agency-link">
+                        K214.BY – АГЕНТСТВО НЕДВИЖИМОСТИ «K214 И КОМАНДА»
+                    </a>
+                    <div class="regions">
+                        Регионы работы: Полоцк / Полоцкий район, Новополоцк / Новополоцкий район …
+                    </div>
+                    <div class="specialties">
+                        Квартиры, комнаты – продажа, Коттеджи, дома, участки – продажа, Новостройки, долевое
+                        строительство,
+                        Коттеджные посёлки, Vip-недвижимость
+                    </div>
+                    <div class="contacts">
+                        <a href="tel:+375295032222" class="phone-number">+375(29)503-22-22</a>
+                    </div>
+                </div>
+            </div>
+            <div class="employee-card">
+                <div class="photo-container">
+                    <img alt="Фото специалиста" src="{% static 'webapp/svg/default_person.svg' %}"
+                         class="rounded-full"/>
+                </div>
+
+                <div class="content">
+                    <div class="header">
+                        <p class="text-title">Иванка Иванкович</p>
+                        <div class="rating">
+                            <span class="stars" aria-label="Рейтинг 5 из 5">★★★★★</span>
+                            <span class="review-count">339 отзывов</span>
+                        </div>
+                    </div>
+                    <div class="position">Риэлтер, Учредитель</div>
+                    <a href="{% url 'about' %}" target="_blank" class="agency-link">
+                        K214.BY – АГЕНТСТВО НЕДВИЖИМОСТИ «K214 И КОМАНДА»
+                    </a>
+                    <div class="regions">
+                        Регионы работы: Полоцк / Полоцкий район, Новополоцк / Новополоцкий район …
+                    </div>
+                    <div class="specialties">
+                        Квартиры, комнаты – продажа, Коттеджи, дома, участки – продажа, Новостройки, долевое
+                        строительство,
+                        Коттеджные посёлки, Vip-недвижимость
+                    </div>
+                    <div class="contacts">
+                        <a href="tel:+375295032222" class="phone-number">+375(29)503-22-22</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="banner">
+                <a href="https://a.realt.by/www/delivery/cl.php?bannerid=12954&amp;zoneid=142" target="_blank"
+                   class="banner-link banner-link-1">
+                </a>
+                <p>Купи — и паркуйся</p>
+            </div>
+            <div class="banner">
+                <a href="https://a.realt.by/www/delivery/cl.php?bannerid=12956&amp;zoneid=77" target="_blank"
+                   class="banner-link banner-link-2">
+                </a>
+                <p> ЖК ТОПАЗ</p>
+            </div>
+            <div class="banner iframe-banner">
+                <iframe src="//a.realt.by/swiffy/data/73432f2f14cf5a0b8368a4f361177bd3/240x400.html"
+                        title="Реклама"></iframe>
+            </div>
+        </aside>
+    </div>
 
 
 {% endblock %}
