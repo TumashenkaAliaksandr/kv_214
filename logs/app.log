@@ -15141,3 +15141,150 @@ ValueError: invalid literal for int() with base 10: '19000.00'
 [WARNING] 2025-09-12 11:39:25,185 log 16804 16940 Not Found: /.well-known/appspecific/com.chrome.devtools.json
 [WARNING] 2025-09-12 11:39:25,186 basehttp 16804 16940 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
 [INFO] 2025-09-12 11:39:25,187 basehttp 16804 4648 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:41:42,542 basehttp 16804 16940 "GET /employees/ HTTP/1.1" 200 15178
+[INFO] 2025-09-12 11:41:42,605 basehttp 16804 16940 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:41:42,611 basehttp 16804 4648 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:41:42,621 basehttp 16804 4648 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:42:03,038 basehttp 16804 4648 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[INFO] 2025-09-12 11:42:03,072 basehttp 16804 4648 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:42:07,918 log 16804 4648 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:42:07,918 basehttp 16804 4648 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:44:22,475 basehttp 16804 4648 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[WARNING] 2025-09-12 11:44:22,784 log 16804 4648 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:44:22,785 basehttp 16804 4648 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:44:22,787 basehttp 16804 16940 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:44:22,801 basehttp 16804 17132 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:44:26,911 basehttp 16804 17132 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[WARNING] 2025-09-12 11:44:26,956 log 16804 17132 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:44:26,957 basehttp 16804 17132 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:44:26,965 basehttp 16804 16940 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-12 11:44:26,965 basehttp 16804 15472 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 11:44:26,967 basehttp 16804 4648 "GET /static/webapp/css/style.css HTTP/1.1" 200 86340
+[INFO] 2025-09-12 11:44:27,006 basehttp 16804 15472 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 11:44:27,006 basehttp 16804 4648 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 11:44:27,026 basehttp 16804 17132 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 11:44:27,027 basehttp 16804 16940 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3918
+[INFO] 2025-09-12 11:44:27,027 basehttp 16804 15472 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 11:44:27,027 basehttp 16804 4648 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 11:44:27,028 basehttp 16804 5176 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 11:44:27,029 basehttp 16804 5772 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 11:44:27,035 basehttp 16804 17132 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-12 11:44:27,040 basehttp 16804 5176 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 200 293
+[INFO] 2025-09-12 11:44:27,206 basehttp 16804 5176 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 11:49:18,897 basehttp 16804 5176 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:49:18,918 log 16804 5176 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:49:18,919 basehttp 16804 5176 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:50:02,294 basehttp 16804 5176 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13691
+[INFO] 2025-09-12 11:50:02,332 basehttp 16804 5176 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:50:02,351 log 16804 15648 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:50:02,353 basehttp 16804 15648 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:50:02,354 basehttp 16804 8532 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:50:30,190 basehttp 16804 15648 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13706
+[WARNING] 2025-09-12 11:50:30,248 log 16804 15648 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-12 11:50:30,249 basehttp 16804 8532 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:50:30,249 basehttp 16804 15648 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:50:48,917 basehttp 16804 15648 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[WARNING] 2025-09-12 11:50:48,960 log 16804 15648 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:50:48,961 basehttp 16804 15648 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:50:48,961 basehttp 16804 8532 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:53:27,663 basehttp 16804 15648 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[WARNING] 2025-09-12 11:53:27,711 log 16804 15648 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:53:27,714 basehttp 16804 15648 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:53:27,716 basehttp 16804 5176 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-12 11:53:27,716 basehttp 16804 17152 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 11:53:27,717 basehttp 16804 8532 "GET /static/webapp/css/style.css HTTP/1.1" 200 87646
+[INFO] 2025-09-12 11:53:27,774 basehttp 16804 17152 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 11:53:27,775 basehttp 16804 8532 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 11:53:27,793 basehttp 16804 17152 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 11:53:27,794 basehttp 16804 15648 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 11:53:27,794 basehttp 16804 5176 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3918
+[INFO] 2025-09-12 11:53:27,795 basehttp 16804 8532 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 11:53:27,796 basehttp 16804 11012 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 11:53:27,796 basehttp 16804 13356 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 11:53:27,798 basehttp 16804 17152 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-12 11:53:27,801 basehttp 16804 13356 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 200 293
+[INFO] 2025-09-12 11:53:28,017 basehttp 16804 13356 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 11:53:50,370 basehttp 16804 13356 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[WARNING] 2025-09-12 11:53:50,408 log 16804 13356 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:53:50,410 basehttp 16804 13356 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:53:50,412 basehttp 16804 5176 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 11:53:50,413 basehttp 16804 11012 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-12 11:53:50,414 basehttp 16804 17152 "GET /static/webapp/css/style.css HTTP/1.1" 200 87328
+[INFO] 2025-09-12 11:53:50,434 basehttp 16804 17152 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 11:53:50,434 basehttp 16804 8532 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3918
+[INFO] 2025-09-12 11:53:50,435 basehttp 16804 5176 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 11:53:50,435 basehttp 16804 15648 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 11:53:50,435 basehttp 16804 13356 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 11:53:50,435 basehttp 16804 11012 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 11:53:50,444 basehttp 16804 13356 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 11:53:50,449 basehttp 16804 11012 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 11:53:50,450 basehttp 16804 5176 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-12 11:53:50,451 basehttp 16804 15648 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 200 293
+[INFO] 2025-09-12 11:53:50,631 basehttp 16804 15648 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 11:54:14,128 basehttp 16804 15648 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[WARNING] 2025-09-12 11:54:14,165 log 16804 15648 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:54:14,166 basehttp 16804 15648 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:54:14,172 basehttp 16804 11012 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-12 11:54:14,173 basehttp 16804 13356 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 11:54:14,174 basehttp 16804 5176 "GET /static/webapp/css/style.css HTTP/1.1" 200 87646
+[INFO] 2025-09-12 11:54:14,257 basehttp 16804 5176 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 11:54:14,257 basehttp 16804 13356 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 11:54:14,276 basehttp 16804 5176 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 11:54:14,277 basehttp 16804 15648 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 11:54:14,277 basehttp 16804 13356 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 11:54:14,278 basehttp 16804 17152 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 11:54:14,278 basehttp 16804 8532 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 11:54:14,278 basehttp 16804 11012 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3918
+[INFO] 2025-09-12 11:54:14,282 basehttp 16804 5176 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-12 11:54:14,285 basehttp 16804 8532 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 200 293
+[INFO] 2025-09-12 11:54:14,421 basehttp 16804 8532 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 11:54:39,284 basehttp 16804 8532 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[WARNING] 2025-09-12 11:54:39,321 log 16804 8532 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:54:39,323 basehttp 16804 8532 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:54:39,325 basehttp 16804 5176 "GET /static/webapp/css/style.css HTTP/1.1" 200 87664
+[INFO] 2025-09-12 11:55:23,955 basehttp 16804 5176 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[WARNING] 2025-09-12 11:55:24,025 log 16804 5176 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:55:24,032 basehttp 16804 5176 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:55:24,032 basehttp 16804 11012 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-12 11:55:24,033 basehttp 16804 17152 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 11:55:24,035 basehttp 16804 8532 "GET /static/webapp/css/style.css HTTP/1.1" 200 87348
+[INFO] 2025-09-12 11:55:24,096 basehttp 16804 11012 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 11:55:24,096 basehttp 16804 8532 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 11:55:24,117 basehttp 16804 13356 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 11:55:24,118 basehttp 16804 11012 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 11:55:24,118 basehttp 16804 15648 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 11:55:24,119 basehttp 16804 8532 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 11:55:24,119 basehttp 16804 17152 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3918
+[INFO] 2025-09-12 11:55:24,119 basehttp 16804 5176 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 11:55:24,128 basehttp 16804 13356 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-12 11:55:24,129 basehttp 16804 8532 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 200 293
+[INFO] 2025-09-12 11:55:24,269 basehttp 16804 8532 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 11:56:54,486 basehttp 16804 8532 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[INFO] 2025-09-12 11:56:54,523 basehttp 16804 17152 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 11:56:54,524 basehttp 16804 13356 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-12 11:56:54,525 basehttp 16804 8532 "GET /static/webapp/css/style.css HTTP/1.1" 200 87690
+[INFO] 2025-09-12 11:56:54,578 basehttp 16804 13356 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 11:56:54,579 basehttp 16804 8532 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 11:56:54,594 basehttp 16804 8532 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 11:56:54,595 basehttp 16804 13356 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 11:56:54,595 basehttp 16804 15648 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 11:56:54,596 basehttp 16804 5176 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 11:56:54,596 basehttp 16804 11012 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 11:56:54,597 basehttp 16804 17152 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3918
+[INFO] 2025-09-12 11:56:54,600 basehttp 16804 8532 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-12 11:56:54,603 basehttp 16804 5176 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 200 293
+[INFO] 2025-09-12 11:56:54,740 basehttp 16804 5176 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 11:57:17,962 basehttp 16804 5176 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:57:18,007 log 16804 5176 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:57:18,008 basehttp 16804 5176 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:57:49,164 basehttp 16804 5176 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[WARNING] 2025-09-12 11:57:49,217 log 16804 5176 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-12 11:57:49,217 basehttp 16804 8532 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:57:49,218 basehttp 16804 5176 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:58:12,177 basehttp 16804 5176 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13689
+[WARNING] 2025-09-12 11:58:12,216 log 16804 5176 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:58:12,218 basehttp 16804 5176 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:58:12,220 basehttp 16804 17152 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:58:12,221 basehttp 16804 8532 "GET /static/webapp/css/style.css HTTP/1.1" 200 87691
+[INFO] 2025-09-12 11:58:40,985 basehttp 16804 8532 "GET / HTTP/1.1" 200 43031
+[INFO] 2025-09-12 11:58:41,011 basehttp 16804 8532 "GET /static/webapp/css/style.css HTTP/1.1" 304 0

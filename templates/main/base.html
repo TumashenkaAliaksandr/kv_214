@@ -45,14 +45,19 @@
         <nav id="navMenu" class="nav" aria-hidden="true">
             <img class="logo-mob" src="{% static 'webapp/images/logo_kvatera.png' %}" alt="Логотип агентства"/>
             <ul class="menu">
-                <li class="dropdown"><a href="{% url 'about' %}"><i class="fa-solid fa-info-circle"></i>
-                    О нас<i
+                <li class="dropdown about-dropdown">
+                    <a href="{% url 'about' %}"><i class="fa-solid fa-info-circle"></i> О нас <i
                             class="fa fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{% url 'employees' %}"><i
-                                class="fa-solid fa-users"></i> Сотрудники</a></li>
+                        <li class="desktop-only"><a href="{% url 'employees' %}"><i class="fa-solid fa-users"></i>
+                            Сотрудники</a></li>
                     </ul>
                 </li>
+
+                <!-- Отдельный пункт для мобильников -->
+                <li class="mobile-only employees-mobile"><a href="{% url 'employees' %}"><i
+                        class="fa-solid fa-users"></i> Сотрудники</a></li>
+
 
                 <li class="dropdown sale-dropdown">
                     <a href="{% url 'sale' %}"><i class="fa-solid fa-coins"></i> Продажа <i

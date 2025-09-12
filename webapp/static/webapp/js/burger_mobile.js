@@ -40,41 +40,72 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function disableMainLinkOnMobile() {
-  const dropdownLinks = document.querySelectorAll('.dropdown > a[href]');
+    const dropdownLinks = document.querySelectorAll('.dropdown > a[href]');
 
-  dropdownLinks.forEach(link => {
-    if (link._menuHandlerAdded) return;
-    if (!link.hasAttribute('aria-expanded')) link.setAttribute('aria-expanded', 'false');
+    dropdownLinks.forEach(link => {
+      if (link._menuHandlerAdded) return;
+      if (!link.hasAttribute('aria-expanded')) link.setAttribute('aria-expanded', 'false');
 
-    link.addEventListener('click', (e) => {
-      if (window.innerWidth > MOBILE_BREAKPOINT) return;
-      e.preventDefault();
-      e.stopPropagation();
+      link.addEventListener('click', (e) => {
+        if (window.innerWidth > MOBILE_BREAKPOINT) {
+          // На десктопе блокируем переход и раскрываем меню
+          e.preventDefault();
+          e.stopPropagation();
 
-      const parentLi = link.parentElement;
-      const wasActive = parentLi.classList.contains('active');
+          const parentLi = link.parentElement;
+          const wasActive = parentLi.classList.contains('active');
 
-      document.querySelectorAll('.dropdown.active').forEach(drop => {
-        if (drop !== parentLi) {
-          drop.classList.remove('active');
-          const otherA = drop.querySelector('> a');
-          if (otherA) otherA.setAttribute('aria-expanded', 'false');
+          document.querySelectorAll('.dropdown.active').forEach(drop => {
+            if (drop !== parentLi) {
+              drop.classList.remove('active');
+              const otherA = drop.querySelector('> a');
+              if (otherA) otherA.setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          if (!wasActive) {
+            parentLi.classList.add('active');
+            link.setAttribute('aria-expanded', 'true');
+          } else {
+            parentLi.classList.remove('active');
+            link.setAttribute('aria-expanded', 'false');
+          }
+
+        } else {
+          // Мобильная версия - исключение для ссылки "О нас" (url 'about')
+          if (link.getAttribute('href').includes('/about')) {
+            // Разрешаем переход по ссылке без блокировки и раскрытия
+            // Ничего не делаем, позволяя открыть страницу "О нас"
+            return;
+          }
+          // Для остальных пунктов ведем себя как раньше - блокируем переход и управляеи классом active
+          e.preventDefault();
+          e.stopPropagation();
+
+          const parentLi = link.parentElement;
+          const wasActive = parentLi.classList.contains('active');
+
+          document.querySelectorAll('.dropdown.active').forEach(drop => {
+            if (drop !== parentLi) {
+              drop.classList.remove('active');
+              const otherA = drop.querySelector('> a');
+              if (otherA) otherA.setAttribute('aria-expanded', 'false');
+            }
+          });
+
+          if (!wasActive) {
+            parentLi.classList.add('active');
+            link.setAttribute('aria-expanded', 'true');
+          } else {
+            parentLi.classList.remove('active');
+            link.setAttribute('aria-expanded', 'false');
+          }
         }
       });
 
-      if (!wasActive) {
-        parentLi.classList.add('active');
-        link.setAttribute('aria-expanded', 'true');
-      } else {
-        parentLi.classList.remove('active');
-        link.setAttribute('aria-expanded', 'false');
-      }
+      link._menuHandlerAdded = true;
     });
-
-    link._menuHandlerAdded = true;
-  });
-}
-
+  }
 
   if (burger) {
     burger.addEventListener('click', (e) => {

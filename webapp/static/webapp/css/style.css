@@ -1923,7 +1923,7 @@ body.light-theme .breadcrumb-item.active {
 .properties-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    /*gap: 25px;*/
     /*justify-content: space-between;*/
 
 }
@@ -2200,26 +2200,68 @@ body.light-theme .breadcrumb-item.active {
     box-shadow: 0 6px 22px rgba(80, 130, 15, 0.21);
 }
 
+/* Основной контейнер миниатюр */
 .gallery-thumbnails {
-    margin-top: 12px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: nowrap;           /* важн, чтобы не переносить миниатюры */
+  gap: 10px;
+  overflow-x: auto;            /* только у миниатюр прокрутка */
+  -webkit-overflow-scrolling: touch; /* плавный скролл iOS */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 8px 0;
+  scroll-snap-type: x mandatory;
+  box-sizing: border-box;
+  max-width: 100%;             /* не больше родителя */
 }
 
+/* Скрыть скроллбар в WebKit */
+.gallery-thumbnails::-webkit-scrollbar {
+  display: none;
+}
+
+/* Миниатюры */
 .gallery-thumbnails .thumbnail {
-    width: 100px;
-    height: 70px;
-    object-fit: cover;
-    border-radius: 6px;
-    /*border: 2px solid #c3fa67;*/
-    cursor: pointer;
-    transition: border 0.17s, box-shadow 0.17s;
+  flex: 0 0 auto;
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  scroll-snap-align: start;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
 }
 
 .gallery-thumbnails .thumbnail:hover {
-    border: 2px solid #2e6e11;
-    box-shadow: 0 5px 11px rgba(122, 195, 12, 0.12);
+  border: 2px solid #2e6e11;
+  box-shadow: 0 5px 11px rgba(122, 195, 12, 0.12);
+}
+
+/* Мобильная версия */
+@media (max-width: 767px) {
+  .gallery-thumbnails {
+    padding: 0 10px;           /* padding создаёт отступ, не двигая весь контент */
+    gap: 8px;
+    max-width: 100vw;          /* максимальная ширина - ширина экрана */
+  }
+
+  .gallery-thumbnails .thumbnail {
+    width: 70px;
+    height: 50px;
+  }
+}
+
+/* Главное фото и его контейнер */
+.single-property-gallery,
+.gallery-main-photo,
+#mainPhoto {
+    /*max-width: 100%;*/
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 13px;
 }
 
 .single-property-info {
@@ -2408,6 +2450,36 @@ body.light-theme .breadcrumb-item.active {
 .logo-mob {
   display: none;
 }
+
+/* По умолчанию пункт "Сотрудники" в дропдауне виден, мобильный скрыт */
+.mobile-only {
+    display: none;
+}
+.desktop-only {
+    display: block;
+}
+
+/* На мобильных - инвертируем видимость */
+@media (max-width: 767px) {
+    .mobile-only {
+        display: block;
+    }
+    .desktop-only {
+        display: none;
+    }
+
+    /* Чтобы на мобилках у "О нас" не было стрелки */
+    .about-dropdown > a .fa-caret-down {
+        display: none;
+    }
+
+    /* Убираем поведение дропдауна на мобильных */
+    .about-dropdown:hover ul,
+    .about-dropdown:focus-within ul {
+        display: none !important;
+    }
+}
+
 
 @media (max-width: 768px) {
     .burger {
