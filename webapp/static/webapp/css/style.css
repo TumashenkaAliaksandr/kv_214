@@ -639,7 +639,7 @@ body {
 
 .new-objects {
     display: flex;
-    gap: 1rem;
+    gap: 1.1rem;
     padding: 0 1rem;        /* отступы, чтобы первый и последний слайд не прилипали */
     transition: transform 0.4s ease;
     height: 230px;
@@ -954,7 +954,7 @@ body {
     overflow: hidden;
     box-shadow: 0 8px 20px var(--shadow-color);
     user-select: none;
-    height: 400px;
+    height: 380px;
     padding: 10px;
 }
 
@@ -2425,6 +2425,16 @@ body.light-theme .breadcrumb-item.active {
         box-sizing: border-box;
     }
 
+    .new-objects-wrapper {
+        overflow: hidden;
+        flex: 1;
+        border-radius: 13px;
+        box-shadow: 0 10px 15px var(--shadow-color);
+        display: flex; /* чтобы потомцентрировать содержимое */
+        justify-content: normal; /* центрируем содержимое по горизонтали */
+        padding: 1rem 0; /* для отступов сверху/снизу */
+    }
+
     .centered-title {
         text-align: center;
         display: flex;
@@ -2584,10 +2594,11 @@ body.light-theme .breadcrumb-item.active {
 
     .slider-new-objects {
         margin: 0rem 0;
-        max-width: 1100px;
+        max-width: 400px;
         margin-left: auto;
         margin-right: auto;
         user-select: none;
+        justify-content: normal;
     }
 
     .nav {
@@ -2730,6 +2741,7 @@ body.light-theme .breadcrumb-item.active {
 
     .slider-container {
         flex-wrap: nowrap;
+        justify-content: center;
     }
 
     .arrow {
@@ -2775,6 +2787,9 @@ body.light-theme .breadcrumb-item.active {
         padding: 0.3rem;
         cursor: pointer;
         transition: box-shadow 0.3s;
+        max-width: 285px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .map-container {

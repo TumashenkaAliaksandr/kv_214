@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
-
+from django.urls import reverse
 
 class Contact(models.Model):
     name = models.CharField(max_length=255)
@@ -217,4 +217,4 @@ class Employee(models.Model):
         return self.full_name
 
     def get_absolute_url(self):
-        return reverse('employee_detail', kwargs={'slug': self.slug})
+        return reverse('employee_single', kwargs={'slug': self.slug})

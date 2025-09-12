@@ -34,23 +34,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(nextSlide, 4000);
     showSlide(slideIndex);
-
+    //ТОп объекты слайдер
     const newObjectsWrapper = document.querySelector(".slider-new-objects .new-objects-wrapper");
     const newObjects = document.querySelector(".slider-new-objects .new-objects");
     const newObjectsLeftBtn = document.querySelector(".slider-new-objects .left-arrow");
     const newObjectsRightBtn = document.querySelector(".slider-new-objects .right-arrow");
 
     let posNewObjects = 0;
-    const newObjectElement = newObjects.querySelector(".new-object");
-    const gapNew = 16;  // должен совпадать с gap в CSS
+    let newObjectElement = newObjects.querySelector(".new-object");
+    const gapNew = 16;
 
     function updateVisibleCountNew() {
         const containerWidthNew = newObjectsWrapper.offsetWidth;
         const itemWidthNew = newObjectElement.offsetWidth + gapNew;
-        return Math.floor(containerWidthNew / itemWidthNew);
+        const visibleCount = Math.floor(containerWidthNew / itemWidthNew);
+        return visibleCount > 0 ? visibleCount : 1; // минимум 1
     }
 
     function updateSizes() {
+        newObjectElement = newObjects.querySelector(".new-object");
         const itemWidthNew = newObjectElement.offsetWidth + gapNew;
         const visibleCountNew = updateVisibleCountNew();
         let maxShiftNew = itemWidthNew * (newObjects.children.length - visibleCountNew);
@@ -60,41 +62,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let {itemWidthNew, visibleCountNew, maxShiftNew} = updateSizes();
 
-// Обработчики кнопок
+    function slideTo(position) {
+        posNewObjects = position;
+        newObjects.style.transform = `translateX(${posNewObjects}px)`;
+    }
+
     newObjectsLeftBtn.addEventListener("click", () => {
         if (posNewObjects < 0) {
-            posNewObjects += itemWidthNew;
-            if (posNewObjects > 0) posNewObjects = 0;
-            newObjects.style.transform = `translateX(${posNewObjects}px)`;
+            slideTo(posNewObjects + itemWidthNew);
         } else {
-            posNewObjects = -maxShiftNew;
-            newObjects.style.transform = `translateX(${posNewObjects}px)`;
+            slideTo(-maxShiftNew);
         }
     });
 
     newObjectsRightBtn.addEventListener("click", () => {
         if (posNewObjects > -maxShiftNew) {
-            posNewObjects -= itemWidthNew;
-            if (posNewObjects < -maxShiftNew) posNewObjects = -maxShiftNew;
-            newObjects.style.transform = `translateX(${posNewObjects}px)`;
+            slideTo(posNewObjects - itemWidthNew);
         } else {
-            posNewObjects = 0;
-            newObjects.style.transform = `translateX(0px)`;
+            slideTo(0);
         }
     });
 
-// Обновление размеров при смене размера окна
     window.addEventListener("resize", () => {
-        const sizes = updateSizes();
+        let sizes = updateSizes();
         itemWidthNew = sizes.itemWidthNew;
         visibleCountNew = sizes.visibleCountNew;
         maxShiftNew = sizes.maxShiftNew;
-        // сброс позиции чтобы не было "за пределами"
-        posNewObjects = 0;
-        newObjects.style.transform = `translateX(0px)`;
+        slideTo(0);
     });
 
-// Автоплей
+// Автоплей слайдера
     setInterval(() => {
         newObjectsRightBtn.click();
     }, 5000);
