@@ -16,10 +16,10 @@
     <!-- Информация о нас -->
     <section class="about-section" id="about">
         <div class="container about-container">
-            <div class="about-photo">
+            <div class="about-photo about-photo-top">
                 <img src="{{ about.photo.url }}" alt="Фото компании"/>
             </div>
-            <div class="about-text">
+            <div class="about-text about-text-page">
                 <h2>✔ О {{ about.name }}</h2>
                 <p>
                     {{ about.description|linebreaksbr }}
@@ -29,7 +29,7 @@
                     <p>Лицензия: {{ about.license }}</p>
                     <p>
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:{{ about.phone|urlencode }}">Гор.: {{ about.phone }}</a>
+                        <a href="tel:{{ about.phone|urlencode }}">Город: {{ about.phone }}</a>
                     </p>
                     <p>
                         <i class="fa-solid fa-mobile-alt"></i>
