@@ -12,16 +12,21 @@
                     {% for property in properties_new %}
                         <div class="new-object">
                             <a href="{% if property.is_rent %}{% url 'rent_single' property.slug %}
-                                 {% elif property.is_sale %}{% url 'sale_single' property.slug %}
-                                 {% else %}#{% endif %}">
-                                {% if property.photos.all %}
-                                    <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
-                                {% else %}
-                                    <img src="{% static 'webapp/images/house_slide.png' %}" alt="{{ property.name }}"/>
-                                {% endif %}
+                            {% elif property.is_sale %}{% url 'sale_single' property.slug %}
+                            {% else %}#{% endif %}">
+                                <div class="image-wrapper">
+                                    {% if property.photos.all %}
+                                        <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
+                                    {% else %}
+                                        <img src="{% static 'webapp/images/house_slide.png' %}"
+                                             alt="{{ property.name }}"/>
+                                    {% endif %}
+                                    <span class="fire-sticker" title="ТОП ДНЯ">🔥</span>
+                                </div>
                                 <p>{{ property.name }}</p>
                             </a>
                         </div>
+
                     {% empty %}
                         <p>Новых объектов нет</p>
                     {% endfor %}

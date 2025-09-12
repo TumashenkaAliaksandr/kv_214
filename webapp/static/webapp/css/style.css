@@ -605,7 +605,7 @@ body {
 
 .slider-new-objects {
     margin: 3rem 0;
-    max-width: 1100px;
+    max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
     user-select: none;
@@ -632,18 +632,23 @@ body {
     flex: 1;
     border-radius: 13px;
     box-shadow: 0 10px 15px var(--shadow-color);
+    display: flex;           /* чтобы потомцентрировать содержимое */
+    justify-content: center; /* центрируем содержимое по горизонтали */
+    padding: 1rem 0;         /* для отступов сверху/снизу */
 }
 
 .new-objects {
     display: flex;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0 1rem;        /* отступы, чтобы первый и последний слайд не прилипали */
     transition: transform 0.4s ease;
     height: 230px;
+    justify-content: flex-start; /* для правильного смещения слайдов */
 }
 
+
 .new-object {
-    min-width: 180px;
+    min-width: 270px;
     border-radius: 8px;
     box-shadow: 0 6px 15px var(--shadow-color);
     background: white;
@@ -2646,6 +2651,30 @@ body.light-theme .breadcrumb-item.active {
     }
 }
 
+.image-wrapper {
+    position: relative;
+}
+
+.fire-sticker {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 17px;
+    z-index: 10;
+    pointer-events: none;
+    user-select: none;
+    background: #e7e7e7;
+    border-radius: 50%;
+    width: 28px;      /* фиксированная ширина */
+    height: 28px;     /* фиксированная высота */
+    display: flex;    /* центрирование содержимого */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2); /* тень для объёма */
+}
+
+
+
 @media (max-width: 767px) {
     .slider-new-objects {
         padding: 10px;
@@ -3434,6 +3463,15 @@ body.light-theme .breadcrumb-item.active {
 
 
 .text-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #3a6500;
+    margin: 0;
+    padding: 4px;
+    margin-left: 4px;
+}
+
+.text-title a{
     font-size: 1.3rem;
     font-weight: 700;
     color: #3a6500;

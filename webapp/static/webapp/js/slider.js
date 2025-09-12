@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(nextSlide, 4000);
     showSlide(slideIndex);
 
-    // Слайдер Новые объекты
     const newObjectsWrapper = document.querySelector(".slider-new-objects .new-objects-wrapper");
     const newObjects = document.querySelector(".slider-new-objects .new-objects");
     const newObjectsLeftBtn = document.querySelector(".slider-new-objects .left-arrow");
@@ -43,20 +42,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let posNewObjects = 0;
     const newObjectElement = newObjects.querySelector(".new-object");
-    // учитываем отступ между элементами (gap = 16px в примере)
-    const gapNew = 16;
-    let itemWidthNew = newObjectElement.offsetWidth + gapNew;
+    const gapNew = 16;  // должен совпадать с gap в CSS
 
     function updateVisibleCountNew() {
-        itemWidthNew = newObjectElement.offsetWidth + gapNew;
         const containerWidthNew = newObjectsWrapper.offsetWidth;
+        const itemWidthNew = newObjectElement.offsetWidth + gapNew;
         return Math.floor(containerWidthNew / itemWidthNew);
     }
 
-    let visibleCountNew = updateVisibleCountNew();
-    let maxShiftNew = itemWidthNew * (newObjects.children.length - visibleCountNew);
-    if (maxShiftNew < 0) maxShiftNew = 0; // если элементов меньше, чем видимых
+    function updateSizes() {
+        const itemWidthNew = newObjectElement.offsetWidth + gapNew;
+        const visibleCountNew = updateVisibleCountNew();
+        let maxShiftNew = itemWidthNew * (newObjects.children.length - visibleCountNew);
+        if (maxShiftNew < 0) maxShiftNew = 0;
+        return {itemWidthNew, visibleCountNew, maxShiftNew};
+    }
 
+    let {itemWidthNew, visibleCountNew, maxShiftNew} = updateSizes();
+
+// Обработчики кнопок
     newObjectsLeftBtn.addEventListener("click", () => {
         if (posNewObjects < 0) {
             posNewObjects += itemWidthNew;
@@ -79,10 +83,22 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Автоплей для новых объектов
+// Обновление размеров при смене размера окна
+    window.addEventListener("resize", () => {
+        const sizes = updateSizes();
+        itemWidthNew = sizes.itemWidthNew;
+        visibleCountNew = sizes.visibleCountNew;
+        maxShiftNew = sizes.maxShiftNew;
+        // сброс позиции чтобы не было "за пределами"
+        posNewObjects = 0;
+        newObjects.style.transform = `translateX(0px)`;
+    });
+
+// Автоплей
     setInterval(() => {
         newObjectsRightBtn.click();
     }, 5000);
+
 
     // Второй слайдер (обратный)
     const objectsWrapper = document.querySelector(".slider-objects-reverse .objects-wrapper");
