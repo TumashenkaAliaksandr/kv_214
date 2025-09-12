@@ -93,6 +93,7 @@ def about(request):
     properties = Property.objects.all()
     trust_stats = TrustStats.objects.first()
     trust_reasons = TrustReason.objects.all()
+    all_employees = Employee.objects.all()
 
 
     context = {
@@ -103,6 +104,7 @@ def about(request):
         'properties_new': Property.objects.filter(is_active_new=True).prefetch_related('photos'),
         'properties_all': properties.prefetch_related('photos'),
         'trust_reasons': trust_reasons,
+        'employees': all_employees,
     }
 
     return render(request, 'webapp/about.html', context)

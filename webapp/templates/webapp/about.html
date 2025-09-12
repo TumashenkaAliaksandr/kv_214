@@ -146,66 +146,38 @@
     <div class="main-container">
         <div class="employees-container">
             <div class="employee-card">
-                <div class="photo-container">
-                    <img alt="Фото специалиста" src="{% static 'webapp/svg/default_person.svg' %}"
-                         class="rounded-full"/>
-                </div>
 
-                <div class="content">
-                    <div class="header">
-                        <p class="text-title">Иван Иванов</p>
-                        <div class="rating">
-                            <span class="stars" aria-label="Рейтинг 5 из 5">★★★★★</span>
-                            <span class="review-count">339 отзывов</span>
+                {% for employee in employees %}
+                    <div class="photo-container">
+                        <img alt="Фото специалиста" src="{% static 'webapp/svg/default_person.svg' %}"
+                             class="rounded-full"/>
+                    </div>
+                    <div class="content">
+                        <div class="header">
+                            <p class="text-title">
+                                {% if employee.slug %}
+                                    <a href="{% url 'employees_single' slug=employee.slug %}">{{ employee.full_name }}</a>
+                                {% else %}
+                                    {{ employee.full_name }}
+                                {% endif %}
+                            </p>
+                            <div class="rating">
+                                <span class="stars" aria-label="Рейтинг {{ employee.rating }}">★★★★★</span>
+                                <span class="review-count">{{ employee.reviews_count }} отзывов</span>
+                            </div>
+                        </div>
+                        <div class="position">{{ employee.position }}</div>
+                        <a href="{% url 'about' %}" target="_blank"
+                           class="agency-link">{{ employee.agency_name }}</a>
+                        <div class="regions">Регионы работы: {{ employee.regions }}</div>
+                        <div class="specialties">{{ employee.specialties }}</div>
+                        <div class="contacts">
+                            <a href="tel:{{ employee.phone }}" class="phone-number">{{ employee.phone }}</a>
                         </div>
                     </div>
-                    <div class="position">Риэлтер, Учредитель</div>
-                    <a href="{% url 'about' %}" target="_blank" class="agency-link">
-                        K214.BY – АГЕНТСТВО НЕДВИЖИМОСТИ «K214 И КОМАНДА»
-                    </a>
-                    <div class="regions">
-                        Регионы работы: Полоцк / Полоцкий район, Новополоцк / Новополоцкий район …
-                    </div>
-                    <div class="specialties">
-                        Квартиры, комнаты – продажа, Коттеджи, дома, участки – продажа, Новостройки, долевое
-                        строительство,
-                        Коттеджные посёлки, Vip-недвижимость
-                    </div>
-                    <div class="contacts">
-                        <a href="tel:+375295032222" class="phone-number">+375(29)503-22-22</a>
-                    </div>
-                </div>
-            </div>
-            <div class="employee-card">
-                <div class="photo-container">
-                    <img alt="Фото специалиста" src="{% static 'webapp/svg/default_person.svg' %}"
-                         class="rounded-full"/>
-                </div>
+                {% endfor %}
 
-                <div class="content">
-                    <div class="header">
-                        <p class="text-title">Иванка Иванкович</p>
-                        <div class="rating">
-                            <span class="stars" aria-label="Рейтинг 5 из 5">★★★★★</span>
-                            <span class="review-count">339 отзывов</span>
-                        </div>
-                    </div>
-                    <div class="position">Риэлтер, Учредитель</div>
-                    <a href="{% url 'about' %}" target="_blank" class="agency-link">
-                        K214.BY – АГЕНТСТВО НЕДВИЖИМОСТИ «K214 И КОМАНДА»
-                    </a>
-                    <div class="regions">
-                        Регионы работы: Полоцк / Полоцкий район, Новополоцк / Новополоцкий район …
-                    </div>
-                    <div class="specialties">
-                        Квартиры, комнаты – продажа, Коттеджи, дома, участки – продажа, Новостройки, долевое
-                        строительство,
-                        Коттеджные посёлки, Vip-недвижимость
-                    </div>
-                    <div class="contacts">
-                        <a href="tel:+375295032222" class="phone-number">+375(29)503-22-22</a>
-                    </div>
-                </div>
+
             </div>
         </div>
 
@@ -222,12 +194,19 @@
                 </a>
                 <p> ЖК ТОПАЗ</p>
             </div>
-            <div class="banner iframe-banner">
-                <iframe src="//a.realt.by/swiffy/data/73432f2f14cf5a0b8368a4f361177bd3/240x400.html"
-                        title="Реклама"></iframe>
+            <div class="banner animated-banner">
+                <img src="{% static 'webapp/svg/default_person.svg' %}" alt="Рекламное фото" class="banner-photo">
+                <div class="ad-text typing-text">Реклама вашего продукта здесь</div>
             </div>
+            <div class="banner animated-banner">
+                <img src="{% static 'webapp/svg/default_person.svg' %}" alt="Рекламное фото" class="banner-photo">
+                <div class="ad-text typing-text">Реклама вашего продукта здесь</div>
+            </div>
+
+
         </aside>
     </div>
+
 
 
 {% endblock %}

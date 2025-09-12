@@ -1,0 +1,47 @@
+{% load static %}
+{% load currency_filters %}
+
+{% block content %}
+
+    <!-- Второй слайдер объектов (наоборот) -->
+    <section class="slider-objects-reverse">
+        <h2><i class="fa-solid fa-home"></i> Все объекты</h2>
+        <div class="slider-container reverse-direction">
+            <button class="arrow left-arrow" aria-label="Влево"><i class="fa fa-chevron-left"></i></button>
+            <div class="objects-wrapper">
+                <div class="objects">
+                    {% for property in properties_all %}
+                        <div class="object-item">
+                            <a href="{% if property.is_rent %}{% url 'rent_single' property.slug %}
+                 {% elif property.is_sale %}{% url 'sale_single' property.slug %}
+                 {% else %}#{% endif %}">
+                                {% if property.photos.all %}
+                                    <img src="{{ property.photos.all.0.photo.url }}" alt="{{ property.name }}"/>
+                                {% else %}
+                                    <img src="{% static 'webapp/images/kvatera_default.jpg' %}"
+                                         alt="{{ property.name }}"/>
+                                {% endif %}
+                                <p>{{ property.name }}</p>
+                                <p>Цена BYN: {{ property.price }}</p>
+                                {% if usd_to_byn_rate and property.price %}
+                                    <p>Цена в USD: ${{ property.price|divide:usd_to_byn_rate|floatformat:2 }}</p>
+                                {% else %}
+                                    <p>Цена USD: $недоступна</p>
+                                {% endif %}
+                            </a>
+                        </div>
+                    {% empty %}
+                        <p>Объектов нет</p>
+                    {% endfor %}
+
+                </div>
+            </div>
+            <button class="arrow right-arrow" aria-label="Вправо"><i class="fa fa-chevron-right"></i></button>
+        </div>
+        <a href="{% url 'sale' %}">
+            <button class="btn btn-see_all" type="button">Посмотреть все</button>
+        </a>
+
+    </section>
+
+{% endblock %}
