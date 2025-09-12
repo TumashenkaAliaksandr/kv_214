@@ -15,37 +15,6 @@
     <div class="main-container">
         <div class="employees-container">
             <div class="employee-card">
-                <div class="photo-container">
-                    <img alt="Фото специалиста" src="{% static 'webapp/svg/default_person.svg' %}"
-                         class="rounded-full"/>
-                </div>
-
-                <div class="content">
-                    <div class="header">
-                        <p class="text-title">Иван Иванов</p>
-                        <div class="rating">
-                            <span class="stars" aria-label="Рейтинг 5 из 5">★★★★★</span>
-                            <span class="review-count">339 отзывов</span>
-                        </div>
-                    </div>
-                    <div class="position">Риэлтер, Учредитель</div>
-                    <a href="{% url 'about' %}" target="_blank" class="agency-link">
-                        K214.BY – АГЕНТСТВО НЕДВИЖИМОСТИ «K214 И КОМАНДА»
-                    </a>
-                    <div class="regions">
-                        Регионы работы: Полоцк / Полоцкий район, Новополоцк / Новополоцкий район …
-                    </div>
-                    <div class="specialties">
-                        Квартиры, комнаты – продажа, Коттеджи, дома, участки – продажа, Новостройки, долевое
-                        строительство,
-                        Коттеджные посёлки, Vip-недвижимость
-                    </div>
-                    <div class="contacts">
-                        <a href="tel:+375295032222" class="phone-number">+375(29)503-22-22</a>
-                    </div>
-                </div>
-            </div>
-            <div class="employee-card">
 
                 {% for employee in employees %}
                     <div class="photo-container">
