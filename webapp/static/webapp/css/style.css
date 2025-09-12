@@ -3640,10 +3640,11 @@ body.light-theme .breadcrumb-item.active {
     flex-wrap: wrap;
     gap: 24px;
     padding: 20px;
-    background-color: #f9fafb;
+    background-color: #e4efdb;
     border-radius: 8px;
-    max-width: 900px;
+    max-width: 1300px;
     margin: 0 auto;
+    margin-bottom: 44px;
 }
 
 .employee-photo {
@@ -3718,19 +3719,59 @@ body.light-theme .breadcrumb-item.active {
     margin-top: 16px;
 }
 
+
+
 .show-phone-btn {
-    background-color: #3b82f6;
-    color: white;
+    background: var(--accent-color);
     border: none;
-    padding: 10px 16px;
-    border-radius: 6px;
-    font-weight: 600;
+    border-radius: var(--border-radius);
+    padding: 0.4rem 1rem;
+    color: #3a6500;
+    font-weight: 700;
+    font-size: 0.9rem;
+    height: 44px;
+    margin-top: 4px;
+
+    /* Выпуклая тень — наружняя тень */
+    box-shadow: 0 4px 6px rgba(134, 160, 52, 0.4), /* основная */ 0 2px 4px rgba(134, 160, 52, 0.2);
+
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s, background 0.3s, transform 0.1s;
+    user-select: none;
+    animation: pulseShadowBg 3s ease-in-out infinite;
 }
 
-.show-phone-btn:hover {
-    background-color: #2563eb;
+.show-phone-btn:hover,
+.show-phone-btn:focus {
+    background: var(--accent-color-light);
+    outline: none;
+
+    /* Более выраженная тень */
+    box-shadow: 0 6px 10px rgba(84, 119, 32, 0.6),
+    0 3px 6px rgba(84, 119, 32, 0.4);
+    animation: none;
+}
+
+.show-phone-btn:active {
+    background: var(--accent-color-dark);
+
+    /* Впуклая тень — внутренние тени (эффект вдавливания) */
+    box-shadow: inset 0 2px 4px rgba(84, 119, 32, 0.7),
+    inset 0 1px 3px rgba(84, 119, 32, 0.5);
+
+    transform: translateY(1px);
+}
+
+/* Анимация для псевдоэлемента */
+@keyframes pulseShadowBg {
+    0%, 100% {
+        box-shadow: 0 4px 6px rgba(115, 255, 0, 0.4), 0 2px 4px rgba(134, 160, 52, 0.2);
+        background: var(--accent-color);
+    }
+    50% {
+        box-shadow: 0 6px 10px rgba(66, 232, 0, 0.6), 0 3px 6px rgba(134, 160, 52, 0.3);
+        background-color: rgb(241, 241, 241);
+    }
 }
 
 .employee-phone {

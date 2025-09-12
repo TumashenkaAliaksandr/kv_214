@@ -14995,3 +14995,149 @@ ValueError: invalid literal for int() with base 10: '19000.00'
 [INFO] 2025-09-12 11:21:27,031 basehttp 16804 9492 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
 [WARNING] 2025-09-12 11:21:29,871 log 16804 9492 Not Found: /.well-known/appspecific/com.chrome.devtools.json
 [WARNING] 2025-09-12 11:21:29,872 basehttp 16804 9492 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:22:00,873 basehttp 16804 9492 "GET / HTTP/1.1" 200 43031
+[WARNING] 2025-09-12 11:22:00,930 log 16804 9492 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:22:00,934 basehttp 16804 9492 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:22:00,935 basehttp 16804 5664 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-12 11:22:00,936 basehttp 16804 10984 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 11:22:00,937 basehttp 16804 8832 "GET /static/webapp/css/style.css HTTP/1.1" 200 86260
+[INFO] 2025-09-12 11:22:00,979 basehttp 16804 8832 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 11:22:00,979 basehttp 16804 10984 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 11:22:00,990 basehttp 16804 10984 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 11:22:00,991 basehttp 16804 8832 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 11:22:01,013 basehttp 16804 8832 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3918
+[INFO] 2025-09-12 11:22:01,016 basehttp 16804 6676 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 480
+[INFO] 2025-09-12 11:22:01,016 basehttp 16804 5664 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 11:22:01,017 basehttp 16804 9492 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 11:22:01,017 basehttp 16804 10984 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 11:22:01,057 basehttp 16804 9492 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-12 11:22:01,060 basehttp 16804 5664 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-12 11:22:01,061 basehttp 16804 10984 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-12 11:22:01,063 basehttp 16804 6676 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-12 11:22:01,068 basehttp 16804 11828 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-12 11:22:01,069 basehttp 16804 8832 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-12 11:22:01,076 basehttp 16804 10984 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-12 11:22:01,089 basehttp 16804 5664 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-12 11:22:01,091 basehttp 16804 6676 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-12 11:22:01,100 basehttp 16804 9492 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-12 11:22:04,403 basehttp 16804 11828 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 11:24:21,077 basehttp 16804 11828 "GET / HTTP/1.1" 200 43031
+[WARNING] 2025-09-12 11:24:21,144 log 16804 11828 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-12 11:24:21,145 basehttp 16804 9492 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:24:21,145 basehttp 16804 8832 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:24:21,145 basehttp 16804 11828 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:26:00,253 basehttp 16804 11828 "GET / HTTP/1.1" 200 43031
+[WARNING] 2025-09-12 11:26:00,316 log 16804 11828 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:26:00,317 basehttp 16804 11828 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:26:00,331 basehttp 16804 11828 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:26:00,378 basehttp 16804 11828 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:26:25,712 basehttp 16804 11828 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:26:25,763 log 16804 11828 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:26:25,764 basehttp 16804 11828 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:26:41,336 basehttp 16804 11828 "GET / HTTP/1.1" 200 43031
+[WARNING] 2025-09-12 11:26:41,392 log 16804 11828 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:26:41,392 basehttp 16804 11828 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:26:41,450 basehttp 16804 11828 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:28:18,791 basehttp 16804 11828 "GET / HTTP/1.1" 200 43031
+[WARNING] 2025-09-12 11:28:18,873 log 16804 9492 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-12 11:28:18,873 basehttp 16804 8832 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:28:18,874 basehttp 16804 11828 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:28:18,874 basehttp 16804 9492 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:29:07,108 basehttp 16804 9492 "GET / HTTP/1.1" 200 43031
+[INFO] 2025-09-12 11:29:07,174 basehttp 16804 9492 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:29:07,189 log 16804 8832 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:29:07,190 basehttp 16804 8832 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:29:07,198 basehttp 16804 8832 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:30:15,387 basehttp 16804 8832 "GET / HTTP/1.1" 200 43031
+[WARNING] 2025-09-12 11:30:15,451 log 16804 8832 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-12 11:30:15,454 basehttp 16804 9492 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:30:15,455 basehttp 16804 8832 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:30:15,518 basehttp 16804 8832 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:33:13,452 basehttp 16804 8832 "GET / HTTP/1.1" 200 43031
+[WARNING] 2025-09-12 11:33:13,563 log 16804 8832 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-12 11:33:13,567 basehttp 16804 11828 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[WARNING] 2025-09-12 11:33:13,567 basehttp 16804 8832 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:33:13,568 basehttp 16804 9492 "GET /static/webapp/css/style.css HTTP/1.1" 200 86314
+[INFO] 2025-09-12 11:33:13,569 basehttp 16804 2084 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 11:33:13,626 basehttp 16804 2084 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 11:33:13,634 basehttp 16804 11828 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 11:33:13,663 basehttp 16804 11828 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 11:33:13,670 basehttp 16804 8832 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 11:33:13,674 basehttp 16804 9492 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3918
+[INFO] 2025-09-12 11:33:13,676 basehttp 16804 2084 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 11:33:13,770 basehttp 16804 13400 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 11:33:13,786 basehttp 16804 11828 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-12 11:33:13,797 basehttp 16804 8832 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 480
+[INFO] 2025-09-12 11:33:13,809 basehttp 16804 11644 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 11:33:13,829 basehttp 16804 8832 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-12 11:33:13,908 basehttp 16804 8832 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-12 11:33:13,926 basehttp 16804 13400 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-12 11:33:13,934 basehttp 16804 11828 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-12 11:33:13,975 basehttp 16804 9492 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-12 11:33:13,992 basehttp 16804 2084 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-12 11:33:14,025 basehttp 16804 11644 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-12 11:33:14,027 basehttp 16804 8832 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-12 11:33:14,059 basehttp 16804 13400 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-12 11:33:17,799 basehttp 16804 2084 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 11:35:31,184 basehttp 16804 2084 "GET / HTTP/1.1" 200 43031
+[WARNING] 2025-09-12 11:35:31,251 log 16804 2084 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:35:31,255 basehttp 16804 2084 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:35:31,257 basehttp 16804 11644 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 11:35:31,258 basehttp 16804 13400 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-12 11:35:31,259 basehttp 16804 9492 "GET /static/webapp/css/style.css HTTP/1.1" 200 86314
+[INFO] 2025-09-12 11:35:31,330 basehttp 16804 9492 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 11:35:31,334 basehttp 16804 13400 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 11:35:31,339 basehttp 16804 9492 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 11:35:31,343 basehttp 16804 13400 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 11:35:31,373 basehttp 16804 9492 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 11:35:31,374 basehttp 16804 11644 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 11:35:31,374 basehttp 16804 13400 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3918
+[INFO] 2025-09-12 11:35:31,375 basehttp 16804 2084 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 11:35:31,375 basehttp 16804 11828 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 480
+[INFO] 2025-09-12 11:35:31,397 basehttp 16804 11828 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-12 11:35:31,404 basehttp 16804 13400 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-12 11:35:31,406 basehttp 16804 9492 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-12 11:35:31,408 basehttp 16804 11644 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-12 11:35:31,426 basehttp 16804 8832 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-12 11:35:31,428 basehttp 16804 11828 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-12 11:35:31,445 basehttp 16804 9492 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-12 11:35:31,450 basehttp 16804 13400 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-12 11:35:31,451 basehttp 16804 2084 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-12 11:35:31,495 basehttp 16804 11644 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-12 11:35:35,546 basehttp 16804 2084 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 11:38:18,981 basehttp 16804 4648 "GET / HTTP/1.1" 200 43031
+[WARNING] 2025-09-12 11:38:19,050 log 16804 16704 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:38:19,053 basehttp 16804 16704 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:38:19,055 basehttp 16804 15836 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 11:38:19,055 basehttp 16804 6872 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-12 11:38:19,055 basehttp 16804 4648 "GET /static/webapp/css/style.css HTTP/1.1" 200 86340
+[INFO] 2025-09-12 11:38:19,116 basehttp 16804 4648 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 11:38:19,116 basehttp 16804 15836 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 11:38:19,122 basehttp 16804 15836 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 11:38:19,123 basehttp 16804 4648 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 11:38:19,149 basehttp 16804 4648 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 3918
+[INFO] 2025-09-12 11:38:19,154 basehttp 16804 6872 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 11:38:19,154 basehttp 16804 15836 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 11:38:19,154 basehttp 16804 16704 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 11:38:19,155 basehttp 16804 14896 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 480
+[INFO] 2025-09-12 11:38:19,171 basehttp 16804 15836 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-12 11:38:19,177 basehttp 16804 16704 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-12 11:38:19,179 basehttp 16804 14896 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-12 11:38:19,184 basehttp 16804 6872 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-12 11:38:19,188 basehttp 16804 15836 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-12 11:38:19,203 basehttp 16804 14896 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-12 11:38:19,206 basehttp 16804 6872 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-12 11:38:19,221 basehttp 16804 4648 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-12 11:38:19,226 basehttp 16804 16704 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-12 11:38:19,261 basehttp 16804 16940 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-12 11:38:23,029 basehttp 16804 16940 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 11:39:05,622 basehttp 16804 16940 "GET /sale/novopolock-kolasa22/ HTTP/1.1" 200 19304
+[INFO] 2025-09-12 11:39:05,677 basehttp 16804 16940 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-12 11:39:08,073 basehttp 16804 16940 "GET / HTTP/1.1" 200 43031
+[INFO] 2025-09-12 11:39:16,038 basehttp 16804 16940 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 11:39:16,074 log 16804 16940 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:39:16,074 basehttp 16804 16940 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:39:25,129 basehttp 16804 16940 "GET / HTTP/1.1" 200 43031
+[WARNING] 2025-09-12 11:39:25,185 log 16804 16940 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 11:39:25,186 basehttp 16804 16940 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 11:39:25,187 basehttp 16804 4648 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
