@@ -2361,8 +2361,8 @@ body.light-theme .breadcrumb-item.active {
 
 .popup-close {
     position: absolute;
-    top: 28px;
-    right: 36px;
+    top: 143px;
+    right: 22px;
     font-size: 3rem;
     color: #fff;
     cursor: pointer;
@@ -2377,7 +2377,7 @@ body.light-theme .breadcrumb-item.active {
 .popup-arrows {
     position: absolute;
     width: 90vw;
-    top: 50%;
+    top: 46%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3280,7 +3280,7 @@ body.light-theme .breadcrumb-item.active {
 
     .gallery-main-photo img {
         max-height: 290px;
-        /*width: 368px !important;*/
+        width: 340px !important;
         position: relative;
         margin-left: auto;
         margin-right: auto
