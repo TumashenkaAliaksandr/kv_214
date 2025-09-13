@@ -980,7 +980,7 @@ body {
 /* Второй слайдер объектов (обратный) */
 
 .slider-objects-reverse {
-    max-width: 1400px;
+    max-width: 1144px;
     margin: 4rem auto 6rem auto;
     user-select: none;
 }

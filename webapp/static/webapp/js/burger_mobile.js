@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeAllDropdowns() {
     document.querySelectorAll('.dropdown.active').forEach(drop => {
       drop.classList.remove('active');
-      const a = drop.querySelector('> a');
+      const a = drop.querySelector(':scope > a');
       if (a) a.setAttribute('aria-expanded', 'false');
     });
   }
@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', (e) => {
         if (window.innerWidth > MOBILE_BREAKPOINT) {
           // На десктопе блокируем переход и раскрываем меню
-          e.preventDefault();
-          e.stopPropagation();
+          // e.preventDefault();
+          // e.stopPropagation();
 
           const parentLi = link.parentElement;
           const wasActive = parentLi.classList.contains('active');
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
           document.querySelectorAll('.dropdown.active').forEach(drop => {
             if (drop !== parentLi) {
               drop.classList.remove('active');
-              const otherA = drop.querySelector('> a');
+              const otherA = drop.querySelector(':scope > a');
               if (otherA) otherA.setAttribute('aria-expanded', 'false');
             }
           });

@@ -17528,3 +17528,90 @@ ValueError: invalid literal for int() with base 10: '19000.00'
 [INFO] 2025-09-12 16:12:20,393 basehttp 16400 15452 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 20406
 [INFO] 2025-09-12 16:13:26,338 basehttp 16400 15452 "GET / HTTP/1.1" 200 43319
 [INFO] 2025-09-12 16:13:26,379 basehttp 16400 15452 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:15:15,823 basehttp 16400 5420 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 22:15:15,840 log 16400 15604 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:15:15,855 basehttp 16400 15604 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:15:50,289 basehttp 16400 15604 "GET / HTTP/1.1" 200 43319
+[WARNING] 2025-09-12 22:15:50,348 log 16400 15604 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:15:50,357 basehttp 16400 15604 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:15:50,362 basehttp 16400 5420 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:15:50,368 basehttp 16400 15596 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:15:50,375 basehttp 16400 5420 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:15:50,386 basehttp 16400 15596 "GET /static/webapp/js/messengers.js HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:18:48,518 basehttp 16400 15596 "GET / HTTP/1.1" 200 43319
+[WARNING] 2025-09-12 22:18:48,629 log 16400 15596 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:18:48,631 basehttp 16400 15596 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:19:33,304 basehttp 16400 15596 "GET /employees/ HTTP/1.1" 200 15466
+[INFO] 2025-09-12 22:19:33,343 basehttp 16400 15596 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:19:37,830 basehttp 16400 15596 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13977
+[INFO] 2025-09-12 22:20:07,283 basehttp 16400 15596 "GET /contacts/ HTTP/1.1" 200 19570
+[INFO] 2025-09-12 22:20:09,644 basehttp 16400 15596 "GET /contacts/ HTTP/1.1" 200 19570
+[INFO] 2025-09-12 22:20:11,640 basehttp 16400 15596 "GET /contacts/ HTTP/1.1" 200 19570
+[WARNING] 2025-09-12 22:20:27,748 log 16400 15596 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:20:27,752 basehttp 16400 15596 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:22:32,967 basehttp 16400 15596 "GET /sale/ HTTP/1.1" 200 19175
+[INFO] 2025-09-12 22:22:51,060 basehttp 16400 15596 "GET / HTTP/1.1" 200 43319
+[INFO] 2025-09-12 22:23:04,365 basehttp 16400 15596 "GET /sale/?property_type=is_active_house HTTP/1.1" 200 14496
+[INFO] 2025-09-12 22:23:06,026 basehttp 16400 15596 "GET /sale/ HTTP/1.1" 200 19175
+[WARNING] 2025-09-12 22:23:12,130 log 16400 15596 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:23:12,131 basehttp 16400 15596 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:23:24,994 basehttp 16400 15596 "GET /sale/polock_okt1/ HTTP/1.1" 200 21328
+[WARNING] 2025-09-12 22:23:25,035 log 16400 15596 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:23:25,036 basehttp 16400 15596 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:23:35,814 basehttp 16400 15596 "GET / HTTP/1.1" 200 43319
+[WARNING] 2025-09-12 22:23:35,853 log 16400 15596 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:23:35,855 basehttp 16400 15596 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:24:01,582 basehttp 16400 15596 "GET /sale/?property_type=is_active_house HTTP/1.1" 200 14496
+[WARNING] 2025-09-12 22:24:01,639 log 16400 15596 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:24:01,639 basehttp 16400 15596 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:24:21,656 basehttp 16400 15596 "GET /sale/?property_type=is_commercial HTTP/1.1" 200 14496
+[WARNING] 2025-09-12 22:24:21,732 log 16400 15596 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:24:21,741 basehttp 16400 15596 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:24:27,232 basehttp 16400 15596 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 20406
+[WARNING] 2025-09-12 22:24:27,288 log 16400 15596 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:24:27,291 basehttp 16400 15596 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:24:27,304 basehttp 16400 15596 "GET /media/property_photos/2_KMgxogp.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:24:27,305 basehttp 16400 7220 "GET /media/property_photos/3_87Ws96w.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:24:27,325 basehttp 16400 7616 "GET /media/property_photos/4_8wGv1zK.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:24:27,329 basehttp 16400 17096 "GET /media/property_photos/5_RzAWJ9S.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:24:27,353 basehttp 16400 15472 "GET /media/property_photos/6_PFYOJAC.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:26:58,446 basehttp 16400 15472 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 20406
+[WARNING] 2025-09-12 22:26:58,494 log 16400 15472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:26:58,500 basehttp 16400 15472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:29:01,595 basehttp 16400 15472 "GET / HTTP/1.1" 200 43319
+[WARNING] 2025-09-12 22:29:01,658 log 16400 15472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:29:01,660 basehttp 16400 15472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:29:42,946 basehttp 16400 15472 "GET /sale/?property_type=is_active_apartment HTTP/1.1" 200 17674
+[WARNING] 2025-09-12 22:29:43,008 log 16400 15472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:29:43,009 basehttp 16400 15472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:29:48,256 basehttp 16400 15472 "GET /sale/novopolock-kolasa22/ HTTP/1.1" 200 19592
+[WARNING] 2025-09-12 22:29:48,312 log 16400 15472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:29:48,312 basehttp 16400 15472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:31:21,640 basehttp 16400 15472 "GET /sale/novopolock-kolasa22/ HTTP/1.1" 200 19592
+[WARNING] 2025-09-12 22:31:21,710 log 16400 15472 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:31:21,713 basehttp 16400 15472 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:31:21,720 basehttp 16400 9332 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-12 22:31:21,723 basehttp 16400 11768 "GET /static/webapp/css/style.css HTTP/1.1" 200 94719
+[INFO] 2025-09-12 22:31:21,728 basehttp 16400 12832 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-12 22:31:21,728 basehttp 16400 11068 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-12 22:31:21,730 basehttp 16400 17028 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-12 22:31:21,732 basehttp 16400 5396 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-12 22:31:21,742 basehttp 16400 11768 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-12 22:31:21,743 basehttp 16400 9332 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5531
+[INFO] 2025-09-12 22:31:21,754 basehttp 16400 5396 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-12 22:31:21,757 basehttp 16400 17028 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-12 22:31:21,761 basehttp 16400 12832 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-12 22:31:21,769 basehttp 16400 11768 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-12 22:31:21,773 basehttp 16400 5396 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-12 22:31:22,036 basehttp 16400 5396 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-12 22:32:51,881 basehttp 16400 5396 "GET /sale/?property_type=is_commercial HTTP/1.1" 200 14496
+[WARNING] 2025-09-12 22:32:51,946 log 16400 5396 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:32:51,947 basehttp 16400 5396 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:32:51,951 basehttp 16400 11768 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-12 22:32:53,622 basehttp 16400 5396 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 20406
+[WARNING] 2025-09-12 22:32:53,687 log 16400 5396 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:32:53,707 basehttp 16400 5396 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:34:01,695 basehttp 16400 5396 "GET / HTTP/1.1" 200 43319
+[WARNING] 2025-09-12 22:34:01,755 log 16400 5396 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-12 22:34:01,759 basehttp 16400 11768 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-12 22:34:01,760 basehttp 16400 5396 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
