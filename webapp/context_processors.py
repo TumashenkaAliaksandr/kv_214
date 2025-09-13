@@ -21,8 +21,13 @@ def get_usd_to_byn_rate():
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        return data['Cur_OfficialRate']
+        rate = data.get('Cur_OfficialRate')
+        scale = data.get('Cur_Scale', 1)
+        # Правильный курс = официальный курс / масштаб
+        if rate and scale:
+            return rate / scale
     return None
+
 
 def currency_rates(request):
     rate = get_usd_to_byn_rate()

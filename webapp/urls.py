@@ -19,6 +19,7 @@ urlpatterns = [
     path('employees/', views.employees, name='employees'),
     path('employees_single/<slug:slug>/', views.employees_single, name='employees_single'),
     path('contacts/', views.contacts, name='contacts'),
+    path('submit_review/', views.submit_review, name='submit_review'),
     path('consultation/', consultation_view, name='consultation_form'),
     path('send-consultation-message/', send_consultation_message, name='send_consultation_message'),
     path("robots.txt", RobotsTxtView.as_view(), name="robots_txt"),

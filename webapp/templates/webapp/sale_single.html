@@ -1,4 +1,5 @@
 {% extends 'main/base.html' %}
+{% load currency_filters %}
 {% load static %}
 
 {% block content %}
@@ -59,8 +60,12 @@
                 <p><b>Площадь:</b> {{ property.area }} м²
                     {% if property.area_ga %} ({{ property.area_ga }} сот./га) {% endif %}
                 </p>
-                <p><b>Цена аренды:</b> <span class="property-price">{{ property.price }} {{ property.currency }}</span>
-                </p>
+                <p><b>Цена BYN:</b> <span class="price-sale">{{ property.price|multiply:usd_to_byn_rate|floatformat:2 }}</span></p>
+                {% if usd_to_byn_rate and property.price %}
+                    <p><b>Цена в USD: $</b> <span class="price-sale">{{ property.price }}</span></p>
+                {% else %}
+                    <p>Цена USD: $недоступна</p>
+                {% endif %}
                 <br>
                 <p><b>Примечание:</b><br> <span>{{ property.notes|safe }}</span>
                 </p>

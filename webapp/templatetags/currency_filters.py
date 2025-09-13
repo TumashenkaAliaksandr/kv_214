@@ -8,3 +8,10 @@ def divide(value, arg):
         return float(value) / float(arg)
     except (ValueError, ZeroDivisionError, TypeError):
         return None
+
+@register.filter
+def multiply(value, arg):
+    try:
+        return float(value) * float(arg)
+    except (ValueError, TypeError):
+        return None

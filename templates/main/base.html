@@ -73,7 +73,8 @@
                     </ul>
                 </li>
 
-                <li><a href="{% url 'contacts' %}"><i class="fas fa-pencil-alt"></i> Оставить отзыв</a></li>
+                <li><a href="#" id="openReviewBtn"><i class="fas fa-pencil-alt"></i> Оставить отзыв</a></li>
+
 
                 {#                  <li class="dropdown rent-dropdown">#}
                 {#                      <a href="{% url 'rent' %}"><i class="fa-solid fa-key"></i> Аренда <i class="fa fa-caret-down"></i></a>#}
@@ -217,6 +218,24 @@
     </div>
 </div>
 
+<div id="reviewModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-modal="true"
+     tabindex="-1" style="display:none;">
+    <div class="modal-content" role="document">
+        <button class="close-btn" id="closeReviewBtn" aria-label="Закрыть">&times;</button>
+        <h2 id="modalTitle">Оставить отзыв</h2>
+        <form method="post" action="{% url 'submit_review' %}" id="reviewForm">
+            {% csrf_token %}
+            <label for="reviewerName">Ваше имя:</label>
+            <input type="text" id="reviewerName" name="reviewerName" required>
+
+            <label for="reviewText">Текст отзыва:</label>
+            <textarea id="reviewText" name="reviewText" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+
 
 <script src="{% static 'webapp/js/slider.js' %}"></script>
 <script src="{% static 'webapp/js/filter_rent.js' %}"></script>
@@ -225,6 +244,7 @@
 <script src="{% static 'webapp/js/trust_animations.js' %}"></script>
 <script src="{% static 'webapp/js/messengers.js' %}"></script>
 <script src="{% static 'webapp/js/employee_profile.js' %}"></script>
+<script src="{% static 'webapp/js/feedback.js' %}"></script>
 <script>
     // Топ бар закрытие
     document.querySelector('.close-button').addEventListener('click', () => {

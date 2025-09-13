@@ -17615,3 +17615,844 @@ ValueError: invalid literal for int() with base 10: '19000.00'
 [WARNING] 2025-09-12 22:34:01,755 log 16400 5396 Not Found: /.well-known/appspecific/com.chrome.devtools.json
 [INFO] 2025-09-12 22:34:01,759 basehttp 16400 11768 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
 [WARNING] 2025-09-12 22:34:01,760 basehttp 16400 5396 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:34:42,705 basehttp 16400 5396 "GET /about/ HTTP/1.1" 200 23111
+[WARNING] 2025-09-12 22:34:42,765 log 16400 5396 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-12 22:34:42,766 basehttp 16400 5396 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-12 22:34:42,789 basehttp 16400 5396 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:24:20,721 basehttp 16400 9260 "GET /about/ HTTP/1.1" 200 23111
+[INFO] 2025-09-13 08:24:20,764 basehttp 16400 9260 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:24:20,774 basehttp 16400 11948 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:24:20,781 basehttp 16400 16820 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:24:20,787 basehttp 16400 16820 "GET /static/webapp/js/messengers.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:24:20,787 basehttp 16400 11948 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:24:20,793 basehttp 16400 17352 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 304 0
+[WARNING] 2025-09-13 08:24:20,812 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:24:20,812 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:25:02,725 basehttp 16400 9260 "GET /about/ HTTP/1.1" 200 23111
+[INFO] 2025-09-13 08:26:03,841 basehttp 16400 9260 "GET / HTTP/1.1" 200 43319
+[INFO] 2025-09-13 08:26:03,887 basehttp 16400 11948 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:26:03,888 basehttp 16400 16820 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:26:03,888 basehttp 16400 17352 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:26:03,888 basehttp 16400 17780 "GET /static/webapp/js/messengers.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:26:03,894 basehttp 16400 17780 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:26:03,926 basehttp 16400 9260 "GET /static/webapp/css/style.css HTTP/1.1" 200 94719
+[WARNING] 2025-09-13 08:26:43,797 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:26:43,798 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[WARNING] 2025-09-13 08:29:15,973 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:29:15,974 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:30:05,944 basehttp 16400 9260 "GET / HTTP/1.1" 200 43319
+[WARNING] 2025-09-13 08:30:06,000 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:30:06,002 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:30:10,294 basehttp 16400 9260 "GET / HTTP/1.1" 200 43319
+[WARNING] 2025-09-13 08:30:10,343 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:30:10,347 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:30:10,349 basehttp 16400 17780 "GET /static/webapp/css/style.css HTTP/1.1" 200 94719
+[INFO] 2025-09-13 08:30:10,349 basehttp 16400 17352 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 08:30:10,371 basehttp 16400 16820 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 08:30:10,430 basehttp 16400 16820 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 08:30:10,437 basehttp 16400 17352 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 08:30:10,470 basehttp 16400 16820 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 08:30:10,471 basehttp 16400 11948 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5531
+[INFO] 2025-09-13 08:30:10,472 basehttp 16400 15000 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 08:30:10,474 basehttp 16400 9260 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 08:30:10,475 basehttp 16400 17780 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 08:30:10,491 basehttp 16400 17352 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 08:30:10,532 basehttp 16400 15000 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 08:30:10,542 basehttp 16400 17780 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 08:30:10,546 basehttp 16400 11948 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 08:30:10,560 basehttp 16400 9260 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 08:30:10,572 basehttp 16400 17352 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 08:30:10,577 basehttp 16400 15000 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 08:30:10,636 basehttp 16400 17780 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 08:30:10,682 basehttp 16400 17780 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 08:30:10,683 basehttp 16400 17352 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 08:30:10,693 basehttp 16400 16820 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 08:30:10,706 basehttp 16400 15000 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 08:30:13,467 basehttp 16400 15000 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 08:31:16,396 basehttp 16400 15000 "GET / HTTP/1.1" 200 43319
+[WARNING] 2025-09-13 08:31:16,454 log 16400 15000 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 08:31:16,456 basehttp 16400 9260 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 08:31:16,457 basehttp 16400 15000 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:32:19,783 basehttp 16400 15000 "GET /contacts/ HTTP/1.1" 200 19570
+[INFO] 2025-09-13 08:32:19,828 basehttp 16400 15000 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:32:46,306 basehttp 16400 15000 "GET /sale/ HTTP/1.1" 200 19175
+[INFO] 2025-09-13 08:32:46,345 basehttp 16400 9260 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:32:46,346 basehttp 16400 17352 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:32:46,347 basehttp 16400 15000 "GET /static/webapp/css/style.css HTTP/1.1" 200 94719
+[WARNING] 2025-09-13 08:32:46,363 log 16400 17352 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:32:46,364 basehttp 16400 17352 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:32:46,370 basehttp 16400 15000 "GET /static/webapp/js/modal_window.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:32:46,370 basehttp 16400 17352 "GET /static/webapp/js/messengers.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:32:46,387 basehttp 16400 17352 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:33:48,307 basehttp 16400 17352 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 08:33:48,345 log 16400 17352 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:33:48,346 basehttp 16400 17352 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:34:00,828 basehttp 16400 17352 "GET /sale/ HTTP/1.1" 200 19175
+[WARNING] 2025-09-13 08:34:00,877 log 16400 17352 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:34:00,878 basehttp 16400 17352 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:34:01,143 basehttp 16400 15548 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 08:34:13,331 basehttp 16400 17352 "GET / HTTP/1.1" 200 43319
+[INFO] 2025-09-13 08:34:13,377 basehttp 16400 17352 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 08:34:18,738 log 16400 17352 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:34:18,739 basehttp 16400 17352 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:37:22,308 basehttp 16400 17352 "GET / HTTP/1.1" 200 43319
+[WARNING] 2025-09-13 08:37:22,346 log 16400 17352 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:37:22,347 basehttp 16400 17352 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:37:22,347 basehttp 16400 15000 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:37:22,649 basehttp 16400 15548 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 08:37:22,729 basehttp 16400 15548 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 08:37:26,122 basehttp 16400 15000 "GET / HTTP/1.1" 200 43319
+[INFO] 2025-09-13 08:37:26,167 basehttp 16400 17352 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 08:37:26,171 basehttp 16400 17460 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 08:37:26,171 basehttp 16400 9260 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 08:37:26,172 basehttp 16400 9200 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 08:37:26,173 basehttp 16400 18024 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 08:37:26,174 basehttp 16400 17352 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 08:37:26,174 basehttp 16400 15000 "GET /static/webapp/css/style.css HTTP/1.1" 200 94719
+[INFO] 2025-09-13 08:37:26,178 basehttp 16400 9200 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5538
+[INFO] 2025-09-13 08:37:26,186 basehttp 16400 17352 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 08:37:26,188 basehttp 16400 15000 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 08:37:26,189 basehttp 16400 18024 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 08:37:26,189 basehttp 16400 9260 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 08:37:26,202 basehttp 16400 15000 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 08:37:26,208 basehttp 16400 9260 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 08:37:26,213 basehttp 16400 18024 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 08:37:26,216 basehttp 16400 17352 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 08:37:26,223 basehttp 16400 15000 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 08:37:26,223 basehttp 16400 9260 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 08:37:26,230 basehttp 16400 18024 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 08:37:26,235 basehttp 16400 17352 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 08:37:26,249 basehttp 16400 9200 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 08:37:26,251 basehttp 16400 17460 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 08:37:29,095 basehttp 16400 9200 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 08:37:35,849 basehttp 16400 9200 "GET / HTTP/1.1" 200 43319
+[INFO] 2025-09-13 08:37:35,891 basehttp 16400 17352 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 08:37:35,892 basehttp 16400 9260 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 08:37:35,893 basehttp 16400 17460 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 08:37:35,893 basehttp 16400 18024 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 08:37:35,894 basehttp 16400 15000 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 08:37:35,897 basehttp 16400 9200 "GET /static/webapp/css/style.css HTTP/1.1" 200 94719
+[INFO] 2025-09-13 08:37:35,900 basehttp 16400 9260 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 08:37:35,905 basehttp 16400 17460 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5538
+[INFO] 2025-09-13 08:37:35,906 basehttp 16400 18024 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 08:37:35,908 basehttp 16400 9200 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 08:37:35,909 basehttp 16400 15000 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 08:37:35,913 basehttp 16400 9260 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 08:37:35,917 basehttp 16400 18024 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 08:37:35,934 basehttp 16400 15000 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 08:37:35,937 basehttp 16400 9200 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 08:37:35,941 basehttp 16400 9260 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 08:37:35,942 basehttp 16400 18024 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 08:37:35,951 basehttp 16400 9200 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 08:37:35,954 basehttp 16400 15000 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 08:37:35,958 basehttp 16400 18024 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 08:37:35,970 basehttp 16400 17460 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 08:37:35,972 basehttp 16400 17352 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 08:37:39,272 basehttp 16400 17460 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[WARNING] 2025-09-13 08:37:40,775 log 16400 17460 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:37:40,776 basehttp 16400 17460 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:37:45,085 basehttp 16400 17460 "GET / HTTP/1.1" 200 43319
+[INFO] 2025-09-13 08:37:45,118 basehttp 16400 17460 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[WARNING] 2025-09-13 08:37:45,144 log 16400 17460 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:37:45,145 basehttp 16400 17460 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:40:17,541 basehttp 16400 17460 "GET / HTTP/1.1" 200 43319
+[INFO] 2025-09-13 08:40:17,589 basehttp 16400 17460 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:40:17,593 basehttp 16400 17352 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5545
+[WARNING] 2025-09-13 08:40:17,606 log 16400 17460 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:40:17,607 basehttp 16400 17460 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:41:28,226 basehttp 16400 17460 "GET / HTTP/1.1" 200 43319
+[INFO] 2025-09-13 08:41:28,476 basehttp 16400 17352 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 08:41:28,480 basehttp 16400 17460 "GET /static/webapp/css/style.css HTTP/1.1" 200 94719
+[INFO] 2025-09-13 08:41:28,498 basehttp 16400 15000 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 08:41:28,499 basehttp 16400 18024 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[WARNING] 2025-09-13 08:41:28,507 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 08:41:28,508 basehttp 16400 9200 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[WARNING] 2025-09-13 08:41:28,513 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:41:28,523 basehttp 16400 18024 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 08:41:28,529 basehttp 16400 9260 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 08:41:28,533 basehttp 16400 17460 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 08:41:28,535 basehttp 16400 17352 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 08:41:28,538 basehttp 16400 9200 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 08:41:28,547 basehttp 16400 15000 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 08:41:28,549 basehttp 16400 18024 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 08:41:28,736 basehttp 16400 17352 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 08:41:28,738 basehttp 16400 9200 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 08:41:28,750 basehttp 16400 18024 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 08:41:28,753 basehttp 16400 15000 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 08:41:28,776 basehttp 16400 17352 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 08:41:28,777 basehttp 16400 9200 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 08:41:28,777 basehttp 16400 17460 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 08:41:28,783 basehttp 16400 9260 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 08:41:28,785 basehttp 16400 15000 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 08:41:28,795 basehttp 16400 18024 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 08:41:31,721 basehttp 16400 9260 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 08:41:32,053 basehttp 16400 9260 "GET /sale/ HTTP/1.1" 200 19175
+[WARNING] 2025-09-13 08:41:32,145 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 08:41:32,147 basehttp 16400 17460 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[WARNING] 2025-09-13 08:41:32,147 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:41:37,764 basehttp 16400 9260 "GET /about/ HTTP/1.1" 200 23111
+[WARNING] 2025-09-13 08:41:37,815 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 08:41:37,816 basehttp 16400 17460 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[WARNING] 2025-09-13 08:41:37,818 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:42:01,574 basehttp 16400 9260 "GET /sale/?property_type=is_commercial HTTP/1.1" 200 14496
+[WARNING] 2025-09-13 08:42:01,631 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:42:01,632 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:42:01,645 basehttp 16400 9260 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:42:06,519 basehttp 16400 9260 "GET /about/ HTTP/1.1" 200 23111
+[WARNING] 2025-09-13 08:42:06,573 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 08:42:06,575 basehttp 16400 17460 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[WARNING] 2025-09-13 08:42:06,575 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:42:12,514 basehttp 16400 9260 "GET /sale/ HTTP/1.1" 200 19175
+[WARNING] 2025-09-13 08:42:12,587 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:42:12,589 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:42:12,605 basehttp 16400 9260 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:42:18,779 basehttp 16400 9260 "GET / HTTP/1.1" 200 43319
+[INFO] 2025-09-13 08:42:18,826 basehttp 16400 9260 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:42:20,233 basehttp 16400 9260 "GET /sale/ HTTP/1.1" 200 19175
+[INFO] 2025-09-13 08:42:25,202 basehttp 16400 9260 "GET /about/ HTTP/1.1" 200 23111
+[INFO] 2025-09-13 08:42:25,237 basehttp 16400 9260 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:42:27,409 basehttp 16400 9260 "GET /employees/ HTTP/1.1" 200 15466
+[INFO] 2025-09-13 08:42:30,676 basehttp 16400 9260 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 13977
+[INFO] 2025-09-13 08:42:37,218 basehttp 16400 9260 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 08:42:37,265 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:42:37,266 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:42:47,847 basehttp 16400 9260 "GET /about/ HTTP/1.1" 200 23111
+[WARNING] 2025-09-13 08:42:47,902 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:42:47,903 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:42:47,919 basehttp 16400 9260 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:42:55,069 basehttp 16400 9260 "GET /sale/?property_type=is_commercial HTTP/1.1" 200 14496
+[WARNING] 2025-09-13 08:42:55,113 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:42:55,114 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:42:58,279 basehttp 16400 9260 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 20406
+[WARNING] 2025-09-13 08:42:58,335 log 16400 9260 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:42:58,336 basehttp 16400 9260 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:42:58,350 basehttp 16400 9260 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:42:58,362 basehttp 16400 9260 "GET /media/property_photos/2_KMgxogp.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:42:58,363 basehttp 16400 17460 "GET /media/property_photos/3_87Ws96w.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:42:58,363 basehttp 16400 17352 "GET /media/property_photos/6_PFYOJAC.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:42:58,363 basehttp 16400 15000 "GET /media/property_photos/4_8wGv1zK.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:42:58,364 basehttp 16400 18024 "GET /media/property_photos/5_RzAWJ9S.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:43:27,932 basehttp 16400 18024 "GET / HTTP/1.1" 200 43319
+[WARNING] 2025-09-13 08:43:27,973 log 16400 18024 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 08:43:27,974 basehttp 16400 18024 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6929
+[INFO] 2025-09-13 08:43:27,987 basehttp 16400 18024 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:43:43,256 basehttp 16400 18024 "GET /about/ HTTP/1.1" 200 23111
+[INFO] 2025-09-13 08:43:43,334 basehttp 16400 18024 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:46:38,368 basehttp 16400 18024 "GET /contacts/ HTTP/1.1" 200 19570
+[INFO] 2025-09-13 08:46:38,397 basehttp 16400 18024 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 08:46:38,410 basehttp 16400 18024 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[ERROR] 2025-09-13 08:54:42,008 log 16400 14192 Internal Server Error: /contacts/
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py", line 277, in contacts
+    return render(request, 'webapp/contacts.html', context=context)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_review' not found. 'submit_review' is not a valid view function or pattern name.
+[ERROR] 2025-09-13 08:54:42,024 basehttp 16400 14192 "GET /contacts/ HTTP/1.1" 500 146907
+[WARNING] 2025-09-13 08:54:42,246 log 16400 14192 Not Found: /favicon.ico
+[WARNING] 2025-09-13 08:54:42,247 basehttp 16400 14192 "GET /favicon.ico HTTP/1.1" 404 6818
+[INFO] 2025-09-13 08:59:15,299 autoreload 16400 11272 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 08:59:17,344 autoreload 13192 16660 Watching for file changes with StatReloader
+[INFO] 2025-09-13 09:01:03,508 autoreload 13192 16660 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 09:01:04,608 autoreload 1708 1516 Watching for file changes with StatReloader
+[ERROR] 2025-09-13 09:01:09,450 log 1708 3572 Internal Server Error: /contacts/
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py", line 279, in contacts
+    return render(request, 'webapp/contacts.html', context=context)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_review' not found. 'submit_review' is not a valid view function or pattern name.
+[ERROR] 2025-09-13 09:01:09,459 basehttp 1708 3572 "GET /contacts/ HTTP/1.1" 500 146907
+[ERROR] 2025-09-13 09:01:13,045 log 1708 3572 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py", line 89, in index
+    return render(request, 'webapp/index.html', context)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'submit_review' not found. 'submit_review' is not a valid view function or pattern name.
+[ERROR] 2025-09-13 09:01:13,050 basehttp 1708 3572 "GET / HTTP/1.1" 500 176021
+[INFO] 2025-09-13 09:01:49,341 autoreload 1708 1516 C:\Users\Admin\PycharmProjects\kv_214\webapp\urls.py changed, reloading.
+[INFO] 2025-09-13 09:01:50,293 autoreload 3316 17556 Watching for file changes with StatReloader
+[INFO] 2025-09-13 09:01:52,422 basehttp 3316 452 "GET / HTTP/1.1" 200 44341
+[INFO] 2025-09-13 09:01:52,458 basehttp 3316 17072 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 09:01:52,565 basehttp 3316 452 "GET /static/webapp/css/style.css HTTP/1.1" 200 96146
+[INFO] 2025-09-13 09:01:52,568 basehttp 3316 17072 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 09:01:54,856 basehttp 3316 17072 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 10:15:35,045 basehttp 3316 17412 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 10:15:35,100 log 3316 17412 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 10:15:35,100 basehttp 3316 17412 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 10:16:00,837 basehttp 3316 17412 "GET / HTTP/1.1" 200 44341
+[WARNING] 2025-09-13 10:16:00,882 log 3316 17412 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 10:16:00,882 basehttp 3316 17412 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 10:16:00,894 basehttp 3316 17412 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 10:16:00,904 basehttp 3316 17412 "GET /static/webapp/js/feedback.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 10:22:05,626 basehttp 3316 2424 "GET / HTTP/1.1" 200 44341
+[WARNING] 2025-09-13 10:22:05,709 log 3316 2424 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 10:22:05,710 basehttp 3316 2424 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 10:23:43,380 basehttp 3316 2424 "GET / HTTP/1.1" 200 44341
+[WARNING] 2025-09-13 10:23:43,463 log 3316 2424 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 10:23:43,464 basehttp 3316 2424 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 12:32:59,338 basehttp 3316 14360 "GET / HTTP/1.1" 200 44341
+[INFO] 2025-09-13 12:32:59,389 basehttp 3316 14360 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 12:32:59,407 log 3316 11500 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 12:32:59,411 basehttp 3316 11500 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 12:32:59,412 basehttp 3316 14360 "GET /static/webapp/js/slider.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:32:59,413 basehttp 3316 13792 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:32:59,431 basehttp 3316 13792 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:32:59,432 basehttp 3316 14360 "GET /static/webapp/js/feedback.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:35:41,518 basehttp 3316 14360 "GET / HTTP/1.1" 200 44341
+[WARNING] 2025-09-13 12:35:41,572 log 3316 14360 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 12:35:41,573 basehttp 3316 14360 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 12:47:11,246 basehttp 3316 8532 "GET / HTTP/1.1" 200 44341
+[WARNING] 2025-09-13 12:47:11,319 log 3316 8532 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 12:47:11,320 basehttp 3316 8532 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 12:48:50,279 basehttp 3316 8532 "GET / HTTP/1.1" 200 44341
+[WARNING] 2025-09-13 12:48:50,389 log 3316 8532 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 12:48:50,393 basehttp 3316 8532 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 12:48:50,398 basehttp 3316 17620 "GET /static/webapp/css/style.css HTTP/1.1" 200 96152
+[INFO] 2025-09-13 12:48:50,398 basehttp 3316 6704 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 12:48:50,419 basehttp 3316 17620 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 12:48:50,421 basehttp 3316 8532 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 12:48:50,422 basehttp 3316 3044 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 12:48:50,428 basehttp 3316 6704 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 12:48:50,434 basehttp 3316 17060 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 12:48:50,443 basehttp 3316 8532 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 12:48:50,445 basehttp 3316 16676 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 12:48:50,453 basehttp 3316 17620 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 12:48:50,484 basehttp 3316 3044 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 12:48:50,507 basehttp 3316 8532 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 12:48:50,512 basehttp 3316 16676 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 12:48:50,517 basehttp 3316 17620 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 12:48:50,523 basehttp 3316 3044 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 12:48:50,533 basehttp 3316 17060 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 12:48:50,559 basehttp 3316 6704 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 12:48:50,567 basehttp 3316 8532 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 12:48:50,687 basehttp 3316 16676 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 12:48:50,690 basehttp 3316 17620 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 12:48:50,709 basehttp 3316 3044 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 12:48:50,761 basehttp 3316 16676 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 12:48:50,762 basehttp 3316 3044 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 12:48:53,853 basehttp 3316 6704 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 12:48:58,361 basehttp 3316 6704 "GET / HTTP/1.1" 200 44341
+[WARNING] 2025-09-13 12:48:58,404 log 3316 6704 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 12:48:58,405 basehttp 3316 6704 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 12:48:58,413 basehttp 3316 3044 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 12:48:58,414 basehttp 3316 16676 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 12:48:58,417 basehttp 3316 17060 "GET /static/webapp/css/style.css HTTP/1.1" 200 96152
+[INFO] 2025-09-13 12:48:58,427 basehttp 3316 17060 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 12:48:58,434 basehttp 3316 16676 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 12:48:58,439 basehttp 3316 17060 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 12:48:58,447 basehttp 3316 16676 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 12:48:58,479 basehttp 3316 17060 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 12:48:58,480 basehttp 3316 3044 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 12:48:58,480 basehttp 3316 16676 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 12:48:58,481 basehttp 3316 6704 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 12:48:58,482 basehttp 3316 8532 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 12:48:58,482 basehttp 3316 17620 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 12:48:58,511 basehttp 3316 3044 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 12:48:58,512 basehttp 3316 16676 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 12:48:58,515 basehttp 3316 8532 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 12:48:58,517 basehttp 3316 17620 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 12:48:58,544 basehttp 3316 6704 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 12:48:58,554 basehttp 3316 16676 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 12:48:58,555 basehttp 3316 3044 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 12:48:58,556 basehttp 3316 17060 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 12:48:58,573 basehttp 3316 17620 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 12:48:58,580 basehttp 3316 8532 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 12:49:01,479 basehttp 3316 17060 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 12:50:47,360 basehttp 3316 17060 "GET /about/ HTTP/1.1" 200 24133
+[INFO] 2025-09-13 12:50:47,420 basehttp 3316 17060 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:50:47,446 basehttp 3316 17060 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:50:50,216 basehttp 3316 17060 "GET /employees/ HTTP/1.1" 200 16488
+[INFO] 2025-09-13 12:50:53,775 basehttp 3316 17060 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 14999
+[INFO] 2025-09-13 12:51:08,833 basehttp 3316 17060 "GET /sale/ HTTP/1.1" 200 20197
+[INFO] 2025-09-13 12:51:08,874 basehttp 3316 17060 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:51:29,086 basehttp 3316 17060 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21428
+[INFO] 2025-09-13 12:51:29,112 basehttp 3316 17060 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:51:29,129 basehttp 3316 17620 "GET /media/property_photos/4_8wGv1zK.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:51:29,129 basehttp 3316 8532 "GET /media/property_photos/5_RzAWJ9S.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:51:29,129 basehttp 3316 17060 "GET /media/property_photos/2_KMgxogp.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:51:29,129 basehttp 3316 6704 "GET /media/property_photos/3_87Ws96w.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:51:29,130 basehttp 3316 16676 "GET /media/property_photos/6_PFYOJAC.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:51:51,053 basehttp 3316 16676 "GET /admin/webapp/property/ HTTP/1.1" 200 23020
+[INFO] 2025-09-13 12:51:51,085 basehttp 3316 6704 "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:51:51,110 basehttp 3316 16676 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-09-13 12:51:51,193 log 3316 16676 Not Found: /favicon.ico
+[WARNING] 2025-09-13 12:51:51,194 basehttp 3316 16676 "GET /favicon.ico HTTP/1.1" 404 7087
+[INFO] 2025-09-13 12:51:56,401 basehttp 3316 16676 "GET /admin/webapp/property/3/change/ HTTP/1.1" 200 46141
+[INFO] 2025-09-13 12:51:56,447 basehttp 3316 16676 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 12:51:56,629 basehttp 3316 16676 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-09-13 12:51:56,629 basehttp 3316 8532 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-09-13 12:51:56,630 basehttp 3316 6704 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-09-13 12:51:56,791 basehttp 3316 6704 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757757116707 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 12:51:56,792 basehttp 3316 16676 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757757116702 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 12:51:56,792 basehttp 3316 8532 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757757116712 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 12:53:28,000 basehttp 3316 8532 "POST /admin/webapp/property/3/change/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 12:53:28,106 basehttp 3316 8532 "GET /admin/webapp/property/ HTTP/1.1" 200 23267
+[INFO] 2025-09-13 12:53:28,157 basehttp 3316 8532 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[ERROR] 2025-09-13 12:57:48,799 log 3316 8532 Internal Server Error: /sale/polock-alekseeva/
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py", line 173, in sale_single
+    return render(request, 'webapp/sale_single.html', {
+        'property': property,
+        'photos': photos,
+    })
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 489, in parse
+    raise self.error(token, e)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'divide'
+[ERROR] 2025-09-13 12:57:48,822 basehttp 3316 8532 "GET /sale/polock-alekseeva/ HTTP/1.1" 500 235272
+[INFO] 2025-09-13 12:58:11,854 basehttp 3316 8532 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21551
+[INFO] 2025-09-13 12:58:11,879 basehttp 3316 8532 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:59:32,171 basehttp 3316 8532 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21571
+[INFO] 2025-09-13 12:59:32,209 basehttp 3316 8532 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 12:59:35,462 basehttp 3316 8532 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21571
+[INFO] 2025-09-13 12:59:36,744 basehttp 3316 8532 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21571
+[INFO] 2025-09-13 12:59:36,786 basehttp 3316 10688 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 12:59:36,786 basehttp 3316 16752 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 12:59:36,787 basehttp 3316 16984 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 12:59:36,789 basehttp 3316 3056 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 12:59:36,790 basehttp 3316 16824 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 12:59:36,795 basehttp 3316 10688 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 12:59:36,796 basehttp 3316 8532 "GET /static/webapp/css/style.css HTTP/1.1" 200 96152
+[INFO] 2025-09-13 12:59:36,796 basehttp 3316 16752 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 12:59:36,798 basehttp 3316 16984 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 12:59:36,799 basehttp 3316 3056 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 12:59:36,799 basehttp 3316 16824 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 12:59:36,804 basehttp 3316 16752 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 12:59:36,806 basehttp 3316 10688 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 12:59:36,823 basehttp 3316 3056 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 12:59:36,891 basehttp 3316 16752 "GET /media/property_photos/6_PFYOJAC.jpg HTTP/1.1" 200 2342061
+[INFO] 2025-09-13 12:59:36,893 basehttp 3316 8532 "GET /media/property_photos/4_8wGv1zK.jpg HTTP/1.1" 200 2478632
+[INFO] 2025-09-13 12:59:36,896 basehttp 3316 16984 "GET /media/property_photos/3_87Ws96w.jpg HTTP/1.1" 200 2567595
+[INFO] 2025-09-13 12:59:36,901 basehttp 3316 10688 "GET /media/property_photos/5_RzAWJ9S.jpg HTTP/1.1" 200 2627020
+[INFO] 2025-09-13 12:59:36,938 basehttp 3316 16824 "GET /media/property_photos/2_KMgxogp.jpg HTTP/1.1" 200 7141943
+[INFO] 2025-09-13 12:59:37,146 basehttp 3316 16824 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 13:01:40,460 basehttp 3316 15992 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21483
+[INFO] 2025-09-13 13:01:40,490 basehttp 3316 15992 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 13:01:51,221 log 3316 15992 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:01:51,222 basehttp 3316 15992 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:06:19,417 basehttp 3316 15992 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21483
+[INFO] 2025-09-13 13:06:19,455 basehttp 3316 15992 "GET /static/webapp/css/style.css HTTP/1.1" 200 96301
+[WARNING] 2025-09-13 13:06:19,478 log 3316 15992 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:06:19,479 basehttp 3316 15992 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:06:21,929 basehttp 3316 15992 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21483
+[WARNING] 2025-09-13 13:06:21,966 log 3316 15992 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:06:21,967 basehttp 3316 15992 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:06:21,975 basehttp 3316 6272 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 13:06:21,975 basehttp 3316 11060 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 13:06:21,976 basehttp 3316 12988 "GET /static/webapp/css/style.css HTTP/1.1" 200 96301
+[INFO] 2025-09-13 13:06:22,019 basehttp 3316 12988 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 13:06:22,020 basehttp 3316 6272 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 13:06:22,038 basehttp 3316 6272 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 13:06:22,039 basehttp 3316 15992 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 13:06:22,041 basehttp 3316 12988 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 13:06:22,042 basehttp 3316 5100 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 13:06:22,043 basehttp 3316 11060 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 13:06:22,044 basehttp 3316 16664 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 13:06:22,045 basehttp 3316 6272 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 13:06:22,047 basehttp 3316 12988 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 13:06:22,087 basehttp 3316 11060 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 13:06:22,159 basehttp 3316 6272 "GET /media/property_photos/6_PFYOJAC.jpg HTTP/1.1" 200 2342061
+[INFO] 2025-09-13 13:06:22,163 basehttp 3316 12988 "GET /media/property_photos/5_RzAWJ9S.jpg HTTP/1.1" 200 2627020
+[INFO] 2025-09-13 13:06:22,165 basehttp 3316 15992 "GET /media/property_photos/4_8wGv1zK.jpg HTTP/1.1" 200 2478632
+[INFO] 2025-09-13 13:06:22,166 basehttp 3316 5100 "GET /media/property_photos/3_87Ws96w.jpg HTTP/1.1" 200 2567595
+[INFO] 2025-09-13 13:06:22,223 basehttp 3316 16664 "GET /media/property_photos/2_KMgxogp.jpg HTTP/1.1" 200 7141943
+[INFO] 2025-09-13 13:06:22,422 basehttp 3316 16664 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 13:07:50,382 basehttp 3316 16664 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[INFO] 2025-09-13 13:07:50,424 basehttp 3316 16664 "GET /static/webapp/css/style.css HTTP/1.1" 200 96240
+[WARNING] 2025-09-13 13:07:50,447 log 3316 16664 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:07:50,449 basehttp 3316 16664 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:08:28,146 basehttp 3316 16664 "GET /admin/webapp/property/3/change/ HTTP/1.1" 200 46142
+[INFO] 2025-09-13 13:08:28,209 basehttp 3316 16664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:08:28,364 basehttp 3316 12988 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-09-13 13:08:28,364 basehttp 3316 5100 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-09-13 13:08:28,376 basehttp 3316 16664 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-09-13 13:08:28,534 basehttp 3316 16664 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758108467 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:08:28,536 basehttp 3316 5100 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758108472 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:08:28,539 basehttp 3316 16664 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758108476 HTTP/1.1" 200 4607
+[WARNING] 2025-09-13 13:08:29,221 log 3316 16664 Not Found: /favicon.ico
+[WARNING] 2025-09-13 13:08:29,222 basehttp 3316 16664 "GET /favicon.ico HTTP/1.1" 404 7087
+[INFO] 2025-09-13 13:08:44,619 basehttp 3316 16664 "POST /admin/webapp/property/3/change/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 13:08:44,743 basehttp 3316 16664 "GET /admin/webapp/property/ HTTP/1.1" 200 23267
+[INFO] 2025-09-13 13:08:44,775 basehttp 3316 16664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:08:52,369 basehttp 3316 16664 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[WARNING] 2025-09-13 13:08:52,408 log 3316 16664 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:08:52,409 basehttp 3316 16664 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:08:52,410 basehttp 3316 5100 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 13:09:17,982 basehttp 3316 5100 "GET /admin/webapp/property/3/change/ HTTP/1.1" 200 46142
+[INFO] 2025-09-13 13:09:18,020 basehttp 3316 5100 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:09:18,109 basehttp 3316 16664 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-09-13 13:09:18,118 basehttp 3316 5100 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-09-13 13:09:18,132 basehttp 3316 12988 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-09-13 13:09:18,184 basehttp 3316 12988 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758158143 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:09:18,189 basehttp 3316 12988 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758158151 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:09:18,455 basehttp 3316 12988 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758158167 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:09:53,224 basehttp 3316 12988 "POST /admin/webapp/property/3/change/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 13:09:53,321 basehttp 3316 12988 "GET /admin/webapp/property/ HTTP/1.1" 200 23267
+[INFO] 2025-09-13 13:09:53,361 basehttp 3316 12988 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:09:58,201 basehttp 3316 12988 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[WARNING] 2025-09-13 13:09:58,238 log 3316 12988 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:09:58,239 basehttp 3316 12988 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:09:58,239 basehttp 3316 5100 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 13:10:06,180 basehttp 3316 12988 "GET /admin/webapp/property/3/change/ HTTP/1.1" 200 46142
+[INFO] 2025-09-13 13:10:06,221 basehttp 3316 12988 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:10:06,313 basehttp 3316 12988 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-09-13 13:10:06,325 basehttp 3316 5100 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-09-13 13:10:06,335 basehttp 3316 16664 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-09-13 13:10:06,393 basehttp 3316 16664 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758206349 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:10:06,403 basehttp 3316 16664 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758206359 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:10:06,693 basehttp 3316 16664 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758206373 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:10:20,617 basehttp 3316 16664 "POST /admin/webapp/property/3/change/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 13:10:20,765 basehttp 3316 16664 "GET /admin/webapp/property/ HTTP/1.1" 200 23267
+[INFO] 2025-09-13 13:10:20,803 basehttp 3316 16664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:10:30,532 basehttp 3316 16664 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[WARNING] 2025-09-13 13:10:30,573 log 3316 16664 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 13:10:30,576 basehttp 3316 5100 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 13:10:30,576 basehttp 3316 16664 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:13:05,467 basehttp 3316 16664 "GET /admin/webapp/property/3/change/ HTTP/1.1" 200 46142
+[INFO] 2025-09-13 13:13:05,510 basehttp 3316 16664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:13:05,610 basehttp 3316 16664 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-09-13 13:13:05,625 basehttp 3316 5100 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-09-13 13:13:05,625 basehttp 3316 12988 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-09-13 13:13:05,681 basehttp 3316 12988 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758385632 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:13:05,829 basehttp 3316 12988 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758385658 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:13:05,841 basehttp 3316 12988 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758385672 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:13:19,645 basehttp 3316 12988 "POST /admin/webapp/property/3/change/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 13:13:19,761 basehttp 3316 12988 "GET /admin/webapp/property/ HTTP/1.1" 200 23267
+[INFO] 2025-09-13 13:13:19,795 basehttp 3316 12988 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:13:26,766 basehttp 3316 12988 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[WARNING] 2025-09-13 13:13:26,815 log 3316 12988 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 13:13:26,817 basehttp 3316 5100 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 13:13:26,818 basehttp 3316 12988 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:13:38,885 basehttp 3316 12988 "GET /admin/webapp/property/3/change/ HTTP/1.1" 200 46142
+[INFO] 2025-09-13 13:13:38,937 basehttp 3316 12988 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:13:39,038 basehttp 3316 16664 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-09-13 13:13:39,041 basehttp 3316 5100 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-09-13 13:13:39,044 basehttp 3316 12988 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-09-13 13:13:39,128 basehttp 3316 12988 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758419094 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:13:39,150 basehttp 3316 12988 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758419097 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:13:39,150 basehttp 3316 5100 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758419087 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:13:59,167 basehttp 3316 5100 "POST /admin/webapp/property/3/change/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 13:13:59,291 basehttp 3316 5100 "GET /admin/webapp/property/ HTTP/1.1" 200 23267
+[INFO] 2025-09-13 13:13:59,342 basehttp 3316 5100 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:14:04,427 basehttp 3316 5100 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[WARNING] 2025-09-13 13:14:04,475 log 3316 5100 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:14:04,477 basehttp 3316 5100 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:14:22,004 basehttp 3316 5100 "GET /admin/webapp/property/3/change/ HTTP/1.1" 200 46142
+[INFO] 2025-09-13 13:14:22,050 basehttp 3316 5100 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:14:22,148 basehttp 3316 12988 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-09-13 13:14:22,149 basehttp 3316 5100 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-09-13 13:14:22,160 basehttp 3316 16664 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-09-13 13:14:22,239 basehttp 3316 16664 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758462193 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:14:22,245 basehttp 3316 16664 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758462198 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:14:22,391 basehttp 3316 16664 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758462208 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:14:55,313 basehttp 3316 16664 "POST /admin/webapp/property/3/change/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 13:14:55,413 basehttp 3316 16664 "GET /admin/webapp/property/ HTTP/1.1" 200 23267
+[INFO] 2025-09-13 13:14:55,457 basehttp 3316 16664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:15:00,760 basehttp 3316 16664 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[WARNING] 2025-09-13 13:15:00,801 log 3316 16664 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:15:00,803 basehttp 3316 16664 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:15:00,803 basehttp 3316 5100 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 13:15:20,584 basehttp 3316 16664 "GET /admin/webapp/property/3/change/ HTTP/1.1" 200 46142
+[INFO] 2025-09-13 13:15:20,624 basehttp 3316 16664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:15:20,724 basehttp 3316 16664 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-09-13 13:15:20,724 basehttp 3316 5100 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-09-13 13:15:20,737 basehttp 3316 12988 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-09-13 13:15:20,812 basehttp 3316 12988 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758520769 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:15:20,815 basehttp 3316 5100 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758520773 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:15:20,819 basehttp 3316 5100 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757758520782 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:15:33,977 basehttp 3316 5100 "POST /admin/webapp/property/3/change/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 13:15:34,092 basehttp 3316 5100 "GET /admin/webapp/property/ HTTP/1.1" 200 23267
+[INFO] 2025-09-13 13:15:34,126 basehttp 3316 5100 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:15:38,821 basehttp 3316 5100 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[WARNING] 2025-09-13 13:15:38,870 log 3316 5100 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:15:38,871 basehttp 3316 5100 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:39:03,441 autoreload 3316 17556 C:\Users\Admin\PycharmProjects\kv_214\webapp\templatetags\currency_filters.py changed, reloading.
+[INFO] 2025-09-13 13:39:04,562 autoreload 15660 16224 Watching for file changes with StatReloader
+[INFO] 2025-09-13 13:39:40,439 autoreload 15660 16224 C:\Users\Admin\PycharmProjects\kv_214\webapp\templatetags\currency_filters.py changed, reloading.
+[INFO] 2025-09-13 13:39:41,473 autoreload 12948 14308 Watching for file changes with StatReloader
+[INFO] 2025-09-13 13:40:47,944 basehttp 12948 15300 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21604
+[INFO] 2025-09-13 13:40:47,988 basehttp 12948 15300 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 13:40:47,992 basehttp 12948 16144 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 13:40:48,007 basehttp 12948 10444 "GET /static/webapp/js/feedback.js HTTP/1.1" 304 0
+[WARNING] 2025-09-13 13:40:48,010 log 12948 15300 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:40:48,010 basehttp 12948 15300 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:40:51,820 basehttp 12948 15300 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21604
+[WARNING] 2025-09-13 13:40:51,863 log 12948 15300 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:40:51,868 basehttp 12948 15300 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:40:52,143 basehttp 12948 10444 "GET /static/webapp/css/style.css HTTP/1.1" 200 96240
+[INFO] 2025-09-13 13:40:52,149 basehttp 12948 10444 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 13:40:52,151 basehttp 12948 13820 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 13:40:52,153 basehttp 12948 17336 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 13:40:52,156 basehttp 12948 10444 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 13:40:52,160 basehttp 12948 13820 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 13:40:52,162 basehttp 12948 16144 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 13:40:52,166 basehttp 12948 17336 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 13:40:52,175 basehttp 12948 15300 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 13:40:52,207 basehttp 12948 13820 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 13:40:52,223 basehttp 12948 10444 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 13:40:52,240 basehttp 12948 3216 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 13:40:52,283 basehttp 12948 10444 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 13:40:52,293 basehttp 12948 13820 "GET /media/property_photos/4_8wGv1zK.jpg HTTP/1.1" 200 2478632
+[INFO] 2025-09-13 13:40:52,302 basehttp 12948 16144 "GET /media/property_photos/3_87Ws96w.jpg HTTP/1.1" 200 2567595
+[INFO] 2025-09-13 13:40:52,330 basehttp 12948 10444 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 13:40:52,335 basehttp 12948 17336 "GET /media/property_photos/5_RzAWJ9S.jpg HTTP/1.1" 200 2627020
+[INFO] 2025-09-13 13:40:52,355 basehttp 12948 3216 "GET /media/property_photos/6_PFYOJAC.jpg HTTP/1.1" 200 2342061
+[INFO] 2025-09-13 13:40:52,399 basehttp 12948 15300 "GET /media/property_photos/2_KMgxogp.jpg HTTP/1.1" 200 7141943
+[INFO] 2025-09-13 13:40:52,600 basehttp 12948 15300 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 13:41:35,103 basehttp 12948 15300 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21604
+[WARNING] 2025-09-13 13:41:35,152 log 12948 15300 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:41:35,153 basehttp 12948 15300 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:41:35,158 basehttp 12948 13820 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 13:41:35,159 basehttp 12948 17336 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 13:41:35,160 basehttp 12948 3216 "GET /static/webapp/css/style.css HTTP/1.1" 200 96240
+[INFO] 2025-09-13 13:41:35,182 basehttp 12948 3216 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 13:41:35,188 basehttp 12948 17336 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 13:41:35,193 basehttp 12948 3216 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 13:41:35,218 basehttp 12948 3216 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 13:41:35,218 basehttp 12948 13820 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 13:41:35,219 basehttp 12948 15300 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 13:41:35,220 basehttp 12948 10444 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 13:41:35,222 basehttp 12948 16144 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 13:41:35,222 basehttp 12948 17336 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 13:41:35,229 basehttp 12948 13820 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 13:41:35,240 basehttp 12948 3216 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 13:41:35,334 basehttp 12948 10444 "GET /media/property_photos/6_PFYOJAC.jpg HTTP/1.1" 200 2342061
+[INFO] 2025-09-13 13:41:35,347 basehttp 12948 13820 "GET /media/property_photos/5_RzAWJ9S.jpg HTTP/1.1" 200 2627020
+[INFO] 2025-09-13 13:41:35,353 basehttp 12948 15300 "GET /media/property_photos/4_8wGv1zK.jpg HTTP/1.1" 200 2478632
+[INFO] 2025-09-13 13:41:35,353 basehttp 12948 17336 "GET /media/property_photos/3_87Ws96w.jpg HTTP/1.1" 200 2567595
+[INFO] 2025-09-13 13:41:35,403 basehttp 12948 16144 "GET /media/property_photos/2_KMgxogp.jpg HTTP/1.1" 200 7141943
+[INFO] 2025-09-13 13:41:35,646 basehttp 12948 16144 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 13:41:40,225 basehttp 12948 16144 "GET / HTTP/1.1" 200 44343
+[WARNING] 2025-09-13 13:41:40,266 log 12948 16144 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:41:40,269 basehttp 12948 16144 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:44:17,825 basehttp 12948 16144 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21524
+[WARNING] 2025-09-13 13:44:17,905 log 12948 16144 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:44:17,906 basehttp 12948 16144 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:45:45,511 basehttp 12948 16144 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21524
+[INFO] 2025-09-13 13:45:45,575 basehttp 12948 13820 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 13:45:45,596 log 12948 16144 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:45:45,614 basehttp 12948 16144 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:45:55,349 basehttp 12948 16144 "GET /admin/webapp/property/3/change/ HTTP/1.1" 200 46142
+[INFO] 2025-09-13 13:45:55,391 basehttp 12948 16144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:45:55,542 basehttp 12948 13820 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-09-13 13:45:55,543 basehttp 12948 16144 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-09-13 13:45:55,546 basehttp 12948 10444 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-09-13 13:45:55,662 basehttp 12948 10444 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757760355609 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:45:55,663 basehttp 12948 16144 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757760355614 HTTP/1.1" 200 4607
+[INFO] 2025-09-13 13:45:55,675 basehttp 12948 16144 "GET /static/summernote/lang/summernote-en-US.min.js?_=1757760355604 HTTP/1.1" 200 4607
+[WARNING] 2025-09-13 13:45:56,152 log 12948 16144 Not Found: /favicon.ico
+[WARNING] 2025-09-13 13:45:56,152 basehttp 12948 16144 "GET /favicon.ico HTTP/1.1" 404 7087
+[INFO] 2025-09-13 13:46:05,100 basehttp 12948 16144 "POST /admin/webapp/property/3/change/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 13:46:05,234 basehttp 12948 16144 "GET /admin/webapp/property/ HTTP/1.1" 200 23266
+[INFO] 2025-09-13 13:46:05,283 basehttp 12948 16144 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 13:46:09,047 basehttp 12948 16144 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[WARNING] 2025-09-13 13:46:09,093 log 12948 16144 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:46:09,094 basehttp 12948 16144 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:50:33,813 autoreload 12948 14308 C:\Users\Admin\PycharmProjects\kv_214\webapp\context_processors.py changed, reloading.
+[INFO] 2025-09-13 13:50:35,782 autoreload 5840 15184 Watching for file changes with StatReloader
+[INFO] 2025-09-13 13:50:38,553 basehttp 5840 4596 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[INFO] 2025-09-13 13:50:38,612 basehttp 5840 13704 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 13:50:38,612 log 5840 4596 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:50:38,614 basehttp 5840 4596 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:50:48,719 basehttp 5840 4596 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 21523
+[WARNING] 2025-09-13 13:50:48,767 log 5840 4596 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 13:50:48,769 basehttp 5840 4596 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 13:50:48,928 basehttp 5840 13704 "GET /static/webapp/css/style.css HTTP/1.1" 200 96240
+[INFO] 2025-09-13 13:50:48,963 basehttp 5840 13704 "GET /media/property_photos/6_PFYOJAC.jpg HTTP/1.1" 200 2342061
+[INFO] 2025-09-13 13:50:49,015 basehttp 5840 13704 "GET /media/property_photos/4_8wGv1zK.jpg HTTP/1.1" 200 2478632
+[INFO] 2025-09-13 13:50:49,030 basehttp 5840 17504 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 13:50:49,059 basehttp 5840 3044 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 13:50:49,064 basehttp 5840 9744 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 13:50:49,066 basehttp 5840 17464 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 13:50:49,096 basehttp 5840 4596 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 13:50:49,107 basehttp 5840 9744 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 13:50:49,115 basehttp 5840 4596 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 13:50:49,126 basehttp 5840 4596 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 13:50:49,151 basehttp 5840 4596 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 13:50:49,166 basehttp 5840 9744 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 13:50:49,168 basehttp 5840 4596 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 13:50:49,205 basehttp 5840 3044 "GET /media/property_photos/3_87Ws96w.jpg HTTP/1.1" 200 2567595
+[INFO] 2025-09-13 13:50:49,214 basehttp 5840 17464 "GET /media/property_photos/5_RzAWJ9S.jpg HTTP/1.1" 200 2627020
+[INFO] 2025-09-13 13:50:49,227 basehttp 5840 17504 "GET /media/property_photos/2_KMgxogp.jpg HTTP/1.1" 200 7141943
+[INFO] 2025-09-13 13:50:49,230 basehttp 5840 4596 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 13:50:49,237 basehttp 5840 9744 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 13:50:49,335 basehttp 5840 17504 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655

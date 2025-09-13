@@ -22,9 +22,10 @@
                                          alt="{{ property.name }}"/>
                                 {% endif %}
                                 <p>{{ property.name }}</p>
-                                <p>Цена BYN: {{ property.price }}</p>
+                                <p>Цена BYN: <span>{{ property.price|multiply:usd_to_byn_rate|floatformat:2 }}</span>
+                                </p>
                                 {% if usd_to_byn_rate and property.price %}
-                                    <p>Цена в USD: ${{ property.price|divide:usd_to_byn_rate|floatformat:2 }}</p>
+                                    <p>Цена в USD: $ <span>{{ property.price }}</span></p>
                                 {% else %}
                                     <p>Цена USD: $недоступна</p>
                                 {% endif %}
