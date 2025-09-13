@@ -376,7 +376,7 @@ def submit_review(request):
     # Проверяем обязательные поля
     if not name or not rating or not text:
         return JsonResponse(
-            {'success': False, 'message': 'Пожалуйста, заполните имя, оценку и текст отзыва'},
+            {'success': False, 'message': '⚠️ Пожалуйста, заполните имя, оценку и текст отзыва'},
             status=400
         )
 
@@ -384,13 +384,13 @@ def submit_review(request):
     try:
         rating_value = int(rating)
         if rating_value < 1 or rating_value > 5:
-            raise ValueError("Некорректная оценка")
+            raise ValueError("⚠️ Некорректная оценка")
     except Exception:
-        return JsonResponse({'success': False, 'message': 'Оценка должна быть числом от 1 до 5'}, status=400)
+        return JsonResponse({'success': False, 'message': '⚠️ Оценка должна быть числом от 1 до 5'}, status=400)
 
     # Формируем письмо
-    subject = 'Новый отзыв на сайте'
-    message = f'Имя: {name}\nОценка: {rating_value}\nОтзыв:\n{text}'
+    subject = '✔️ Новый отзыв на сайте'
+    message = f'🙎🏻‍♂️ Имя: {name}\n\n⭐ Оценка: {rating_value}\n\n📝 Отзыв:\n{text}'
     recipient_list = ['Badminton500@inbox.lv']  # Замените на нужный email
 
     # Отправляем email
@@ -402,18 +402,18 @@ def submit_review(request):
             recipient_list,
             fail_silently=False,
         )
-        logger.info(f'Email отправлено от {settings.EMAIL_HOST_USER} о отзыве от {name}')
+        logger.info(f'✔️ Email отправлено от {settings.EMAIL_HOST_USER} о отзыве от {name}')
     except Exception as e:
-        logger.error(f'Ошибка отправки email: {e}')
-        return JsonResponse({'success': False, 'message': f'Ошибка при отправке email: {str(e)}'}, status=500)
+        logger.error(f'⛔ Ошибка отправки email: {e}')
+        return JsonResponse({'success': False, 'message': f'⛔ Ошибка при отправке email: {str(e)}'}, status=500)
 
     # Отправляем в Telegram
     telegram_api_url = f"https://api.telegram.org/bot{settings.TELEGRAM_BOT_TOKEN}/sendMessage"
     telegram_message = (
-        f"<b>Новый отзыв с сайта</b>\n\n"
-        f"<b>Имя:</b> {name}\n"
-        f"<b>Оценка:</b> {rating_value}\n"
-        f"<b>Отзыв:</b> {text}"
+        f"<b>🐸 Новый отзыв с сайта</b>\n\n\n"
+        f"<b>🙎🏻‍♂️ Имя:</b> {name}\n\n"
+        f"<b>⭐ Оценка:</b> {rating_value}\n\n"
+        f"<b>📝 Отзыв:</b> {text}"
     )
     payload = {
         'chat_id': settings.TELEGRAM_CHAT_ID,
@@ -423,12 +423,12 @@ def submit_review(request):
 
     try:
         response = requests.post(telegram_api_url, data=payload, timeout=10)
-        logger.info(f'Ответ Telegram: {response.text}')
+        logger.info(f'✔️ Ответ Telegram: {response.text}')
         if response.status_code != 200:
-            desc = response.json().get('description', 'Ошибка при отправке сообщения в Telegram.')
+            desc = response.json().get('description', '⚠️error⚠️ Ошибка при отправке сообщения в Telegram.')
             return JsonResponse({'success': False, 'message': desc}, status=500)
     except Exception as e:
-        logger.error(f'Ошибка подключения к Telegram: {e}')
-        return JsonResponse({'success': False, 'message': f'Ошибка соединения с Telegram: {str(e)}'}, status=500)
+        logger.error(f'⚠️error⚠️ Ошибка подключения к Telegram: {e}')
+        return JsonResponse({'success': False, 'message': f'⚠️error⚠️ Ошибка соединения с Telegram: {str(e)}'}, status=500)
 
-    return JsonResponse({'success': True, 'message': 'Спасибо за отзыв!'}, json_dumps_params={'ensure_ascii': False})
+    return JsonResponse({'success': True, 'message': '🐸 Спасибо, отзыв появиться когда пройдет модерацию!'}, json_dumps_params={'ensure_ascii': False})

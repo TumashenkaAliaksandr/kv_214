@@ -18868,3 +18868,33 @@ django.template.exceptions.TemplateSyntaxError: Invalid filter: 'divide'
 [INFO] 2025-09-13 14:54:40,353 basehttp 6304 10360 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
 [INFO] 2025-09-13 14:54:42,788 basehttp 6304 13900 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
 [INFO] 2025-09-13 14:54:56,157 basehttp 6304 13900 "POST /submit_review/ HTTP/1.1" 200 63
+[INFO] 2025-09-13 14:56:20,556 basehttp 6304 13900 "POST /send-consultation-message/ HTTP/1.1" 200 92
+[INFO] 2025-09-13 14:59:47,018 basehttp 6304 13900 "POST /submit_review/ HTTP/1.1" 200 63
+[INFO] 2025-09-13 15:11:32,439 autoreload 6304 14836 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:11:33,620 autoreload 10464 15184 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:12:10,561 autoreload 10464 15184 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:12:11,490 autoreload 6664 16344 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:20:13,992 autoreload 6664 16344 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:20:15,174 autoreload 15608 8496 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:21:17,579 autoreload 15608 8496 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:21:18,864 autoreload 13672 17544 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:21:37,366 autoreload 13672 17544 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:21:38,833 autoreload 11892 10832 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:22:09,057 autoreload 11892 10832 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:22:09,995 autoreload 15288 2992 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:23:14,854 autoreload 15288 2992 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:23:15,906 autoreload 11140 16832 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:23:52,337 autoreload 11140 16832 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:23:53,295 autoreload 17384 6236 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:24:45,027 autoreload 17384 6236 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:24:45,966 autoreload 17028 16872 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:26:36,865 autoreload 17028 16872 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:26:37,797 autoreload 4612 13780 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:27:10,995 autoreload 4612 13780 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:27:11,945 autoreload 16296 17288 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:27:30,075 basehttp 16296 1436 "GET / HTTP/1.1" 200 45554
+[INFO] 2025-09-13 15:27:30,130 basehttp 16296 1436 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 15:27:30,131 basehttp 16296 18056 "GET /static/webapp/js/send_mail.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 15:27:44,646 basehttp 16296 18056 "POST /submit_review/ HTTP/1.1" 200 128
+[INFO] 2025-09-13 15:34:16,112 autoreload 16296 17288 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:34:17,074 autoreload 11508 7888 Watching for file changes with StatReloader

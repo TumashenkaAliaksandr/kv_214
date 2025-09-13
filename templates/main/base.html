@@ -190,6 +190,7 @@
     </div>
 </footer>
 
+<!-- Modal consultations -->
 <div class="modal-overlay" id="consultationModal" style="display:none;">
     <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <button class="modal-close" id="closeConsultationBtn" aria-label="Закрыть окно">&times;</button>
@@ -218,6 +219,7 @@
     </div>
 </div>
 
+<!-- Modal Review -->
 <div id="reviewModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-modal="true"
      tabindex="-1" style="display:none;">
     <div class="modal-content" role="document">
@@ -225,13 +227,13 @@
         <h2 id="modalTitle">💬 Оставить отзыв</h2>
         <form method="post" action="{% url 'submit_review' %}" id="reviewForm">
             {% csrf_token %}
-            <label for="reviewerName">Ваше имя:</label>
+            <label for="reviewerName">👤 Ваше имя:</label>
             <input type="text" id="reviewerName" name="reviewerName" required>
 
-            <label for="reviewRating">Ваша оценка (1-5):</label>
+            <label for="reviewRating">⭐ Ваша оценка (1-5):</label>
             <input type="number" id="reviewRating" name="reviewRating" min="1" max="5" required>
 
-            <label for="reviewText">Текст отзыва:</label>
+            <label for="reviewText">✏️ Текст отзыва:</label>
             <textarea id="reviewText" name="reviewText" required></textarea>
 
             <div class="radio-label-container">
