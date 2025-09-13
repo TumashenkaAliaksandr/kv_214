@@ -1393,7 +1393,7 @@ a[href^="tel"], a[href^="mailto"] {
 
     .new-objects,
     .objects {
-        padding: 1rem 0.5rem;
+        padding: 1rem 0.6rem;
     }
 
     .new-object img,
@@ -2986,12 +2986,12 @@ body.light-theme .breadcrumb-item.active {
     }
 
     .new-objects {
-        gap: 15px;
+        gap: 17px;
         /* Можно сделать слайдинг по одному элементу */
     }
 
     .new-object {
-        flex: 0 0 80vw; /* Почти вся ширина экрана */
+        flex: 0 0 75vw; /* Почти вся ширина экрана */
         max-width: 300px; /* либо ограничение */
     }
 
@@ -3023,7 +3023,7 @@ body.light-theme .breadcrumb-item.active {
         padding: 0.3rem;
         cursor: pointer;
         transition: box-shadow 0.3s;
-        max-width: 285px;
+        max-width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -3104,6 +3104,7 @@ body.light-theme .breadcrumb-item.active {
         max-width: 1100px;
         margin: auto;
         user-select: none;
+        /*padding-left: 2px;*/
     }
 
     .object-item img {
@@ -3203,9 +3204,9 @@ body.light-theme .breadcrumb-item.active {
 
     .objects {
         width: max-content; /* Чтобы можно было скроллить */
-        gap: 8px;
-        margin-left: 2px;
-        margin-right: 2px;
+        gap: 7px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /*.object-item {*/
@@ -4109,4 +4110,99 @@ body.light-theme .breadcrumb-item.active {
 
 #reviewForm button[type="submit"]:hover {
   background-color: #3c6b21;
+}
+.reviews-section {
+    padding: 2rem;
+}
+
+.review-rating {
+    color: #f5a623; /* золотой для звёзд */
+    font-size: 1rem;
+    user-select: none;
+}
+
+.reviews-wrapper {
+    display: flex;
+    overflow-x: auto;       /* Горизонтальный скролл */
+    scroll-behavior: smooth; /* Плавный скролл */
+    gap: 1rem;              /* Отступы между отзывами */
+    padding-bottom: 0.5rem; /* Чтобы скролл не обрезался */
+    -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+    scrollbar-width: none;   /* Для Firefox тонкий скролл */
+}
+
+/* Чтобы отступы для самых первых и последних элементов не прилипали к краям */
+.reviews-wrapper > .review-card:first-child {
+    margin-left: 1rem;
+}
+.reviews-wrapper > .review-card:last-child {
+    margin-right: 1rem;
+}
+
+/* На десктопе можно добавить ограничение ширины для удобства */
+@media (min-width: 1024px) {
+    .reviews-wrapper {
+        max-width: 100%;
+    }
+}
+
+
+.review-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    white-space: normal;  /* перенос текста */
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.review-author {
+    color: #333;
+}
+
+.review-text {
+    flex-grow: 1;
+    font-style: italic;
+    color: #555;
+}
+
+.review-date {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+
+
+/* Desktop: 5 отзывов в строке, центрируем и ограничиваем максимальную ширину */
+@media (min-width: 1024px) {
+    .review-card {
+        min-width: calc((100% - 4rem) / 5);
+        max-width: calc((100% - 4rem) / 5);
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        white-space: normal;  /* для десктопа также перенос */
+    }
+}
+
+/* Мобильный стиль: не делаем картчоки очень широкими */
+@media (max-width: 1023px) {
+    .review-card {
+        white-space: normal;      /* перенос текста */
+        word-break: break-word;   /* для длинных слов */
+        min-width: 90%;           /* карточка занимает 90% ширины экрана, чтобы оставался отступ */
+        max-width: 90%;
+    }
 }

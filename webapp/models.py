@@ -218,3 +218,18 @@ class Employee(models.Model):
 
     def get_absolute_url(self):
         return reverse('employee_single', kwargs={'slug': self.slug})
+
+
+class Review(models.Model):
+    name = models.CharField('Имя', max_length=100)
+    rating = models.PositiveSmallIntegerField('Оценка', default=5)
+    text = models.TextField('Текст отзыва')
+    date = models.DateTimeField('Дата создания', auto_now_add=True)
+
+    class Meta:
+        ordering = ['-date']
+        verbose_name = 'Отзыв'
+        verbose_name_plural = 'Отзывы'
+
+    def __str__(self):
+        return f'{self.name} ({self.rating}/5)'

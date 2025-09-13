@@ -7,7 +7,7 @@ from django.views.generic import TemplateView
 
 from kv_214 import settings
 from kv_214.settings import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
-from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason, About, Employee
+from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason, About, Employee, Review
 import requests
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
@@ -22,6 +22,7 @@ def index(request):
     videos = PropertyVideo.objects.all()
     trust_stats = TrustStats.objects.first()
     trust_reasons = TrustReason.objects.all()
+    reviews = Review.objects.all()[:20]
 
     # Фильтрация по типам (булевым полям)
     property_types = request.GET.getlist('property_type')
@@ -85,6 +86,7 @@ def index(request):
         'sold_objects': trust_stats.sold_objects if trust_stats else 1000,
         'avg_sale_days': trust_stats.avg_sale_days if trust_stats else 21,
         'support_247': trust_stats.support_247 if trust_stats else "24",
+        'reviews': reviews,
     }
     return render(request, 'webapp/index.html', context)
 
@@ -432,3 +434,4 @@ def submit_review(request):
         return JsonResponse({'success': False, 'message': f'⚠️error⚠️ Ошибка соединения с Telegram: {str(e)}'}, status=500)
 
     return JsonResponse({'success': True, 'message': '🐸 Спасибо, отзыв появиться когда пройдет модерацию!'}, json_dumps_params={'ensure_ascii': False})
+

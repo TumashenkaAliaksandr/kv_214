@@ -3,7 +3,7 @@ from django.utils.html import format_html
 
 from .forms import ObjectForm
 from .models import Contact, SocialNetwork, PropertyPhoto, Property, PropertyVideo, MainSliderPhoto, MainSlider, \
-    TrustStats, TrustReason, About, Messengers, Employee
+    TrustStats, TrustReason, About, Messengers, Employee, Review
 
 
 class PropertyPhotoInline(admin.TabularInline):
@@ -111,3 +111,10 @@ class EmployeeAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('full_name',)}
     readonly_fields = ('created_at', 'updated_at')
     ordering = ('full_name',)
+
+
+@admin.register(Review)
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = ('name', 'rating', 'date')
+    list_filter = ('rating', 'date')
+    search_fields = ('name', 'text')

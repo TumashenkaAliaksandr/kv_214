@@ -18898,3 +18898,210 @@ django.template.exceptions.TemplateSyntaxError: Invalid filter: 'divide'
 [INFO] 2025-09-13 15:27:44,646 basehttp 16296 18056 "POST /submit_review/ HTTP/1.1" 200 128
 [INFO] 2025-09-13 15:34:16,112 autoreload 16296 17288 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
 [INFO] 2025-09-13 15:34:17,074 autoreload 11508 7888 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:36:03,380 basehttp 11508 15620 "GET / HTTP/1.1" 200 45621
+[INFO] 2025-09-13 15:36:03,422 basehttp 11508 15620 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 15:36:03,423 basehttp 11508 5372 "GET /static/webapp/js/feedback.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 15:36:03,425 basehttp 11508 18008 "GET /static/webapp/js/send_mail.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 15:37:13,123 basehttp 11508 18008 "GET /employees/ HTTP/1.1" 200 17036
+[INFO] 2025-09-13 15:41:22,851 basehttp 11508 18008 "GET /employees/ HTTP/1.1" 200 16961
+[INFO] 2025-09-13 15:41:23,087 basehttp 11508 18132 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 15:41:23,090 basehttp 11508 18132 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 15:41:23,093 basehttp 11508 18132 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 15:41:23,097 basehttp 11508 18132 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 15:41:23,098 basehttp 11508 18008 "GET /static/webapp/css/style.css HTTP/1.1" 200 96240
+[INFO] 2025-09-13 15:41:23,101 basehttp 11508 4772 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 15:41:23,106 basehttp 11508 18008 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 15:41:23,107 basehttp 11508 18132 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 15:41:23,108 basehttp 11508 4772 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 15:41:23,108 basehttp 11508 6328 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 15:41:23,108 basehttp 11508 13832 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 15:41:23,110 basehttp 11508 2052 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 15:41:23,120 basehttp 11508 18008 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 15:41:23,120 basehttp 11508 18132 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 15:41:23,139 basehttp 11508 2052 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 200 293
+[INFO] 2025-09-13 15:41:23,322 basehttp 11508 2052 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 15:41:27,384 basehttp 11508 2052 "GET /about/ HTTP/1.1" 200 24681
+[INFO] 2025-09-13 15:41:48,944 basehttp 11508 2052 "GET /about/ HTTP/1.1" 200 24681
+[INFO] 2025-09-13 15:41:48,981 basehttp 11508 4772 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 15:41:48,981 basehttp 11508 13832 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 15:41:48,982 basehttp 11508 6328 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 15:41:48,982 basehttp 11508 18132 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 15:41:48,982 basehttp 11508 18008 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 15:41:48,985 basehttp 11508 2052 "GET /static/webapp/css/style.css HTTP/1.1" 200 96240
+[INFO] 2025-09-13 15:41:48,994 basehttp 11508 6328 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 15:41:48,994 basehttp 11508 2052 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 15:41:48,995 basehttp 11508 18008 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 15:41:48,995 basehttp 11508 13832 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 15:41:48,995 basehttp 11508 18132 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 15:41:48,996 basehttp 11508 4772 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 15:41:48,998 basehttp 11508 6328 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 15:41:49,004 basehttp 11508 13832 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 15:41:49,004 basehttp 11508 18132 "GET /static/webapp/svg/default_person.svg HTTP/1.1" 200 293
+[INFO] 2025-09-13 15:41:49,005 basehttp 11508 2052 "GET /media/about_photos/kvatera_about_1_Ud0WEn4.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 15:41:49,582 basehttp 11508 2052 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 15:41:53,845 basehttp 11508 2052 "GET /employees/ HTTP/1.1" 200 16961
+[INFO] 2025-09-13 15:41:56,290 basehttp 11508 2052 "GET /static/webapp/svg/map_com.svg HTTP/1.1" 200 191
+[WARNING] 2025-09-13 15:41:56,345 log 11508 2052 Not Found: /favicon.ico
+[WARNING] 2025-09-13 15:41:56,345 basehttp 11508 2052 "GET /favicon.ico HTTP/1.1" 404 7087
+[INFO] 2025-09-13 15:42:04,505 basehttp 11508 2052 "GET /static/webapp/svg/parking.svg HTTP/1.1" 200 316
+[INFO] 2025-09-13 15:42:30,594 basehttp 11508 2052 "GET /static/webapp/svg/map_com.svg HTTP/1.1" 304 0
+[INFO] 2025-09-13 15:42:38,430 basehttp 11508 2052 "GET / HTTP/1.1" 200 45621
+[INFO] 2025-09-13 15:43:01,571 basehttp 11508 2052 "GET /employees/ HTTP/1.1" 200 16903
+[INFO] 2025-09-13 15:43:05,037 basehttp 11508 2052 "GET /employees/ HTTP/1.1" 200 16903
+[INFO] 2025-09-13 15:43:07,677 basehttp 11508 2052 "GET /employees/ HTTP/1.1" 200 16903
+[INFO] 2025-09-13 15:43:12,268 basehttp 11508 2052 "GET / HTTP/1.1" 200 45621
+[INFO] 2025-09-13 15:43:36,168 basehttp 11508 2052 "GET /admin/ HTTP/1.1" 200 18590
+[INFO] 2025-09-13 15:43:36,238 basehttp 11508 2052 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 15:43:36,271 basehttp 11508 2052 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2025-09-13 15:43:39,065 basehttp 11508 2052 "GET /admin/webapp/messengers/ HTTP/1.1" 200 17974
+[INFO] 2025-09-13 15:43:39,114 basehttp 11508 2052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 15:43:43,996 basehttp 11508 2052 "GET /admin/webapp/messengers/1/change/ HTTP/1.1" 200 19059
+[INFO] 2025-09-13 15:43:44,039 basehttp 11508 2052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 15:43:55,352 basehttp 11508 2052 "GET /admin/webapp/messengers/ HTTP/1.1" 200 17974
+[INFO] 2025-09-13 15:43:55,395 basehttp 11508 2052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 15:48:43,760 basehttp 11508 2052 "GET /employees_single/ivan-ivanov/ HTTP/1.1" 200 15547
+[INFO] 2025-09-13 15:48:43,793 basehttp 11508 2052 "GET /static/webapp/js/send_mail.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 15:52:17,218 autoreload 11508 7888 C:\Users\Admin\PycharmProjects\kv_214\webapp\models.py changed, reloading.
+[INFO] 2025-09-13 15:52:18,362 autoreload 17516 9224 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:52:32,602 autoreload 17516 9224 C:\Users\Admin\PycharmProjects\kv_214\webapp\models.py changed, reloading.
+[INFO] 2025-09-13 15:52:33,905 autoreload 14232 17624 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:53:48,831 autoreload 14232 17624 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-13 15:53:49,926 autoreload 16188 17672 Watching for file changes with StatReloader
+[INFO] 2025-09-13 15:55:07,390 autoreload 16188 17672 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-09-13 15:55:08,439 autoreload 11592 16796 Watching for file changes with StatReloader
+[ERROR] 2025-09-13 15:55:22,579 log 11592 11812 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: webapp_review
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py", line 91, in index
+    return render(request, 'webapp/index.html', context)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: webapp_review
+[ERROR] 2025-09-13 15:55:22,598 basehttp 11592 11812 "GET / HTTP/1.1" 500 240399
+[INFO] 2025-09-13 15:56:01,948 basehttp 11592 11812 "GET / HTTP/1.1" 200 45799
+[INFO] 2025-09-13 15:56:01,987 basehttp 11592 11812 "GET /static/webapp/js/send_mail.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 15:56:36,089 basehttp 11592 11812 "GET /admin/webapp/messengers/ HTTP/1.1" 200 18397
+[INFO] 2025-09-13 15:56:36,118 basehttp 11592 11812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 15:56:42,123 basehttp 11592 11812 "GET /admin/webapp/review/ HTTP/1.1" 200 15836
+[INFO] 2025-09-13 15:56:42,161 basehttp 11592 11812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 15:56:44,399 basehttp 11592 11812 "GET /admin/webapp/review/add/ HTTP/1.1" 200 16232
+[INFO] 2025-09-13 15:56:44,432 basehttp 11592 11812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 15:58:00,467 basehttp 11592 11812 "POST /admin/webapp/review/add/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 15:58:00,569 basehttp 11592 11812 "GET /admin/webapp/review/ HTTP/1.1" 200 18039
+[INFO] 2025-09-13 15:58:00,604 basehttp 11592 11812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 15:58:06,297 basehttp 11592 11812 "GET / HTTP/1.1" 200 46369
+[INFO] 2025-09-13 15:58:06,383 basehttp 11592 11812 "GET /static/webapp/css/style.css HTTP/1.1" 200 97612
+[INFO] 2025-09-13 15:59:10,897 basehttp 11592 11812 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 15:59:10,941 log 11592 11812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 15:59:10,942 basehttp 11592 11812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 15:59:55,608 basehttp 11592 11812 "GET / HTTP/1.1" 200 46369
+[WARNING] 2025-09-13 15:59:55,663 log 11592 11812 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 15:59:55,666 basehttp 11592 11812 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 15:59:55,667 basehttp 11592 5892 "GET /static/webapp/css/style.css HTTP/1.1" 200 97612
+[INFO] 2025-09-13 16:00:39,544 autoreload 11592 16796 C:\Users\Admin\PycharmProjects\kv_214\webapp\templatetags\custom_filters.py changed, reloading.
+[INFO] 2025-09-13 16:00:40,533 autoreload 14728 8688 Watching for file changes with StatReloader

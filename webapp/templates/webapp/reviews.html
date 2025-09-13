@@ -1,0 +1,23 @@
+{% load static %}
+{% load custom_filters %}
+
+<section class="reviews-section">
+    <h2>📜 Отзывы наших клиентов.</h2>
+    <div class="reviews-wrapper">
+        {% for review in reviews %}
+        <div class="review-card">
+            <div class="review-header">
+                <span class="review-author">✔️ {{ review.name }}</span>
+                <span class="review-rating">
+                    {% for _ in review.rating|times %}
+                        ⭐
+                    {% endfor %}
+                </span>
+            </div>
+            <p class="review-text">💬 {{ review.text }}</p>
+            <div class="review-date">🗓 {{ review.date|date:"d M Y" }}</div>
+        </div>
+        {% endfor %}
+    </div>
+<p>Скролл →</p>
+</section>
