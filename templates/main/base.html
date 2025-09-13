@@ -222,14 +222,22 @@
      tabindex="-1" style="display:none;">
     <div class="modal-content" role="document">
         <button class="close-btn" id="closeReviewBtn" aria-label="Закрыть">&times;</button>
-        <h2 id="modalTitle">Оставить отзыв</h2>
+        <h2 id="modalTitle">💬 Оставить отзыв</h2>
         <form method="post" action="{% url 'submit_review' %}" id="reviewForm">
             {% csrf_token %}
             <label for="reviewerName">Ваше имя:</label>
             <input type="text" id="reviewerName" name="reviewerName" required>
 
+            <label for="reviewRating">Ваша оценка (1-5):</label>
+            <input type="number" id="reviewRating" name="reviewRating" min="1" max="5" required>
+
             <label for="reviewText">Текст отзыва:</label>
             <textarea id="reviewText" name="reviewText" required></textarea>
+
+            <div class="radio-label-container">
+                <input type="radio" id="agree" name="agree" required/>
+                <label for="agree">Я согласен с обработкой информации</label>
+            </div>
 
             <button type="submit">Отправить</button>
         </form>
@@ -245,12 +253,14 @@
 <script src="{% static 'webapp/js/messengers.js' %}"></script>
 <script src="{% static 'webapp/js/employee_profile.js' %}"></script>
 <script src="{% static 'webapp/js/feedback.js' %}"></script>
+<script src="{% static 'webapp/js/send_mail.js' %}"></script>
 <script>
     // Топ бар закрытие
     document.querySelector('.close-button').addEventListener('click', () => {
         document.getElementById('top-bar').style.display = 'none';
     });
 </script>
+
 
 </body>
 </html>

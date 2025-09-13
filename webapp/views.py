@@ -5,10 +5,10 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
 from django.views.generic import TemplateView
 
+from kv_214 import settings
 from kv_214.settings import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason, About, Employee
 import requests
-from django.conf import settings
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
 import logging
@@ -365,47 +365,70 @@ class RobotsTxtView(TemplateView):
         return {'sitemap_url': sitemap_url}
 
 
+logger = logging.getLogger(__name__)
+
 @require_POST
 def submit_review(request):
     name = request.POST.get('reviewerName')
+    rating = request.POST.get('reviewRating')
     text = request.POST.get('reviewText')
 
-    if not name or not text:
-        return JsonResponse({'success': False, 'message': 'Пожалуйста, заполните имя и текст отзыва'}, status=400)
+    # Проверяем обязательные поля
+    if not name or not rating or not text:
+        return JsonResponse(
+            {'success': False, 'message': 'Пожалуйста, заполните имя, оценку и текст отзыва'},
+            status=400
+        )
+
+    # Проверяем корректность рейтинга (1-5)
+    try:
+        rating_value = int(rating)
+        if rating_value < 1 or rating_value > 5:
+            raise ValueError("Некорректная оценка")
+    except Exception:
+        return JsonResponse({'success': False, 'message': 'Оценка должна быть числом от 1 до 5'}, status=400)
+
+    # Формируем письмо
+    subject = 'Новый отзыв на сайте'
+    message = f'Имя: {name}\nОценка: {rating_value}\nОтзыв:\n{text}'
+    recipient_list = ['Badminton500@inbox.lv']  # Замените на нужный email
 
     # Отправляем email
-    subject = 'Новый отзыв на сайте'
-    message = f'Имя: {name}\nОтзыв:\n{text}'
-    recipient_list = ['получатель@example.com']  # Замените на ваш email
-
     try:
-        send_mail(subject, message, settings.DEFAULT_FROM_EMAIL, recipient_list, fail_silently=False)
+        send_mail(
+            subject,
+            message,
+            settings.EMAIL_HOST_USER,
+            recipient_list,
+            fail_silently=False,
+        )
+        logger.info(f'Email отправлено от {settings.EMAIL_HOST_USER} о отзыве от {name}')
     except Exception as e:
+        logger.error(f'Ошибка отправки email: {e}')
         return JsonResponse({'success': False, 'message': f'Ошибка при отправке email: {str(e)}'}, status=500)
 
     # Отправляем в Telegram
-    bot_token = settings.TELEGRAM_BOT_TOKEN
-    chat_id = settings.TELEGRAM_CHAT_ID
-    telegram_api_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-
+    telegram_api_url = f"https://api.telegram.org/bot{settings.TELEGRAM_BOT_TOKEN}/sendMessage"
     telegram_message = (
         f"<b>Новый отзыв с сайта</b>\n\n"
         f"<b>Имя:</b> {name}\n"
+        f"<b>Оценка:</b> {rating_value}\n"
         f"<b>Отзыв:</b> {text}"
     )
-
     payload = {
-        'chat_id': chat_id,
+        'chat_id': settings.TELEGRAM_CHAT_ID,
         'text': telegram_message,
         'parse_mode': 'HTML',
     }
 
     try:
         response = requests.post(telegram_api_url, data=payload, timeout=10)
+        logger.info(f'Ответ Telegram: {response.text}')
         if response.status_code != 200:
-            error_desc = response.json().get('description', 'Ошибка при отправке сообщения в Telegram.')
-            return JsonResponse({'success': False, 'message': error_desc}, status=500)
+            desc = response.json().get('description', 'Ошибка при отправке сообщения в Telegram.')
+            return JsonResponse({'success': False, 'message': desc}, status=500)
     except Exception as e:
+        logger.error(f'Ошибка подключения к Telegram: {e}')
         return JsonResponse({'success': False, 'message': f'Ошибка соединения с Telegram: {str(e)}'}, status=500)
 
     return JsonResponse({'success': True, 'message': 'Спасибо за отзыв!'}, json_dumps_params={'ensure_ascii': False})
