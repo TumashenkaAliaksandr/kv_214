@@ -24,7 +24,7 @@
         </ol>
     </nav>
 
- <h2 class="centered-title"><i class="fa-solid fa-shop"></i> Предлагаем к продаже</h2>
+    <h2 class="centered-title"><i class="fa-solid fa-shop"></i> Предлагаем к продаже</h2>
 
 
     <section class="objects-section">
@@ -60,7 +60,8 @@
                 <p><b>Площадь:</b> {{ property.area }} м²
                     {% if property.area_ga %} ({{ property.area_ga }} сот./га) {% endif %}
                 </p>
-                <p><b>Цена BYN:</b> <span class="price-sale">{{ property.price|multiply:usd_to_byn_rate|floatformat:2 }}</span></p>
+                <p><b>Цена BYN:</b> <span
+                        class="price-sale">{{ property.price|multiply:usd_to_byn_rate|floatformat:2 }}</span></p>
                 {% if usd_to_byn_rate and property.price %}
                     <p><b>Цена в USD: $</b> <span class="price-sale">{{ property.price }}</span></p>
                 {% else %}
@@ -70,6 +71,35 @@
                 <p><b>Примечание:</b><br> <span>{{ property.notes|safe }}</span>
                 </p>
                 <button class="btn-sale" onclick="showCallbackModal()">🕭 &nbsp;&nbsp;Заказать звонок</button>
+                <button class="btn-sale" onclick="showMapModal()">🗺️ Посмотреть на карте</button>
+
+                <div id="mapModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle"
+                     tabindex="-1" style="display:none;">
+                    <div class="modal-content" role="document">
+                        <button class="close-btn" aria-label="Закрыть" onclick="closeMapModal()">&times;</button>
+                        <h2 id="modalTitle">🗺️ Карта объекта</h2>
+                        <div id="mapContainer" style="width: 600px; height: 450px;">
+                            <!-- сюда вставляем iframe из модели -->
+                            {% if property.map_embed_html %}
+                                {{ property.map_embed_html|safe }}
+                            {% else %}
+                                <p>Карта недоступна</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    function showMapModal() {
+                        document.getElementById('mapModal').style.display = 'flex';
+                    }
+
+                    function closeMapModal() {
+                        document.getElementById('mapModal').style.display = 'none';
+                    }
+                </script>
+
+
             </div>
         </div>
         <div class="single-property-desc">

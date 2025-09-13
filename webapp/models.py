@@ -80,6 +80,11 @@ class Property(models.Model):
     many_rooms = models.TextField(help_text='Сколько комнат', verbose_name="Сколько комнат", default=0)
     area = models.FloatField(help_text='Площадь в квадратных метрах', verbose_name="Полщадь м/кв")
     area_ga = models.FloatField(help_text='Площадь в гектарах/сотках', verbose_name="Площадь в гектарах/сотках", null=True, blank=True)
+    map_embed_html = models.TextField(
+        blank=True,
+        null=True,
+        verbose_name="HTML-код карты (iframe)"
+    )
     date_posted = models.DateField(auto_now_add=True, verbose_name="Дата добавления")
     is_sale = models.BooleanField(default=True, verbose_name="Продается")
     is_top_ten = models.BooleanField(default=True, verbose_name="Топ 10")

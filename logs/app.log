@@ -19105,3 +19105,1154 @@ django.db.utils.OperationalError: no such table: webapp_review
 [INFO] 2025-09-13 15:59:55,667 basehttp 11592 5892 "GET /static/webapp/css/style.css HTTP/1.1" 200 97612
 [INFO] 2025-09-13 16:00:39,544 autoreload 11592 16796 C:\Users\Admin\PycharmProjects\kv_214\webapp\templatetags\custom_filters.py changed, reloading.
 [INFO] 2025-09-13 16:00:40,533 autoreload 14728 8688 Watching for file changes with StatReloader
+[INFO] 2025-09-13 16:02:10,353 basehttp 14728 9748 "GET / HTTP/1.1" 200 46648
+[WARNING] 2025-09-13 16:02:10,404 log 14728 9748 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:02:10,414 basehttp 14728 9748 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:02:10,586 basehttp 14728 14964 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:02:10,592 basehttp 14728 14964 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:02:10,601 basehttp 14728 14964 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:02:10,607 basehttp 14728 14964 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:02:10,614 basehttp 14728 14964 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:02:10,618 basehttp 14728 14964 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:02:10,622 basehttp 14728 14964 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:02:10,627 basehttp 14728 14964 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:02:10,632 basehttp 14728 18036 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:02:10,633 basehttp 14728 14964 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:02:10,685 basehttp 14728 16544 "GET /static/webapp/css/style.css HTTP/1.1" 200 97743
+[INFO] 2025-09-13 16:02:10,685 basehttp 14728 18224 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 16:02:10,686 basehttp 14728 9748 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:02:10,689 basehttp 14728 4612 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:02:10,706 basehttp 14728 9748 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:02:10,707 basehttp 14728 14964 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:02:10,710 basehttp 14728 18224 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:02:10,713 basehttp 14728 4612 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:02:10,715 basehttp 14728 18036 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:02:10,715 basehttp 14728 16544 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:02:10,725 basehttp 14728 18224 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:02:10,729 basehttp 14728 14964 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:02:10,733 basehttp 14728 18036 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:02:10,738 basehttp 14728 16544 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:02:13,654 basehttp 14728 16544 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:02:37,832 basehttp 14728 16544 "GET / HTTP/1.1" 200 46648
+[WARNING] 2025-09-13 16:02:37,876 log 14728 16544 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:02:37,881 basehttp 14728 16544 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:02:37,883 basehttp 14728 18224 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:02:37,886 basehttp 14728 14964 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:02:37,892 basehttp 14728 4612 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:02:37,893 basehttp 14728 14964 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:02:37,894 basehttp 14728 18036 "GET /static/webapp/css/style.css HTTP/1.1" 200 97741
+[INFO] 2025-09-13 16:02:37,896 basehttp 14728 16544 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:02:37,895 basehttp 14728 9748 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 16:02:37,897 basehttp 14728 18224 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:02:37,903 basehttp 14728 18036 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:02:37,912 basehttp 14728 14964 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:02:37,914 basehttp 14728 9748 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:02:37,914 basehttp 14728 16544 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:02:37,914 basehttp 14728 4612 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:02:37,918 basehttp 14728 18036 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:02:37,940 basehttp 14728 14964 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:02:37,941 basehttp 14728 4612 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:02:37,944 basehttp 14728 18036 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:02:37,945 basehttp 14728 9748 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:02:37,963 basehttp 14728 14964 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:02:37,964 basehttp 14728 4612 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:02:37,968 basehttp 14728 9748 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:02:37,969 basehttp 14728 18036 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:02:37,993 basehttp 14728 18224 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:02:38,000 basehttp 14728 16544 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:02:40,747 basehttp 14728 16544 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:03:12,142 basehttp 14728 16544 "GET / HTTP/1.1" 200 46637
+[WARNING] 2025-09-13 16:03:12,188 log 14728 16544 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:03:12,189 basehttp 14728 16544 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:03:12,192 basehttp 14728 18224 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:04:01,277 basehttp 14728 18224 "GET / HTTP/1.1" 200 46638
+[WARNING] 2025-09-13 16:04:01,328 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:04:01,329 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:04:01,329 basehttp 14728 16544 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:04:30,576 basehttp 14728 18224 "GET /admin/webapp/review/add/ HTTP/1.1" 200 16232
+[INFO] 2025-09-13 16:04:30,609 basehttp 14728 18224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-09-13 16:04:30,675 log 14728 18224 Not Found: /favicon.ico
+[WARNING] 2025-09-13 16:04:30,676 basehttp 14728 18224 "GET /favicon.ico HTTP/1.1" 404 7087
+[INFO] 2025-09-13 16:04:58,831 basehttp 14728 18224 "POST /admin/webapp/review/add/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 16:04:58,946 basehttp 14728 18224 "GET /admin/webapp/review/ HTTP/1.1" 200 18455
+[INFO] 2025-09-13 16:04:58,988 basehttp 14728 18224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 16:05:03,190 basehttp 14728 18224 "GET / HTTP/1.1" 200 47464
+[WARNING] 2025-09-13 16:05:03,236 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:05:03,237 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:05:03,237 basehttp 14728 16544 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:05:46,433 basehttp 14728 18224 "GET / HTTP/1.1" 200 47464
+[WARNING] 2025-09-13 16:05:46,487 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 16:05:46,488 basehttp 14728 16544 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:05:46,488 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:07:08,101 basehttp 14728 18224 "GET / HTTP/1.1" 200 47464
+[WARNING] 2025-09-13 16:07:08,153 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 16:07:08,154 basehttp 14728 16544 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:07:08,154 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:07:32,676 basehttp 14728 18224 "GET / HTTP/1.1" 200 47468
+[WARNING] 2025-09-13 16:07:32,724 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:07:32,725 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:08:10,599 basehttp 14728 18224 "GET /admin/webapp/review/add/ HTTP/1.1" 200 16232
+[INFO] 2025-09-13 16:08:10,627 basehttp 14728 18224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 16:08:32,827 basehttp 14728 18224 "POST /admin/webapp/review/add/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 16:08:32,934 basehttp 14728 18224 "GET /admin/webapp/review/ HTTP/1.1" 200 18820
+[INFO] 2025-09-13 16:08:32,976 basehttp 14728 18224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 16:08:36,060 basehttp 14728 18224 "GET / HTTP/1.1" 200 48203
+[WARNING] 2025-09-13 16:08:36,103 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:08:36,105 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:08:36,105 basehttp 14728 16544 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:09:43,414 basehttp 14728 16544 "GET / HTTP/1.1" 200 48203
+[WARNING] 2025-09-13 16:09:43,468 log 14728 16544 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:09:43,474 basehttp 14728 16544 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:09:43,478 basehttp 14728 15408 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:09:43,479 basehttp 14728 17496 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:09:43,480 basehttp 14728 18224 "GET /static/webapp/css/style.css HTTP/1.1" 200 97770
+[INFO] 2025-09-13 16:09:43,499 basehttp 14728 15408 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 16:09:43,501 basehttp 14728 18224 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:09:43,504 basehttp 14728 17328 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:09:43,508 basehttp 14728 15408 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:09:43,509 basehttp 14728 17496 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:09:43,509 basehttp 14728 932 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:09:43,511 basehttp 14728 18224 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:09:43,514 basehttp 14728 17328 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:09:43,526 basehttp 14728 17800 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:09:43,539 basehttp 14728 932 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:09:43,539 basehttp 14728 18224 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:09:43,542 basehttp 14728 17496 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:09:43,561 basehttp 14728 17800 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:09:43,565 basehttp 14728 932 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:09:43,567 basehttp 14728 17496 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:09:43,571 basehttp 14728 18224 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:09:43,579 basehttp 14728 17800 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:09:43,589 basehttp 14728 18224 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:09:43,593 basehttp 14728 17496 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:09:43,606 basehttp 14728 17328 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:09:43,609 basehttp 14728 15408 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:09:46,769 basehttp 14728 15408 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:10:57,582 basehttp 14728 15408 "GET / HTTP/1.1" 200 48203
+[WARNING] 2025-09-13 16:10:57,668 log 14728 15408 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 16:10:57,668 basehttp 14728 17328 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:10:57,669 basehttp 14728 15408 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:12:18,543 basehttp 14728 15408 "GET / HTTP/1.1" 200 48203
+[WARNING] 2025-09-13 16:12:18,631 log 14728 15408 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 16:12:18,636 basehttp 14728 18224 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:12:18,636 basehttp 14728 17496 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:12:18,637 basehttp 14728 17328 "GET /static/webapp/css/style.css HTTP/1.1" 200 98361
+[WARNING] 2025-09-13 16:12:18,658 basehttp 14728 15408 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:12:18,667 basehttp 14728 17800 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:12:18,667 basehttp 14728 932 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 16:12:18,671 basehttp 14728 18224 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:12:18,693 basehttp 14728 15408 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:12:18,694 basehttp 14728 17328 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:12:18,694 basehttp 14728 17496 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:12:18,698 basehttp 14728 18224 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:12:18,702 basehttp 14728 17800 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:12:18,706 basehttp 14728 15408 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:12:18,725 basehttp 14728 18224 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:12:18,729 basehttp 14728 17800 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:12:18,748 basehttp 14728 17496 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:12:18,750 basehttp 14728 18224 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:12:18,754 basehttp 14728 17800 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:12:18,756 basehttp 14728 932 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:12:18,780 basehttp 14728 17328 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:12:18,787 basehttp 14728 17496 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:12:18,796 basehttp 14728 17800 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:12:18,802 basehttp 14728 15408 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:12:18,803 basehttp 14728 18224 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:12:18,807 basehttp 14728 17496 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:12:22,069 basehttp 14728 15408 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:13:44,737 basehttp 14728 15408 "GET / HTTP/1.1" 200 48203
+[WARNING] 2025-09-13 16:13:44,811 log 14728 15408 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 16:13:44,812 basehttp 14728 17328 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:13:44,813 basehttp 14728 15408 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:15:36,726 basehttp 14728 15408 "GET / HTTP/1.1" 200 48203
+[INFO] 2025-09-13 16:15:36,751 basehttp 14728 15408 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:15:48,450 basehttp 14728 15408 "GET /admin/webapp/review/add/ HTTP/1.1" 200 16232
+[INFO] 2025-09-13 16:15:48,482 basehttp 14728 15408 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-09-13 16:15:48,551 log 14728 15408 Not Found: /favicon.ico
+[WARNING] 2025-09-13 16:15:48,552 basehttp 14728 15408 "GET /favicon.ico HTTP/1.1" 404 7087
+[INFO] 2025-09-13 16:16:24,521 basehttp 14728 15408 "POST /admin/webapp/review/add/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 16:16:24,629 basehttp 14728 15408 "GET /admin/webapp/review/ HTTP/1.1" 200 19205
+[INFO] 2025-09-13 16:16:24,674 basehttp 14728 15408 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 16:16:28,059 basehttp 14728 15408 "GET / HTTP/1.1" 200 48972
+[INFO] 2025-09-13 16:16:28,088 basehttp 14728 15408 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:16:51,847 basehttp 14728 15408 "GET / HTTP/1.1" 200 48972
+[INFO] 2025-09-13 16:16:51,886 basehttp 14728 17496 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:16:51,886 basehttp 14728 932 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:16:51,887 basehttp 14728 17328 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:16:51,888 basehttp 14728 17800 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 16:16:51,888 basehttp 14728 18224 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:16:51,890 basehttp 14728 15408 "GET /static/webapp/css/style.css HTTP/1.1" 200 98335
+[INFO] 2025-09-13 16:16:51,897 basehttp 14728 17328 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:16:51,901 basehttp 14728 15408 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:16:51,902 basehttp 14728 17800 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:16:51,903 basehttp 14728 18224 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:16:51,903 basehttp 14728 932 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:16:51,904 basehttp 14728 17496 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:16:51,904 basehttp 14728 17328 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:16:51,907 basehttp 14728 15408 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:16:51,924 basehttp 14728 17328 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:16:51,926 basehttp 14728 17800 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:16:51,932 basehttp 14728 15408 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:16:51,940 basehttp 14728 18224 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:16:51,941 basehttp 14728 17800 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:16:51,945 basehttp 14728 17328 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:16:51,949 basehttp 14728 18224 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:16:51,949 basehttp 14728 15408 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:16:51,967 basehttp 14728 932 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:16:51,970 basehttp 14728 17496 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:16:54,492 basehttp 14728 17496 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:16:56,100 basehttp 14728 17496 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:16:56,163 log 14728 17496 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:16:56,163 basehttp 14728 17496 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:17:28,312 basehttp 14728 17496 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:17:28,370 log 14728 17496 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:17:28,377 basehttp 14728 17496 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:17:28,379 basehttp 14728 932 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:18:23,816 basehttp 14728 17496 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:18:23,888 log 14728 17496 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 16:18:23,890 basehttp 14728 932 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:18:23,890 basehttp 14728 17496 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:20:39,414 basehttp 14728 17496 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:20:39,471 log 14728 17496 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:20:39,473 basehttp 14728 17496 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:20:39,484 basehttp 14728 18224 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:20:39,486 basehttp 14728 17328 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:20:39,486 basehttp 14728 15408 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:20:39,489 basehttp 14728 17496 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:20:39,489 basehttp 14728 932 "GET /static/webapp/css/style.css HTTP/1.1" 200 98335
+[INFO] 2025-09-13 16:20:39,490 basehttp 14728 17800 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 16:20:39,497 basehttp 14728 18224 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:20:39,508 basehttp 14728 17328 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:20:39,509 basehttp 14728 17800 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:20:39,510 basehttp 14728 15408 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:20:39,510 basehttp 14728 932 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:20:39,511 basehttp 14728 17496 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:20:39,512 basehttp 14728 18224 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:20:39,519 basehttp 14728 17496 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:20:39,542 basehttp 14728 17800 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:20:39,544 basehttp 14728 15408 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:20:39,548 basehttp 14728 17328 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:20:39,553 basehttp 14728 17496 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:20:39,577 basehttp 14728 932 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:20:39,600 basehttp 14728 17328 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:20:39,604 basehttp 14728 15408 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:20:39,606 basehttp 14728 17496 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:20:39,622 basehttp 14728 17800 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:20:39,623 basehttp 14728 18224 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:20:43,762 basehttp 14728 18224 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:21:26,711 basehttp 14728 18224 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:21:26,765 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:21:26,767 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:21:26,768 basehttp 14728 932 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:22:50,911 basehttp 14728 18224 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:22:51,027 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 16:22:51,028 basehttp 14728 932 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:22:51,039 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:23:35,784 basehttp 14728 18224 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:23:35,829 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:23:35,830 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:23:35,848 basehttp 14728 18224 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:24:21,491 basehttp 14728 18224 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:24:21,569 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:24:21,571 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:24:21,571 basehttp 14728 932 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:25:13,762 basehttp 14728 18224 "GET / HTTP/1.1" 200 48972
+[INFO] 2025-09-13 16:25:13,810 basehttp 14728 18224 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:25:13,830 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:25:13,831 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:26:30,556 basehttp 14728 18224 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:26:30,614 log 14728 18224 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:26:30,616 basehttp 14728 18224 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:26:30,617 basehttp 14728 932 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:32:04,992 basehttp 14728 4508 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:32:05,050 log 14728 4508 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:32:05,054 basehttp 14728 4508 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:32:05,062 basehttp 14728 15336 "GET /static/webapp/css/style.css HTTP/1.1" 200 99524
+[INFO] 2025-09-13 16:32:05,067 basehttp 14728 4508 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:32:05,071 basehttp 14728 8852 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:32:05,075 basehttp 14728 15336 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:32:05,075 basehttp 14728 12192 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:32:05,077 basehttp 14728 18324 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 16:32:05,078 basehttp 14728 2220 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:32:05,083 basehttp 14728 8852 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:32:05,092 basehttp 14728 15336 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:32:05,094 basehttp 14728 4508 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:32:05,105 basehttp 14728 8852 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:32:05,105 basehttp 14728 12192 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:32:05,106 basehttp 14728 2220 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:32:05,108 basehttp 14728 18324 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:32:05,152 basehttp 14728 18324 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:32:05,155 basehttp 14728 12192 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:32:05,159 basehttp 14728 2220 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:32:05,161 basehttp 14728 8852 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:32:05,166 basehttp 14728 15336 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:32:05,176 basehttp 14728 18324 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:32:05,179 basehttp 14728 12192 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:32:05,181 basehttp 14728 4508 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:32:05,212 basehttp 14728 2220 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:32:05,214 basehttp 14728 8852 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:32:08,374 basehttp 14728 4508 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:33:50,931 basehttp 14728 4508 "GET / HTTP/1.1" 200 48972
+[INFO] 2025-09-13 16:33:50,983 basehttp 14728 8852 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:33:50,984 basehttp 14728 15336 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:33:50,985 basehttp 14728 4508 "GET /static/webapp/css/style.css HTTP/1.1" 200 99239
+[INFO] 2025-09-13 16:33:50,996 basehttp 14728 4508 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:33:50,997 basehttp 14728 15336 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[WARNING] 2025-09-13 16:33:51,015 log 14728 15336 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:33:51,020 basehttp 14728 15336 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:33:51,022 basehttp 14728 4508 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:33:51,023 basehttp 14728 2220 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:33:51,023 basehttp 14728 12192 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:33:51,023 basehttp 14728 8852 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:33:51,025 basehttp 14728 18324 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:33:51,026 basehttp 14728 15336 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:33:51,032 basehttp 14728 12192 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:33:51,037 basehttp 14728 18324 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:33:51,040 basehttp 14728 15336 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:33:51,047 basehttp 14728 4508 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:33:51,050 basehttp 14728 18324 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:33:51,071 basehttp 14728 15336 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:33:51,071 basehttp 14728 12192 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:33:51,085 basehttp 14728 18324 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:33:51,092 basehttp 14728 2220 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:33:51,096 basehttp 14728 8852 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:33:51,101 basehttp 14728 4508 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:33:51,114 basehttp 14728 15336 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:33:51,119 basehttp 14728 4508 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:33:54,678 basehttp 14728 8852 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:34:21,064 basehttp 14728 8852 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:34:21,111 log 14728 8852 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:34:21,112 basehttp 14728 8852 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:34:21,113 basehttp 14728 2220 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:34:28,838 basehttp 14728 2220 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:34:28,897 log 14728 2220 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:34:28,901 basehttp 14728 2220 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:34:28,903 basehttp 14728 4508 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:34:28,904 basehttp 14728 15336 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:34:28,906 basehttp 14728 8852 "GET /static/webapp/css/style.css HTTP/1.1" 200 98335
+[INFO] 2025-09-13 16:34:28,919 basehttp 14728 4508 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 16:34:28,919 basehttp 14728 8852 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:34:28,928 basehttp 14728 8852 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:34:28,931 basehttp 14728 4508 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:34:28,943 basehttp 14728 4508 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:34:28,952 basehttp 14728 15336 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:34:28,952 basehttp 14728 8852 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:34:28,953 basehttp 14728 18324 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:34:28,953 basehttp 14728 12192 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:34:28,954 basehttp 14728 2220 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:34:28,955 basehttp 14728 4508 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:34:28,983 basehttp 14728 18324 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:34:28,988 basehttp 14728 4508 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:34:28,991 basehttp 14728 8852 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:34:28,995 basehttp 14728 15336 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:34:29,005 basehttp 14728 18324 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:34:29,019 basehttp 14728 8852 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:34:29,025 basehttp 14728 4508 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:34:29,026 basehttp 14728 15336 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:34:29,042 basehttp 14728 12192 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:34:29,056 basehttp 14728 2220 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:34:32,566 basehttp 14728 2220 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:36:16,402 basehttp 14728 2220 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:36:16,470 log 14728 12192 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 16:36:16,471 basehttp 14728 2220 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:36:16,475 basehttp 14728 12192 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:38:32,593 basehttp 14728 12192 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:38:32,653 log 14728 12192 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:38:32,655 basehttp 14728 12192 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:38:32,656 basehttp 14728 2220 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:39:58,147 basehttp 14728 2220 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:39:58,245 log 14728 2220 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 16:39:58,246 basehttp 14728 12192 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:39:58,249 basehttp 14728 2220 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:42:51,232 basehttp 14728 9980 "GET / HTTP/1.1" 200 48972
+[INFO] 2025-09-13 16:42:51,325 basehttp 14728 17916 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:42:51,331 log 14728 9980 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:42:51,334 basehttp 14728 9980 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:44:25,940 basehttp 14728 9980 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:44:26,006 log 14728 9980 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:44:26,007 basehttp 14728 9980 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:44:26,007 basehttp 14728 17916 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:46:08,216 basehttp 14728 9980 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:46:08,298 log 14728 9980 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 16:46:08,300 basehttp 14728 17916 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 16:46:08,301 basehttp 14728 9980 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:46:08,351 basehttp 14728 9980 "GET /static/webapp/js/send_mail.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:47:30,517 basehttp 14728 9980 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:47:30,584 log 14728 9980 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:47:30,586 basehttp 14728 9980 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:47:30,586 basehttp 14728 17916 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:48:54,460 basehttp 14728 17916 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:48:54,514 log 14728 17916 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:48:54,516 basehttp 14728 17916 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:48:54,516 basehttp 14728 9980 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:48:57,475 basehttp 14728 9980 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:48:57,549 log 14728 9980 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:48:57,552 basehttp 14728 9980 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:48:57,556 basehttp 14728 16356 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:48:57,556 basehttp 14728 16604 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:48:57,558 basehttp 14728 17916 "GET /static/webapp/css/style.css HTTP/1.1" 200 98335
+[INFO] 2025-09-13 16:48:57,576 basehttp 14728 16604 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 16:48:57,576 basehttp 14728 17916 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:48:57,584 basehttp 14728 16604 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:48:57,585 basehttp 14728 17916 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:48:57,615 basehttp 14728 16604 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:48:57,615 basehttp 14728 17916 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:48:57,615 basehttp 14728 9980 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:48:57,616 basehttp 14728 16356 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:48:57,617 basehttp 14728 9580 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:48:57,619 basehttp 14728 6124 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:48:57,628 basehttp 14728 9980 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:48:57,643 basehttp 14728 6124 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:48:57,645 basehttp 14728 17916 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:48:57,648 basehttp 14728 16604 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:48:57,651 basehttp 14728 9980 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:48:57,661 basehttp 14728 6124 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:48:57,666 basehttp 14728 17916 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:48:57,670 basehttp 14728 16604 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:48:57,689 basehttp 14728 16356 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:48:57,692 basehttp 14728 9980 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:48:57,704 basehttp 14728 9580 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:49:01,345 basehttp 14728 16356 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:50:23,471 basehttp 14728 16356 "GET / HTTP/1.1" 200 48972
+[INFO] 2025-09-13 16:50:23,526 basehttp 14728 16604 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 16:50:23,526 basehttp 14728 9580 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 16:50:23,528 basehttp 14728 16356 "GET /static/webapp/css/style.css HTTP/1.1" 200 98335
+[INFO] 2025-09-13 16:50:23,563 basehttp 14728 16356 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 16:50:23,563 basehttp 14728 9580 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[WARNING] 2025-09-13 16:50:23,577 log 14728 16604 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:50:23,579 basehttp 14728 16604 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:50:23,580 basehttp 14728 9580 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 16:50:23,581 basehttp 14728 16356 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 16:50:23,605 basehttp 14728 16604 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 16:50:23,606 basehttp 14728 16356 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 16:50:23,608 basehttp 14728 17916 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 16:50:23,608 basehttp 14728 9580 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 16:50:23,609 basehttp 14728 9980 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 16:50:23,609 basehttp 14728 6124 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 16:50:23,625 basehttp 14728 16356 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 16:50:23,636 basehttp 14728 16604 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 16:50:23,637 basehttp 14728 9980 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 16:50:23,641 basehttp 14728 6124 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 16:50:23,653 basehttp 14728 16604 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 16:50:23,660 basehttp 14728 16356 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 16:50:23,662 basehttp 14728 9980 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 16:50:23,666 basehttp 14728 6124 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 16:50:23,682 basehttp 14728 16356 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 16:50:23,695 basehttp 14728 17916 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 16:50:23,700 basehttp 14728 9580 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 16:50:27,125 basehttp 14728 9580 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 16:58:48,496 basehttp 14728 18200 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:58:48,572 log 14728 18200 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:58:48,574 basehttp 14728 18200 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 16:58:48,575 basehttp 14728 16796 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 16:59:43,337 basehttp 14728 18200 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 16:59:43,395 log 14728 18200 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 16:59:43,396 basehttp 14728 18200 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:00:52,764 basehttp 14728 15512 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 17:00:52,830 log 14728 15512 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:00:52,832 basehttp 14728 15512 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:02:06,674 basehttp 14728 15512 "GET / HTTP/1.1" 200 48972
+[WARNING] 2025-09-13 17:02:06,771 log 14728 15512 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:02:06,771 basehttp 14728 13764 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:02:06,773 basehttp 14728 15512 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:03:25,453 basehttp 14728 15512 "GET /admin/webapp/review/add/ HTTP/1.1" 200 16232
+[INFO] 2025-09-13 17:03:25,489 basehttp 14728 15512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[WARNING] 2025-09-13 17:03:25,574 log 14728 15512 Not Found: /favicon.ico
+[WARNING] 2025-09-13 17:03:25,574 basehttp 14728 15512 "GET /favicon.ico HTTP/1.1" 404 7087
+[INFO] 2025-09-13 17:03:49,640 basehttp 14728 15512 "POST /admin/webapp/review/add/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 17:03:49,739 basehttp 14728 15512 "GET /admin/webapp/review/ HTTP/1.1" 200 19617
+[INFO] 2025-09-13 17:03:49,792 basehttp 14728 15512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 17:03:53,006 basehttp 14728 15512 "GET / HTTP/1.1" 200 49976
+[INFO] 2025-09-13 17:03:53,103 basehttp 14728 15512 "GET /static/webapp/js/send_mail.js HTTP/1.1" 304 0
+[INFO] 2025-09-13 17:04:05,526 basehttp 14728 15512 "GET /admin/webapp/review/5/change/ HTTP/1.1" 200 16917
+[INFO] 2025-09-13 17:04:05,560 basehttp 14728 15512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 17:04:13,907 basehttp 14728 15512 "POST /admin/webapp/review/5/change/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 17:04:13,996 basehttp 14728 15512 "GET /admin/webapp/review/ HTTP/1.1" 200 19619
+[INFO] 2025-09-13 17:04:14,041 basehttp 14728 15512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 17:11:49,964 basehttp 14728 8104 "GET /admin/webapp/review/add/ HTTP/1.1" 200 16232
+[INFO] 2025-09-13 17:11:50,003 basehttp 14728 8104 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 17:12:00,232 basehttp 14728 8104 "POST /admin/webapp/review/add/ HTTP/1.1" 302 0
+[INFO] 2025-09-13 17:12:00,330 basehttp 14728 8104 "GET /admin/webapp/review/ HTTP/1.1" 200 19967
+[INFO] 2025-09-13 17:12:00,380 basehttp 14728 8104 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-13 17:12:03,958 basehttp 14728 8104 "GET / HTTP/1.1" 200 50627
+[INFO] 2025-09-13 17:12:03,993 basehttp 14728 8104 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:12:13,307 log 14728 8104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:12:13,307 basehttp 14728 8104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[WARNING] 2025-09-13 17:13:17,944 log 14728 8104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:13:17,945 basehttp 14728 8104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:13:20,400 basehttp 14728 8104 "GET / HTTP/1.1" 200 50627
+[WARNING] 2025-09-13 17:13:20,444 log 14728 8104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:13:20,445 basehttp 14728 8104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:14:23,039 basehttp 14728 8104 "GET / HTTP/1.1" 200 50627
+[WARNING] 2025-09-13 17:14:23,102 log 14728 8104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:14:23,102 basehttp 14728 8104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:14:23,120 basehttp 14728 8104 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:14:23,121 basehttp 14728 13772 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:14:23,122 basehttp 14728 16436 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:14:23,123 basehttp 14728 16008 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:14:23,123 basehttp 14728 14348 "GET /static/webapp/css/style.css HTTP/1.1" 200 99126
+[INFO] 2025-09-13 17:14:23,126 basehttp 14728 8104 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:14:23,126 basehttp 14728 4772 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:14:23,134 basehttp 14728 13772 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:14:23,136 basehttp 14728 16436 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:14:23,140 basehttp 14728 4772 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:14:23,145 basehttp 14728 16008 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:14:23,146 basehttp 14728 8104 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:14:23,152 basehttp 14728 16436 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:14:23,156 basehttp 14728 4772 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:14:23,174 basehttp 14728 16436 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:14:23,178 basehttp 14728 16008 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:14:23,183 basehttp 14728 4772 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:14:23,186 basehttp 14728 14348 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:14:23,207 basehttp 14728 16008 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:14:23,213 basehttp 14728 16436 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:14:23,220 basehttp 14728 8104 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:14:23,220 basehttp 14728 13772 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:14:23,234 basehttp 14728 4772 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:14:23,268 basehttp 14728 16436 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:14:26,658 basehttp 14728 13772 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:15:56,169 basehttp 14728 13772 "GET / HTTP/1.1" 200 50627
+[WARNING] 2025-09-13 17:15:56,227 log 14728 13772 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:15:56,228 basehttp 14728 13772 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:15:56,229 basehttp 14728 8104 "GET /static/webapp/css/style.css HTTP/1.1" 200 99414
+[INFO] 2025-09-13 17:15:57,918 basehttp 14728 8104 "GET / HTTP/1.1" 200 50627
+[WARNING] 2025-09-13 17:15:57,960 log 14728 8104 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:15:57,962 basehttp 14728 8104 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:15:57,964 basehttp 14728 16436 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:15:57,964 basehttp 14728 4772 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:15:57,966 basehttp 14728 13772 "GET /static/webapp/css/style.css HTTP/1.1" 200 99414
+[INFO] 2025-09-13 17:15:58,048 basehttp 14728 16436 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:15:58,048 basehttp 14728 13772 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:15:58,072 basehttp 14728 16436 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:15:58,073 basehttp 14728 16008 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:15:58,073 basehttp 14728 13772 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:15:58,074 basehttp 14728 8104 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:15:58,074 basehttp 14728 4772 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:15:58,075 basehttp 14728 14348 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:15:58,081 basehttp 14728 16436 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:15:58,095 basehttp 14728 14348 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:15:58,096 basehttp 14728 8104 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:15:58,100 basehttp 14728 16436 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:15:58,102 basehttp 14728 4772 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:15:58,112 basehttp 14728 8104 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:15:58,128 basehttp 14728 4772 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:15:58,129 basehttp 14728 14348 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:15:58,130 basehttp 14728 16436 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:15:58,153 basehttp 14728 16008 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:15:58,156 basehttp 14728 8104 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:15:58,159 basehttp 14728 4772 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:15:58,160 basehttp 14728 13772 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:16:00,962 basehttp 14728 13772 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[WARNING] 2025-09-13 17:16:02,243 log 14728 13772 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:16:02,244 basehttp 14728 13772 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:16:02,259 basehttp 14728 13772 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:16:02,273 log 14728 13772 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:16:02,274 basehttp 14728 13772 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:16:04,193 basehttp 14728 13772 "GET / HTTP/1.1" 200 50627
+[WARNING] 2025-09-13 17:16:04,247 log 14728 13772 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:16:04,248 basehttp 14728 13772 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:16:04,249 basehttp 14728 16008 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 17:16:51,290 basehttp 14728 13772 "GET / HTTP/1.1" 200 50627
+[WARNING] 2025-09-13 17:16:51,336 log 14728 13772 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:16:51,338 basehttp 14728 13772 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:16:51,344 basehttp 14728 8104 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:16:51,344 basehttp 14728 4772 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:16:51,348 basehttp 14728 16008 "GET /static/webapp/css/style.css HTTP/1.1" 200 99039
+[INFO] 2025-09-13 17:16:51,353 basehttp 14728 16436 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:16:51,353 basehttp 14728 14348 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:16:51,354 basehttp 14728 13772 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:16:51,361 basehttp 14728 16008 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:16:51,362 basehttp 14728 8104 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:16:51,362 basehttp 14728 4772 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:16:51,374 basehttp 14728 8104 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:16:51,374 basehttp 14728 4772 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:16:51,374 basehttp 14728 16008 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:16:51,381 basehttp 14728 13772 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:16:51,381 basehttp 14728 16436 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:16:51,396 basehttp 14728 8104 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:16:51,397 basehttp 14728 16008 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:16:51,422 basehttp 14728 16436 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:16:51,426 basehttp 14728 13772 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:16:51,434 basehttp 14728 14348 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:16:51,437 basehttp 14728 4772 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:16:51,442 basehttp 14728 8104 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:16:51,443 basehttp 14728 16008 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:16:51,461 basehttp 14728 13772 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:16:51,469 basehttp 14728 8104 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:16:55,165 basehttp 14728 14348 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:17:57,397 basehttp 14728 14348 "GET / HTTP/1.1" 200 50627
+[WARNING] 2025-09-13 17:17:57,456 log 14728 14348 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:17:57,458 basehttp 14728 14348 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:17:57,460 basehttp 14728 4772 "GET /static/webapp/css/style.css HTTP/1.1" 200 98962
+[INFO] 2025-09-13 17:17:59,800 basehttp 14728 14348 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:17:59,854 basehttp 14728 4772 "GET / HTTP/1.1" 200 50627
+[WARNING] 2025-09-13 17:17:59,903 log 14728 4772 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:17:59,908 basehttp 14728 4772 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:17:59,910 basehttp 14728 8104 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:17:59,911 basehttp 14728 13772 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:17:59,912 basehttp 14728 14348 "GET /static/webapp/css/style.css HTTP/1.1" 200 98962
+[INFO] 2025-09-13 17:17:59,918 basehttp 14728 16436 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:17:59,918 basehttp 14728 16008 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:17:59,923 basehttp 14728 13772 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:17:59,928 basehttp 14728 14348 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:17:59,929 basehttp 14728 4772 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:17:59,937 basehttp 14728 16008 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:17:59,938 basehttp 14728 16436 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:17:59,941 basehttp 14728 14348 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:17:59,945 basehttp 14728 4772 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:17:59,946 basehttp 14728 13772 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:17:59,949 basehttp 14728 16436 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:17:59,977 basehttp 14728 16436 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:17:59,987 basehttp 14728 4772 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:17:59,987 basehttp 14728 13772 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:17:59,988 basehttp 14728 14348 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:17:59,998 basehttp 14728 16436 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:18:00,014 basehttp 14728 13772 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:18:00,015 basehttp 14728 14348 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:18:00,017 basehttp 14728 4772 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:18:00,019 basehttp 14728 8104 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:18:00,053 basehttp 14728 16008 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:18:10,359 basehttp 14728 16008 "GET / HTTP/1.1" 200 50627
+[WARNING] 2025-09-13 17:18:10,408 log 14728 16008 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:18:10,413 basehttp 14728 16008 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:18:10,413 basehttp 14728 13772 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:18:10,415 basehttp 14728 4772 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:18:10,416 basehttp 14728 8104 "GET /static/webapp/css/style.css HTTP/1.1" 200 98798
+[INFO] 2025-09-13 17:18:10,426 basehttp 14728 4772 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:18:10,433 basehttp 14728 8104 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:18:10,443 basehttp 14728 8104 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:18:10,446 basehttp 14728 4772 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:18:10,451 basehttp 14728 16008 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:18:10,452 basehttp 14728 13772 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:18:10,452 basehttp 14728 14348 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:18:10,455 basehttp 14728 16436 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:18:10,467 basehttp 14728 16008 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:18:10,469 basehttp 14728 14348 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:18:10,473 basehttp 14728 16436 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:18:10,480 basehttp 14728 4772 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:18:10,490 basehttp 14728 14348 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:18:10,492 basehttp 14728 16008 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:18:10,498 basehttp 14728 16436 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:18:10,505 basehttp 14728 4772 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:18:10,522 basehttp 14728 16008 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:18:10,525 basehttp 14728 14348 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:18:10,528 basehttp 14728 8104 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:18:10,533 basehttp 14728 4772 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:18:10,539 basehttp 14728 13772 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:18:13,579 basehttp 14728 13772 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:18:43,721 basehttp 14728 13772 "GET / HTTP/1.1" 200 50627
+[WARNING] 2025-09-13 17:18:43,765 log 14728 13772 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:18:43,768 basehttp 14728 13772 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:18:43,770 basehttp 14728 4772 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:18:43,771 basehttp 14728 14348 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:18:43,772 basehttp 14728 8104 "GET /static/webapp/css/style.css HTTP/1.1" 200 99039
+[INFO] 2025-09-13 17:18:43,786 basehttp 14728 8104 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:18:43,788 basehttp 14728 14348 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:18:43,790 basehttp 14728 4772 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:18:43,791 basehttp 14728 13772 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:18:43,792 basehttp 14728 16436 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:18:43,793 basehttp 14728 16008 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:18:43,793 basehttp 14728 8104 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:18:43,801 basehttp 14728 4772 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:18:43,805 basehttp 14728 16436 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:18:43,809 basehttp 14728 8104 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:18:43,813 basehttp 14728 16008 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:18:43,829 basehttp 14728 8104 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:18:43,833 basehttp 14728 16436 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:18:43,838 basehttp 14728 4772 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:18:43,844 basehttp 14728 16008 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:18:43,853 basehttp 14728 16436 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:18:43,854 basehttp 14728 4772 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:18:43,861 basehttp 14728 8104 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:18:43,863 basehttp 14728 16008 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:18:43,881 basehttp 14728 14348 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:18:43,888 basehttp 14728 13772 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:18:46,731 basehttp 14728 13772 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:20:05,420 basehttp 14728 13772 "GET / HTTP/1.1" 200 50655
+[WARNING] 2025-09-13 17:20:05,474 log 14728 13772 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:20:05,477 basehttp 14728 14348 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:20:05,478 basehttp 14728 13772 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:20:09,066 basehttp 14728 13772 "GET / HTTP/1.1" 200 50655
+[WARNING] 2025-09-13 17:20:09,116 log 14728 13772 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:20:09,121 basehttp 14728 13772 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:20:09,122 basehttp 14728 8104 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:20:09,122 basehttp 14728 16008 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:20:09,123 basehttp 14728 14348 "GET /static/webapp/css/style.css HTTP/1.1" 200 99039
+[INFO] 2025-09-13 17:20:09,148 basehttp 14728 8104 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:20:09,148 basehttp 14728 14348 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:20:09,148 basehttp 14728 4772 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:20:09,149 basehttp 14728 16436 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:20:09,150 basehttp 14728 16008 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:20:09,150 basehttp 14728 13772 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:20:09,169 basehttp 14728 16008 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:20:09,172 basehttp 14728 13772 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:20:09,172 basehttp 14728 16436 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:20:09,173 basehttp 14728 4772 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:20:09,173 basehttp 14728 8104 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:20:09,197 basehttp 14728 8104 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:20:09,203 basehttp 14728 4772 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:20:09,208 basehttp 14728 16436 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:20:09,214 basehttp 14728 13772 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:20:09,217 basehttp 14728 8104 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:20:09,222 basehttp 14728 4772 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:20:09,237 basehttp 14728 16436 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:20:09,237 basehttp 14728 16008 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:20:09,239 basehttp 14728 14348 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:20:09,248 basehttp 14728 8104 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:20:12,123 basehttp 14728 14348 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:20:29,717 basehttp 14728 14348 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:20:29,774 log 14728 14348 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:20:29,775 basehttp 14728 16008 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:20:29,775 basehttp 14728 14348 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:21:24,113 basehttp 14728 14348 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:21:24,182 log 14728 14348 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:21:24,183 basehttp 14728 14348 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:21:29,954 basehttp 14728 14348 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:21:30,010 log 14728 14348 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:21:30,011 basehttp 14728 14348 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:24:05,591 basehttp 14728 14348 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:24:05,657 log 14728 16008 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:24:05,657 basehttp 14728 16008 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:24:05,658 basehttp 14728 14348 "GET /static/webapp/css/style.css HTTP/1.1" 200 99039
+[INFO] 2025-09-13 17:25:37,356 basehttp 14728 16008 "GET / HTTP/1.1" 200 50651
+[INFO] 2025-09-13 17:25:37,418 basehttp 14728 14348 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:25:37,422 basehttp 14728 16460 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:25:37,422 basehttp 14728 16008 "GET /static/webapp/css/style.css HTTP/1.1" 200 99041
+[WARNING] 2025-09-13 17:25:37,444 log 14728 17988 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:25:37,449 basehttp 14728 16460 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:25:37,449 basehttp 14728 16008 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[WARNING] 2025-09-13 17:25:37,451 basehttp 14728 17988 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:25:37,456 basehttp 14728 14348 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:25:37,467 basehttp 14728 16460 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:25:37,468 basehttp 14728 15056 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:25:37,475 basehttp 14728 14348 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:25:37,479 basehttp 14728 4628 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:25:37,482 basehttp 14728 16008 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:25:37,483 basehttp 14728 17988 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:25:37,486 basehttp 14728 14348 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:25:37,487 basehttp 14728 15056 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:25:37,495 basehttp 14728 17988 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:25:37,504 basehttp 14728 16008 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:25:37,522 basehttp 14728 17988 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:25:37,528 basehttp 14728 14348 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:25:37,532 basehttp 14728 15056 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:25:37,538 basehttp 14728 4628 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:25:37,544 basehttp 14728 16460 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:25:37,554 basehttp 14728 16008 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:25:37,568 basehttp 14728 14348 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:25:37,573 basehttp 14728 15056 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:25:42,339 basehttp 14728 16460 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:27:21,733 basehttp 14728 15056 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:27:21,790 log 14728 15056 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:27:21,791 basehttp 14728 15056 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:27:21,798 basehttp 14728 16008 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:27:21,798 basehttp 14728 17988 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:27:21,799 basehttp 14728 14348 "GET /static/webapp/css/style.css HTTP/1.1" 200 99041
+[INFO] 2025-09-13 17:27:21,814 basehttp 14728 14348 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:27:21,815 basehttp 14728 17988 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:27:21,838 basehttp 14728 14348 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:27:21,842 basehttp 14728 16008 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:27:21,843 basehttp 14728 17988 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:27:21,844 basehttp 14728 15056 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:27:21,852 basehttp 14728 14348 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:27:21,853 basehttp 14728 13736 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:27:21,854 basehttp 14728 17988 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:27:21,855 basehttp 14728 16008 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:27:21,858 basehttp 14728 14660 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:27:21,883 basehttp 14728 14660 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:27:21,884 basehttp 14728 16008 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:27:21,888 basehttp 14728 17988 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:27:21,890 basehttp 14728 14348 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:27:21,905 basehttp 14728 14660 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:27:21,910 basehttp 14728 16008 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:27:21,914 basehttp 14728 14348 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:27:21,916 basehttp 14728 17988 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:27:21,927 basehttp 14728 13736 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:27:21,928 basehttp 14728 15056 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[ERROR] 2025-09-13 17:27:22,701 log 14728 16460 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+TimeoutError: [WinError 10060] Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+    ...<2 lines>...
+    ) from e
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x00000272DA467610>, 'Connection to api.nbrb.by timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.nbrb.by', port=443): Max retries exceeded with url: /exrates/rates/USD?parammode=2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000272DA467610>, 'Connection to api.nbrb.by timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py", line 91, in index
+    return render(request, 'webapp/index.html', context)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 169, in render
+    with context.bind_template(self):
+         ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 141, in __enter__
+    return next(self.gen)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\context.py", line 259, in bind_template
+    context = processor(self.request)
+  File "C:\Users\Admin\PycharmProjects\kv_214\webapp\context_processors.py", line 33, in currency_rates
+    rate = get_usd_to_byn_rate()
+  File "C:\Users\Admin\PycharmProjects\kv_214\webapp\context_processors.py", line 21, in get_usd_to_byn_rate
+    response = requests.get(url)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\requests\adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.nbrb.by', port=443): Max retries exceeded with url: /exrates/rates/USD?parammode=2 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x00000272DA467610>, 'Connection to api.nbrb.by timed out. (connect timeout=None)'))
+[INFO] 2025-09-13 17:27:22,727 basehttp 14728 16460 - Broken pipe from ('127.0.0.1', 60658)
+[INFO] 2025-09-13 17:27:27,816 basehttp 14728 4628 - Broken pipe from ('127.0.0.1', 60661)
+[INFO] 2025-09-13 17:27:29,292 basehttp 14728 16904 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:28:34,395 basehttp 14728 16904 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:28:34,447 log 14728 16904 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:28:34,448 basehttp 14728 16904 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:28:34,456 basehttp 14728 14644 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:28:34,456 basehttp 14728 9196 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:28:34,458 basehttp 14728 2340 "GET /static/webapp/css/style.css HTTP/1.1" 200 99041
+[INFO] 2025-09-13 17:28:34,473 basehttp 14728 14644 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:28:34,473 basehttp 14728 2340 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:28:34,498 basehttp 14728 6900 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:28:34,499 basehttp 14728 2340 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:28:34,500 basehttp 14728 9196 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:28:34,501 basehttp 14728 16904 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:28:34,501 basehttp 14728 14644 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:28:34,503 basehttp 14728 7340 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:28:34,506 basehttp 14728 2340 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:28:34,508 basehttp 14728 9196 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:28:34,509 basehttp 14728 16904 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:28:34,539 basehttp 14728 2340 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:28:34,544 basehttp 14728 16904 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:28:34,549 basehttp 14728 14644 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:28:34,554 basehttp 14728 6900 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:28:34,556 basehttp 14728 2340 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:28:34,561 basehttp 14728 16904 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:28:34,573 basehttp 14728 7340 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:28:34,577 basehttp 14728 9196 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:28:34,584 basehttp 14728 14644 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:28:34,587 basehttp 14728 6900 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:28:37,911 basehttp 14728 9196 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:31:55,567 basehttp 14728 18304 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:31:55,645 log 14728 18304 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:31:55,646 basehttp 14728 18384 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:31:55,646 basehttp 14728 18304 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:33:35,210 basehttp 14728 18304 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:33:35,275 log 14728 18304 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:33:35,275 basehttp 14728 18304 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:33:35,290 basehttp 14728 18304 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 17:35:28,682 basehttp 14728 18304 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:35:28,745 log 14728 18304 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:35:28,748 basehttp 14728 18384 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:35:28,749 basehttp 14728 18304 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:37:04,379 basehttp 14728 18304 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:37:04,432 log 14728 18304 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:37:04,433 basehttp 14728 18304 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:37:04,435 basehttp 14728 18384 "GET /static/webapp/css/style.css HTTP/1.1" 200 99069
+[INFO] 2025-09-13 17:38:43,667 basehttp 14728 18384 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:38:43,736 log 14728 18384 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:38:43,737 basehttp 14728 18304 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:38:43,737 basehttp 14728 18384 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:39:25,919 basehttp 14728 18384 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:39:25,976 log 14728 18384 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:39:25,978 basehttp 14728 18384 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:39:25,979 basehttp 14728 18304 "GET /static/webapp/css/style.css HTTP/1.1" 200 99073
+[INFO] 2025-09-13 17:40:38,885 basehttp 14728 18304 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:40:38,938 log 14728 18304 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:40:38,939 basehttp 14728 18304 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:40:38,945 basehttp 14728 14680 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:40:38,945 basehttp 14728 15912 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:40:38,947 basehttp 14728 18384 "GET /static/webapp/css/style.css HTTP/1.1" 200 99070
+[INFO] 2025-09-13 17:40:38,974 basehttp 14728 14680 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:40:38,974 basehttp 14728 18384 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:40:39,006 basehttp 14728 18384 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:40:39,007 basehttp 14728 14680 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:40:39,008 basehttp 14728 16488 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:40:39,008 basehttp 14728 18304 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:40:39,010 basehttp 14728 15912 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:40:39,015 basehttp 14728 14680 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:40:39,017 basehttp 14728 18384 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:40:39,018 basehttp 14728 17528 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:40:39,022 basehttp 14728 15912 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:40:39,040 basehttp 14728 17528 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:40:39,043 basehttp 14728 18384 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:40:39,044 basehttp 14728 14680 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:40:39,048 basehttp 14728 15912 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:40:39,068 basehttp 14728 17528 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:40:39,072 basehttp 14728 16488 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:40:39,078 basehttp 14728 18304 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:40:39,084 basehttp 14728 18384 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:40:39,089 basehttp 14728 14680 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:40:39,106 basehttp 14728 15912 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:40:42,946 basehttp 14728 18304 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:40:49,384 basehttp 14728 18304 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:40:49,433 log 14728 18304 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:40:49,435 basehttp 14728 18304 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:40:49,435 basehttp 14728 16488 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 17:42:11,497 basehttp 14728 16488 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:42:11,557 log 14728 16488 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:42:11,558 basehttp 14728 16488 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:42:11,559 basehttp 14728 18304 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 17:42:51,425 basehttp 14728 18304 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:42:51,491 log 14728 18304 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:42:51,493 basehttp 14728 18304 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:42:51,494 basehttp 14728 16488 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 17:43:12,308 basehttp 14728 16488 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:43:12,364 log 14728 16488 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:43:12,366 basehttp 14728 16488 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:43:12,366 basehttp 14728 18304 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 17:44:35,635 basehttp 14728 18304 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:44:35,702 log 14728 18304 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:44:35,703 basehttp 14728 18304 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:44:35,718 basehttp 14728 18304 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 17:45:32,979 basehttp 14728 18304 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:45:33,044 log 14728 18304 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:45:33,046 basehttp 14728 16488 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:45:33,049 basehttp 14728 18304 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:51:53,517 basehttp 14728 5540 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:51:53,578 log 14728 5540 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:51:53,579 basehttp 14728 5540 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:51:53,583 basehttp 14728 15040 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 17:53:24,285 basehttp 14728 5540 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:53:24,337 log 14728 5540 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:53:24,341 basehttp 14728 5540 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:53:24,343 basehttp 14728 14780 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 17:53:24,343 basehttp 14728 9108 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 17:53:24,345 basehttp 14728 15040 "GET /static/webapp/css/style.css HTTP/1.1" 200 99080
+[INFO] 2025-09-13 17:53:24,384 basehttp 14728 15040 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:53:24,389 basehttp 14728 9108 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:53:24,399 basehttp 14728 15040 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:53:24,401 basehttp 14728 9108 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:53:24,429 basehttp 14728 15040 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:53:24,429 basehttp 14728 14780 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:53:24,429 basehttp 14728 9108 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:53:24,430 basehttp 14728 5540 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:53:24,431 basehttp 14728 9956 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:53:24,432 basehttp 14728 17532 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:53:24,437 basehttp 14728 5540 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:53:24,455 basehttp 14728 17532 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:53:24,459 basehttp 14728 9108 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:53:24,462 basehttp 14728 5540 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:53:24,465 basehttp 14728 14780 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:53:24,482 basehttp 14728 17532 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:53:24,492 basehttp 14728 9108 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:53:24,500 basehttp 14728 14780 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:53:24,504 basehttp 14728 9956 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:53:24,507 basehttp 14728 15040 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:53:24,510 basehttp 14728 5540 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:53:28,270 basehttp 14728 15040 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 17:53:41,339 basehttp 14728 15040 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:53:41,409 log 14728 15040 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:53:41,411 basehttp 14728 9956 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:53:41,412 basehttp 14728 15040 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:54:08,416 basehttp 14728 15040 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:54:08,465 log 14728 15040 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:54:08,466 basehttp 14728 15040 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:54:08,467 basehttp 14728 9956 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 17:56:04,504 basehttp 14728 9956 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:56:04,599 log 14728 9956 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 17:56:04,601 basehttp 14728 9956 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:56:04,603 basehttp 14728 15040 "GET /static/webapp/css/style.css HTTP/1.1" 200 99080
+[INFO] 2025-09-13 17:56:10,559 basehttp 14728 15040 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:56:10,633 log 14728 15040 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:56:10,634 basehttp 14728 9956 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:56:10,635 basehttp 14728 15040 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:57:29,110 basehttp 14728 15040 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 17:57:29,167 log 14728 15040 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:57:29,183 basehttp 14728 9956 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 17:57:29,226 basehttp 14728 15040 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:59:20,737 basehttp 14728 15040 "GET / HTTP/1.1" 200 50651
+[INFO] 2025-09-13 17:59:20,798 basehttp 14728 452 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[WARNING] 2025-09-13 17:59:20,811 log 14728 17916 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 17:59:20,812 basehttp 14728 9956 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[WARNING] 2025-09-13 17:59:20,813 basehttp 14728 17916 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 17:59:20,814 basehttp 14728 15040 "GET /static/webapp/css/style.css HTTP/1.1" 200 99080
+[INFO] 2025-09-13 17:59:20,846 basehttp 14728 17916 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 17:59:20,849 basehttp 14728 15040 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 17:59:20,854 basehttp 14728 17916 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 17:59:20,860 basehttp 14728 15040 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 17:59:20,895 basehttp 14728 452 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 17:59:20,895 basehttp 14728 17916 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 17:59:20,896 basehttp 14728 15040 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 17:59:20,896 basehttp 14728 9956 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 17:59:20,898 basehttp 14728 11612 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 17:59:20,898 basehttp 14728 7352 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 17:59:20,912 basehttp 14728 452 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 17:59:20,919 basehttp 14728 11612 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 17:59:20,924 basehttp 14728 15040 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 17:59:20,924 basehttp 14728 9956 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 17:59:20,931 basehttp 14728 452 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 17:59:20,942 basehttp 14728 11612 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 17:59:20,951 basehttp 14728 15040 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 17:59:20,954 basehttp 14728 9956 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 17:59:20,961 basehttp 14728 452 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 17:59:20,968 basehttp 14728 7352 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 17:59:20,974 basehttp 14728 17916 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 17:59:24,421 basehttp 14728 17916 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 18:00:09,940 basehttp 14728 17916 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 18:00:10,018 log 14728 17916 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[INFO] 2025-09-13 18:00:10,019 basehttp 14728 7352 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 18:00:10,020 basehttp 14728 17916 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 18:01:05,764 basehttp 14728 4296 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 18:01:05,844 log 14728 4296 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 18:01:05,846 basehttp 14728 4296 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 18:01:05,846 basehttp 14728 4548 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:02:04,952 basehttp 14728 4296 "GET / HTTP/1.1" 200 50651
+[INFO] 2025-09-13 18:02:04,994 basehttp 14728 4296 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:02:07,548 basehttp 14728 4296 "GET / HTTP/1.1" 200 50651
+[INFO] 2025-09-13 18:02:07,585 basehttp 14728 8116 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 18:02:07,585 basehttp 14728 4548 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 18:02:07,587 basehttp 14728 4296 "GET /static/webapp/css/style.css HTTP/1.1" 200 99080
+[INFO] 2025-09-13 18:02:07,625 basehttp 14728 4296 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 18:02:07,628 basehttp 14728 4548 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 18:02:07,650 basehttp 14728 4296 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 18:02:07,650 basehttp 14728 4548 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 18:02:07,651 basehttp 14728 8116 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 18:02:07,651 basehttp 14728 17876 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 18:02:07,652 basehttp 14728 18128 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 18:02:07,656 basehttp 14728 16160 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 18:02:07,658 basehttp 14728 4296 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 18:02:07,666 basehttp 14728 8116 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 18:02:07,669 basehttp 14728 18128 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 18:02:07,703 basehttp 14728 18128 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 18:02:07,707 basehttp 14728 8116 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 18:02:07,707 basehttp 14728 4296 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 18:02:07,714 basehttp 14728 16160 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 18:02:07,726 basehttp 14728 17876 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 18:02:07,728 basehttp 14728 18128 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 18:02:07,730 basehttp 14728 4548 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 18:02:07,742 basehttp 14728 8116 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 18:02:07,759 basehttp 14728 16160 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 18:02:07,761 basehttp 14728 18128 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 18:02:10,320 basehttp 14728 17876 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 18:02:19,948 basehttp 14728 17876 "GET / HTTP/1.1" 200 50651
+[INFO] 2025-09-13 18:02:33,282 basehttp 14728 17876 "GET / HTTP/1.1" 200 50651
+[INFO] 2025-09-13 18:02:44,130 basehttp 14728 17876 "GET / HTTP/1.1" 200 50651
+[INFO] 2025-09-13 18:02:45,777 basehttp 14728 4548 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-09-13 18:02:45,833 basehttp 14728 17876 "GET / HTTP/1.1" 200 50651
+[INFO] 2025-09-13 18:02:45,863 basehttp 14728 4548 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-13 18:02:45,863 basehttp 14728 18128 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-13 18:02:45,864 basehttp 14728 17876 "GET /static/webapp/css/style.css HTTP/1.1" 200 99073
+[INFO] 2025-09-13 18:02:45,990 basehttp 14728 18128 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-13 18:02:45,990 basehttp 14728 17876 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-13 18:02:46,013 basehttp 14728 8116 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-13 18:02:46,014 basehttp 14728 17876 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-13 18:02:46,014 basehttp 14728 18128 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-13 18:02:46,015 basehttp 14728 4548 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-13 18:02:46,015 basehttp 14728 16160 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-13 18:02:46,015 basehttp 14728 4296 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-13 18:02:46,026 basehttp 14728 18128 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-13 18:02:46,031 basehttp 14728 16160 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-13 18:02:46,037 basehttp 14728 4548 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-09-13 18:02:46,043 basehttp 14728 8116 "GET /media/main_slider_photos/kv214_rent_slider.jpg HTTP/1.1" 200 116441
+[INFO] 2025-09-13 18:02:46,045 basehttp 14728 16160 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-09-13 18:02:46,047 basehttp 14728 18128 "GET /media/property_photos/kvatera214_polock_oct1.jpg HTTP/1.1" 200 274349
+[INFO] 2025-09-13 18:02:46,063 basehttp 14728 4548 "GET /media/property_photos/kvatera_polock_house.jpg HTTP/1.1" 200 412942
+[INFO] 2025-09-13 18:02:46,080 basehttp 14728 18128 "GET /media/property_photos/kvatera_kolasa.jpg HTTP/1.1" 200 99681
+[INFO] 2025-09-13 18:02:46,084 basehttp 14728 16160 "GET /media/property_photos/kvatera214_np_drujby3.jpg HTTP/1.1" 200 256900
+[INFO] 2025-09-13 18:02:46,085 basehttp 14728 8116 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-09-13 18:02:46,091 basehttp 14728 17876 "GET /media/main_slider_photos/kv214_kv_slider.png HTTP/1.1" 200 2378515
+[INFO] 2025-09-13 18:02:46,096 basehttp 14728 4296 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-09-13 18:02:46,101 basehttp 14728 4548 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-09-13 18:02:58,165 basehttp 14728 4296 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 18:02:58,216 log 14728 4296 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 18:02:58,216 basehttp 14728 4296 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 18:03:01,883 basehttp 14728 4296 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 18:03:01,943 log 14728 4296 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 18:03:01,944 basehttp 14728 4296 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 18:03:01,947 basehttp 14728 17876 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:03:50,232 basehttp 14728 17876 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 18:03:50,287 log 14728 17876 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 18:03:50,288 basehttp 14728 17876 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 18:03:50,305 basehttp 14728 17876 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:05:21,346 basehttp 14728 17876 "GET /sale/?property_type=is_active_house HTTP/1.1" 200 16066
+[INFO] 2025-09-13 18:05:21,400 basehttp 14728 17876 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:05:23,105 basehttp 14728 17876 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 22071
+[INFO] 2025-09-13 18:05:23,143 basehttp 14728 17876 "GET /media/property_photos/2_KMgxogp.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:05:23,150 basehttp 14728 17876 "GET /media/property_photos/6_PFYOJAC.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:05:23,150 basehttp 14728 4548 "GET /media/property_photos/4_8wGv1zK.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:05:23,150 basehttp 14728 4296 "GET /media/property_photos/3_87Ws96w.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:05:23,150 basehttp 14728 8116 "GET /media/property_photos/5_RzAWJ9S.jpg HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:08:05,938 basehttp 14728 8116 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 22211
+[INFO] 2025-09-13 18:08:05,966 basehttp 14728 8116 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-09-13 18:08:21,646 basehttp 14728 8116 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 22193
+[INFO] 2025-09-13 18:09:01,162 basehttp 14728 8116 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 22196
+[INFO] 2025-09-13 18:09:01,216 basehttp 14728 8116 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-09-13 18:09:15,001 log 14728 8116 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 18:09:15,002 basehttp 14728 8116 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 18:09:17,852 basehttp 14728 8116 "GET / HTTP/1.1" 200 50651
+[WARNING] 2025-09-13 18:09:17,898 log 14728 8116 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 18:09:17,899 basehttp 14728 8116 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 18:09:28,254 basehttp 14728 8116 "GET /sale/polock-alekseeva/ HTTP/1.1" 200 22196
+[WARNING] 2025-09-13 18:09:28,317 log 14728 8116 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-09-13 18:09:28,318 basehttp 14728 8116 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7198
+[INFO] 2025-09-13 18:13:03,038 autoreload 14728 8688 C:\Users\Admin\PycharmProjects\kv_214\webapp\models.py changed, reloading.
+[INFO] 2025-09-13 18:13:04,059 autoreload 4568 15324 Watching for file changes with StatReloader
+[INFO] 2025-09-13 18:13:42,025 autoreload 4568 15324 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-13 18:13:43,026 autoreload 15676 3076 Watching for file changes with StatReloader
