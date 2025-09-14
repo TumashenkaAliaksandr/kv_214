@@ -665,6 +665,7 @@ body {
     font-weight: 600;
     color: #3a6500;
     user-select: text;
+    font-size: 14px;
 }
 
 .new-object img {
@@ -1070,10 +1071,22 @@ body {
     margin-bottom: 30px;
 }
 
+/*.sale-container {*/
+/*    display: flex;*/
+/*    gap: 2rem;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*    max-width: 1350px;*/
+/*    width: 100%;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    margin-bottom: 60px;*/
+/*}*/
+
 .sale-container {
     display: flex;
     gap: 2rem;
-    align-items: center;
+    align-items: stretch; /* изменить */
     flex-wrap: wrap;
     max-width: 1350px;
     width: 100%;
@@ -1081,6 +1094,39 @@ body {
     margin-right: auto;
     margin-bottom: 60px;
 }
+
+.page-title {
+    filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
+    /* position: absolute; */ /* Отключено */
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    width: 100%;
+    background: transparent;
+    z-index: 20;
+}
+
+.properties-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;  /* добавить gap */
+    /* убрать margin у карточек */
+}
+
+.property-card {
+    background-color: #f9faf7;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(120, 170, 50, 0.15);
+    padding: 10px 13px;
+    width: calc((100% - 3 * 12px) / 4); /* 4 элемента в ряд с промежутками */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: 0; /* обнулить margin с боков */
+}
+
 
 .rent-container {
     position: relative;
@@ -1656,7 +1702,7 @@ a[href^="tel"], a[href^="mailto"] {
 .breadcrumb-list {
     list-style: none;
     padding: 0;
-    margin-left: 15px;
+    margin-left: 5px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1944,9 +1990,9 @@ body.light-theme .breadcrumb-item.active {
 
 .page-title {
     filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
-    /*position: absolute;*/
+    position: relative;
     top: 0;
-    left: 0;
+    left: 80px;
     padding: 10px 0; /* чтобы отступ от верха был */
     width: 100%; /* для корректного позиционирования */
     background: transparent; /* можно убрать фон если не нужен */
@@ -1966,21 +2012,21 @@ body.light-theme .breadcrumb-item.active {
 
 
 /* Карточка объекта */
-.property-card {
-    background-color: #f9faf7;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(120, 170, 50, 0.15);
-    padding: 10px 13px;
-    width: calc(25% - 10px);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    transition: box-shadow 0.3s ease;
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: 4.4px;
-    margin-right: 4.4px;
-}
+/*.property-card {*/
+/*    background-color: #f9faf7;*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0 6px 15px rgba(120, 170, 50, 0.15);*/
+/*    padding: 10px 13px;*/
+/*    width: calc(25% - 10px);*/
+/*    box-sizing: border-box;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    transition: box-shadow 0.3s ease;*/
+/*    cursor: pointer;*/
+/*    margin-top: 20px;*/
+/*    margin-left: 4.4px;*/
+/*    margin-right: 4.4px;*/
+/*}*/
 
 .margin-set {
     margin-top: 13px;
@@ -2126,13 +2172,270 @@ body.light-theme .breadcrumb-item.active {
     box-shadow: 0 4px 14px rgba(127, 195, 1, 0.2);
 }
 
+/* Контейнер для списка карточек - растягивается по ширине родителя */
+.properties-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 1350px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 !important;
+}
 
-/* Адаптив */
+/* Карточка объекта */
+.property-card {
+    flex: 1 1 calc((100% - 3 * 12px) / 4) !important; /* 4 карточки в ряд */
+    box-sizing: border-box !important;
+    background-color: #f9faf7 !important;
+    border-radius: 15px !important;
+    box-shadow: 0 6px 15px rgba(120, 170, 50, 0.15) !important;
+    padding: 10px 13px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: box-shadow 0.3s ease !important;
+    margin: 0 !important;
+    min-width: 200px !important; /* необязательно, но помогает */
+    max-width: 100% !important;
+}
+
+/* Ховер эффект */
+.property-card:hover {
+    box-shadow: 0 10px 30px rgba(120, 170, 50, 0.3) !important;
+}
+
+/* Ширина карточек для планшетов и небольших экранов */
 @media (max-width: 1024px) {
     .property-card {
-        width: calc(50% - 20px);
+        flex: 1 1 calc((100% - 12px) / 2) !important; /* 2 карточки в ряд */
     }
 }
+
+/* Ширина карточек для телефонов */
+@media (max-width: 640px) {
+    .property-card {
+        flex: 1 1 100% !important; /* 1 карточка в ряд */
+    }
+}
+
+/* Обертка списка карточек */
+.listing-cards {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 1350px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 !important;
+}
+
+/* Одна карточка объекта */
+.listing-card {
+    flex: 1 1 calc((100% - 3 * 12px) / 4) !important;
+    box-sizing: border-box !important;
+    background-color: #f9faf7 !important;
+    border-radius: 15px !important;
+    box-shadow: 0 6px 15px rgba(120, 170, 50, 0.15) !important;
+    padding: 10px 13px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    flex-direction: column !important;
+    transition: box-shadow 0.3s ease !important;
+    margin: 0 !important;
+    min-width: 200px !important;
+    max-width: 100% !important;
+}
+
+.listing-card:hover {
+    box-shadow: 0 10px 30px rgba(120, 170, 50, 0.3) !important;
+}
+
+/* Ширина карточек для планшетов и меньше */
+@media (max-width: 1024px) {
+    .listing-card {
+        flex: 1 1 calc((100% - 12px) / 2) !important;
+    }
+}
+
+/* На мобильных в один столбец */
+@media (max-width: 640px) {
+    .listing-card {
+        flex: 1 1 100% !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .listing-card {
+        flex: 1 1 calc((100% - 12px) / 2) !important; /* 2 карточки в ряд */
+    }
+}
+
+@media (max-width: 640px) {
+    .listing-card {
+        flex: 1 1 100% !important; /* 1 карточка в ряд */
+    }
+
+    .listing-photo {
+        max-height: 140px !important;
+    }
+
+    .listing-title {
+        font-size: 1rem !important;
+    }
+
+    .listing-price {
+        font-size: 1rem !important;
+    }
+
+    .listing-description {
+        font-size: 0.9rem !important;
+        -webkit-line-clamp: 5 !important; /* разрешаем чуть больше текста */
+    }
+}
+
+
+/* Заголовок в карточке */
+.listing-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #3e5418;
+    margin-bottom: 12px;
+}
+
+.listing-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.listing-link:hover {
+    color: #7fc301;
+}
+
+/* Цена */
+.listing-price {
+    color: #577d0a;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Тип объекта */
+.listing-type {
+    font-size: 1rem;
+    color: #4c8c2d;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Описание */
+.listing-description {
+    font-size: 1rem;
+    color: #4c8c2d;
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+/* Фото */
+.listing-photo-wrapper {
+    text-align: center;
+    margin-top: auto;
+}
+
+.listing-photo {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(127, 195, 1, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.listing-photo:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Сообщение об отсутствии объектов */
+.no-listings-message {
+    background: linear-gradient(270deg, #9ff806, #51ae0b, #92ea60, #a1d51d);
+    background-size: 600% 600%;
+    border: 2px solid #3d723b;
+    animation: saladGradientShift 15s ease infinite;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(190, 150, 10, 0.14);
+    padding: 22px 28px;
+    margin: 70px auto 84px;
+    font-size: 1.25rem;
+    color: #bd1414;
+    font-weight: 700;
+    text-align: center;
+    max-width: 400px;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 9px 22px;
+    background: #51ae0b;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 13px;
+    text-decoration: none;
+    box-shadow: 0 2px 7px rgba(127, 195, 1, 0.14);
+    font-size: 1rem;
+    transition: background 0.3s, box-shadow 0.3s;
+    user-select: none;
+}
+
+.btn-back:hover {
+    background: #9ff806;
+    color: #465b1e;
+    box-shadow: 0 4px 14px rgba(127, 195, 1, 0.2);
+}
+
+
+/* Ограничения на описание текста внутри карточки */
+.property-description,
+.property-price,
+.property-name {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 3 !important; /* максимум 3 строки для сокращения */
+}
+
+/* Изображения в карточках */
+.property-main-photo {
+    width: 100% !important;
+    max-height: 180px !important;
+    object-fit: cover !important;
+    border-radius: 12px !important;
+    box-shadow: 0 6px 12px rgba(127, 195, 1, 0.25) !important;
+    transition: transform 0.3s ease !important;
+}
+
+.property-main-photo:hover {
+    transform: scale(1.05) !important;
+    cursor: pointer !important;
+}
+
+
+
+/* Адаптив */
+/*@media (max-width: 1024px) {*/
+/*    .property-card {*/
+/*        width: calc(50% - 20px);*/
+/*    }*/
+/*}*/
 
 @media (max-width: 640px) {
     .property-card {
@@ -3149,7 +3452,7 @@ body.light-theme .breadcrumb-item.active {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
-        /* justify-content: space-between; */
+         justify-content: space-between;
         width: 390px;
         margin-left: auto;
         margin-right: auto;
@@ -3220,7 +3523,7 @@ body.light-theme .breadcrumb-item.active {
     }
 
     .object-item p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
 }
@@ -4123,6 +4426,8 @@ body.light-theme .breadcrumb-item.active {
     color: #f5a623; /* золотой для звёзд */
     font-size: 1rem;
     user-select: none;
+    flex-shrink: 0;
+    margin-right: 4px;
 }
 
 .reviews-wrapper {

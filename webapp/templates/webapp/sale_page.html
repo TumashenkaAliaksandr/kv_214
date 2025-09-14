@@ -31,59 +31,54 @@
     </nav>
 
     <section>
-        <div class="sale-container">
+        <div class="listing-wrapper">
             <h1 class="page-title">Объекты для покупки</h1>
 
             {% if properties %}
-                <div class="properties-list">
+                <div class="listing-cards">
                     {% for property in properties %}
-                        <div class="property-card">
-                            <h2 class="property-name">
-                                <a href="{% url 'sale_single' property.slug %}">{{ property.name }}</a>
+                        <article class="listing-card">
+                            <h2 class="listing-title">
+                                <a href="{% url 'sale_single' property.slug %}" class="listing-link">
+                                    {{ property.name }}
+                                </a>
                             </h2>
-{#                            <p class="property-address">{{ property.address }}</p>#}
-                            <p class="property-price">Цена: {{ property.price }} USD</p>
 
-                            <p class="property-type">
+                            <p class="listing-price">Цена: {{ property.price }} USD</p>
+
+                            <p class="listing-type">
                                 Тип недвижимости:
-                                {% if property.is_active_apartment %}
-                                    Квартира
-                                {% elif property.is_active_house %}
-                                    Дом
-                                {% elif property.is_active_country_house %}
-                                    Дача
-                                {% elif property.is_active_new %}
-                                    Новостройка
-                                {% elif property.is_active_sold %}
-                                    Продано
-                                {% else %}
-                                    Другой тип
+                                {% if property.is_active_apartment %}Квартира
+                                {% elif property.is_active_house %}Дом
+                                {% elif property.is_active_country_house %}Дача
+                                {% elif property.is_active_new %}Новостройка
+                                {% elif property.is_active_sold %}Продано
+                                {% else %}Другой тип
                                 {% endif %}
                             </p>
 
-                            <p class="property-description">{{ property.description|safe|truncatewords:30 }}</p>
+                            <p class="listing-description">{{ property.description|safe|truncatewords:30 }}</p>
 
-                            <a href="{% url 'sale_single' property.slug %}">
+                            <a href="{% url 'sale_single' property.slug %}" class="listing-photo-link">
                                 {% if property.photos.all %}
-                                    <div class="property-photos">
+                                    <div class="listing-photo-wrapper">
                                         <img src="{{ property.photos.all.0.photo.url }}"
                                              alt="{{ property.photos.all.0.alt_text }}"
-                                             class="property-main-photo"/>
+                                             class="listing-photo"/>
                                     </div>
                                 {% endif %}
                             </a>
-
-                        </div>
+                        </article>
                     {% endfor %}
                 </div>
             {% else %}
-                <div class="no-properties-wrapper">
-                    <div class="no-properties-message">
+                <div class="no-listings">
+                    <p class="no-listings-message">
                         💡⚠️🤷‍♂️ К сожалению, объекты по вашему запросу не найдены.
                         <br>
                         ✔️ Попробуйте ещё раз, перейдите назад ♻️
-                        <a href="javascript:history.back()" class="back-button">← Назад</a>
-                    </div>
+                        <a href="javascript:history.back()" class="btn-back">← Назад</a>
+                    </p>
                 </div>
             {% endif %}
         </div>
