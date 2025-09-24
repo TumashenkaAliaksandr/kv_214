@@ -1,4 +1,5 @@
 {% extends 'main/base.html' %}
+{% load currency_filters %}
 {% load static %}
 
 {% block content %}
@@ -44,20 +45,30 @@
                                 </a>
                             </h2>
 
-                            <p class="listing-price">Цена: {{ property.price }} USD</p>
-
-                            <p class="listing-type">
-                                Тип недвижимости:
-                                {% if property.is_active_apartment %}Квартира
-                                {% elif property.is_active_house %}Дом
-                                {% elif property.is_active_country_house %}Дача
-                                {% elif property.is_active_new %}Новостройка
-                                {% elif property.is_active_sold %}Продано
-                                {% else %}Другой тип
+                            <p><b>Тип:</b>
+                                {% if property.is_active_apartment %} Квартира
+                                {% elif property.is_active_house %} Дом
+                                {% elif property.is_active_country_house %} Дача
+                                {% elif property.is_active_new %} Новостройка
+                                {% else %} Другое
                                 {% endif %}
                             </p>
+                            <p><b>Этаж:</b> {{ property.floor|safe }}</p>
+                            <p><b>Комнат:</b> {{ property.many_rooms|safe }}</p>
+                            <p><b>Площадь:</b> {{ property.area }} м²
+                                {% if property.area_ga %} ({{ property.area_ga }} сот./га) {% endif %}
+                            </p>
+                            <p><b>Цена BYN:</b> <span
+                                    class="price-sale">{{ property.price|multiply:usd_to_byn_rate|floatformat:2 }}</span>
+                            </p>
+                            {% if usd_to_byn_rate and property.price %}
+                                <p><b>Цена в USD: $</b> <span class="price-sale">{{ property.price }}</span></p>
+                            {% else %}
+                                <p>Цена USD: $недоступна</p>
+                            {% endif %}
 
-                            <p class="listing-description">{{ property.description|safe|truncatewords:30 }}</p>
+
+                            <p class="listing-description">{{ property.description|safe|truncatewords:13 }}</p>
 
                             <a href="{% url 'sale_single' property.slug %}" class="listing-photo-link">
                                 {% if property.photos.all %}

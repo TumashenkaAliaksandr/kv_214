@@ -1992,9 +1992,9 @@ body.light-theme .breadcrumb-item.active {
     filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
     position: relative;
     top: 0;
-    left: 80px;
+    margin-left: 80px;
     padding: 10px 0; /* чтобы отступ от верха был */
-    width: 100%; /* для корректного позиционирования */
+    width: auto; /* для корректного позиционирования */
     background: transparent; /* можно убрать фон если не нужен */
     z-index: 20;
 }
@@ -2333,9 +2333,10 @@ body.light-theme .breadcrumb-item.active {
 
 /* Описание */
 .listing-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #4c8c2d;
     margin-bottom: 12px;
+    margin-top: 7px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
