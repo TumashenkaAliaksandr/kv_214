@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.html import format_html
 from django.utils.text import slugify
 from django.urls import reverse
 
@@ -63,6 +64,33 @@ class About(models.Model):
         verbose_name_plural = "О нас"
 
 
+class City(models.Model):
+    name = models.CharField(max_length=255, unique=True, verbose_name="Название города")
+    slug = models.SlugField(max_length=255, unique=True, blank=True, null=True, verbose_name="Slug для URL")
+    description = models.TextField(blank=True, null=True, verbose_name="Описание города")
+    photo = models.ImageField(upload_to='city_photos/', blank=True, null=True, verbose_name="Фото города")
+
+    def __str__(self):
+        return self.name
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+        super().save(*args, **kwargs)
+
+    # Для показа превью в админке
+    def photo_preview(self):
+        if self.photo:
+            return format_html('<img src="{}" style="max-height: 100px;"/>', self.photo.url)
+        return "Нет фото"
+    photo_preview.short_description = "Фото"
+
+    class Meta:
+        verbose_name = "Город"
+        verbose_name_plural = "Города"
+        ordering = ['name']
+
+
 
 class Property(models.Model):
     CURRENCY_CHOICES = [
@@ -71,7 +99,9 @@ class Property(models.Model):
     ]
     name = models.CharField(max_length=255, verbose_name="Имя/Адрес")
     slug = models.SlugField(max_length=255, unique=True, blank=True, null=True, verbose_name="Для адресной строки ЮРЛ")
-    city_name = models.CharField(max_length=255, default='город', verbose_name="Город")
+    city_name = models.CharField(max_length=255, default='город', verbose_name="Город")  # пока оставить
+    city = models.ForeignKey(City, on_delete=models.SET_NULL, null=True, blank=True, related_name='properties',
+                             verbose_name="Город")
     description = models.TextField(verbose_name="Описание")
     notes = models.TextField(default='Примечание', verbose_name="Примечание")
     address = models.CharField(max_length=500, verbose_name="Адрес")

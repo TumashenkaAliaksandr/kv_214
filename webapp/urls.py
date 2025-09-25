@@ -3,11 +3,13 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 
-from .views import consultation_view, send_consultation_message, RobotsTxtView
+from .views import consultation_view, send_consultation_message, RobotsTxtView, city_detail
 
 urlpatterns = [
     path('', views.index, name='index'),
     path('about', views.about, name='about'),
+    path('cities/', views.city_list, name='city_list'),
+    path('city/<slug:slug>/', city_detail, name='city_detail'),
 
     path('autocomplete/', views.autocomplete, name='autocomplete'),
     path('sale/', views.sale, name='sale'),

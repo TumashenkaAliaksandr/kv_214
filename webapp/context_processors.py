@@ -1,9 +1,11 @@
 import requests
 
-from .models import Contact
+from .models import Contact, City
+
 
 def contact_data(request):
     contact = Contact.objects.prefetch_related('social_networks', 'messengers').first()
+    cities = City.objects.all()
     if contact:
         social_networks = contact.social_networks.filter(is_had=True)
         messengers = contact.messengers.filter(is_had=True)
@@ -14,6 +16,7 @@ def contact_data(request):
         'contact': contact,
         'social_networks': social_networks,
         'messengers': messengers,
+        'cities': cities,
     }
 
 def get_usd_to_byn_rate():

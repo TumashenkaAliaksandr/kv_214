@@ -3,7 +3,14 @@ from django.utils.html import format_html
 
 from .forms import ObjectForm
 from .models import Contact, SocialNetwork, PropertyPhoto, Property, PropertyVideo, MainSliderPhoto, MainSlider, \
-    TrustStats, TrustReason, About, Messengers, Employee, Review
+    TrustStats, TrustReason, About, Messengers, Employee, Review, City
+
+
+@admin.register(City)
+class CityAdmin(admin.ModelAdmin):
+    list_display = ('name', 'photo_preview')
+    readonly_fields = ('photo_preview',)
+    prepopulated_fields = {'slug': ('name',)}
 
 
 class PropertyPhotoInline(admin.TabularInline):

@@ -7,7 +7,7 @@ from django.views.generic import TemplateView
 
 from kv_214 import settings
 from kv_214.settings import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
-from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason, About, Employee, Review
+from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason, About, Employee, Review, City
 import requests
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
@@ -435,3 +435,13 @@ def submit_review(request):
 
     return JsonResponse({'success': True, 'message': '🐸 Спасибо, отзыв появиться когда пройдет модерацию!'}, json_dumps_params={'ensure_ascii': False})
 
+
+def city_list(request):
+    cities = City.objects.all()
+    return render(request, 'webapp/category_objects.html', {'cities': cities})
+
+
+def city_detail(request, slug):
+    city = get_object_or_404(City, slug=slug)
+    properties = city.properties.all()
+    return render(request, 'webapp/category_objects.html', {'city': city, 'properties': properties})

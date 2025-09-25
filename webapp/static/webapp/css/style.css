@@ -4552,3 +4552,43 @@ body.light-theme .breadcrumb-item.active {
     color: #333;
     font-weight: bold;
 }
+
+
+.city-header {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.properties-list {
+    margin-top: 20px;
+}
+
+.property-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.property-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.property-link:hover {
+    text-decoration: underline;
+}
+
+.property-price {
+    font-weight: bold;
+    color: #007bff;
+}
