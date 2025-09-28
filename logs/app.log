@@ -22014,3 +22014,391 @@ django.template.exceptions.TemplateSyntaxError: Invalid filter: 'multiply'
 [INFO] 2025-09-25 18:15:57,268 basehttp 18536 15368 "GET /media/city_photos/2_KMgxogp.jpg HTTP/1.1" 304 0
 [INFO] 2025-09-25 18:16:05,669 basehttp 18536 15368 "GET /cities/ HTTP/1.1" 200 14385
 [INFO] 2025-09-25 18:16:15,311 basehttp 18536 15368 "GET /cities/ HTTP/1.1" 200 14385
+[INFO] 2025-09-28 08:55:46,073 autoreload 15252 19928 Watching for file changes with StatReloader
+[INFO] 2025-09-28 08:56:06,086 basehttp 15252 18328 "GET /admin/ HTTP/1.1" 302 0
+[INFO] 2025-09-28 08:56:07,128 basehttp 15252 18328 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+[INFO] 2025-09-28 08:56:07,330 basehttp 15252 18392 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 08:56:07,333 basehttp 15252 16936 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 08:56:07,365 basehttp 15252 18328 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 08:56:07,414 basehttp 15252 6800 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 08:56:07,452 basehttp 15252 13136 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+[WARNING] 2025-09-28 08:56:07,526 log 15252 13136 Not Found: /favicon.ico
+[WARNING] 2025-09-28 08:56:07,527 basehttp 15252 13136 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 08:56:16,354 basehttp 15252 13136 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[INFO] 2025-09-28 08:56:16,486 basehttp 15252 13136 "GET /admin/ HTTP/1.1" 200 19595
+[INFO] 2025-09-28 08:56:16,546 basehttp 15252 13136 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2025-09-28 08:56:16,564 basehttp 15252 13136 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2025-09-28 08:56:21,391 basehttp 15252 13136 "GET /admin/webapp/property/ HTTP/1.1" 200 24749
+[INFO] 2025-09-28 08:56:21,421 basehttp 15252 13136 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[INFO] 2025-09-28 08:56:21,423 basehttp 15252 18328 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[INFO] 2025-09-28 08:56:21,423 basehttp 15252 18392 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[INFO] 2025-09-28 08:56:21,433 basehttp 15252 18392 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[INFO] 2025-09-28 08:56:21,461 basehttp 15252 6800 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-28 08:56:21,519 basehttp 15252 6800 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[INFO] 2025-09-28 08:56:24,731 basehttp 15252 6800 "GET /admin/webapp/property/5/change/ HTTP/1.1" 200 43945
+[INFO] 2025-09-28 08:56:24,790 basehttp 15252 6800 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+[INFO] 2025-09-28 08:56:24,791 basehttp 15252 18484 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-28 08:56:24,812 basehttp 15252 16936 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[INFO] 2025-09-28 08:56:24,815 basehttp 15252 6800 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+[INFO] 2025-09-28 08:56:24,823 basehttp 15252 13136 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+[INFO] 2025-09-28 08:56:24,827 basehttp 15252 18328 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+[INFO] 2025-09-28 08:56:24,830 basehttp 15252 18392 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+[INFO] 2025-09-28 08:56:24,851 basehttp 15252 18328 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[INFO] 2025-09-28 08:56:24,871 basehttp 15252 18392 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[INFO] 2025-09-28 08:56:24,952 basehttp 15252 18392 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 537
+[INFO] 2025-09-28 08:56:25,036 basehttp 15252 6800 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-09-28 08:56:25,036 basehttp 15252 18328 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-09-28 08:56:25,036 basehttp 15252 13136 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-09-28 08:56:25,088 basehttp 15252 6800 "GET /static/summernote/django_summernote.css HTTP/1.1" 200 126
+[INFO] 2025-09-28 08:56:25,090 basehttp 15252 13136 "GET /static/summernote/summernote.min.css HTTP/1.1" 200 19392
+[INFO] 2025-09-28 08:56:25,124 basehttp 15252 18392 "GET /static/summernote/jquery.iframe-transport.js HTTP/1.1" 200 10891
+[INFO] 2025-09-28 08:56:25,128 basehttp 15252 18328 "GET /static/summernote/jquery.ui.widget.js HTTP/1.1" 200 22757
+[INFO] 2025-09-28 08:56:25,135 basehttp 15252 16936 "GET /static/summernote/jquery.fileupload.js HTTP/1.1" 200 64780
+[INFO] 2025-09-28 08:56:25,136 basehttp 15252 18484 "GET /static/summernote/summernote.min.js HTTP/1.1" 200 152734
+[INFO] 2025-09-28 08:56:25,164 basehttp 15252 13136 "GET /static/summernote/ResizeSensor.js HTTP/1.1" 200 7678
+[INFO] 2025-09-28 08:56:25,293 basehttp 15252 13136 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[INFO] 2025-09-28 08:56:25,342 basehttp 15252 18484 "GET /static/summernote/lang/summernote-en-US.min.js?_=1759038985239 HTTP/1.1" 200 4607
+[INFO] 2025-09-28 08:56:25,342 basehttp 15252 16936 "GET /static/summernote/lang/summernote-en-US.min.js?_=1759038985243 HTTP/1.1" 200 4607
+[INFO] 2025-09-28 08:56:25,343 basehttp 15252 13136 "GET /static/summernote/lang/summernote-en-US.min.js?_=1759038985202 HTTP/1.1" 200 4607
+[INFO] 2025-09-28 08:56:25,616 basehttp 15252 13136 "GET /static/summernote/font/summernote.woff2 HTTP/1.1" 200 6948
+[INFO] 2025-09-28 09:12:51,692 autoreload 15252 19928 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 09:12:53,393 autoreload 7164 19888 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:21:39,044 autoreload 20296 3004 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:23:01,372 autoreload 20296 3004 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 09:23:02,501 autoreload 20308 20260 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:25:40,006 autoreload 1020 19804 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:25:54,356 basehttp 1020 18812 "GET /admin/ HTTP/1.1" 200 19595
+[WARNING] 2025-09-28 09:25:54,430 log 1020 18812 Not Found: /favicon.ico
+[WARNING] 2025-09-28 09:25:54,430 basehttp 1020 18812 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 09:26:15,829 basehttp 1020 18812 "GET /admin/django_summernote/attachment/ HTTP/1.1" 200 15299
+[INFO] 2025-09-28 09:26:15,874 basehttp 1020 18812 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-28 09:34:26,052 basehttp 1020 14208 "GET /admin/django_summernote/attachment/ HTTP/1.1" 200 14966
+[INFO] 2025-09-28 09:34:26,101 basehttp 1020 20256 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-28 09:34:26,289 basehttp 1020 14208 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 09:34:26,299 basehttp 1020 17548 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 09:34:26,309 basehttp 1020 4044 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 09:34:26,315 basehttp 1020 20256 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 09:34:26,324 basehttp 1020 18928 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+[INFO] 2025-09-28 09:34:26,337 basehttp 1020 17548 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[INFO] 2025-09-28 09:34:26,352 basehttp 1020 20476 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-09-28 09:34:26,371 basehttp 1020 18928 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[INFO] 2025-09-28 09:34:26,372 basehttp 1020 4044 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[INFO] 2025-09-28 09:34:26,378 basehttp 1020 20256 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+[INFO] 2025-09-28 09:34:26,381 basehttp 1020 17548 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[INFO] 2025-09-28 09:34:26,389 basehttp 1020 20476 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[INFO] 2025-09-28 09:34:26,396 basehttp 1020 18928 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[INFO] 2025-09-28 09:34:26,426 basehttp 1020 14208 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[INFO] 2025-09-28 09:34:26,470 basehttp 1020 14208 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-09-28 09:34:26,496 basehttp 1020 14208 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[INFO] 2025-09-28 09:34:26,554 basehttp 1020 4044 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[INFO] 2025-09-28 09:34:26,599 basehttp 1020 14208 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[INFO] 2025-09-28 09:34:26,599 basehttp 1020 4044 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2025-09-28 09:34:26,619 log 1020 4044 Not Found: /favicon.ico
+[WARNING] 2025-09-28 09:34:26,619 basehttp 1020 4044 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 09:36:58,042 autoreload 1020 19804 C:\Users\Admin\PycharmProjects\kv_214\webapp\urls.py changed, reloading.
+[INFO] 2025-09-28 09:36:59,012 autoreload 3300 18156 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:42:18,010 basehttp 3300 10012 "GET /admin/django_summernote/attachment/ HTTP/1.1" 200 14966
+[INFO] 2025-09-28 09:42:18,038 basehttp 3300 10012 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-28 09:42:25,807 basehttp 3300 10012 "GET /admin/django_summernote/attachment/ HTTP/1.1" 200 14966
+[INFO] 2025-09-28 09:42:25,999 basehttp 3300 10012 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 09:42:26,016 basehttp 3300 10012 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-28 09:42:26,038 basehttp 3300 10012 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[INFO] 2025-09-28 09:42:26,054 basehttp 3300 10012 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[INFO] 2025-09-28 09:42:26,059 basehttp 3300 10816 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 09:42:26,076 basehttp 3300 10012 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[INFO] 2025-09-28 09:42:26,081 basehttp 3300 10816 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+[INFO] 2025-09-28 09:42:26,090 basehttp 3300 10012 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[INFO] 2025-09-28 09:42:26,094 basehttp 3300 10816 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[INFO] 2025-09-28 09:42:26,099 basehttp 3300 10012 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[INFO] 2025-09-28 09:42:26,105 basehttp 3300 10012 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[INFO] 2025-09-28 09:42:26,108 basehttp 3300 10816 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[INFO] 2025-09-28 09:42:26,115 basehttp 3300 7096 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+[INFO] 2025-09-28 09:42:26,130 basehttp 3300 15752 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 09:42:26,134 basehttp 3300 17284 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 09:42:26,141 basehttp 3300 17284 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-09-28 09:42:26,146 basehttp 3300 13772 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-09-28 09:42:26,149 basehttp 3300 17284 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[INFO] 2025-09-28 09:42:26,175 basehttp 3300 17284 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2025-09-28 09:42:26,175 basehttp 3300 13772 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[WARNING] 2025-09-28 09:42:26,214 log 3300 13772 Not Found: /favicon.ico
+[WARNING] 2025-09-28 09:42:26,222 basehttp 3300 13772 "GET /favicon.ico HTTP/1.1" 404 7860
+[WARNING] 2025-09-28 09:43:06,151 log 3300 17284 Not Found: /admin/cach
+[WARNING] 2025-09-28 09:43:06,152 basehttp 3300 17284 "GET /admin/cach HTTP/1.1" 404 9031
+[INFO] 2025-09-28 09:43:18,163 basehttp 3300 13772 - Broken pipe from ('127.0.0.1', 64709)
+[INFO] 2025-09-28 09:44:05,174 autoreload 3300 18156 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 09:44:06,116 autoreload 20236 5424 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:44:35,258 autoreload 20236 5424 C:\Users\Admin\PycharmProjects\kv_214\webapp\urls.py changed, reloading.
+[INFO] 2025-09-28 09:44:36,385 autoreload 13616 7648 Watching for file changes with StatReloader
+[WARNING] 2025-09-28 09:44:43,434 log 13616 4420 Not Found: /admin/cach
+[WARNING] 2025-09-28 09:44:43,435 basehttp 13616 4420 "GET /admin/cach HTTP/1.1" 404 9031
+[WARNING] 2025-09-28 09:44:56,211 log 13616 4420 Not Found: /admin/cache
+[WARNING] 2025-09-28 09:44:56,212 basehttp 13616 4420 "GET /admin/cache HTTP/1.1" 404 9034
+[WARNING] 2025-09-28 09:45:00,557 log 13616 4420 Not Found: /admin/cache
+[WARNING] 2025-09-28 09:45:00,557 basehttp 13616 4420 "GET /admin/cache HTTP/1.1" 404 9034
+[WARNING] 2025-09-28 09:45:00,602 log 13616 4420 Not Found: /favicon.ico
+[WARNING] 2025-09-28 09:45:00,603 basehttp 13616 4420 "GET /favicon.ico HTTP/1.1" 404 7860
+[INFO] 2025-09-28 09:46:17,676 autoreload 13616 7648 C:\Users\Admin\PycharmProjects\kv_214\kv_214\urls.py changed, reloading.
+[INFO] 2025-09-28 09:46:18,616 autoreload 4692 2092 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:47:35,550 autoreload 4692 2092 C:\Users\Admin\PycharmProjects\kv_214\kv_214\urls.py changed, reloading.
+[INFO] 2025-09-28 09:47:37,543 autoreload 15084 19372 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:48:05,784 autoreload 15084 19372 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 09:48:06,812 autoreload 16004 11856 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:50:23,692 autoreload 16004 11856 C:\Users\Admin\PycharmProjects\kv_214\webapp\urls.py changed, reloading.
+[INFO] 2025-09-28 09:50:26,146 autoreload 6408 15820 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:50:32,825 basehttp 6408 15860 "GET /admin/cache HTTP/1.1" 301 0
+[ERROR] 2025-09-28 09:50:33,204 log 6408 15860 Internal Server Error: /admin/cache/
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: admin/cache_admin.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: admin/cache_admin.html
+[ERROR] 2025-09-28 09:50:33,213 basehttp 6408 15860 "GET /admin/cache/ HTTP/1.1" 500 147307
+[WARNING] 2025-09-28 09:50:33,466 log 6408 15860 Not Found: /favicon.ico
+[WARNING] 2025-09-28 09:50:33,467 basehttp 6408 15860 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 09:51:23,489 autoreload 6408 15820 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 09:51:24,481 autoreload 16528 19400 Watching for file changes with StatReloader
+[ERROR] 2025-09-28 09:51:29,295 log 16528 13624 Internal Server Error: /admin/cache/
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\response.py", line 74, in resolve_template
+    return get_template(template, using=self.using)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: templates/admin/cache_admin.html
+[ERROR] 2025-09-28 09:51:29,299 basehttp 16528 13624 "GET /admin/cache/ HTTP/1.1" 500 85787
+[INFO] 2025-09-28 09:52:57,071 autoreload 16528 19400 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 09:52:58,150 autoreload 11120 596 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:53:05,108 basehttp 11120 13728 "GET /admin/cache/ HTTP/1.1" 200 13775
+[INFO] 2025-09-28 09:53:05,400 basehttp 11120 20344 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-09-28 09:53:05,408 basehttp 11120 13728 "GET /static/webapp/css/style.css HTTP/1.1" 200 108676
+[INFO] 2025-09-28 09:53:05,413 basehttp 11120 13568 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-09-28 09:53:05,414 basehttp 11120 6036 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-09-28 09:53:05,422 basehttp 11120 18264 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-09-28 09:53:05,435 basehttp 11120 20344 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-09-28 09:53:05,437 basehttp 11120 17336 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-09-28 09:53:05,447 basehttp 11120 6036 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-09-28 09:53:05,449 basehttp 11120 13728 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-09-28 09:53:05,456 basehttp 11120 13568 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-09-28 09:53:05,458 basehttp 11120 18264 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-09-28 09:53:05,465 basehttp 11120 20344 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-09-28 09:53:05,465 basehttp 11120 17336 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-09-28 09:53:05,479 basehttp 11120 13728 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[WARNING] 2025-09-28 09:53:11,485 log 11120 13728 Not Found: /admin/cache/clear-cache/
+[WARNING] 2025-09-28 09:53:11,486 basehttp 11120 13728 "POST /admin/cache/clear-cache/ HTTP/1.1" 404 5502
+[INFO] 2025-09-28 09:56:20,944 autoreload 11120 596 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 09:56:21,895 autoreload 10516 6732 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:56:28,884 basehttp 10516 11308 "GET /admin/cache/ HTTP/1.1" 200 6045
+[INFO] 2025-09-28 09:56:31,251 basehttp 10516 11308 "GET /admin/cache/ HTTP/1.1" 200 6045
+[INFO] 2025-09-28 09:56:33,620 basehttp 10516 11308 "GET /admin/cache/ HTTP/1.1" 200 6045
+[INFO] 2025-09-28 09:56:33,806 basehttp 10516 14836 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 09:56:33,810 basehttp 10516 18768 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-09-28 09:56:33,812 basehttp 10516 19752 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 09:56:33,813 basehttp 10516 11196 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 09:56:33,814 basehttp 10516 11308 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 09:56:33,870 basehttp 10516 11308 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-09-28 09:56:33,883 basehttp 10516 11308 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2025-09-28 09:56:33,922 log 10516 11308 Not Found: /favicon.ico
+[WARNING] 2025-09-28 09:56:33,923 basehttp 10516 11308 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 09:56:39,836 basehttp 10516 11308 "POST /admin/cache/clear-cache/ HTTP/1.1" 302 0
+[WARNING] 2025-09-28 09:56:39,855 log 10516 11308 Not Found: /admin/cache/cache/
+[WARNING] 2025-09-28 09:56:39,856 basehttp 10516 11308 "GET /admin/cache/cache/ HTTP/1.1" 404 5760
+[INFO] 2025-09-28 09:56:44,662 basehttp 10516 11308 "GET /admin/ HTTP/1.1" 200 9156
+[INFO] 2025-09-28 09:56:44,686 basehttp 10516 11308 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2025-09-28 09:56:44,706 basehttp 10516 11308 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[INFO] 2025-09-28 09:56:59,422 basehttp 10516 11308 "GET /admin/ HTTP/1.1" 200 9016
+[INFO] 2025-09-28 09:58:27,179 autoreload 10516 6732 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 09:58:28,346 autoreload 12388 16364 Watching for file changes with StatReloader
+[INFO] 2025-09-28 09:58:31,560 basehttp 12388 15500 "GET /admin/ HTTP/1.1" 200 9016
+[INFO] 2025-09-28 09:58:31,748 basehttp 12388 15500 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 09:58:31,797 basehttp 12388 17084 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-09-28 09:58:31,800 basehttp 12388 19636 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 09:58:31,801 basehttp 12388 20224 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 09:58:31,802 basehttp 12388 18892 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2025-09-28 09:58:31,805 basehttp 12388 17624 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 09:58:31,816 basehttp 12388 19636 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-09-28 09:58:31,824 basehttp 12388 19636 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2025-09-28 09:58:31,825 basehttp 12388 17624 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2025-09-28 09:58:31,842 log 12388 17624 Not Found: /favicon.ico
+[WARNING] 2025-09-28 09:58:31,843 basehttp 12388 17624 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 09:58:40,903 basehttp 12388 17624 "GET /admin/django_summernote/attachment/ HTTP/1.1" 200 7476
+[INFO] 2025-09-28 09:58:40,961 basehttp 12388 17624 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-28 09:58:46,548 basehttp 12388 17624 "GET /admin/ HTTP/1.1" 200 9016
+[INFO] 2025-09-28 10:00:44,435 autoreload 12388 16364 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 10:00:45,355 autoreload 8968 7680 Watching for file changes with StatReloader
+[INFO] 2025-09-28 10:04:06,277 autoreload 8968 7680 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 10:04:07,148 autoreload 17648 19216 Watching for file changes with StatReloader
+[INFO] 2025-09-28 10:05:28,395 autoreload 17648 19216 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 10:05:29,369 autoreload 6060 5424 Watching for file changes with StatReloader
+[INFO] 2025-09-28 10:05:40,577 basehttp 6060 19540 "GET /admin/ HTTP/1.1" 200 16766
+[INFO] 2025-09-28 10:06:08,706 basehttp 6060 19540 "GET //admin/cache/ HTTP/1.1" 200 11194
+[INFO] 2025-09-28 10:06:15,316 basehttp 6060 19540 "POST /admin/cache/clear-cache/ HTTP/1.1" 302 0
+[WARNING] 2025-09-28 10:06:15,333 log 6060 19540 Not Found: /admin/cache/cache/
+[WARNING] 2025-09-28 10:06:15,333 basehttp 6060 19540 "GET /admin/cache/cache/ HTTP/1.1" 404 8812
+[INFO] 2025-09-28 10:07:24,517 basehttp 6060 19540 "GET //admin/cache/ HTTP/1.1" 200 11335
+[INFO] 2025-09-28 10:07:27,459 basehttp 6060 19540 "GET //admin/cache/ HTTP/1.1" 200 11195
+[INFO] 2025-09-28 10:07:30,300 basehttp 6060 19540 "POST /admin/cache/clear-cache/ HTTP/1.1" 302 0
+[WARNING] 2025-09-28 10:07:30,315 log 6060 19540 Not Found: /admin/cache/cache/
+[WARNING] 2025-09-28 10:07:30,315 basehttp 6060 19540 "GET /admin/cache/cache/ HTTP/1.1" 404 8812
+[INFO] 2025-09-28 10:07:32,987 basehttp 6060 19540 "GET //admin/cache/ HTTP/1.1" 200 11335
+[INFO] 2025-09-28 10:07:34,813 basehttp 6060 19540 "GET //admin/cache/ HTTP/1.1" 200 11195
+[INFO] 2025-09-28 10:07:34,992 basehttp 6060 19540 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 10:07:35,002 basehttp 6060 18304 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 10:07:35,004 basehttp 6060 9316 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-09-28 10:07:35,006 basehttp 6060 19640 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 10:07:35,007 basehttp 6060 1004 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 10:07:35,011 basehttp 6060 1004 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-09-28 10:07:35,016 basehttp 6060 1004 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2025-09-28 10:07:35,035 log 6060 1004 Not Found: /favicon.ico
+[WARNING] 2025-09-28 10:07:35,035 basehttp 6060 1004 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 10:07:38,143 basehttp 6060 1004 "POST /admin/cache/clear-cache/ HTTP/1.1" 302 0
+[WARNING] 2025-09-28 10:07:38,155 log 6060 1004 Not Found: /admin/cache/cache/
+[WARNING] 2025-09-28 10:07:38,156 basehttp 6060 1004 "GET /admin/cache/cache/ HTTP/1.1" 404 8812
+[INFO] 2025-09-28 10:09:04,080 autoreload 6060 5424 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 10:09:05,432 autoreload 11500 15300 Watching for file changes with StatReloader
+[INFO] 2025-09-28 10:09:07,958 basehttp 11500 11968 "GET //admin/cache/ HTTP/1.1" 200 11335
+[INFO] 2025-09-28 10:09:09,652 basehttp 11500 11968 "GET //admin/cache/ HTTP/1.1" 200 11195
+[INFO] 2025-09-28 10:09:09,886 basehttp 11500 11968 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 10:09:09,917 basehttp 11500 20288 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 10:09:09,926 basehttp 11500 4832 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-09-28 10:09:09,930 basehttp 11500 15944 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 10:09:09,931 basehttp 11500 4752 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 10:09:09,934 basehttp 11500 4832 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-09-28 10:09:09,943 basehttp 11500 4832 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2025-09-28 10:09:09,971 log 11500 4832 Not Found: /favicon.ico
+[WARNING] 2025-09-28 10:09:09,971 basehttp 11500 4832 "GET /favicon.ico HTTP/1.1" 404 7621
+[ERROR] 2025-09-28 10:09:11,778 log 11500 4832 Internal Server Error: /admin/cache/clear-cache/
+Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py", line 162, in clear_cache_view
+    return HttpResponseRedirect(reverse('admin:cache-management'))
+                                ^^^^^^^
+NameError: name 'reverse' is not defined. Did you mean: 'reversed'?
+[ERROR] 2025-09-28 10:09:11,782 basehttp 11500 4832 "POST /admin/cache/clear-cache/ HTTP/1.1" 500 91029
+[INFO] 2025-09-28 10:09:59,552 autoreload 11500 15300 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 10:10:00,573 autoreload 19940 18976 Watching for file changes with StatReloader
+[INFO] 2025-09-28 10:10:02,391 basehttp 19940 20416 "GET //admin/cache/ HTTP/1.1" 200 11335
+[INFO] 2025-09-28 10:10:03,892 basehttp 19940 20416 "GET //admin/cache/ HTTP/1.1" 200 11195
+[INFO] 2025-09-28 10:10:04,053 basehttp 19940 20416 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 10:10:04,075 basehttp 19940 8032 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 10:10:04,082 basehttp 19940 18700 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 10:10:04,084 basehttp 19940 17304 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 10:10:04,086 basehttp 19940 14888 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-09-28 10:10:04,089 basehttp 19940 17304 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-09-28 10:10:04,095 basehttp 19940 17304 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2025-09-28 10:10:04,115 log 19940 17304 Not Found: /favicon.ico
+[WARNING] 2025-09-28 10:10:04,116 basehttp 19940 17304 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 10:10:05,710 basehttp 19940 17304 "POST /admin/cache/clear-cache/ HTTP/1.1" 302 0
+[INFO] 2025-09-28 10:10:05,814 basehttp 19940 17304 "GET /admin/cache/ HTTP/1.1" 200 11335
+[INFO] 2025-09-28 10:14:28,216 autoreload 19940 18976 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 10:14:29,584 autoreload 14936 2476 Watching for file changes with StatReloader
+[INFO] 2025-09-28 10:14:35,318 basehttp 14936 2328 "GET /admin/cache/ HTTP/1.1" 200 11159
+[INFO] 2025-09-28 10:14:35,501 basehttp 14936 2328 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 10:14:35,518 basehttp 14936 19280 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 10:14:35,520 basehttp 14936 2664 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-09-28 10:14:35,523 basehttp 14936 16032 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 10:14:35,525 basehttp 14936 16796 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 10:14:35,526 basehttp 14936 2664 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-09-28 10:14:35,532 basehttp 14936 2664 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2025-09-28 10:14:35,551 log 14936 2664 Not Found: /favicon.ico
+[WARNING] 2025-09-28 10:14:35,552 basehttp 14936 2664 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 10:14:38,245 basehttp 14936 2664 "POST /admin/cache/clear-cache/ HTTP/1.1" 302 0
+[INFO] 2025-09-28 10:14:38,343 basehttp 14936 2664 "GET /admin/cache/ HTTP/1.1" 200 11325
+[INFO] 2025-09-28 10:14:53,559 basehttp 14936 2664 "GET /admin/cache/ HTTP/1.1" 200 11159
+[INFO] 2025-09-28 10:14:53,585 basehttp 14936 16032 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-09-28 10:14:53,585 basehttp 14936 19280 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 10:14:53,587 basehttp 14936 16796 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 10:14:53,587 basehttp 14936 2664 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 10:14:53,588 basehttp 14936 2328 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 10:14:53,593 basehttp 14936 16796 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-09-28 10:14:53,599 basehttp 14936 16796 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2025-09-28 10:14:53,615 log 14936 16796 Not Found: /favicon.ico
+[WARNING] 2025-09-28 10:14:53,616 basehttp 14936 16796 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 10:15:28,584 autoreload 14936 2476 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 10:15:29,710 autoreload 872 632 Watching for file changes with StatReloader
+[INFO] 2025-09-28 10:16:32,383 autoreload 872 632 C:\Users\Admin\PycharmProjects\kv_214\webapp\admin.py changed, reloading.
+[INFO] 2025-09-28 10:16:34,072 autoreload 17028 12664 Watching for file changes with StatReloader
+[INFO] 2025-09-28 10:16:52,988 basehttp 17028 19680 "GET /admin/cache/ HTTP/1.1" 200 11202
+[INFO] 2025-09-28 10:16:53,156 basehttp 17028 19680 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-09-28 10:16:53,176 basehttp 17028 3916 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-09-28 10:16:53,186 basehttp 17028 3228 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-09-28 10:16:53,187 basehttp 17028 4324 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-09-28 10:16:53,189 basehttp 17028 19368 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-09-28 10:16:53,192 basehttp 17028 19368 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-09-28 10:16:53,197 basehttp 17028 19368 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[WARNING] 2025-09-28 10:16:53,219 log 17028 19368 Not Found: /favicon.ico
+[WARNING] 2025-09-28 10:16:53,220 basehttp 17028 19368 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-09-28 10:19:07,936 basehttp 17028 19368 "POST /admin/cache/clear-cache/ HTTP/1.1" 302 0
+[INFO] 2025-09-28 10:19:08,029 basehttp 17028 19368 "GET /admin/cache/ HTTP/1.1" 200 11399
+[INFO] 2025-09-28 10:19:11,711 basehttp 17028 19368 "GET /admin/webapp/property/ HTTP/1.1" 200 22449
+[INFO] 2025-09-28 10:19:11,779 basehttp 17028 19368 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-09-28 10:19:11,807 basehttp 17028 19368 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[INFO] 2025-09-28 14:03:24,208 basehttp 17028 17300 "GET /admin/cache/ HTTP/1.1" 200 11202
+[WARNING] 2025-09-28 14:03:24,265 log 17028 17300 Not Found: /favicon.ico
+[WARNING] 2025-09-28 14:03:24,266 basehttp 17028 17300 "GET /favicon.ico HTTP/1.1" 404 7621

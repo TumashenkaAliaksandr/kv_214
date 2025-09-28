@@ -1,0 +1,10 @@
+{% extends 'admin/base_site.html' %}
+
+{% block content %}
+<h1>Управление кэшем</h1>
+<p>Информация по кэшу: {{ cache_info }}</p>
+<form action="{% url 'admin:cache-clear' %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Очистить кэш" class="default">
+</form>
+{% endblock %}
