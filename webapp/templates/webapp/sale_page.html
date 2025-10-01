@@ -45,7 +45,7 @@
                                 </a>
                             </h2>
 
-                            <p><b>Тип:</b>
+                            <p><b style="font-size: 15px">🧩 Тип:</b>
                                 {% if property.is_active_apartment %} Квартира
                                 {% elif property.is_active_house %} Дом
                                 {% elif property.is_active_country_house %} Дача
@@ -53,22 +53,22 @@
                                 {% else %} Другое
                                 {% endif %}
                             </p>
-                            <p><b>Этаж:</b> {{ property.floor|safe }}</p>
-                            <p><b>Комнат:</b> {{ property.many_rooms|safe }}</p>
-                            <p><b>Площадь:</b> {{ property.area }} м²
+                            <p><b style="font-size: 15px">📍 Этаж:</b> {{ property.floor|safe }}</p>
+                            <p><b style="font-size: 15px">🚪 Комнат:</b> {{ property.many_rooms|safe }}</p>
+                            <p><b style="font-size: 15px">📐 Площадь:</b> {{ property.area }} м²
                                 {% if property.area_ga %} ({{ property.area_ga }} сот./га) {% endif %}
                             </p>
-                            <p><b>Цена BYN:</b> <span
+                            <p><b style="font-size: 15px">Цена BYN:</b> <span
                                     class="price-sale">{{ property.price|multiply:usd_to_byn_rate|floatformat:2 }}</span>
                             </p>
                             {% if usd_to_byn_rate and property.price %}
-                                <p><b>Цена в USD: $</b> <span class="price-sale">{{ property.price }}</span></p>
+                                <p><b style="font-size: 15px">Цена в USD: $</b> <span class="price-sale">{{ property.price }}</span></p>
                             {% else %}
-                                <p>Цена USD: $недоступна</p>
+                                <p style="font-size: 15px">Цена USD: $недоступна</p>
                             {% endif %}
 
 
-                            <p class="listing-description">{{ property.description|truncatewords_html:13|safe }}</p>
+                            <div class="listing-description">{{ property.description|truncatechars:74|safe }}</div>
 
                             <a href="{% url 'sale_single' property.slug %}" class="listing-photo-link">
                                 {% if property.photos.all %}

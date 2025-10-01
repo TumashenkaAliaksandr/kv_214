@@ -2346,6 +2346,7 @@ body.light-theme .breadcrumb-item.active {
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+    line-height: 1.44;
 }
 
 /* Фото */
