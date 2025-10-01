@@ -2299,10 +2299,14 @@ body.light-theme .breadcrumb-item.active {
 
 /* Заголовок в карточке */
 .listing-title {
-    font-size: 1.1rem;
+    font-size: 0.75rem;
     font-weight: 700;
     color: #3e5418;
     margin-bottom: 12px;
+    text-transform: uppercase;
+    background: #adff5b;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 .listing-link {

@@ -68,7 +68,7 @@
                             {% endif %}
 
 
-                            <p class="listing-description">{{ property.description|safe|truncatewords:13 }}</p>
+                            <p class="listing-description">{{ property.description|truncatewords_html:13|safe }}</p>
 
                             <a href="{% url 'sale_single' property.slug %}" class="listing-photo-link">
                                 {% if property.photos.all %}
