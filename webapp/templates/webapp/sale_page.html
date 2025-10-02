@@ -58,7 +58,8 @@
                             <p><b style="font-size: 15px">📐 Площадь:</b> {{ property.area }} м²
                                 {% if property.area_ga %} ({{ property.area_ga }} сот./га) {% endif %}
                             </p>
-                            <p><b style="font-size: 15px">Цена BYN:</b> <span
+
+                            <p><b style="font-size: 15px; margin-top: 13px">Цена BYN:</b> <span
                                     class="price-sale">{{ property.price|multiply:usd_to_byn_rate|floatformat:2 }}</span>
                             </p>
                             {% if usd_to_byn_rate and property.price %}
