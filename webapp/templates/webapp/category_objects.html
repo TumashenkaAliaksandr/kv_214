@@ -2,110 +2,29 @@
 {% load static %}
 {% load currency_filters %}
 
-
 {% block content %}
-
-
-    <div class="city-header"
-         {% if city.photo %}
-         style="background-image: url('{{ city.photo.url }}');"
-         {% endif %}>
-        {{ city.name }}
-    </div>
-<h1>Список городов</h1>
-<ul>
-  {% for city in cities %}
-    <li><a href="{% url 'city_detail' slug=city.slug %}">{{ city.name }}</a></li>
-  {% empty %}
-    <li>Города не найдены</li>
-  {% endfor %}
-</ul>
-
-
-
     <section>
         <div class="listing-wrapper">
-            <h1 class="page-title">Объекты для покупки</h1>
+            <h1 class="page-title">Список городов</h1>
 
-            {% if properties %}
-                <div class="listing-cards">
-                    {% for property in properties %}
-                        <article class="listing-card">
-                            <h2 class="listing-title">
-                                <a href="{% url 'sale_single' property.slug %}" class="listing-link">
-                                    {{ property.name }}
-                                </a>
-                            </h2>
-
-                            <p><b>Тип:</b>
-                                {% if property.is_active_apartment %}
-                                    Квартира
-                                {% elif property.is_active_house %}
-                                    Дом
-                                {% elif property.is_active_country_house %}
-                                    Дача
-                                {% elif property.is_active_new %}
-                                    Новостройка
-                                {% else %}
-                                    Другое
+            <div class="city-list-container">
+                <div class="city-grid">
+                    {% for city in cities %}
+                        <div class="city-grid-item">
+                            <a href="{% url 'city_detail' slug=city.slug %}" class="city-link">
+                                {% if city.photo %}
+                                    <img src="{{ city.photo.url }}" alt="{{ city.name }}" class="city-photo"/>
                                 {% endif %}
-                            </p>
-                            <p><b>Этаж:</b> {{ property.floor|default:"Не указано" }}</p>
-                            <p><b>Комнат:</b> {{ property.many_rooms|default:"Не указано" }}</p>
-                            <p><b>Площадь:</b> {{ property.area|default:"Не указано" }} м²
-                                {% if property.area_ga %}
-                                    ({{ property.area_ga }} сот./га)
-                                {% endif %}
-                            </p>
-                            <p><b>Цена BYN:</b>
-                                {% if property.price %}
-                                    <span class="price-sale">{{ property.price|multiply:usd_to_byn_rate|floatformat:2 }}</span>
-                                {% else %}
-                                    <span>Цена не указана</span>
-                                {% endif %}
-                            </p>
-                            {% if usd_to_byn_rate and property.price %}
-                                <p><b>Цена в USD: $</b> <span
-                                        class="price-sale">{{ property.price|floatformat:2 }}</span></p>
-                            {% else %}
-                                <p>Цена USD: $недоступна</p>
-                            {% endif %}
-
-                            <p class="listing-description">{{ property.description|default:"Описание отсутствует"|safe|truncatewords:13 }}</p>
-
-                            <a href="{% url 'sale_single' property.slug %}" class="listing-photo-link">
-                                {% if property.photos.all %}
-                                    {% with photo=property.photos.all.0 %}
-                                        {% if photo.photo %}
-                                            <div class="listing-photo-wrapper">
-                                                <img src="{{ photo.photo.url }}" alt="{{ photo.alt_text|default:'' }}"
-                                                     class="listing-photo"/>
-                                            </div>
-                                        {% else %}
-                                            <div class="listing-photo-wrapper no-photo">
-                                                <span>Фото отсутствует</span>
-                                            </div>
-                                        {% endif %}
-                                    {% endwith %}
-                                {% else %}
-                                    <div class="listing-photo-wrapper no-photo">
-                                        <span>Фото отсутствует</span>
-                                    </div>
-                                {% endif %}
+                                <span class="city-name">{{ city.name }}</span>
                             </a>
-                        </article>
+                            <span class="property-count">Объекты: {{ city.property_count }}</span>
+                        </div>
+                    {% empty %}
+                        <p>Города не найдены</p>
                     {% endfor %}
                 </div>
-            {% else %}
-                <div class="no-listings">
-                    <p class="no-listings-message">
-                        💡⚠️🤷‍♂️ К сожалению, объекты по вашему запросу не найдены.
-                        <br>
-                        ✔️ Попробуйте ещё раз, перейдите назад ♻️
-                        <a href="javascript:history.back()" class="btn-back">← Назад</a>
-                    </p>
-                </div>
-            {% endif %}
+            </div>
         </div>
     </section>
+
 {% endblock %}

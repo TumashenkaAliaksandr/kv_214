@@ -24046,3 +24046,81 @@ TypeError: Cannot reorder a query once a slice has been taken.
 [INFO] 2025-10-03 09:41:11,592 autoreload 14520 15840 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
 [INFO] 2025-10-03 09:41:12,340 autoreload 6492 18724 Watching for file changes with StatReloader
 [INFO] 2025-10-03 09:41:12,623 autoreload 19408 19804 Watching for file changes with StatReloader
+[INFO] 2025-10-03 10:12:33,828 basehttp 19408 14152 "GET /cities/ HTTP/1.1" 200 14443
+[INFO] 2025-10-03 10:12:33,860 basehttp 19408 14152 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[WARNING] 2025-10-03 10:16:08,236 log 19408 14152 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-10-03 10:16:08,237 basehttp 19408 14152 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7732
+[INFO] 2025-10-03 10:16:38,907 basehttp 19408 14152 "GET / HTTP/1.1" 200 50711
+[INFO] 2025-10-03 10:16:39,032 basehttp 19408 14152 "GET /static/webapp/js/burger_pages.js HTTP/1.1" 304 0
+[INFO] 2025-10-03 10:16:39,281 basehttp 19408 14152 "GET /media/main_slider_photos/kv214_slide-house.png HTTP/1.1" 200 2736227
+[INFO] 2025-10-03 10:16:39,521 basehttp 19408 14152 "GET /media/property_photos/kvatera214_kalinina5.jpg HTTP/1.1" 200 199809
+[INFO] 2025-10-03 10:16:39,596 basehttp 19408 14152 "GET /media/property_photos/kvatera_mira.jpg HTTP/1.1" 200 246031
+[INFO] 2025-10-03 10:16:39,603 basehttp 19408 14152 "GET /static/webapp/images/kvatera_about.jpg HTTP/1.1" 200 32878
+[INFO] 2025-10-03 10:16:46,778 basehttp 19408 14152 "GET /admin/ HTTP/1.1" 200 16795
+[INFO] 2025-10-03 10:16:46,813 basehttp 19408 1348 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+[INFO] 2025-10-03 10:16:46,813 basehttp 19408 14152 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+[INFO] 2025-10-03 10:16:46,825 basehttp 19408 7428 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+[INFO] 2025-10-03 10:16:46,830 basehttp 19408 1348 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+[INFO] 2025-10-03 10:16:46,832 basehttp 19408 14152 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+[INFO] 2025-10-03 10:16:46,846 basehttp 19408 7428 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+[INFO] 2025-10-03 10:16:46,860 basehttp 19408 14152 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+[INFO] 2025-10-03 10:16:46,879 basehttp 19408 14152 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[INFO] 2025-10-03 10:16:46,879 basehttp 19408 7428 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[WARNING] 2025-10-03 10:16:47,135 log 19408 14152 Not Found: /favicon.ico
+[WARNING] 2025-10-03 10:16:47,136 basehttp 19408 14152 "GET /favicon.ico HTTP/1.1" 404 7621
+[INFO] 2025-10-03 10:16:55,468 basehttp 19408 14152 "GET /admin/webapp/city/ HTTP/1.1" 200 14475
+[INFO] 2025-10-03 10:16:55,512 basehttp 19408 14152 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+[INFO] 2025-10-03 10:16:55,542 basehttp 19408 1348 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[INFO] 2025-10-03 10:16:55,555 basehttp 19408 15444 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+[INFO] 2025-10-03 10:16:55,556 basehttp 19408 19640 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+[INFO] 2025-10-03 10:16:55,565 basehttp 19408 15104 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-10-03 10:16:55,565 basehttp 19408 14152 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+[INFO] 2025-10-03 10:16:55,585 basehttp 19408 1348 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+[INFO] 2025-10-03 10:16:55,599 basehttp 19408 15104 "GET /media/city_photos/generated-image_5.png HTTP/1.1" 200 2588344
+[INFO] 2025-10-03 10:16:55,600 basehttp 19408 15444 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[INFO] 2025-10-03 10:16:55,648 basehttp 19408 7428 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+[INFO] 2025-10-03 10:16:55,661 basehttp 19408 14152 "GET /media/city_photos/2_KMgxogp.jpg HTTP/1.1" 200 7141943
+[INFO] 2025-10-03 10:16:55,706 basehttp 19408 14152 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+[INFO] 2025-10-03 10:16:55,767 basehttp 19408 19640 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+[INFO] 2025-10-03 10:16:55,796 basehttp 19408 14152 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[INFO] 2025-10-03 10:16:55,812 basehttp 19408 19640 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[INFO] 2025-10-03 10:17:00,499 basehttp 19408 19640 "GET /admin/webapp/property/ HTTP/1.1" 200 22443
+[INFO] 2025-10-03 10:17:00,528 basehttp 19408 7428 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[INFO] 2025-10-03 10:17:00,531 basehttp 19408 19640 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-10-03 10:17:00,542 basehttp 19408 14152 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[INFO] 2025-10-03 10:17:00,569 basehttp 19408 14152 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[INFO] 2025-10-03 10:17:02,520 basehttp 19408 14152 "GET /admin/webapp/property/6/change/ HTTP/1.1" 200 43730
+[INFO] 2025-10-03 10:17:02,561 basehttp 19408 14152 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+[INFO] 2025-10-03 10:17:02,563 basehttp 19408 15444 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-10-03 10:17:02,584 basehttp 19408 14152 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+[INFO] 2025-10-03 10:17:02,585 basehttp 19408 1348 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+[INFO] 2025-10-03 10:17:02,594 basehttp 19408 15104 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+[INFO] 2025-10-03 10:17:02,598 basehttp 19408 7428 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+[INFO] 2025-10-03 10:17:02,601 basehttp 19408 19640 "GET /static/admin/js/inlines.js HTTP/1.1" 200 15628
+[INFO] 2025-10-03 10:17:02,619 basehttp 19408 7428 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[INFO] 2025-10-03 10:17:02,632 basehttp 19408 19640 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+[INFO] 2025-10-03 10:17:02,707 basehttp 19408 1348 "GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 537
+[INFO] 2025-10-03 10:17:02,775 basehttp 19408 19640 "GET /summernote/editor/id_notes/ HTTP/1.1" 200 7149
+[INFO] 2025-10-03 10:17:02,776 basehttp 19408 7428 "GET /summernote/editor/id_many_rooms/ HTTP/1.1" 200 7164
+[INFO] 2025-10-03 10:17:02,776 basehttp 19408 15104 "GET /summernote/editor/id_description/ HTTP/1.1" 200 7167
+[INFO] 2025-10-03 10:17:02,816 basehttp 19408 19640 "GET /static/summernote/django_summernote.css HTTP/1.1" 200 126
+[INFO] 2025-10-03 10:17:02,817 basehttp 19408 15104 "GET /static/summernote/summernote.min.css HTTP/1.1" 200 19392
+[INFO] 2025-10-03 10:17:02,848 basehttp 19408 1348 "GET /static/summernote/jquery.iframe-transport.js HTTP/1.1" 200 10891
+[INFO] 2025-10-03 10:17:02,856 basehttp 19408 15444 "GET /static/summernote/summernote.min.js HTTP/1.1" 200 152734
+[INFO] 2025-10-03 10:17:02,860 basehttp 19408 7428 "GET /static/summernote/jquery.ui.widget.js HTTP/1.1" 200 22757
+[INFO] 2025-10-03 10:17:02,865 basehttp 19408 14152 "GET /static/summernote/jquery.fileupload.js HTTP/1.1" 200 64780
+[INFO] 2025-10-03 10:17:02,870 basehttp 19408 19640 "GET /static/summernote/ResizeSensor.js HTTP/1.1" 200 7678
+[INFO] 2025-10-03 10:17:02,963 basehttp 19408 19640 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[INFO] 2025-10-03 10:17:02,997 basehttp 19408 14152 "GET /static/summernote/lang/summernote-en-US.min.js?_=1759475822913 HTTP/1.1" 200 4607
+[INFO] 2025-10-03 10:17:02,997 basehttp 19408 19640 "GET /static/summernote/lang/summernote-en-US.min.js?_=1759475822909 HTTP/1.1" 200 4607
+[INFO] 2025-10-03 10:17:02,998 basehttp 19408 7428 "GET /static/summernote/lang/summernote-en-US.min.js?_=1759475822916 HTTP/1.1" 200 4607
+[INFO] 2025-10-03 10:18:38,322 basehttp 19408 7428 "GET /cities/ HTTP/1.1" 200 13748
+[INFO] 2025-10-03 10:18:38,356 basehttp 19408 7428 "GET /static/webapp/css/style.css HTTP/1.1" 304 0
+[INFO] 2025-10-03 10:19:07,767 basehttp 19408 7428 "GET /admin/webapp/city/ HTTP/1.1" 200 14475
+[INFO] 2025-10-03 10:19:07,802 basehttp 19408 7428 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-10-03 10:19:13,053 basehttp 19408 7428 "GET /admin/webapp/city/1/change/ HTTP/1.1" 200 16470
+[INFO] 2025-10-03 10:19:13,092 basehttp 19408 7428 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+[INFO] 2025-10-03 10:22:33,867 autoreload 19408 19804 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-10-03 10:22:34,895 autoreload 18856 19200 Watching for file changes with StatReloader
+[INFO] 2025-10-03 10:22:56,263 autoreload 18856 19200 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
+[INFO] 2025-10-03 10:22:57,253 autoreload 15556 16644 Watching for file changes with StatReloader

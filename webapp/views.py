@@ -1,6 +1,7 @@
 import json
 
 from django.core.mail import send_mail
+from django.db.models import Count
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
 from django.views.generic import TemplateView
@@ -460,7 +461,8 @@ def submit_review(request):
 
 
 def city_list(request):
-    cities = City.objects.all()
+    cities = City.objects.annotate(property_count=Count('properties'))
+
     return render(request, 'webapp/category_objects.html', {'cities': cities})
 
 
