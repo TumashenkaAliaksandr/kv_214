@@ -4,7 +4,7 @@ from django.core.mail import send_mail
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.decorators.http import require_POST
 from django.views.generic import TemplateView
-
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from kv_214 import settings
 from kv_214.settings import TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 from webapp.models import Property, MainSlider, PropertyVideo, TrustStats, TrustReason, About, Employee, Review, City
@@ -237,13 +237,36 @@ def sale(request):
         has_filters = True
         properties = properties.filter(currency=currency.upper())
 
-    # Первый объект для булевых признаков
+    # Сортируем properties по pk, чтобы избежать ошибок в пагинации
+    properties = properties.order_by('pk')
+
+    # Пагинация
+    paginator = Paginator(properties, 12)  # 10 объектов на страницу
+    page = request.GET.get('page', 1)
+
+    try:
+        properties_page = paginator.page(page)
+    except PageNotAnInteger:
+        properties_page = paginator.page(1)
+    except EmptyPage:
+        properties_page = paginator.page(paginator.num_pages)
+
+    # Получаем первый объект из всего queryset (отсортированного)
     first_property = properties.first()
 
+    # Формируем GET-параметры без page для пагинации с фильтрами
+    get_params = request.GET.copy()
+    if 'page' in get_params:
+        del get_params['page']
+    query_string = get_params.urlencode()
+
     context = {
-        'properties': properties,
+        'properties': properties_page,
         'first_property': first_property,
         'has_filters': has_filters,
+        'paginator': paginator,
+        'page_obj': properties_page,
+        'query_string': query_string,
     }
 
     return render(request, 'webapp/sale_page.html', context)

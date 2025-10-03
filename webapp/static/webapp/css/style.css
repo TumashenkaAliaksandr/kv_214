@@ -2298,11 +2298,12 @@ body.light-theme .breadcrumb-item.active {
     filter: drop-shadow(2px 1px 0px rgba(255, 255, 255, 0.98));
     position: relative;
     top: 0;
-    margin-left: 80px;
+    margin-left: 0;
     padding: 10px 0; /* чтобы отступ от верха был */
     width: auto; /* для корректного позиционирования */
     background: transparent; /* можно убрать фон если не нужен */
     z-index: 20;
+    text-align: center;
 }
 
 .single-page-title {
@@ -2532,7 +2533,7 @@ body.light-theme .breadcrumb-item.active {
     flex-wrap: wrap !important;
     gap: 12px !important;
     width: 100% !important;
-    max-width: 1350px !important;
+    max-width: 1400px !important;
     margin-left: auto !important;
     margin-right: auto !important;
     padding: 0 !important;
@@ -2610,7 +2611,7 @@ body.light-theme .breadcrumb-item.active {
     color: #3e5418;
     margin-bottom: 12px;
     text-transform: uppercase;
-    background: #adff5b;
+    background: linear-gradient(92deg, #adff5199 0%, #f1ffdeb8 100%);
     padding: 7px;
     border-radius: 5px;
 }
