@@ -4322,12 +4322,25 @@ body.light-theme .breadcrumb-item.active {
     }
 }
 
+.filter-title {
+    font-weight: 500;
+    color: #545453;
+    user-select: none;
+    font-size: 17px;
+    position: relative;
+    bottom: 4px;
+}
+
 /* Базовые стили распределения */
 .main-container {
     display: flex;
     gap: 20px;
     align-items: flex-start;
     margin-bottom: 44px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1450px;
 }
 
 /* Карточка сотрудника */
