@@ -24656,3 +24656,34 @@ TypeError: Cannot reorder a query once a slice has been taken.
 [INFO] 2025-10-04 17:08:24,865 basehttp 15556 19832 "GET /cities/ HTTP/1.1" 200 17318
 [INFO] 2025-10-04 17:11:32,710 autoreload 15556 16644 C:\Users\Admin\PycharmProjects\kv_214\webapp\views.py changed, reloading.
 [INFO] 2025-10-04 17:11:35,208 autoreload 11072 18088 Watching for file changes with StatReloader
+[INFO] 2025-10-04 17:11:36,682 basehttp 11072 15992 "GET /cities/ HTTP/1.1" 200 17318
+[INFO] 2025-10-04 17:11:36,957 basehttp 11072 18064 "GET /static/webapp/images/logo_kvatera.png HTTP/1.1" 200 5827
+[INFO] 2025-10-04 17:11:36,960 basehttp 11072 11836 "GET /media/messenger_svgs/telegram-logo-svgrepo-com.svg HTTP/1.1" 200 1384
+[INFO] 2025-10-04 17:11:36,966 basehttp 11072 15992 "GET /static/webapp/css/style.css HTTP/1.1" 200 118970
+[INFO] 2025-10-04 17:11:36,968 basehttp 11072 17448 "GET /media/messenger_svgs/viber-color-svgrepo-com.svg HTTP/1.1" 200 5269
+[INFO] 2025-10-04 17:11:36,981 basehttp 11072 15784 "GET /media/messenger_svgs/whatsapp-svgrepo-com.svg HTTP/1.1" 200 1179
+[INFO] 2025-10-04 17:11:36,997 basehttp 11072 18064 "GET /static/webapp/js/filter_rent.js HTTP/1.1" 200 1220
+[INFO] 2025-10-04 17:11:37,002 basehttp 11072 17012 "GET /static/webapp/js/slider.js HTTP/1.1" 200 6812
+[INFO] 2025-10-04 17:11:37,005 basehttp 11072 11836 "GET /static/webapp/js/burger_mobile.js HTTP/1.1" 200 5551
+[INFO] 2025-10-04 17:11:37,007 basehttp 11072 17448 "GET /static/webapp/js/trust_animations.js HTTP/1.1" 200 667
+[INFO] 2025-10-04 17:11:37,015 basehttp 11072 15992 "GET /static/webapp/js/modal_window.js HTTP/1.1" 200 2363
+[INFO] 2025-10-04 17:11:37,015 basehttp 11072 15784 "GET /static/webapp/js/messengers.js HTTP/1.1" 200 396
+[INFO] 2025-10-04 17:11:37,028 basehttp 11072 18064 "GET /static/webapp/js/employee_profile.js HTTP/1.1" 200 2550
+[INFO] 2025-10-04 17:11:37,032 basehttp 11072 15992 "GET /media/city_photos/5f8da4820e502-pan.jpg HTTP/1.1" 200 345279
+[INFO] 2025-10-04 17:11:37,033 basehttp 11072 17012 "GET /static/webapp/js/feedback.js HTTP/1.1" 200 2027
+[INFO] 2025-10-04 17:11:37,033 basehttp 11072 15784 "GET /media/city_photos/zastavki-gas-kvas-com-8lbd-p-zastavki-derevnya-letom-1.jpg HTTP/1.1" 200 384584
+[INFO] 2025-10-04 17:11:37,045 basehttp 11072 17448 "GET /static/webapp/js/send_mail.js HTTP/1.1" 200 512
+[INFO] 2025-10-04 17:11:37,051 basehttp 11072 11836 "GET /static/webapp/js/burger_pages.js HTTP/1.1" 200 1744
+[INFO] 2025-10-04 17:11:37,053 basehttp 11072 18064 "GET /media/city_photos/Glubokaje3.jpg HTTP/1.1" 200 586836
+[INFO] 2025-10-04 17:11:37,055 basehttp 11072 15992 "GET /media/city_photos/%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B5.jpg HTTP/1.1" 200 150247
+[INFO] 2025-10-04 17:11:37,055 basehttp 11072 15784 "GET /media/city_photos/%D0%9D%D0%BE%D0%B2%D0%BE%D0%BF%D0%BE%D0%BB%D0%BE%D1%86%D0%BA-800x445.jpg HTTP/1.1" 200 216838
+[INFO] 2025-10-04 17:11:37,056 basehttp 11072 17012 "GET /media/city_photos/vitebsk-01.jpg HTTP/1.1" 200 168806
+[INFO] 2025-10-04 17:11:40,579 basehttp 11072 15992 "GET /static/webapp/images/favicon_kvatera.png HTTP/1.1" 200 855655
+[INFO] 2025-10-04 17:11:43,222 basehttp 11072 15992 "GET /city/g-polock/ HTTP/1.1" 200 23268
+[INFO] 2025-10-04 17:11:50,781 basehttp 11072 15992 "GET /sale/ HTTP/1.1" 200 25403
+[INFO] 2025-10-04 17:11:56,837 basehttp 11072 15992 "GET /cities/ HTTP/1.1" 200 17318
+[INFO] 2025-10-04 17:12:01,485 basehttp 11072 15992 "GET /city/novoplock/ HTTP/1.1" 200 23356
+[INFO] 2025-10-04 17:12:08,925 basehttp 11072 15992 "GET /cities/ HTTP/1.1" 200 17318
+[INFO] 2025-10-04 17:12:11,802 basehttp 11072 15992 "GET /city/glubokoe/ HTTP/1.1" 200 17470
+[INFO] 2025-10-04 17:12:17,426 basehttp 11072 15992 "GET /city/ushachi/ HTTP/1.1" 200 17470
+[INFO] 2025-10-04 17:12:33,317 basehttp 11072 15992 "GET /city/g-polock/ HTTP/1.1" 200 23268

@@ -828,7 +828,7 @@ body {
 .messenger-menu-always {
     position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 85px;
     border-radius: 50%;
     width: 56px;
     height: 56px;
@@ -5026,4 +5026,27 @@ body.light-theme .breadcrumb-item.active {
         width: 80px;
         height: 60px;
     }
+}
+
+
+#scrollTopBtn {
+    display: none; /* Скрыта по умолчанию */
+    position: fixed;
+    bottom: 24px;
+    right: 22px;
+    z-index: 1000;
+    font-size: 28px;
+    background-color: #9bde39;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    background-color: #7abc2f;
 }
