@@ -469,4 +469,4 @@ def city_list(request):
 def city_detail(request, slug):
     city = get_object_or_404(City, slug=slug)
     properties = city.properties.all()
-    return render(request, 'webapp/category_objects.html', {'city': city, 'properties': properties})
+    return render(request, 'webapp/sale_page.html', {'city': city, 'properties': properties})
