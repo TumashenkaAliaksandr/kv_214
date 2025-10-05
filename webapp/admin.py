@@ -28,8 +28,8 @@ class PropertyPhotoInline(admin.TabularInline):
 @admin.register(Property)
 class PropertyAdmin(admin.ModelAdmin):
     form = ObjectForm
-    list_display = ['name', 'address', 'city_name', 'price', 'area', 'area_ga', 'map_embed_html', 'date_posted', 'is_active_new', 'is_active_sold']
-    list_filter = ['is_active_new', 'is_active_sold', 'date_posted']
+    list_display = ['name', 'address', 'city_name', 'price', 'area', 'area_ga', 'map_embed_html', 'date_posted', 'is_active_newstroy', 'is_active_new', 'is_active_sold']
+    list_filter = ['is_active_newstroy', 'is_active_new', 'is_active_sold', 'date_posted']
     search_fields = ['name', 'address', 'description']
     inlines = [PropertyPhotoInline]
     filter_horizontal = ['contacts']

@@ -121,6 +121,7 @@ class Property(models.Model):
     is_commercial = models.BooleanField(default=True, verbose_name="Коммерческая")
     is_rent = models.BooleanField(default=True, verbose_name="Сдается в аренду")
     is_active_new = models.BooleanField(default=True, verbose_name="Новое объявление")
+    is_active_newstroy = models.BooleanField(default=True, verbose_name="Новостройки")
     is_active_house = models.BooleanField(default=True, verbose_name="Дом")
     is_active_country_house = models.BooleanField(default=True, verbose_name="Загородный дом")
     is_active_apartment = models.BooleanField(default=True, verbose_name="Квартира")
